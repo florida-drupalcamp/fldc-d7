@@ -1,7 +1,7 @@
 <?php
 
 // Vagrant
-$aliases['dev'] = array(
+$aliases['vagrant'] = array(
   'uri' => 'fldc15.dev',
   'root' => '/home/vagrant/docroot',
   'remote-host' => 'fldc15.dev',
