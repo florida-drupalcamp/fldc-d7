@@ -1,5 +1,13 @@
 <?php
 
+// Vagrant
+$aliases['dev'] = array(
+  'uri' => 'fldc15.dev',
+  'root' => '/home/vagrant/docroot',
+  'remote-host' => 'fldc15.dev',
+  'remote-user' => 'vagrant',
+);
+
 if (!isset($drush_major_version)) {
   $drush_version_components = explode('.', DRUSH_VERSION);
   $drush_major_version = $drush_version_components[0];
