@@ -5,3 +5,121 @@
  */
 
 include_once 'fldc_bio.features.inc';
+
+/**
+ * Load the Eventbrite API object.
+ *
+ * @return mixed
+ *   Either NULL if the load fails, or an Eventbrite object.
+ */
+function fldc_bio_get_eventbrite_api() {
+  $library = libraries_load('eventbrite');
+  $eventbrite_api = new Eventbrite(array(
+    'app_key' => variable_get('eventbrite_app_key', ''),
+    'user_key' => variable_get('eventbrite_user_key', ''),
+  ));
+  if (empty($library['loaded']) || empty($eventbrite_api)) {
+    drupal_set_message(t('Unable to load Eventbrite API library.', 'error'));
+    return NULL;
+  }
+  return $eventbrite_api;
+}
+
+/**
+ * Implements hook_cron().
+ */
+function fldc_bio_cron() {
+  fldc_bio_create_attendees();
+}
+
+/**
+ * Creates Bio nodes from attendees from the Eventbrite API.
+ */
+function fldc_bio_create_attendees() {
+  // Load the Eventbrite API.
+  $eventbrite_api = fldc_bio_get_eventbrite_api();
+  if (empty($eventbrite_api)) {
+    return;
+  }
+  // Load all existing IDs.
+  $attendees_ids = fldc_bio_get_attendees_ids();
+  // Get a list of all events.
+  $events = fldc_bio_get_events();
+  // Get the attendees from Eventbrite for each event.
+  foreach ($events as $event) {
+    // Less performant, but there should never be more than one or two of these,
+    // so it's not worth the hassle of using field_attach_load() and so on.
+    $event = node_load($event->nid);
+    $event_ids = field_get_items('node', $event, 'field_even_eventbrite');
+    $eventbrite_id = $event_ids[0]['value'];
+    $attendees_list = $eventbrite_api->__call('event_list_attendees', array(array(
+      'id' => $eventbrite_id
+    )));
+    // Loop through the list of attendees from the Eventbrite API.
+    foreach($attendees_list->attendees as $attendee) {
+      // If the attendee already exists in the system, skip it.
+      if (in_array($attendee->attendee->id, $attendees_ids)) {
+        continue;
+      }
+      // Create and save a new node.
+      $node = new stdClass();
+      $node->type = 'bio';
+      $node->language = LANGUAGE_NONE;
+      node_object_prepare($node);
+      $node->field_bio_firstname[LANGUAGE_NONE][0]['value'] = $attendee->attendee->first_name;
+      $node->field_bio_lastname[LANGUAGE_NONE][0]['value'] = $attendee->attendee->last_name;
+      $node->field_bio_eventbrite[LANGUAGE_NONE][0]['value'] = $attendee->attendee->id;
+      // Build the node title automatically.
+      auto_entitylabel_set_title($node, 'node');
+      node_save($node);
+    }
+  }
+}
+
+/**
+ * Loads all events.
+ *
+ * @return array
+ *   An empty array, or an array of all events, as returned from EFQ.
+ */
+function fldc_bio_get_events() {
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'even');
+  $result = $query->execute();
+  if (!empty($result['node'])) {
+    return $result['node'];
+  }
+  else {
+    return array();
+  }
+}
+
+/**
+ * Returns the Eventbrite IDs for all Bio nodes.
+ *
+ * @return array
+ *   Either an empty array, or an array of Eventbrite IDs, keyed by NID.
+ */
+function fldc_bio_get_attendees_ids() {
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'bio')
+    ->fieldCondition('field_bio_eventbrite', 'value', 'NULL', '!=');
+  $result = $query->execute();
+  if (!empty($result['node'])) {
+    $ids = array();
+    // Attach the Eventbrite ID field to the objects.
+    $fields = field_info_instances('node', 'bio');
+    field_attach_load('node', $result['node'], FIELD_LOAD_CURRENT, array('field_id' => $fields['field_bio_eventbrite']['field_id']));
+    // Extract the IDs and return them.
+    foreach ($result['node'] as $bio) {
+      $eventbrite_ids = field_get_items('node', $bio, 'field_bio_eventbrite');
+      $ids[$bio->nid] = $eventbrite_ids[0]['value'];
+    }
+    return $ids;
+  }
+  else {
+    return array();
+  }
+}

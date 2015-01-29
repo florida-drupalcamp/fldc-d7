@@ -88,6 +88,38 @@ function fldc_bio_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_bio_eventbrite'
+  $field_bases['field_bio_eventbrite'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_bio_eventbrite',
+    'field_permissions' => array(
+      'type' => 1,
+    ),
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 32,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_bio_firstname'
   $field_bases['field_bio_firstname'] = array(
     'active' => 1,

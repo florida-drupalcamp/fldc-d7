@@ -91,6 +91,45 @@ function fldc_bio_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-bio-field_bio_eventbrite'
+  $field_instances['node-bio-field_bio_eventbrite'] = array(
+    'bundle' => 'bio',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_bio_eventbrite',
+    'label' => 'Eventbrite ID',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 40,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'node-bio-field_bio_firstname'
   $field_instances['node-bio-field_bio_firstname'] = array(
     'bundle' => 'bio',
@@ -272,6 +311,7 @@ function fldc_bio_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Eventbrite ID');
   t('First Name');
   t('Last Name');
   t('Portrait Image');
