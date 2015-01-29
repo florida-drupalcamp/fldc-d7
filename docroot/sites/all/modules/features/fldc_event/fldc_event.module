@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the FLDC Event feature.
+ */
+
+include_once 'fldc_event.features.inc';
