@@ -66,9 +66,49 @@ function fldc_bio_create_attendees() {
       $node->type = 'bio';
       $node->language = LANGUAGE_NONE;
       node_object_prepare($node);
-      $node->field_bio_firstname[LANGUAGE_NONE][0]['value'] = $attendee->attendee->first_name;
-      $node->field_bio_lastname[LANGUAGE_NONE][0]['value'] = $attendee->attendee->last_name;
       $node->field_bio_eventbrite[LANGUAGE_NONE][0]['value'] = $attendee->attendee->id;
+      // "Attendee" bio type is NID 656.
+      $node->field_bio_bioty_ref[LANGUAGE_NONE][0]['target_id'] = 656;
+      // First name
+      $node->field_bio_firstname[LANGUAGE_NONE][0]['value'] = $attendee->attendee->first_name;
+      // Last name
+      $node->field_bio_lastname[LANGUAGE_NONE][0]['value'] = $attendee->attendee->last_name;
+      // Job title
+      $node->field_bio_worktitle[LANGUAGE_NONE][0]['value'] = $attendee->attendee->job_title;
+      // Company or organization
+      $node->field_bio_co_org_name[LANGUAGE_NONE][0]['value'] = $attendee->attendee->company;
+      // Website - requires some special handling for links.
+      $link = fldc_validate_url($attendee->attendee->website);
+      if (!empty($link) && $link == LINK_EXTERNAL) {
+        $node->field_bio_web_site[LANGUAGE_NONE][0]['url'] = $attendee->attendee->website;
+      }
+      // Custom questions in EB require special handling.
+      foreach ($attendee->attendee->answers as $answer) {
+        switch ($answer->answer->question_id) {
+          // drupal.org profile
+          case '9330584':
+            $link = fldc_validate_url($answer->answer->answer_text);
+            if (!empty($link) && $link == LINK_EXTERNAL) {
+              $node->field_bio_do_profile[LANGUAGE_NONE][0]['url'] = $answer->answer->answer_text;
+            }
+            break;
+          // Twitter
+          case '9330592':
+            $link = fldc_validate_url($answer->answer->answer_text);
+            if (!empty($link) && $link == LINK_EXTERNAL) {
+              $node->field_bio_twitter_profile[LANGUAGE_NONE][0]['url'] = $answer->answer->answer_text;
+            }
+            break;
+          // Bio
+          case '9330624':
+            $node->field_bio_body[LANGUAGE_NONE][0]['value'] = $answer->answer->answer_text;
+            break;
+          // Interests
+          case '9330629':
+            $node->field_bio_my_interest[LANGUAGE_NONE][0]['value'] = $answer->answer->answer_text;
+            break;
+        }
+      }
       // Build the node title automatically.
       auto_entitylabel_set_title($node, 'node');
       node_save($node);
@@ -121,5 +161,29 @@ function fldc_bio_get_attendees_ids() {
   }
   else {
     return array();
+  }
+}
+
+/**
+ * Custom link validator.
+ *
+ * @param string $text
+ *   The link text to be checked.
+ *
+ * @return mixed
+ *   Either boolean FALSE, or the LINK_EXTERNAL constant.
+ *
+ * @see link_validate_url()
+ */
+function fldc_validate_url($text = '') {
+  $link = link_validate_url($text);
+  // External links should have a period in them somewhere - http://example.com,
+  // for instance. This is to prevent links like @Example_Com from passing
+  // link_validate_url(), which they do and shouldn't.
+  if ($link == LINK_EXTERNAL && strpos($text, '.')) {
+    return LINK_EXTERNAL;
+  }
+  else {
+    return FALSE;
   }
 }
