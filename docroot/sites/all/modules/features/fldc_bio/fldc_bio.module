@@ -57,15 +57,17 @@ function fldc_bio_create_attendees() {
     )));
     // Loop through the list of attendees from the Eventbrite API.
     foreach($attendees_list->attendees as $attendee) {
-      // If the attendee already exists in the system, skip it.
-      if (in_array($attendee->attendee->id, $attendees_ids)) {
-        continue;
+      // Use the existing node.
+      if ($nid = array_search($attendee->attendee->id, $attendees_ids)) {
+        $node = node_load($nid);
       }
-      // Create and save a new node.
-      $node = new stdClass();
-      $node->type = 'bio';
-      $node->language = LANGUAGE_NONE;
-      node_object_prepare($node);
+      // Create a new node.
+      else {
+        $node = new stdClass();
+        $node->type = 'bio';
+        $node->language = LANGUAGE_NONE;
+        node_object_prepare($node);
+      }
       $node->field_bio_eventbrite[LANGUAGE_NONE][0]['value'] = $attendee->attendee->id;
       // "Attendee" bio type is NID 656.
       $node->field_bio_bioty_ref[LANGUAGE_NONE][0]['target_id'] = 656;
