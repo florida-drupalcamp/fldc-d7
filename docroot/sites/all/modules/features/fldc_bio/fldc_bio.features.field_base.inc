@@ -40,7 +40,7 @@ function fldc_bio_field_default_field_bases() {
       'handler_settings' => array(
         'behaviors' => array(
           'views-select-list' => array(
-            'status' => 0,
+            'status' => 1,
           ),
         ),
         'sort' => array(
@@ -86,6 +86,71 @@ function fldc_bio_field_default_field_bases() {
     'settings' => array(),
     'translatable' => 0,
     'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_bio_co_org_name'
+  $field_bases['field_bio_co_org_name'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_bio_co_org_name',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 60,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_bio_do_profile'
+  $field_bases['field_bio_do_profile'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_bio_do_profile',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'link',
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'link_field',
   );
 
   // Exported field_base: 'field_bio_eventbrite'
@@ -184,6 +249,67 @@ function fldc_bio_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_bio_meal'
+  $field_bases['field_bio_meal'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_bio_meal',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'NP' => 'No Preference',
+        'V' => 'Vegitarian',
+        'VE' => 'Vegan',
+        'O' => 'Other - Email us',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_bio_my_interest'
+  $field_bases['field_bio_my_interest'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_bio_my_interest',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
   // Exported field_base: 'field_bio_portrait'
   $field_bases['field_bio_portrait'] = array(
     'active' => 1,
@@ -215,6 +341,105 @@ function fldc_bio_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'image',
+  );
+
+  // Exported field_base: 'field_bio_tshirt_size'
+  $field_bases['field_bio_tshirt_size'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_bio_tshirt_size',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'S' => 'Small',
+        'M' => 'Medium',
+        'L' => 'Large',
+        'XL' => 'Extra Large',
+        '2XL' => '2 Extra Large',
+        '3XL' => '3 Extra Large',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_bio_twitter_profile'
+  $field_bases['field_bio_twitter_profile'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_bio_twitter_profile',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'link',
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'link_field',
+  );
+
+  // Exported field_base: 'field_bio_web_site'
+  $field_bases['field_bio_web_site'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_bio_web_site',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'link',
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'link_field',
   );
 
   // Exported field_base: 'field_bio_worktitle'
