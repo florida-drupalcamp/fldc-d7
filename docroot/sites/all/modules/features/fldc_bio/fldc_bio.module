@@ -160,8 +160,14 @@ function fldc_bio_update_attendee($data) {
         break;
     }
   }
+  // Save the node.
+  node_save($node);
+  // Re-load the node. This is unfortunate but necessary, or node titles will
+  // not set properly.
+  $node = node_load($node->nid);
   // Build the node title automatically.
   auto_entitylabel_set_title($node, 'node');
+  // Save again, to save the new title.
   node_save($node);
 }
 
