@@ -29,20 +29,36 @@ function fldc_bio_get_eventbrite_api() {
  * Implements hook_cron().
  */
 function fldc_bio_cron() {
-  fldc_bio_create_attendees();
+  fldc_bio_update_all_attendees();
 }
 
 /**
- * Creates Bio nodes from attendees from the Eventbrite API.
+ * Implements hook_cron_queue_info().
  */
-function fldc_bio_create_attendees() {
+function fldc_bio_cron_queue_info() {
+  $queues = array();
+
+  $queues['fldc_bio_bios_queue'] = array(
+    'worker callback' => 'fldc_bio_update_attendee',
+    'time' => 30,
+  );
+
+  return $queues;
+}
+
+/**
+ * Updates all attendees with the latest Eventbrite data.
+ */
+function fldc_bio_update_all_attendees() {
+  // Load the queue.
+  $queue = DrupalQueue::get('fldc_bio_bios_queue');
   // Load the Eventbrite API.
   $eventbrite_api = fldc_bio_get_eventbrite_api();
   if (empty($eventbrite_api)) {
     return;
   }
   // Load all existing IDs.
-  $attendees_ids = fldc_bio_get_attendees_ids();
+  $bios = fldc_bio_get_bios();
   // Get a list of all events.
   $events = fldc_bio_get_events();
   // Get the attendees from Eventbrite for each event.
@@ -57,65 +73,96 @@ function fldc_bio_create_attendees() {
     )));
     // Loop through the list of attendees from the Eventbrite API.
     foreach($attendees_list->attendees as $attendee) {
-      // Use the existing node.
-      if ($nid = array_search($attendee->attendee->id, $attendees_ids)) {
-        $node = node_load($nid);
+      $id = $attendee->attendee->id;
+      // The node already exists, so use that.
+      if (array_key_exists($id, $bios)) {
+        $bio = $bios[$id];
       }
-      // Create a new node.
+      // The node doesn't exist, so only pass in the Eventbrite ID.
       else {
-        $node = new stdClass();
-        $node->type = 'bio';
-        $node->language = LANGUAGE_NONE;
-        node_object_prepare($node);
+        $bio = array(
+          'field_bio_eventbrite' => $id,
+        );
       }
-      $node->field_bio_eventbrite[LANGUAGE_NONE][0]['value'] = $attendee->attendee->id;
-      // "Attendee" bio type is NID 656.
-      $node->field_bio_bioty_ref[LANGUAGE_NONE][0]['target_id'] = 656;
-      // First name
-      $node->field_bio_firstname[LANGUAGE_NONE][0]['value'] = $attendee->attendee->first_name;
-      // Last name
-      $node->field_bio_lastname[LANGUAGE_NONE][0]['value'] = $attendee->attendee->last_name;
-      // Job title
-      $node->field_bio_worktitle[LANGUAGE_NONE][0]['value'] = $attendee->attendee->job_title;
-      // Company or organization
-      $node->field_bio_co_org_name[LANGUAGE_NONE][0]['value'] = $attendee->attendee->company;
-      // Website - requires some special handling for links.
-      $link = fldc_validate_url($attendee->attendee->website);
-      if (!empty($link) && $link == LINK_EXTERNAL) {
-        $node->field_bio_web_site[LANGUAGE_NONE][0]['url'] = $attendee->attendee->website;
-      }
-      // Custom questions in EB require special handling.
-      foreach ($attendee->attendee->answers as $answer) {
-        switch ($answer->answer->question_id) {
-          // drupal.org profile
-          case '9330584':
-            $link = fldc_validate_url($answer->answer->answer_text);
-            if (!empty($link) && $link == LINK_EXTERNAL) {
-              $node->field_bio_do_profile[LANGUAGE_NONE][0]['url'] = $answer->answer->answer_text;
-            }
-            break;
-          // Twitter
-          case '9330592':
-            $link = fldc_validate_url($answer->answer->answer_text);
-            if (!empty($link) && $link == LINK_EXTERNAL) {
-              $node->field_bio_twitter_profile[LANGUAGE_NONE][0]['url'] = $answer->answer->answer_text;
-            }
-            break;
-          // Bio
-          case '9330624':
-            $node->field_bio_body[LANGUAGE_NONE][0]['value'] = $answer->answer->answer_text;
-            break;
-          // Interests
-          case '9330629':
-            $node->field_bio_my_interest[LANGUAGE_NONE][0]['value'] = $answer->answer->answer_text;
-            break;
-        }
-      }
-      // Build the node title automatically.
-      auto_entitylabel_set_title($node, 'node');
-      node_save($node);
+      // Attach the attendee.
+      $bio['attendee'] = $attendee;
+      // Send the bio into the queue.
+      $queue->createItem($bio);
     }
   }
+}
+
+/**
+ * Worker callback for hook_cron_queue_info().
+ *
+ * Updates an individual attendee node.
+ *
+ * @see fldc_bio_cron_queue_info()
+ */
+function fldc_bio_update_attendee($data) {
+  // Get the attendee, for easier access.
+  $attendee = $data['attendee'];
+  // Load the current node if it exists.
+  if (!empty($data['nid'])) {
+    $node = node_load($data['nid']);
+    if (empty($node)) {
+      return;
+    }
+  }
+  // Create a new node if it doesn't.
+  else {
+    $node = new stdClass();
+    $node->type = 'bio';
+    $node->language = LANGUAGE_NONE;
+    node_object_prepare($node);
+  }
+  // Update all fields.
+  $node->field_bio_eventbrite[LANGUAGE_NONE][0]['value'] = $attendee->attendee->id;
+  // "Attendee" bio type is NID 656.
+  $node->field_bio_bioty_ref[LANGUAGE_NONE][0]['target_id'] = 656;
+  // First name
+  $node->field_bio_firstname[LANGUAGE_NONE][0]['value'] = $attendee->attendee->first_name;
+  // Last name
+  $node->field_bio_lastname[LANGUAGE_NONE][0]['value'] = $attendee->attendee->last_name;
+  // Job title
+  $node->field_bio_worktitle[LANGUAGE_NONE][0]['value'] = $attendee->attendee->job_title;
+  // Company or organization
+  $node->field_bio_co_org_name[LANGUAGE_NONE][0]['value'] = $attendee->attendee->company;
+  // Website - requires some special handling for links.
+  $link = fldc_validate_url($attendee->attendee->website);
+  if (!empty($link) && $link == LINK_EXTERNAL) {
+    $node->field_bio_web_site[LANGUAGE_NONE][0]['url'] = $attendee->attendee->website;
+  }
+  // Custom questions in EB require special handling.
+  foreach ($attendee->attendee->answers as $answer) {
+    switch ($answer->answer->question_id) {
+      // drupal.org profile
+      case '9330584':
+        $link = fldc_validate_url($answer->answer->answer_text);
+        if (!empty($link) && $link == LINK_EXTERNAL) {
+          $node->field_bio_do_profile[LANGUAGE_NONE][0]['url'] = $answer->answer->answer_text;
+        }
+        break;
+      // Twitter
+      case '9330592':
+        $link = fldc_validate_url($answer->answer->answer_text);
+        if (!empty($link) && $link == LINK_EXTERNAL) {
+          $node->field_bio_twitter_profile[LANGUAGE_NONE][0]['url'] = $answer->answer->answer_text;
+        }
+        break;
+      // Bio
+      case '9330624':
+        $node->field_bio_body[LANGUAGE_NONE][0]['value'] = $answer->answer->answer_text;
+        break;
+      // Interests
+      case '9330629':
+        $node->field_bio_my_interest[LANGUAGE_NONE][0]['value'] = $answer->answer->answer_text;
+        break;
+    }
+  }
+  // Build the node title automatically.
+  auto_entitylabel_set_title($node, 'node');
+  node_save($node);
 }
 
 /**
@@ -141,9 +188,10 @@ function fldc_bio_get_events() {
  * Returns the Eventbrite IDs for all Bio nodes.
  *
  * @return array
- *   Either an empty array, or an array of Eventbrite IDs, keyed by NID.
+ *   Either an empty array, or an array of NIDs and Eventbrite IDs, keyed by
+ *   Eventbrite ID.
  */
-function fldc_bio_get_attendees_ids() {
+function fldc_bio_get_bios() {
   $query = new EntityFieldQuery();
   $query->entityCondition('entity_type', 'node')
     ->entityCondition('bundle', 'bio')
@@ -157,7 +205,11 @@ function fldc_bio_get_attendees_ids() {
     // Extract the IDs and return them.
     foreach ($result['node'] as $bio) {
       $eventbrite_ids = field_get_items('node', $bio, 'field_bio_eventbrite');
-      $ids[$bio->nid] = $eventbrite_ids[0]['value'];
+      $id = $eventbrite_ids[0]['value'];
+      $ids[$id] = array(
+        'nid' => $bio->nid,
+        'field_bio_eventbrite' => $id,
+      );
     }
     return $ids;
   }
