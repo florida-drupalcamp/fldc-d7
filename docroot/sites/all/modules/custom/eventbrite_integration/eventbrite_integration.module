@@ -331,7 +331,6 @@ function eventbrite_integration_bio_field_mapping($form, &$form_state) {
 
     // Load custom Eventbrite questions.
     $questions = $api->get_event_questions($eventbrite_id);
-    dpm($questions, 'questions');
     foreach ($questions->questions as $question) {
       $question_id = $question->id;
       $question_text = $question->question->text;
