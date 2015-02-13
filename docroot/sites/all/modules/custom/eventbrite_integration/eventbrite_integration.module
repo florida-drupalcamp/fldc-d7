@@ -279,6 +279,11 @@ function eventbrite_integration_menu() {
   return $items;
 }
 
+/**
+ * Form builder callback.
+ *
+ * Builds a form for mapping between Eventbrite fields and Bio fields.
+ */
 function eventbrite_integration_bio_field_mapping($form, &$form_state) {
   $form['help_text'] = array(
     '#markup' =>
