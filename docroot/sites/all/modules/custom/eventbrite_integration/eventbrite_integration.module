@@ -280,6 +280,12 @@ function eventbrite_integration_menu() {
 }
 
 function eventbrite_integration_bio_field_mapping($form, &$form_state) {
+  $form['help_text'] = array(
+    '#markup' =>
+      "<p>" . t("Create mappings between Eventbrite order form fields and Bio fields.") . "</p>" .
+      "<p>" . t("Each select field is a field on the event's Eventbrite order form, and the options in the field are fields on the Bio content type.") . "</p>",
+  );
+
   // Load the V3 Eventbrite API.
   $api = new EventbriteV3();
 
