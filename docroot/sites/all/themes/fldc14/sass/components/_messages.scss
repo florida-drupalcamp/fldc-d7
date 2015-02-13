@@ -1,0 +1,66 @@
+
+
+/* =============================================================================
+    Drupal's Messages
+   ========================================================================== */
+
+.messages {
+	@extend h2;
+	position: relative;
+	background-image: none;
+	border: none;
+	padding: 20px;
+	color: white;
+	.placeholder {
+		margin-right: 10px;
+	}
+	a {
+		color: white!important;
+		text-decoration: underline!important;
+		&:hover {
+			text-decoration: none!important;
+		}
+	}
+	@include breakpoint($tablet_narrow) {
+		&:before {
+			font-family: FontAwesome;
+			position: absolute;
+			font-size: 70px;
+			line-height: 1;
+			left: 20px;
+			top: 50%;
+			margin-top: -35px; // Half of the font-size.
+		}
+	}
+}
+
+.messages--status {
+	background-color: $orange;
+	@include breakpoint($tablet_narrow) {
+		padding-left: 100px;
+		&:before {
+			content: "\f087"; // Thumbs up
+		}
+	}
+}
+
+.messages--warning {
+	background-color: $yellow;
+	@include breakpoint($tablet_narrow) {
+		padding-left: 100px;
+		&:before {
+			content: "\f0a4"; // Finger pointing
+		}
+	}
+}
+
+.messages--error,
+.messages.error {
+	background-color: darkred;
+	@include breakpoint($tablet_narrow) {
+		padding-left: 110px;
+		&:before {
+			content: "\f071"; // Warning symbol
+		}
+	}
+}

@@ -1,0 +1,64 @@
+
+/* =============================================================================
+    Session Node
+   ========================================================================== */
+
+.node-type-session {
+	.field--name-field-speakers {
+		background: #f5f5f5;
+		padding: 10px;
+		position: relative;
+		min-height: 300px;
+		@include breakpoint($tablet_narrow) {
+			.field {
+				max-width: 70%;
+			}
+			.field--name-field-your-picture {
+				position: absolute;
+				right: 10px;
+				top: 10px;
+				max-width: 30%;
+			}
+		}
+	}
+	.field--name-field-tax-track {
+		font-size: 1.2em;
+		.field__label:before {
+				font-family: FontAwesome;
+				display: inline-block;
+				width: 30px;
+				content: "\f02e";
+			}
+	}
+	.field--name-field-experience {
+		font-size: 1.2em;
+		margin-bottom: 20px;
+		.field__label:before {
+				font-family: FontAwesome;
+				display: inline-block;
+				width: 30px;
+				content: "\f135";
+			}
+	}
+}
+// Slides link
+
+.field--name-field-slides {
+	margin: 20px 0;
+	label {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	a {
+		@extend button;
+		font-size: 25px;
+		padding: 10px 20px;
+		display: inline-block;
+		vertical-align: middle;
+		&:hover {
+			color: White;
+		}
+	}
+}
+

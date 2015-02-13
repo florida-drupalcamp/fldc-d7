@@ -1,0 +1,207 @@
+/*******************************************************************************
+ * zones.layout.scss
+ *
+ * Styling of the "zones" layout.
+ ******************************************************************************/
+// SASS Libraries
+@import "compass";
+@import "breakpoint";
+@import "susy";
+
+// Theme SASS Helpers
+@import "../../variables/**/*";
+@import "../../abstractions/**/*";
+
+/***************************************
+ * Susy Variables
+ **************************************/
+// Set consistent vertical and horizontal spacing units.
+$vert-spacing-unit: 20px;
+$horz-spacing-unit: 1em;
+
+// Define Susy grid variables mobile first.
+$total-columns: 4;
+$column-width: 4em;
+$gutter-width: $horz-spacing-unit;
+$grid-padding: 5px;
+
+$container-style: magic;
+$container-width: 1110px;
+
+
+// Susy Media Layouts @see http://susy.oddbird.net/guides/reference/#ref-media-layouts
+$tab: 44em 12; // At 44em use 12 columns.
+$desk: 70em 16; // At 70em use 16 columns.
+
+// Sticky Footer
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+
+body,
+.l-page {
+  height: 100%;
+  min-height: 100%;
+}
+
+
+
+// Zones
+.zone {
+  @extend %clearfix;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0.83em 0;
+  position: relative;
+}
+
+.z-navigation,
+.z-header,
+.z-preface,
+.z-content,
+.z-postscript,
+.z-footer {}
+
+/** Header is back in, so we don't need to pad the top of the content zone to
+ *  accommodate for the fixed navigation
+ *
+.z-content {
+  .not-front & {
+    margin-top: 100px;
+    
+    &.admin-menu & {
+      margin-top: 129px;
+    }
+  }
+}
+*/
+
+.z-navigation {
+  top: 0;
+  .admin-menu & {
+    top: 29px;
+  }
+}
+
+// Regions
+.l-header,
+.l-preface,
+.l-preface2 .wrapper,
+.l-main,
+.l-postscript,
+.l-footer {
+  @include container; // Define these elements as the grid containers.
+  padding-bottom: $vert-spacing-unit;
+}
+
+.l-navigation {
+  @include container;
+}
+
+.l-region--highlighted,
+.l-region--help,
+.l-region--sidebar-first,
+.l-region--sidebar-second {
+  margin-bottom: $vert-spacing-unit;
+}
+
+@include at-breakpoint($tab) { // At a given Susy Media Layout, use a given amount of columns.
+  .l-navigation,
+  .l-header,
+  .l-preface,
+  .l-preface2 .wrapper,
+  .l-main,
+  .l-postscript,
+  .l-footer {
+    @include set-container-width; // Reset only the container width (elements have already been declared as containers).
+    @include breakpoint($wide) {
+    max-width: 1500px!important; // Because i can't figure out where else to change this. Sorry.
+  }      
+  }
+
+  .l-branding {
+    @include span-columns(12, 12); 
+    @include breakpoint($tablet_wide) {
+      @include span-columns(4, 12); // Span 4 out of 12 columns.
+    }
+  }
+  .l-region--header{
+    @include span-columns(12, 12);
+    @include breakpoint($tablet_wide) {
+      @include span-columns(8 omega, 12); // Span the last (omega) 8 columns of 12.
+    }
+  }
+  .l-region--navigation {
+    clear: both;
+  }
+}
+
+@include breakpoint($tablet_wide) {
+  .has-sidebar-first,
+  .has-sidebar-second,
+  .has-two-sidebars {
+    .l-content {
+      @include span-columns(8, 12); // Span 8 out of 12 columns.
+    }
+    .l-region--sidebar-first,
+    .l-region--sidebar-second {
+      @include span-columns(4 omega, 12); // Span the last (omega) 4 columns of 12.
+    }
+    .l-region--sidebar-second {
+      clear: right;
+    }
+  }
+}
+
+@include at-breakpoint($desk) {
+  .l-navigation,
+  .l-header,
+  .l-main,
+  .l-footer {
+    @include set-container-width; // Reset only the container width (elements have already been declared as containers).
+  }
+
+  .l-branding {
+    @include span-columns(6, 16); // Span 6 out of 16 columns.
+  }
+  .l-region--header{
+    @include span-columns(10 omega, 16); // Span the last (omega) 10 columns of 16.
+  }
+
+  .has-sidebar-first {
+    .l-content {
+      @include span-columns(12 omega, 16); // Span the last (omega) 12 columns of 16.
+    }
+    .l-region--sidebar-first {
+      @include span-columns(4, 16); // Span 4 out of 16 columns.
+    }
+  }
+  .has-sidebar-second {
+    .l-content {
+      @include span-columns(11, 16); // Span 12 out of 16 columns.
+    }
+    .l-region--sidebar-second {
+      @include span-columns(5 omega, 16); // Span the last (omega) 4 columns of 16.
+      clear: none;
+    }
+  }
+
+  .has-two-sidebars {
+    .l-content {
+      @include span-columns(7, 16);
+      @include push(4, 16);
+    }
+    .l-region--sidebar-first {
+      @include span-columns(4, 16);
+      @include pull(11, 16);
+    }
+    .l-region--sidebar-second {
+      @include span-columns(5, 16);
+      @include omega;
+      clear: none;
+    }
+  }
+}

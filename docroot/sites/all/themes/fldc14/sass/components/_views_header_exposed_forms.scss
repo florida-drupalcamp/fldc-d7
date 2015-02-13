@@ -1,0 +1,77 @@
+/* =============================================================================
+    Views Exposed Forms
+   ========================================================================== */
+.views-exposed-form {
+	input[type="submit"] {
+		margin-top: 0;
+		font-size: 25px;
+		@include breakpoint($tablet_narrow) {
+			margin-top: 1.4em;
+		}
+	}
+	.views-exposed-widget {
+		float: none;
+		@include breakpoint($tablet_narrow) {
+			float: left;
+			text-align: left;
+			width: 30%;
+		}
+	}
+
+}
+
+.view-header {
+	a.button {
+		margin-top: 10px;
+		@include breakpoint($tablet_narrow) {
+			margin-top: 0;
+		}
+	}
+	p {
+		font-size: 1em;
+		margin-top: 10px;
+		color: #999;
+		// background: #f5f5f5;
+		// padding: 10px;
+	}	
+}
+
+// Better Exposed Filter Theming
+
+.ctools-auto-submit-full-form .views-exposed-form .views-exposed-widget {
+	width: 100%;
+	padding: 0;
+}
+.bef-checkboxes {
+	.form-type-bef-checkbox {
+		padding: 0 0;
+		margin-bottom: 10px;
+		&.highlight {
+			label {
+				background: #eee;
+				&:hover {
+					background: #ddd;
+				}
+			}
+		}
+		@include breakpoint($tablet_narrow) {
+			width: 50%;
+			float: left;
+		}
+	}
+	input[type="checkbox"] {
+		display: none;
+	}
+	label {
+		cursor: pointer;
+		font-weight: normal;
+		font-size: 1em;
+		padding: 10px;
+		display: block;
+		&:hover {
+      background: #f5f5f5;
+    }
+	}
+}
+
+

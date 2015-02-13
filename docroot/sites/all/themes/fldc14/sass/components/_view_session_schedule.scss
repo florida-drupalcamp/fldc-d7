@@ -1,0 +1,232 @@
+
+/* =============================================================================
+    Sessions schedule
+   ========================================================================== */
+
+
+.view-session-schedule {
+  h3 {
+    .date-display-single {
+      @extend h1;
+      margin-top: 0;
+      font-size: 1em;
+      background-color: $blue;
+      color: white;
+      display: block;
+      text-align: center;
+      padding: 20px 0;
+      @include breakpoint($normal) {
+        padding: 0;
+        font-size: 1.2em;
+        background-color: transparent;
+        color: $blue;
+      }
+    }
+    @include breakpoint($normal) {
+      float: left;
+      width: 150px;
+      margin-top: 0;
+    }
+  }
+  h2 {
+    font-size: 1.5em;
+    margin: 0;
+    position: relative;
+    //z-index: 5;
+    a {
+      color: $blue;
+    }
+  }
+  .views-field-body {
+    max-height: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+    @include transition(all .5s);
+    @include breakpoint(max-width $smartphone_wide) {
+      margin-left: -26px;
+    }
+  }
+  .track {
+    position: absolute;
+    display: block;
+    top: 10px;
+    left: 10px;
+    height: 26px;
+    width: 26px;
+    background-image: url(../images/sprite-track-icons.png);
+  }
+  .track-7 { // Theming
+    background-position: 0 -320px;
+  }
+  .track-8 { // Development & performance
+    background-position: 0 -40px;
+  }
+  .track-9 { // Site building
+    background-position: 0 -160px;
+  }
+  .track-10 { // Project managment
+    background-position: 0 0;
+  }
+  .track-11 { // Drupal island
+    background-position: 0 -200px;
+  }
+  .track-12 { // Beginner
+    background-position: 0 -279px;
+  }
+  .views-row {
+    cursor: pointer;
+    margin: 0 0 10px 0;
+    padding: 10px 40px 10px 46px;
+    background: #eee;
+    position: relative;
+    .speaker-wrapper:nth-child(2):before {
+      content: " & ";
+    }
+    > .where,
+    > .speaker,
+    > .experience {
+      font-size: .9em;
+      margin-right: 10px;
+      display: inline-block;
+      &:before {
+        font-family: FontAwesome;
+        display: inline-block;
+        width: 15px;
+      }
+    }
+    > .where:before {
+      content: "\f041";
+    }
+    > .speaker:before {
+      content: "\f007";
+    }
+    > .experience:before {
+      content: "\f135";
+    }
+    &:after {
+      position: absolute;
+      content: "\f054";
+      font-family: FontAwesome;
+      font-size: 16px;
+      display: block;
+      right: 20px;
+      top: 30px;
+      color: $blue;
+      @include transition(all .5s);
+    }
+    &.session-view {
+      .views-field-body {
+        padding-top: 20px;
+        max-height: 2000px;
+      }
+      &:after {
+        @include transform(rotate(90deg));
+      }
+    }
+    &.Schedule { // Hide track, speaker, etc for Schedule items like lunch
+      cursor: auto;
+      &:after {
+        display: none;
+      }
+      .track,
+      .where,
+      .speaker,
+      .experience {
+        display: none;
+      }
+    }
+    &.nid-146 { // Hide the speaker and experience for the BOF session
+      .speaker,
+      .experience {
+        display: none;
+      }
+    }
+    @include breakpoint($normal) {
+      margin: 0 0 20px 160px; // Make room for the time to the left
+    }
+    // End .views-row
+  }
+  .group {
+    clear: both;
+    @include breakpoint($normal) {
+      border-top: solid 2px $blue;
+      padding-top: 20px;
+    }
+  }
+}
+
+// Specific to the Exposed Filters on this 
+
+.view-session-schedule {
+  // Exposed Filter Label 
+  .views-widget-filter-field_tax_track_tid > label {
+    @extend h2;    
+    text-align: center;
+    display: none;
+    @include breakpoint($normal) {
+      display: block;
+      font-size: 2em;
+      margin-top: 10px;
+      padding: 0;
+      float: left;
+      width: 150px;
+    }
+  }
+  .views-widget {
+    padding: 10px 0;
+    @include breakpoint($normal) {
+      margin-left: 160px;
+      padding: 0;
+    }
+  }
+  .bef-checkboxes {
+    label {
+      padding-left: 45px;
+      position: relative;
+      line-height: 1.2;
+      font-family: $font-narrow;
+      font-size: 1.1em;
+      @include breakpoint(399px) {
+        font-size: 1.3em;
+      }
+      @include breakpoint($tablet_wide) {
+        font-size: 1.1em;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 50%;
+        margin-top: -13px;
+        left: 10px;
+        height: 27px;
+        width: 26px;
+        background-image: url(../images/sprite-track-icons.png);
+        background-repeat: no-repeat;
+      }
+      
+    }
+  }
+  .form-item-edit-field-tax-track-tid-7 label:before { // Theming
+    background-position: 0 -320px;
+  }
+  .form-item-edit-field-tax-track-tid-8 label:before { // Development & performance
+    background-position: 0 -40px;
+  }
+  .form-item-edit-field-tax-track-tid-9 label:before { // Site building
+    background-position: 0 -160px;
+  }
+  .form-item-edit-field-tax-track-tid-10 label:before { // Project managment
+    background-position: 0 0;
+  }
+  .form-item-edit-field-tax-track-tid-11 label:before { // Drupal island
+    background-position: 0 -200px;
+  }
+  .form-item-edit-field-tax-track-tid-12 label:before { // Beginner
+    background-position: 0 -279px;
+  }
+
+}
+
+
+

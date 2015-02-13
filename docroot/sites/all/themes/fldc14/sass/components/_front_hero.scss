@@ -1,0 +1,125 @@
+.cta--event-register {
+  .content {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    width: 95%;
+    margin: 40px auto;
+    @extend %clearfix; 
+    @include breakpoint($tablet_narrow) {
+      width: 90%;
+      padding: 20px;
+    }
+    @include breakpoint($tablet_wide) {
+      margin: 40px 0;
+      float: right;
+    }
+    @include breakpoint($normal) {
+      margin: 80px 0;
+    }
+    @include breakpoint($wide) {
+      margin: 120px 0;
+    }
+  }
+  h1 {
+    line-height: 1.2;
+    display: inline-block;
+    font-size: 55px;
+    color: white;
+    border-bottom: solid 1px white;
+    -webkit-text-stroke: 1px white;
+    @include breakpoint($smartphone_wide) {
+      font-size: 65px;
+    }    
+    @include breakpoint($tablet_wide) {
+      font-size: 55px;
+    }
+    @include breakpoint($normal) {
+      font-size: 65px;
+    }    
+    @include breakpoint($wide) {
+      font-size: 70px;
+    }
+  }
+  h2 {
+    font-size: 30px;
+    margin: 0;
+    line-height: 1.2;
+    color: $orange;
+    @include breakpoint($smartphone_wide) {
+      line-height: 1.5;
+    }    
+    @include breakpoint($wide) {
+      font-size: 40px;
+    }
+  }
+  p {
+    margin: 10px;
+    @include breakpoint($wide) {
+
+      font-size: 25px;
+    }      
+  }
+  button {
+    width: 90%;
+    max-width: 380px;
+    height: 90px;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;    
+    line-height: 90px;
+    margin: 10px 0 20px 0;
+  }
+  .date {
+    display: block;
+    font-size: 35px;
+    @include breakpoint($smartphone_wide) {
+      display: inline;
+      font-size: 30px;
+      &:after {
+        content: " | "
+      }
+    }
+    @include breakpoint($wide) {
+      font-size: inherit;
+    }
+  }
+  .loc {
+    display: block;
+    @include breakpoint($smartphone_wide) {
+      display: inline;
+    }
+  } 
+  // Social Media
+
+  .icon {
+    color: #fff;
+    font-size: 50px;
+  }
+
+  .icon:hover {
+    color: $yellow;  
+  }  
+  // /#hero
+}
+
+
+
+
+
+#bubble1,
+#bubble2,
+#bubble3,
+#bubble4,
+#bubble5 {
+  display: none;
+}
+
+.cssanimations #bubble1,
+.cssanimations #bubble2,
+.cssanimations #bubble3,
+.cssanimations #bubble4,
+.cssanimations #bubble5 {
+  display: block;
+}

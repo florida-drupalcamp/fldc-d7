@@ -1,0 +1,30 @@
+
+/* =============================================================================
+    Flag buttons
+   ========================================================================== */
+.flag {
+	a {
+		@extend button;
+		font-size: 20px;
+		padding: 10px 20px;
+		&:hover {
+			color: white;
+		}
+		&:before {
+			display: inline;
+			font-family: FontAwesome;
+			content: "\f14a";
+			margin-right: 10px;
+
+		}
+		&.unflag-action {
+			background-color: darken($orange, 20%);
+			&:before {
+				content: "\f00d"
+			}
+		}
+	}
+}
+.flag-message {
+	margin-top: 10px;
+}

@@ -1,0 +1,40 @@
+
+
+/* =============================================================================
+    User Profile
+   ========================================================================== */
+
+.field--name-field-your-picture {
+	.field__items {
+		text-align: center;
+		@include breakpoint($tablet_narrow) {
+			text-align: left;
+		}
+	}
+	.field__item {
+		display: inline-block;
+		border-radius: 50%;
+		border: solid 5px $orange;
+		width: auto;
+		text-align: center;
+		margin: 10px 0;
+	}
+	img {
+		display: block;
+		border-radius: 50%;
+	}
+}
+
+.field--name-field-profile-first,
+.field--name-field-profile-last {
+	@extend h1;
+	clear: both;
+	display: inline;
+	div {
+		display: inline;
+	}
+}
+.field--name-field-profile-first:after {
+	content: " ";
+	display: inline;
+}

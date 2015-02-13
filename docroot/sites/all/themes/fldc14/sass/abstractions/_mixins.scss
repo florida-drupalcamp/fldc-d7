@@ -1,0 +1,21 @@
+%clearfix {
+  &:after,
+  &:before {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+
+@function pem($pxval, $base: 16) {
+  @return strip-unit($pxval) / $base * 1em;
+}
+
+@function emp($emval, $base: 16) {
+  @return (strip-unit($emval) * $base) + 0px;
+}

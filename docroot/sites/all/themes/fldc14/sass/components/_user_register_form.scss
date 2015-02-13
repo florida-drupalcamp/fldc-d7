@@ -1,0 +1,30 @@
+
+
+/* =============================================================================
+    User Register Form
+   ========================================================================== */
+
+
+ .password-strength { // Hide the password strength meter for smartphones
+ 	display: none;
+ 	@include breakpoint($tablet_narrow) {
+ 		display: block;
+ 	}
+ }
+
+ div.password-confirm {
+ 	width: 100%;
+ 	@include breakpoint($tablet_narrow) {
+ 		width: 17em; // Back to Drupal's system.css default value.
+ 	}
+ }
+
+ .optional-info {
+ 	background-color: #f5f5f5;
+ 	padding: .2em .8em;
+ 	margin-bottom: 1em;
+ }
+
+ .image-widget input[type="submit"] { // Upload button for the image upload widget
+ 	font-size: 25px;
+ }

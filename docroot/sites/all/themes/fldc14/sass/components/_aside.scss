@@ -1,0 +1,19 @@
+
+
+/* =============================================================================
+    Some general theming for the sidebar
+   ========================================================================== */
+.l-region--sidebar-second {
+	h2 {
+		margin: 0 0 10px 0;
+	}
+	/* Provide a deliniation between the content and aside while stacked */
+	@include breakpoint(max-width $tablet_wide) {
+		border: solid 1px #ddd;
+		padding: 10px;
+		margin: 5px;
+		@include box-shadow(2px 2px 2px 2px #999);	
+	}
+}
+
+

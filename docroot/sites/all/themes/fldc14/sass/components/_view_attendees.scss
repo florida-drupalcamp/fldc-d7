@@ -1,0 +1,66 @@
+
+
+/* =============================================================================
+    Attendees View
+   ========================================================================== */
+
+ .view-cod-community-attendees {
+ 	// Views Exposed Form
+ 	.views-exposed-form {
+ 		margin-bottom: 50px;
+ 		input[type="submit"] {
+ 			margin-top: 0;
+ 			font-size: 25px;
+ 			@include breakpoint($tablet_narrow) {
+ 				margin-top: 1.4em;
+ 			}
+ 		}
+ 		.views-exposed-widget {
+ 			float: none;
+ 			@include breakpoint($tablet_narrow) {
+ 				float: left;
+ 				text-align: left;
+ 				width: 30%;
+ 			}
+ 		}
+ 	}
+
+ 	// Views Content
+ 	.views-row {
+ 		display: inline-block;
+ 		position: relative;
+ 		vertical-align: top;
+ 		text-align: center;
+ 		width: 48%;
+ 		max-width: 180px;
+ 		padding: 10px;
+ 		border-radius: 5px;
+ 		&:hover {
+ 			.user-image {
+	 			@include transform(rotate(360deg));
+	 		}
+ 		}
+ 		@include breakpoint($smartphone_wide) {
+ 			width: 32%;
+ 		}
+ 	}
+ 	.user-image {
+ 		border-radius: 50%;
+ 		border: solid 5px $orange;
+ 		display: block;
+ 		text-align: center;
+ 		@include transition(all .5s);
+ 	}
+ 	img {
+ 		margin: 0 auto;
+ 		border-radius: 50%;
+ 		display: block;
+ 	}
+ 	.user-org {
+ 		font-size: 14px;
+ 		color: #999;
+ 	}
+ 	.icon {
+ 		font-size: 25px;
+ 	}
+ }

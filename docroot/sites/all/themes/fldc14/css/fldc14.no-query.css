@@ -1,0 +1,90 @@
+/* line 7, ../sass/fldc14.no-query.scss */
+#block-system-main-menu > .menu li {
+  display: inline-block !important; }
+  /* line 9, ../sass/fldc14.no-query.scss */
+  #block-system-main-menu > .menu li li {
+    display: block !important; }
+
+/* line 15, ../sass/fldc14.no-query.scss */
+.zone.z-header {
+  background-image: url(../images/auditorium_blur_ie8.jpg) !important; }
+
+/* Rgba fallback */
+/* line 22, ../sass/fldc14.no-query.scss */
+.cta--event-register .content,
+h1.page__title {
+  background-image: url(../images/ie8-fallback-transparent-black.png); }
+
+/* Normal page title - no bg image */
+/* line 28, ../sass/fldc14.no-query.scss */
+h1.site-name a {
+  text-indent: 0;
+  background-image: none !important;
+  left: 0; }
+
+/* This is the first name field in the exposed filter in the attendees view */
+/* line 36, ../sass/fldc14.no-query.scss */
+#edit-field-profile-first-value-wrapper {
+  padding-right: 10px; }
+
+/* line 40, ../sass/fldc14.no-query.scss */
+.view-cod-community-attendees .user-image {
+  border: 0; }
+  /* line 42, ../sass/fldc14.no-query.scss */
+  .view-cod-community-attendees .user-image img {
+    border: solid 5px #fcb040; }
+
+/* Messages */
+/* line 51, ../sass/fldc14.no-query.scss */
+.messages {
+  color: white !important;
+  background-image: none !important; }
+
+/* line 56, ../sass/fldc14.no-query.scss */
+.messages--status {
+  background-color: #fcb040 !important; }
+
+/* line 60, ../sass/fldc14.no-query.scss */
+.messages--warning {
+  background-color: #e4d400 !important; }
+
+/* line 64, ../sass/fldc14.no-query.scss */
+.messages--error {
+  background-color: darkred !important; }
+
+/* Sponsors */
+/* line 71, ../sass/fldc14.no-query.scss */
+.view-cod-sponsors .wrap img {
+  max-width: 999px !important; }
+
+/* Speakers */
+/* line 78, ../sass/fldc14.no-query.scss */
+.speaker-image-wrapper,
+.speaker-image-wrapper img {
+  width: 225px;
+  height: 225px; }
+
+/* line 82, ../sass/fldc14.no-query.scss */
+.speaker-image-wrapper {
+  overflow: hidden; }
+
+/* max width 1100px */
+/* line 93, ../sass/fldc14.no-query.scss */
+.zone .l-header,
+.zone .l-preface,
+.zone .l-navigation,
+.zone .l-main,
+.zone .l-postscript,
+.zone .l-footer {
+  max-width: 1100px !important; }
+
+/* No svgs */
+/* line 105, ../sass/fldc14.no-query.scss */
+.ie8-hide,
+.svg,
+.bubble1,
+.bubble2,
+.bubble3,
+.bubble4,
+.bubble5 {
+  display: none !important; }
