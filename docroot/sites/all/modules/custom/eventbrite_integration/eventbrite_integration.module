@@ -1,10 +1,9 @@
 <?php
 /**
  * @file
- * Code for the FLDC Bio feature.
+ * Provides custom integration with the Eventbrite API.
  */
 
-include_once 'fldc_bio.features.inc';
 
 /**
  * Load the Eventbrite API object.
@@ -12,7 +11,7 @@ include_once 'fldc_bio.features.inc';
  * @return mixed
  *   Either NULL if the load fails, or an Eventbrite object.
  */
-function fldc_bio_get_eventbrite_api() {
+function eventbrite_integration_get_eventbrite_api() {
   $library = libraries_load('eventbrite');
   $eventbrite_api = new Eventbrite(array(
     'app_key' => variable_get('eventbrite_app_key', ''),
@@ -28,18 +27,18 @@ function fldc_bio_get_eventbrite_api() {
 /**
  * Implements hook_cron().
  */
-function fldc_bio_cron() {
-  fldc_bio_update_all_attendees();
+function eventbrite_integration_cron() {
+  eventbrite_integration_update_all_attendees();
 }
 
 /**
  * Implements hook_cron_queue_info().
  */
-function fldc_bio_cron_queue_info() {
+function eventbrite_integration_cron_queue_info() {
   $queues = array();
 
-  $queues['fldc_bio_bios_queue'] = array(
-    'worker callback' => 'fldc_bio_update_attendee',
+  $queues['eventbrite_integration_bios_queue'] = array(
+    'worker callback' => 'eventbrite_integration_update_attendee',
     'time' => 30,
   );
 
@@ -49,18 +48,18 @@ function fldc_bio_cron_queue_info() {
 /**
  * Updates all attendees with the latest Eventbrite data.
  */
-function fldc_bio_update_all_attendees() {
+function eventbrite_integration_update_all_attendees() {
   // Load the queue.
-  $queue = DrupalQueue::get('fldc_bio_bios_queue');
+  $queue = DrupalQueue::get('eventbrite_integration_bios_queue');
   // Load the Eventbrite API.
-  $eventbrite_api = fldc_bio_get_eventbrite_api();
+  $eventbrite_api = eventbrite_integration_get_eventbrite_api();
   if (empty($eventbrite_api)) {
     return;
   }
   // Load all existing IDs.
-  $bios = fldc_bio_get_bios();
+  $bios = eventbrite_integration_get_bios();
   // Get a list of all events.
-  $events = fldc_bio_get_events();
+  $events = eventbrite_integration_get_events();
   // Get the attendees from Eventbrite for each event.
   foreach ($events as $event) {
     // Less performant, but there should never be more than one or two of these,
@@ -97,9 +96,9 @@ function fldc_bio_update_all_attendees() {
  *
  * Updates an individual attendee node.
  *
- * @see fldc_bio_cron_queue_info()
+ * @see eventbrite_integration_cron_queue_info()
  */
-function fldc_bio_update_attendee($data) {
+function eventbrite_integration_update_attendee($data) {
   // Get the attendee, for easier access.
   $attendee = $data['attendee'];
   // Load the current node if it exists.
@@ -129,7 +128,7 @@ function fldc_bio_update_attendee($data) {
   // Company or organization
   $node->field_bio_co_org_name[LANGUAGE_NONE][0]['value'] = $attendee->attendee->company;
   // Website - requires some special handling for links.
-  $link = fldc_validate_url($attendee->attendee->website);
+  $link = eventbrite_integration_validate_url($attendee->attendee->website);
   if (!empty($link) && $link == LINK_EXTERNAL) {
     $node->field_bio_web_site[LANGUAGE_NONE][0]['url'] = $attendee->attendee->website;
   }
@@ -138,14 +137,14 @@ function fldc_bio_update_attendee($data) {
     switch ($answer->answer->question_id) {
       // drupal.org profile
       case '9330584':
-        $link = fldc_validate_url($answer->answer->answer_text);
+        $link = eventbrite_integration_validate_url($answer->answer->answer_text);
         if (!empty($link) && $link == LINK_EXTERNAL) {
           $node->field_bio_do_profile[LANGUAGE_NONE][0]['url'] = $answer->answer->answer_text;
         }
         break;
       // Twitter
       case '9330592':
-        $link = fldc_validate_url($answer->answer->answer_text);
+        $link = eventbrite_integration_validate_url($answer->answer->answer_text);
         if (!empty($link) && $link == LINK_EXTERNAL) {
           $node->field_bio_twitter_profile[LANGUAGE_NONE][0]['url'] = $answer->answer->answer_text;
         }
@@ -177,7 +176,7 @@ function fldc_bio_update_attendee($data) {
  * @return array
  *   An empty array, or an array of all events, as returned from EFQ.
  */
-function fldc_bio_get_events() {
+function eventbrite_integration_get_events() {
   $query = new EntityFieldQuery();
   $query->entityCondition('entity_type', 'node')
     ->entityCondition('bundle', 'even');
@@ -197,7 +196,7 @@ function fldc_bio_get_events() {
  *   Either an empty array, or an array of NIDs and Eventbrite IDs, keyed by
  *   Eventbrite ID.
  */
-function fldc_bio_get_bios() {
+function eventbrite_integration_get_bios() {
   $query = new EntityFieldQuery();
   $query->entityCondition('entity_type', 'node')
     ->entityCondition('bundle', 'bio')
@@ -235,7 +234,7 @@ function fldc_bio_get_bios() {
  *
  * @see link_validate_url()
  */
-function fldc_validate_url($text = '') {
+function eventbrite_integration_validate_url($text = '') {
   $link = link_validate_url($text);
   // External links should have a period in them somewhere - http://example.com,
   // for instance. This is to prevent links like @Example_Com from passing

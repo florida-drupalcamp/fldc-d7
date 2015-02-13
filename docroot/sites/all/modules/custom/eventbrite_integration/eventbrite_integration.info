@@ -1,0 +1,7 @@
+name = Eventbrite Integration
+description = Provides custom integration with the Eventbrite API.
+core = 7.x
+package = Eventbrite
+version = 7.x-1.0
+
+dependencies[] = eventbrite
