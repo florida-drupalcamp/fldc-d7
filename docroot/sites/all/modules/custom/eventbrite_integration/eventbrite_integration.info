@@ -5,3 +5,5 @@ package = Eventbrite
 version = 7.x-1.0
 
 dependencies[] = eventbrite
+
+files[] = includes/EventbriteV3.inc
