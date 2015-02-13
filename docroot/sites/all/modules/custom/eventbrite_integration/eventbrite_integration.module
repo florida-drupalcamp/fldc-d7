@@ -246,3 +246,119 @@ function eventbrite_integration_validate_url($text = '') {
     return FALSE;
   }
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function eventbrite_integration_form_eventbrite_admin_settings_alter(&$form, &$form_state) {
+  $form['eventbrite_oauth_token'] = array(
+    '#type' => 'textfield',
+    '#title' => t('OAuth key'),
+    '#required' => TRUE,
+    '#default_value' => variable_get('eventbrite_oauth_token', ''),
+    '#description' => t("Your app's OAuth key. It can be found !here. You will need to create an app if you haven't already.", array('!here' => l('here', 'https://www.eventbrite.com/myaccount/apps/'))),
+  );
+}
+
+/**
+ * Implements hook_menu().
+ */
+function eventbrite_integration_menu() {
+  $items = array();
+
+  $items['admin/config/services/eventbrite/bio-field-mapping'] = array(
+    'type' => MENU_LOCAL_TASK,
+    'title' => 'Bio field mapping',
+    'description' => 'Configure mapping between Eventbrite fields and Bio fields.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('eventbrite_integration_bio_field_mapping'),
+    'weight' => 10,
+    'access arguments' => array('administer site configuration'),
+  );
+
+  return $items;
+}
+
+function eventbrite_integration_bio_field_mapping($form, &$form_state) {
+  // Load the V3 Eventbrite API.
+  $api = new EventbriteV3();
+
+  // Default profile questions.
+  $default_questions = array(
+    'first_name' => 'First Name',
+    'last_name' => 'Last Name',
+    'email' => 'Email Address',
+    'cell_phone' => 'Cell Phone',
+    'job_title' => 'Job Title',
+    'company' => 'Company / Organization',
+    'website' => 'Website',
+  );
+
+  // Build a list of all Bio fields, for a select list.
+  $fields_info = field_info_instances('node', 'bio');
+  $field_options = array(
+    '' => t('- Select -'),
+  );
+  foreach ($fields_info as $name => $field_info) {
+    $field_options[$name] = $field_info['label'];
+  }
+
+  // Get a list of all events.
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'even');
+  $result = $query->execute();
+  if (empty($result['node'])) {
+    drupal_set_message(t('Unable to load any events.'), 'error');
+    return $form;
+  }
+
+  // For each event, build a fieldset of fields to map.
+  foreach ($result['node'] as $event) {
+    // Start with the default questions.
+    $event_questions = $default_questions;
+    $event = node_load($event->nid);
+    // Store the NID for convenience, since it will be re-used often.
+    $nid = $event->nid;
+    $event_id = field_get_items('node', $event, 'field_even_eventbrite');
+    if (!empty($event_id[0]['value'])) {
+      $eventbrite_id = $event_id[0]['value'];
+    }
+    else {
+      // Skip the event if it doesn't have an Eventbrite ID.
+      continue;
+    }
+
+    // Load custom Eventbrite questions.
+    $questions = $api->get_event_questions($eventbrite_id);
+    dpm($questions, 'questions');
+    foreach ($questions->questions as $question) {
+      $question_id = $question->id;
+      $question_text = $question->question->text;
+      $event_questions[$question_id] = $question_text;
+    }
+
+    // Build the fieldset for the event.
+    $form['event_mapping_' . $nid] = array(
+      '#type' => 'fieldset',
+      '#title' => $event->title,
+      '#collapsible' => TRUE,
+      '#collapsed' => TRUE,
+    );
+    // Store the fieldset as a reference for convenience.
+    $fieldset = &$form['event_mapping_' . $nid];
+    // Create each Eventbrite field as a select list. The options are the fields
+    //from the Bio content type.
+    foreach ($event_questions as $question_id => $question_label) {
+      $field_id = 'event_mapping_' . $nid . '_' . $question_id;
+      $fieldset[$field_id] = array(
+        '#type' => 'select',
+        '#options' => $field_options,
+        '#title' => $question_label,
+        '#default_value' => variable_get($field_id, ''),
+      );
+    }
+  }
+
+  return system_settings_form($form);
+}
