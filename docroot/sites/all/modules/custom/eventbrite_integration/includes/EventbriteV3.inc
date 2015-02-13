@@ -1,7 +1,5 @@
 <?php
 
-define('EVENTBRITE_V3_BASE_URL', 'https://www.eventbriteapi.com/v3/');
-
 class EventbriteV3 extends stdClass {
 
   protected $api_key;
