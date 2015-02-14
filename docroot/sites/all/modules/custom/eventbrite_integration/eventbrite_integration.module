@@ -4,6 +4,7 @@
  * Provides custom integration with the Eventbrite API.
  */
 
+define('EVENTBRITE_INTEGRATION_MAPPING_PREFIX', 'eventbrite_field_mapping_');
 
 /**
  * Load the Eventbrite API object.
@@ -315,17 +316,14 @@ function eventbrite_integration_bio_field_mapping($form, &$form_state) {
   }
 
   // Get a list of all events.
-  $query = new EntityFieldQuery();
-  $query->entityCondition('entity_type', 'node')
-    ->entityCondition('bundle', 'even');
-  $result = $query->execute();
-  if (empty($result['node'])) {
+  $events = eventbrite_integration_get_events();
+  if (empty($events)) {
     drupal_set_message(t('Unable to load any events.'), 'error');
     return $form;
   }
 
   // For each event, build a fieldset of fields to map.
-  foreach ($result['node'] as $event) {
+  foreach ($events as $event) {
     // Start with the default questions.
     $event_questions = $default_questions;
     $event = node_load($event->nid);
@@ -349,26 +347,52 @@ function eventbrite_integration_bio_field_mapping($form, &$form_state) {
     }
 
     // Build the fieldset for the event.
-    $form['event_mapping_' . $nid] = array(
+    $event_fieldset_id = EVENTBRITE_INTEGRATION_MAPPING_PREFIX . $nid;
+    $form[$event_fieldset_id] = array(
       '#type' => 'fieldset',
       '#title' => $event->title,
       '#collapsible' => TRUE,
       '#collapsed' => TRUE,
+      '#tree' => TRUE,
     );
     // Store the fieldset as a reference for convenience.
-    $fieldset = &$form['event_mapping_' . $nid];
+    $fieldset = &$form[$event_fieldset_id];
     // Create each Eventbrite field as a select list. The options are the fields
     //from the Bio content type.
+    $default_form_values = variable_get($event_fieldset_id, array());
     foreach ($event_questions as $question_id => $question_label) {
-      $field_id = 'event_mapping_' . $nid . '_' . $question_id;
-      $fieldset[$field_id] = array(
+      $fieldset[$question_id] = array(
         '#type' => 'select',
         '#options' => $field_options,
         '#title' => $question_label,
-        '#default_value' => variable_get($field_id, ''),
+        '#default_value' => array_key_exists($question_id, $default_form_values) ? $default_form_values[$question_id] : '',
       );
     }
   }
 
-  return system_settings_form($form);
+  $form = system_settings_form($form);
+  // Remove the system_settings_form_submit() submit handler.
+  $form['#submit'] = array(
+    'eventbrite_integration_bio_field_mapping_submit',
+  );
+  return $form;
+}
+
+/**
+ * Form submission handler.
+ *
+ * @see eventbrite_integration_bio_field_mapping()
+ */
+function eventbrite_integration_bio_field_mapping_submit($form, &$form_state) {
+  // Get a list of all events.
+  $events = eventbrite_integration_get_events();
+  // Easy access to the values.
+  $values = $form_state['values'];
+  foreach ($events as $event) {
+    // Store the form values per event as an array.
+    $field_id = EVENTBRITE_INTEGRATION_MAPPING_PREFIX . $event->nid;
+    if (!empty($values[$field_id])) {
+      variable_set($field_id, $values[$field_id]);
+    }
+  }
 }
