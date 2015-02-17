@@ -45,7 +45,7 @@ class EventbriteV3 extends stdClass {
   /**
    * Gets the list of custom questions for an event.
    *
-   * @param int $id
+   * @param string $id
    *   The Eventbrite event's ID.
    *
    * @return stdClass
@@ -63,7 +63,7 @@ class EventbriteV3 extends stdClass {
   /**
    * Gets the list of attendees for an event.
    *
-   * @param int $id
+   * @param string $id
    *   The Eventbrite event's ID.
    *
    * @return stdClass
@@ -74,6 +74,28 @@ class EventbriteV3 extends stdClass {
       'events',
       $id,
       'attendees',
+    );
+    return $this->call_api($endpoint);
+  }
+
+  /**
+   * Get information about a single ticket.
+   *
+   * @param string $event_id
+   *   The Eventbrite event's ID.
+   *
+   * @param string $ticket_id
+   *   The Eventbrite ticket's ID.
+   *
+   * @return stdClass
+   *   Object containing information about the ticket.
+   */
+  public function get_ticket($event_id, $ticket_id) {
+    $endpoint = array(
+      'events',
+      $event_id,
+      'ticket_classes',
+      $ticket_id,
     );
     return $this->call_api($endpoint);
   }
