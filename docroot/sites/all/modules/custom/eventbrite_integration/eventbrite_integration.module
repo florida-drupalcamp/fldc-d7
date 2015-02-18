@@ -171,8 +171,9 @@ function eventbrite_integration_update_attendee($data) {
     try {
       // Deal with link fields.
       if ($field['type'] == 'link_field') {
+        $eventbrite_data = eventbrite_integration_validate_url($eventbrite_data);
         if (empty($eventbrite_data)) {
-          $eventbrite_data = '';
+          continue;
         }
         $wrapper->$drupal_field_id->url = $eventbrite_data;
         // Set the title if it's anything other than not allowed.
@@ -185,9 +186,13 @@ function eventbrite_integration_update_attendee($data) {
         $wrapper->$drupal_field_id->safe_value = $eventbrite_data;
         $wrapper->$drupal_field_id->value = $eventbrite_data;
       }
+      // Deal with list fields.
       elseif ($field['type'] == 'list_text') {
         $allowed_values = $field['settings']['allowed_values'];
-        $wrapper->$drupal_field_id = array_search($eventbrite_data, $allowed_values);
+        $value_match = array_search($eventbrite_data, $allowed_values);
+        if (!empty($value_match)) {
+          $wrapper->$drupal_field_id = $value_match;
+        }
       }
       // Everything else can be set normally.
       else {
@@ -273,17 +278,22 @@ function eventbrite_integration_get_bios() {
  *   The link text to be checked.
  *
  * @return mixed
- *   Either boolean FALSE, or the LINK_EXTERNAL constant.
+ *   Either boolean FALSE, or the possibly modified link string.
  *
  * @see link_validate_url()
  */
 function eventbrite_integration_validate_url($text = '') {
   $link = link_validate_url($text);
+  // Make sure the link can't be fixed by simply prepending "https://".
+  if ($link != LINK_EXTERNAL || !stripos($text, 'http')) {
+    $text = 'https://' . $text;
+    $link = link_validate_url($text);
+  }
   // External links should have a period in them somewhere - http://example.com,
   // for instance. This is to prevent links like @Example_Com from passing
   // link_validate_url(), which they do and shouldn't.
   if ($link == LINK_EXTERNAL && strpos($text, '.')) {
-    return LINK_EXTERNAL;
+    return $text;
   }
   else {
     return FALSE;
