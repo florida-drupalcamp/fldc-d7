@@ -25,11 +25,14 @@ class EventbriteV3 extends stdClass {
    * @param array $data
    *   An array of data to send, for example, with a POST request.
    *
+   * @param array $query_params
+   *   GET parameters to add to the URL.
+   *
    * @return stdClass
    *   Object containing requested information, or an object containing
    *   information about any errors that may have occurred.
    */
-  protected function call_api(array $endpoint, $method = 'GET', $data = array()) {
+  protected function call_api(array $endpoint, $method = 'GET', $data = array(), $query_params = array()) {
     $endpoint = implode('/', $endpoint);
     $options = array(
       'method' => $method,
@@ -38,7 +41,8 @@ class EventbriteV3 extends stdClass {
       ),
       'data' => implode('&', $data),
     );
-    $result = drupal_http_request('https://www.eventbriteapi.com/v3/' . $endpoint, $options);
+    $url = url('https://www.eventbriteapi.com/v3/' . $endpoint, array('query' => $query_params));
+    $result = drupal_http_request($url, $options);
     return json_decode($result->data);
   }
 
@@ -70,12 +74,15 @@ class EventbriteV3 extends stdClass {
    *   Object containing information about the attendees.
    */
   public function get_event_attendees($id) {
+    $params = array(
+      'status' => 'attending',
+    );
     $endpoint = array(
       'events',
       $id,
       'attendees',
     );
-    return $this->call_api($endpoint);
+    return $this->call_api($endpoint, 'GET', array(), $params);
   }
 
   /**

@@ -29,7 +29,10 @@ function eventbrite_integration_get_eventbrite_api() {
  * Implements hook_cron().
  */
 function eventbrite_integration_cron() {
-  eventbrite_integration_update_all_attendees();
+  $queue = DrupalQueue::get('eventbrite_integration_bios_queue');
+  if ($queue->numberOfItems() == 0) {
+    eventbrite_integration_update_all_attendees($queue);
+  }
 }
 
 /**
@@ -40,7 +43,7 @@ function eventbrite_integration_cron_queue_info() {
 
   $queues['eventbrite_integration_bios_queue'] = array(
     'worker callback' => 'eventbrite_integration_update_attendee',
-    'time' => 30,
+    'time' => 10,
   );
 
   return $queues;
@@ -48,10 +51,11 @@ function eventbrite_integration_cron_queue_info() {
 
 /**
  * Updates all attendees with the latest Eventbrite data.
+ *
+ * @param DrupalReliableQueueInterface $queue
+ *   The queue to store items in.
  */
-function eventbrite_integration_update_all_attendees() {
-  // Load the queue.
-  $queue = DrupalQueue::get('eventbrite_integration_bios_queue');
+function eventbrite_integration_update_all_attendees(DrupalReliableQueueInterface $queue) {
   // Load the Eventbrite API.
   $eventbrite_api = eventbrite_integration_get_eventbrite_api();
   if (empty($eventbrite_api)) {
