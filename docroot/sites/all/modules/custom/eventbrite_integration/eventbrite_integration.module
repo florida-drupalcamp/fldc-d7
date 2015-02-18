@@ -165,6 +165,11 @@ function eventbrite_integration_update_attendee($data) {
     $field = field_info_field($drupal_field_id);
     $field_instance = field_info_instance('node', $drupal_field_id, 'bio');
 
+    // Truncate strings, just in case.
+    if (is_string($eventbrite_data) && !empty($field['settings']['max_length']) && strlen($eventbrite_data) > $field['settings']['max_length']) {
+      $eventbrite_data = substr($eventbrite_data, 0, $field['settings']['max_length']);
+    }
+
     // EMW will throw exceptions if the data doesn't validate. Rather than allow
     // that to interrupt the flow, the field should be skipped by ignoring the
     // exception and moving on.
