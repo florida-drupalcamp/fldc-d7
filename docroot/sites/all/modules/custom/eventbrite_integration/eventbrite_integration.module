@@ -188,8 +188,8 @@ function eventbrite_integration_update_attendee($data) {
       }
       // Deal with long text fields.
       elseif ($field['type'] == 'text_with_summary') {
-        $wrapper->$drupal_field_id->safe_value = $eventbrite_data;
-        $wrapper->$drupal_field_id->value = $eventbrite_data;
+        $wrapper->$drupal_field_id->value = nl2br($eventbrite_data);
+        $wrapper->$drupal_field_id->format = 'filtered_html';
       }
       // Deal with list fields.
       elseif ($field['type'] == 'list_text') {
