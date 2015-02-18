@@ -2,6 +2,10 @@
 /**
  * @file
  * Provides custom integration with the Eventbrite API.
+ *
+ * @todo Eventually all of the API calls should be moved to the new EventbriteV3
+ *    API, as the old API has been deprecated. This may require modifying
+ *    EventbriteV3 to support the necessary calls.
  */
 
 define('EVENTBRITE_INTEGRATION_MAPPING_PREFIX', 'eventbrite_field_mapping_');
