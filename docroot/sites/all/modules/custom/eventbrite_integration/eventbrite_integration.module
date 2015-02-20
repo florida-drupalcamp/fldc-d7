@@ -326,7 +326,7 @@ function eventbrite_integration_get_bios() {
 function eventbrite_integration_validate_url($text = '') {
   $link = link_validate_url($text);
   // Make sure the link can't be fixed by simply prepending "https://".
-  if ($link != LINK_EXTERNAL || !stripos($text, 'http')) {
+  if ($link != LINK_EXTERNAL || stripos($text, 'http') === FALSE) {
     $text = 'https://' . $text;
     $link = link_validate_url($text);
   }
