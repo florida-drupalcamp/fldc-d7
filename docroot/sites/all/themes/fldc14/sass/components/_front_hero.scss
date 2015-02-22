@@ -1,15 +1,20 @@
 .block--views-events-block-1 {
   .block__content {
-    position: absolute;
-    max-width: 50%;
-    @include center(y);
-    right: 0;
     text-align: center;
     padding: 10px;
     color: white;
     background-color: rgba(0,0,0,0.5);
     @include breakpoint($tablet_narrow) {
       padding: 20px;
+    }
+    @include breakpoint($tablet_wide) {
+      position: absolute;
+      width: 50%;
+      @include center(y);
+      right: 20px;
+    }
+    @include breakpoint($normal) {
+      right: 0;
     }
   }
   .views-field-title {

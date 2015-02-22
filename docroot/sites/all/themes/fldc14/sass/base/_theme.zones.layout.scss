@@ -38,10 +38,8 @@ body {
 }
 
 .zone.z-header {
-  @include breakpoint($smartphone_wide) {
-    background-size: cover;
-    background-image: url("../images/auditorium_blur-smartphone_wide.jpg");
-  }
+  background-size: cover;
+  background-image: url("../images/auditorium_blur-smartphone_wide.jpg");
   @include breakpoint($tablet_narrow) {
     background-image: url("../images/auditorium_blur-tablet_narrow.jpg");
   }

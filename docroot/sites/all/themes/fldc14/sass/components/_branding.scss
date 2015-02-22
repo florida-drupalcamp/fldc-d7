@@ -67,8 +67,9 @@ h1.site-name {
     z-index: 10;
     background-position-y: -12px;
     &:after {
-      content: "#FLDC14";
+      content: "#FLDC15";
       position: absolute;
+      top: 0;
       left: 100%;
       text-indent:0
     }
@@ -111,8 +112,21 @@ h1.site-name {
 }
 
 .site-logo {
-  position: absolute;
-  @include center(y);
-  left: 0;
-  max-width: 500px;
+  display: none;
+  @include breakpoint($tablet_narrow) {
+    display: inline-block;
+    position: relative;
+    left: 8%; // Do you believe in magic??
+  }
+  @include breakpoint($tablet_wide) {
+    position: absolute;
+    @include center(y);
+    left: 4%;
+    width: 40%;
+    max-width: 500px;
+  }
+  @include breakpoint($normal) {
+    left: 0;
+    width: 100%;
+  }
 }
