@@ -3,6 +3,9 @@
     Primary Navigation
    ========================================================================== */
 
+.z-navigation {
+  overflow: visible;
+}
 #block-system-main-menu {
   background-color: $black;
   /* clear: both; */
@@ -59,7 +62,7 @@
 }
 
 #block-system-main-menu > .menu {
-  /* @extend %clearfix; */
+  /* @include clearfix; */
   margin: 0;
   width: 100%;
   padding: 0;

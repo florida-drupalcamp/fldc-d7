@@ -8,7 +8,7 @@
 
 @include breakpoint(max-width $tablet_narrow) {
 	ul.tabs {
-		@extend %clearfix;
+		@include clearfix;
 		background-color: #eee;
 		border-bottom: none;
 		@include box-sizing(content-box);

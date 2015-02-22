@@ -38,13 +38,8 @@ body {
 }
 
 .zone.z-header {
-  background-image: url("../images/auditorium_blur-smartphone_narrow.jpg");
-  background-position: center top;
-  background-size: cover;
-  position: relative;
-  padding-bottom: 20px;
-  padding-top: 60px;
   @include breakpoint($smartphone_wide) {
+    background-size: cover;
     background-image: url("../images/auditorium_blur-smartphone_wide.jpg");
   }
   @include breakpoint($tablet_narrow) {
@@ -87,9 +82,7 @@ body {
     background-image: url("../images/ftc-blur.jpg");
   }
   
-  @include breakpoint($mobile-nav) {
-    padding-top: 100px;
-  }
+
 }
 
 .zone.z-preface {

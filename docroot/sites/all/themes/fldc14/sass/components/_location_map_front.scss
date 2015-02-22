@@ -45,9 +45,10 @@
   width: 95%;
   z-index: 5;
   position: relative;
-  @extend %clearfix;
+  @include clearfix;
   background-color: $blue;
   color: white;
+  overflow: visible;
   @include breakpoint($smartphone_wide) {
     width: 80%;
   }
