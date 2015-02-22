@@ -158,12 +158,22 @@ function eventbrite_integration_update_attendee($data) {
   }
   $ticket = $api->get_ticket($attendee->event_id, $attendee->ticket_id);
 
+  // Find the Attendee Bio Type node.
+  $attendee_type = eventbrite_integration_get_attendee_bio_type();
+
+  // Some things should be hard-coded.
   $wrapper->field_bio_eventbrite = $attendee->id;
   $wrapper->field_bio_eb_order_no = $attendee->order_id;
   $wrapper->field_bio_eb_ticket_type = $ticket->name;
   $wrapper->field_bio_eb_order_type = $attendee->order_type;
   $wrapper->field_bio_total_paid = $attendee->amount_paid;
   $wrapper->field_bio_eb_event_id = $attendee->event_id;
+  // Only set the Bio Type field if the Attendee type was found, and it hasn't
+  // been set yet. For example, a Bio might have been manually changed to a
+  //Featured Speaker. This shouldn't be overridden back to Attendee.
+  if (!empty($attendee_type) && empty($wrapper->field_bio_bioty_ref)) {
+    $wrapper->field_bio_bioty_ref = $attendee_type->nid;
+  }
 
   foreach ($mappings as $eventbrite_field_id => $drupal_field_id) {
     if (empty($drupal_field_id)) {
@@ -240,8 +250,6 @@ function eventbrite_integration_update_attendee($data) {
 
   // Save the wrapper.
   $wrapper->save();
-  // Save the node.
-  node_save($node);
   // Re-load the node. This is unfortunate but necessary, or node titles will
   // not set properly.
   $node = node_load($node->nid);
@@ -318,7 +326,7 @@ function eventbrite_integration_get_bios() {
 function eventbrite_integration_validate_url($text = '') {
   $link = link_validate_url($text);
   // Make sure the link can't be fixed by simply prepending "https://".
-  if ($link != LINK_EXTERNAL || !stripos($text, 'http')) {
+  if ($link != LINK_EXTERNAL || stripos($text, 'http') === FALSE) {
     $text = 'https://' . $text;
     $link = link_validate_url($text);
   }
@@ -344,4 +352,25 @@ function eventbrite_integration_form_eventbrite_admin_settings_alter(&$form, &$f
     '#default_value' => variable_get('eventbrite_oauth_token', ''),
     '#description' => t("Your app's OAuth key. It can be found !here. You will need to create an app if you haven't already.", array('!here' => l('here', 'https://www.eventbrite.com/myaccount/apps/'))),
   );
+}
+
+/**
+ * Finds the Attendee bio type.
+ *
+ * @return mixed
+ *   Either an object as returned from EntityFieldQuery, or NULL.
+ */
+function eventbrite_integration_get_attendee_bio_type() {
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'bioty')
+    ->propertyCondition('title', 'Attendee');
+  $result = $query->execute();
+  if (!empty($result['node'])) {
+    $attendee = array_shift($result['node']);
+    return $attendee;
+  }
+  else {
+    return NULL;
+  }
 }
