@@ -65,6 +65,7 @@
 
 
 .cssanimations .bubble1 {
+  cursor: crosshair;
   opacity: 0.8;  
   display: block;
   position: absolute;
@@ -80,6 +81,7 @@
 }
 
 .cssanimations .bubble2 {
+  cursor: crosshair;
   opacity: 0.8;
   display: block;
   position: absolute;
@@ -94,20 +96,22 @@
 }
 
 .cssanimations .bubble3 {
+  cursor: crosshair;
   opacity: 0.5;
   position: absolute;
   right: 25%;
   bottom: -5%;
-  @include transform(translateX(-2000px)); // Hide this bubble until animation kicks in
-  -webkit-animation:bubblerise1 13s linear 2s infinite;
-  animation:bubblerise1 13s linear 2s infinite;
+  -webkit-animation:bubblerise1 13s linear 0s infinite;
+  animation:bubblerise1 13s linear 0s infinite;
   -moz-animation-name: bubblerise1;  /* Firefox does not like shorthand */
   -moz-animation-duration: 13s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
+  @include animation-fill-mode(both);
 }
 
 .cssanimations .bubble4 {
+  cursor: crosshair;
   opacity: 0.5;
   display: block;
   position: absolute;
@@ -122,6 +126,7 @@
 }
 
 .cssanimations .bubble5 {
+  cursor: crosshair;
   opacity: 0.5;
   display: block;
   position: absolute;

@@ -18,11 +18,11 @@
   <div id="water">
     <div id="logo-container">
       <img id="logo" src="/sites/all/themes/fldc14/coming_soon/drupal-diver-no-bubble.svg" alt="Florida Drupalcamp Logo" />
-      <img id="bubble1" src="/sites/all/themes/fldc14/coming_soon/bubbles.svg" alt="bubbles">
-      <img id="bubble2" src="/sites/all/themes/fldc14/coming_soon/bubbles.svg" alt="bubbles">
-      <img id="bubble3" src="/sites/all/themes/fldc14/coming_soon/bubbles.svg" alt="bubbles">
-      <img id="bubble4" src="/sites/all/themes/fldc14/coming_soon/bubbles.svg" alt="bubbles">
-      <img id="bubble5" src="/sites/all/themes/fldc14/coming_soon/bubbles.svg" alt="bubbles">
+      <img class="diver-bubble" id="bubble1" src="/sites/all/themes/fldc14/coming_soon/bubbles.svg" alt="bubbles">
+      <img class="diver-bubble" id="bubble2" src="/sites/all/themes/fldc14/coming_soon/bubbles.svg" alt="bubbles">
+      <img class="diver-bubble" id="bubble3" src="/sites/all/themes/fldc14/coming_soon/bubbles.svg" alt="bubbles">
+      <img class="diver-bubble" id="bubble4" src="/sites/all/themes/fldc14/coming_soon/bubbles.svg" alt="bubbles">
+      <img class="diver-bubble" id="bubble5" src="/sites/all/themes/fldc14/coming_soon/bubbles.svg" alt="bubbles">
       <img id="diver-bubble-static" src="/sites/all/themes/fldc14/coming_soon/bubbles-static.png" alt="bubbles">
     </div>
   </div>

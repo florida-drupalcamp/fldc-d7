@@ -64,7 +64,7 @@
     }
   };
   
-  Drupal.behaviors.fldc14DiverBubbles = {
+  Drupal.behaviors.explodeShit = {
     attach: function ( context, settings ) {
       // By using the 'context' variable we make sure that our code only runs on
       // the relevant HTML. Furthermore, by using jQuery.once() we make sure that
@@ -72,15 +72,17 @@
       // processed previously. By using .once('foo') all processed elements will
       // get tagged with a 'foo-processed' class, causing all future invocations
       // of this behavior to ignore them.
-      $('.site-logo', context).once('bubbles', function () {
-        var bubbles = $();
-        for (var i = 0, limit = 5; i < limit; i++) {
-          var bubble = Drupal.theme('fldc14DiverBubble', 'sites/all/themes/fldc14/images/bubbles.svg', i + 1);
-          bubbles = bubbles.add(bubble);
-        }
-        // Append the bubbles the current element.
-        bubbles.appendTo(this);
+      $('.diver-bubble', context).click(function() {
+        $(this).addClass('explode-this-shit-for-dave')
+               .attr('src', '/sites/all/themes/fldc14/images/explosion.svg')
+               .removeClass('bubble1')
+               .removeClass('bubble2')
+               .removeClass('bubble3')
+               .removeClass('bubble4')
+               .removeClass('bubble5');
       });
+
+
     }
   };
   

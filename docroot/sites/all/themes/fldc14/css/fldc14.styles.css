@@ -196,6 +196,7 @@
     -moz-transform: translateX(-10px) translateY(-650px) scale(1.3); } }
 /* line 67, ../sass/base/_animations.scss */
 .cssanimations .bubble1 {
+  cursor: crosshair;
   opacity: 0.8;
   display: block;
   position: absolute;
@@ -210,8 +211,9 @@
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear; }
 
-/* line 82, ../sass/base/_animations.scss */
+/* line 83, ../sass/base/_animations.scss */
 .cssanimations .bubble2 {
+  cursor: crosshair;
   opacity: 0.8;
   display: block;
   position: absolute;
@@ -225,26 +227,27 @@
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear; }
 
-/* line 96, ../sass/base/_animations.scss */
+/* line 98, ../sass/base/_animations.scss */
 .cssanimations .bubble3 {
+  cursor: crosshair;
   opacity: 0.5;
   position: absolute;
   right: 25%;
   bottom: -5%;
-  -moz-transform: translateX(-2000px);
-  -ms-transform: translateX(-2000px);
-  -webkit-transform: translateX(-2000px);
-  transform: translateX(-2000px);
-  -webkit-animation: bubblerise1 13s linear 2s infinite;
-  animation: bubblerise1 13s linear 2s infinite;
+  -webkit-animation: bubblerise1 13s linear 0s infinite;
+  animation: bubblerise1 13s linear 0s infinite;
   -moz-animation-name: bubblerise1;
   /* Firefox does not like shorthand */
   -moz-animation-duration: 13s;
   -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear; }
+  -moz-animation-timing-function: linear;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
 
-/* line 110, ../sass/base/_animations.scss */
+/* line 113, ../sass/base/_animations.scss */
 .cssanimations .bubble4 {
+  cursor: crosshair;
   opacity: 0.5;
   display: block;
   position: absolute;
@@ -258,8 +261,9 @@
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear; }
 
-/* line 124, ../sass/base/_animations.scss */
+/* line 128, ../sass/base/_animations.scss */
 .cssanimations .bubble5 {
+  cursor: crosshair;
   opacity: 0.5;
   display: block;
   position: absolute;
@@ -300,7 +304,7 @@
     background-position: 110% -200px; }
   100% {
     background-position: 105% -600px; } }
-/* line 176, ../sass/base/_animations.scss */
+/* line 181, ../sass/base/_animations.scss */
 .cssanimations #images {
   background-image: url(../images/white-bubble.svg);
   background-repeat: no-repeat;
@@ -316,7 +320,7 @@
   -moz-animation-timing-function: linear; }
 
 @media (min-width: 700px) and (max-width: 1025px) {
-  /* line 191, ../sass/base/_animations.scss */
+  /* line 196, ../sass/base/_animations.scss */
   .cssanimations #block-system-main-menu {
     background-image: url(../images/white-bubble.svg);
     background-repeat: no-repeat;
@@ -353,7 +357,7 @@
     opacity: 0; }
   100% {
     opacity: 1; } }
-/* line 228, ../sass/base/_animations.scss */
+/* line 233, ../sass/base/_animations.scss */
 .cssanimations .header-menu-active .expanded:after {
   animation: mobilenav 1s linear 0s 1;
   -webkit-animation: mobilenav 1s linear 0s 1;
@@ -1202,6 +1206,37 @@ table.checkout-review .pane-data-full {
     .comment__links a:hover {
       color: white; }
 
+/* line 3, ../sass/components/_exploding_bubbles.scss */
+.explode-this-shit-for-dave {
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-animation: explode 1s linear 0 1;
+  -webkit-animation: explode 1s linear 0 1;
+  animation: explode 1s linear 0 1;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@keyframes explode {
+  0% {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 1; }
+  100% {
+    transform: translate(-50%, -50%) scale(5);
+    opacity: 0; } }
+@-webkit-keyframes explode {
+  0% {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 1; }
+  100% {
+    transform: translate(-50%, -50%) scale(5);
+    opacity: 0; } }
 /* =============================================================================
     Flag buttons
    ========================================================================== */
