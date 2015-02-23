@@ -8,22 +8,26 @@ body {
   background-color: $true-white;
 }
 
-.zone.z-navigation {
-  @include transition(all 200ms ease);
-  background-color: $black;
-  color: $white;
-  width: 100%;
-  left: 0;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  min-height: 60px;
-  height: 60px;
-  position: fixed;
-  z-index: 15;
-  
-  @include breakpoint($mobile-nav) {
-    height: 100px;
+.zone {
+  &.z-navigation {
+    @include transition(all 200ms ease);
+    background-color: $black;
+    color: $white;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    min-height: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 15;
+    @include breakpoint($mobile-nav) {
+      height: 100px;
+    }
+  }
+  &.z-content {
+    padding-bottom: 30px;
   }
 }
 
