@@ -398,7 +398,7 @@
     Forms
    ========================================================================== */
 /* line 7, ../sass/base/_forms.scss */
-button, input[type="submit"], a.button, .comment__links a, .flag a, .field--name-field-slides a, .view-cod-session-sessions .read-more {
+button, input[type="submit"], a.button, .comment__links a, .flag a, .field--name-field-slides a, .view-session-list .read-more {
   font-family: "bebas_neueregular", "arial narrow", arial, sans-serif;
   text-transform: uppercase;
   border: 0;
@@ -415,7 +415,7 @@ button, input[type="submit"], a.button, .comment__links a, .flag a, .field--name
   -webkit-transition: all 0.2s;
   transition: all 0.2s; }
   /* line 18, ../sass/base/_forms.scss */
-  button:hover, input[type="submit"]:hover, a.button:hover, .comment__links a:hover, .flag a:hover, .field--name-field-slides a:hover, .view-cod-session-sessions .read-more:hover {
+  button:hover, input[type="submit"]:hover, a.button:hover, .comment__links a:hover, .flag a:hover, .field--name-field-slides a:hover, .view-session-list .read-more:hover {
     background-color: #fca627; }
 
 /* line 23, ../sass/base/_forms.scss */
@@ -1502,7 +1502,7 @@ table.checkout-review .pane-data-full {
     .block--views-events-block-1 p {
       font-size: 25px; } }
 /* line 67, ../sass/components/_front_hero.scss */
-.block--views-events-block-1 button, .block--views-events-block-1 input[type="submit"], .block--views-events-block-1 a.button, .block--views-events-block-1 .comment__links a, .comment__links .block--views-events-block-1 a, .block--views-events-block-1 .flag a, .flag .block--views-events-block-1 a, .block--views-events-block-1 .field--name-field-slides a, .field--name-field-slides .block--views-events-block-1 a, .block--views-events-block-1 .view-cod-session-sessions .read-more, .view-cod-session-sessions .block--views-events-block-1 .read-more {
+.block--views-events-block-1 button, .block--views-events-block-1 input[type="submit"], .block--views-events-block-1 a.button, .block--views-events-block-1 .comment__links a, .comment__links .block--views-events-block-1 a, .block--views-events-block-1 .flag a, .flag .block--views-events-block-1 a, .block--views-events-block-1 .field--name-field-slides a, .field--name-field-slides .block--views-events-block-1 a, .block--views-events-block-1 .view-session-list .read-more, .view-session-list .block--views-events-block-1 .read-more {
   width: 90%;
   max-width: 380px;
   height: 90px;
@@ -3159,50 +3159,50 @@ div.password-confirm {
     Sessions Views (Accepted and Proposed)
    ========================================================================== */
 /* line 8, ../sass/components/_view_sessions.scss */
-.view-cod-session-sessions .propose-session {
+.view-session-list .propose-session {
   font-size: 25px;
   padding: 10px 20px;
   margin-top: 10px; }
   @media (min-width: 700px) {
     /* line 8, ../sass/components/_view_sessions.scss */
-    .view-cod-session-sessions .propose-session {
+    .view-session-list .propose-session {
       margin-top: 0; } }
 /* line 17, ../sass/components/_view_sessions.scss */
-.view-cod-session-sessions .views-exposed-form input[type="submit"] {
+.view-session-list .views-exposed-form input[type="submit"] {
   font-size: 25px; }
 @media (min-width: 700px) {
   /* line 21, ../sass/components/_view_sessions.scss */
-  .view-cod-session-sessions .views-exposed-widget {
+  .view-session-list .views-exposed-widget {
     max-width: 33%; } }
 /* line 26, ../sass/components/_view_sessions.scss */
-.view-cod-session-sessions .views-row {
+.view-session-list .views-row {
   margin-bottom: 50px; }
   /* line 28, ../sass/components/_view_sessions.scss */
-  .view-cod-session-sessions .views-row > .speaker,
-  .view-cod-session-sessions .views-row > .experience,
-  .view-cod-session-sessions .views-row > .track {
+  .view-session-list .views-row > .speaker,
+  .view-session-list .views-row > .experience,
+  .view-session-list .views-row > .track {
     font-size: 1.2em; }
     /* line 32, ../sass/components/_view_sessions.scss */
-    .view-cod-session-sessions .views-row > .speaker:before,
-    .view-cod-session-sessions .views-row > .experience:before,
-    .view-cod-session-sessions .views-row > .track:before {
+    .view-session-list .views-row > .speaker:before,
+    .view-session-list .views-row > .experience:before,
+    .view-session-list .views-row > .track:before {
       font-family: FontAwesome;
       display: inline-block;
       width: 20px; }
   /* line 39, ../sass/components/_view_sessions.scss */
-  .view-cod-session-sessions .views-row > .speaker:before {
+  .view-session-list .views-row > .speaker:before {
     content: "\f007"; }
   /* line 45, ../sass/components/_view_sessions.scss */
-  .view-cod-session-sessions .views-row > .experience:before {
+  .view-session-list .views-row > .experience:before {
     content: "\f135"; }
   /* line 51, ../sass/components/_view_sessions.scss */
-  .view-cod-session-sessions .views-row > .track:before {
+  .view-session-list .views-row > .track:before {
     content: "\f02e"; }
   /* line 56, ../sass/components/_view_sessions.scss */
-  .view-cod-session-sessions .views-row > .views-field-body {
+  .view-session-list .views-row > .views-field-body {
     margin: 20px 0; }
 /* line 62, ../sass/components/_view_sessions.scss */
-.view-cod-session-sessions .expandable .views-field-body {
+.view-session-list .expandable .views-field-body {
   max-height: 200px;
   overflow: hidden;
   position: relative;
@@ -3211,7 +3211,7 @@ div.password-confirm {
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
   /* line 67, ../sass/components/_view_sessions.scss */
-  .view-cod-session-sessions .expandable .views-field-body:after {
+  .view-session-list .expandable .views-field-body:after {
     background: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0));
     display: block;
     height: 75px;
@@ -3221,13 +3221,13 @@ div.password-confirm {
     width: 100%;
     content: ""; }
 /* line 78, ../sass/components/_view_sessions.scss */
-.view-cod-session-sessions .expandable-expanded .views-field-body {
+.view-session-list .expandable-expanded .views-field-body {
   max-height: 1000px; }
   /* line 80, ../sass/components/_view_sessions.scss */
-  .view-cod-session-sessions .expandable-expanded .views-field-body:after {
+  .view-session-list .expandable-expanded .views-field-body:after {
     background: none; }
 /* line 84, ../sass/components/_view_sessions.scss */
-.view-cod-session-sessions .read-more {
+.view-session-list .read-more {
   cursor: pointer;
   font-size: 25px;
   padding: 0px 20px 0px 10px;
@@ -3235,25 +3235,25 @@ div.password-confirm {
   max-width: 175px;
   margin: 0 auto; }
   /* line 92, ../sass/components/_view_sessions.scss */
-  .view-cod-session-sessions .read-more:before {
+  .view-session-list .read-more:before {
     font-family: FontAwesome;
     content: "\f078";
     display: inline-block;
     margin-right: 10px; }
   /* line 98, ../sass/components/_view_sessions.scss */
-  .view-cod-session-sessions .read-more:after {
+  .view-session-list .read-more:after {
     display: inline;
     content: "Read More"; }
   /* line 102, ../sass/components/_view_sessions.scss */
-  .view-cod-session-sessions .read-more.read-more-processed:before {
+  .view-session-list .read-more.read-more-processed:before {
     content: "\f077"; }
   /* line 105, ../sass/components/_view_sessions.scss */
-  .view-cod-session-sessions .read-more.read-more-processed:after {
+  .view-session-list .read-more.read-more-processed:after {
     display: inline;
     content: "Read Less"; }
   @media (min-width: 700px) {
     /* line 84, ../sass/components/_view_sessions.scss */
-    .view-cod-session-sessions .read-more {
+    .view-session-list .read-more {
       display: inline-block;
       margin: 0;
       font-size: 20px;
