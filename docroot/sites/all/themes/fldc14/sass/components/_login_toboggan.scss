@@ -1,0 +1,26 @@
+.toboggan-unified {
+  #login-message {
+    display: none;
+  }
+  #login-links {
+    text-align: left;
+    border-bottom: solid 1px #ddd;
+    @include clearfix;
+    a {
+      color: $dark-grey;
+      background-color: transparent;
+      border: none;
+      display: inline-block;
+      padding: 0 10px;
+      font-size: 16px;
+      &.lt-active {
+        background-color: #ddd;
+        border: none;
+        &:hover {
+          border: none;
+          background-color: #ccc;
+        }
+      }
+    }
+  }
+}
