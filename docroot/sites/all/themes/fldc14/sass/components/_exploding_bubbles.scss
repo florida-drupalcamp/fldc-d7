@@ -4,15 +4,19 @@
   pointer-events: none;
   position: absolute;
   @include center(xy);
-  @include animation(explode 1s linear 0 1);
+  @include animation(explode .5s linear 0 1);
   @include animation-fill-mode(both);
 }
 
 @keyframes explode {
-  0% { transform: translate(-50%, -50%) scale(.2); opacity: 1; } 
-  100% { transform: translate(-50%, -50%) scale(5); opacity: 0;}
+  0% { transform: translate(-25%, -50%) scale(.2); opacity: 1; } 
+  100% { transform: translate(-25%, -50%) scale(3); opacity: 0;}
 }
 @-webkit-keyframes explode {
-  0% { transform: translate(-50%, -50%) scale(.2); opacity: 1; } 
-  100% { transform: translate(-50%, -50%) scale(5); opacity: 0;}
+  0% { -webkit-transform: translate(-25%, -50%) scale(.2); opacity: 1; } 
+  100% { -webkit-transform: translate(-25%, -50%) scale(3); opacity: 0;}
+}
+@-moz-keyframes explode {
+  0% { -moz-transform: translate(-25%, -50%) scale(.2); opacity: 1; } 
+  100% { -moz-transform: translate(-25%, -50%) scale(3); opacity: 0;}
 }
