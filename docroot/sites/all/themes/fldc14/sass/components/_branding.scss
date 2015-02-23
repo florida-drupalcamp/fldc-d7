@@ -116,14 +116,16 @@ h1.site-name {
   @include breakpoint($tablet_narrow) {
     display: inline-block;
     position: relative;
-    left: 8%; // Do you believe in magic??
+    width: 70%;
+    left: 45%;
+    @include transform(translatex(-50%));
   }
   @include breakpoint($tablet_wide) {
     position: absolute;
     @include center(y);
     left: 4%;
     width: 40%;
-    max-width: 500px;
+    max-width: 550px;
   }
   @include breakpoint($normal) {
     left: 0;

@@ -17,6 +17,9 @@
   width: 94%;
   max-width: 1100px;
   margin: 0 auto;
+  @include breakpoint($wide) {
+    max-width: 1500px;
+  }
 }
 
 .zone.z-navigation {
@@ -48,5 +51,20 @@
   }
   .admin-menu & {
     margin-top: 90px;
+  }
+}
+.has-sidebar-first {
+  .l-content {
+    @include breakpoint($tablet_wide) {
+      width: 70%;
+      float: left;
+      padding-right: 20px;
+    }
+  }
+  .l-region--sidebar-first {
+    @include breakpoint($tablet_wide) {
+      width: 30%;
+      float: left;
+    }
   }
 }
