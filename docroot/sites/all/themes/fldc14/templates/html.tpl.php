@@ -55,6 +55,7 @@
 <?php endif; ?>
 <head>
   <title><?php print $head_title; ?></title>
+  <meta property="og:image" content="/sites/all/themes/fldc14/images/drupal-diver-no-bubble.png" />
   <?php print $head; ?>
   <?php print $styles; ?>
   <?php print $scripts; ?>
