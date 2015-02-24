@@ -63,4 +63,20 @@
 			content: "\f071"; // Warning symbol
 		}
 	}
+	.submit-session-access-denied & {
+		background-color: $yellow;
+		text-indent: -9999px;
+		position: relative;
+		&:before {
+			position: absolute;
+			text-indent: 0;
+			left: 20px;
+		}
+		&:after {
+			content: "Heyo! Please create an account to submit a session.";
+			position: absolute;
+			left: 110px;
+			text-indent: 0;
+		}
+	}
 }

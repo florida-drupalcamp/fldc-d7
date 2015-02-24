@@ -429,6 +429,7 @@ select {
   background-color: #ddd;
   font-size: 18px;
   max-width: 100%;
+  min-width: 300px;
   -webkit-appearance: none;
   width: 100%; }
   @media (min-width: 700px) {
@@ -440,7 +441,7 @@ select {
     select {
       width: auto;
       max-width: 600px; } }
-  /* line 39, ../sass/base/_forms.scss */
+  /* line 40, ../sass/base/_forms.scss */
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="password"]:focus,
@@ -448,74 +449,74 @@ select {
   select:focus {
     background-color: #c5c5c5; }
 
-/* line 44, ../sass/base/_forms.scss */
+/* line 45, ../sass/base/_forms.scss */
 label {
   display: block; }
-  /* line 46, ../sass/base/_forms.scss */
+  /* line 47, ../sass/base/_forms.scss */
   label.error {
     color: red; }
-    /* line 48, ../sass/base/_forms.scss */
+    /* line 49, ../sass/base/_forms.scss */
     label.error:before {
       font-family: FontAwesome;
       content: "\f119 ";
       margin-right: 5px; }
 
-/* line 57, ../sass/base/_forms.scss */
+/* line 58, ../sass/base/_forms.scss */
 form .description {
   color: #999;
   font-style: italic;
   font-size: 14px; }
 
-/* line 64, ../sass/base/_forms.scss */
+/* line 65, ../sass/base/_forms.scss */
 .form-item {
   padding: 10px 0; }
 
-/* line 68, ../sass/base/_forms.scss */
+/* line 69, ../sass/base/_forms.scss */
 input[type="submit"] {
   padding: 10px 20px;
   margin-top: 10px;
   margin-right: 10px;
   font-size: 40px; }
-  /* line 74, ../sass/base/_forms.scss */
+  /* line 75, ../sass/base/_forms.scss */
   input[type="submit"]:last-child {
     margin-right: 0; }
 
-/* line 80, ../sass/base/_forms.scss */
+/* line 81, ../sass/base/_forms.scss */
 .views-exposed-form .views-exposed-widget .form-submit {
   margin: 0; }
   @media (min-width: 700px) {
-    /* line 80, ../sass/base/_forms.scss */
+    /* line 81, ../sass/base/_forms.scss */
     .views-exposed-form .views-exposed-widget .form-submit {
       margin: 1.4em; } }
 
-/* line 87, ../sass/base/_forms.scss */
+/* line 88, ../sass/base/_forms.scss */
 .views-exposed-form .views-exposed-widget {
   float: none; }
   @media (min-width: 700px) {
-    /* line 87, ../sass/base/_forms.scss */
+    /* line 88, ../sass/base/_forms.scss */
     .views-exposed-form .views-exposed-widget {
       float: left; } }
 
-/* line 94, ../sass/base/_forms.scss */
+/* line 95, ../sass/base/_forms.scss */
 fieldset {
   border: 0;
   border-bottom: solid 2px #0E73AF;
   margin-bottom: 20px; }
-  /* line 98, ../sass/base/_forms.scss */
+  /* line 99, ../sass/base/_forms.scss */
   fieldset:last-child {
     border-bottom: none;
     margin-bottom: 5px; }
 
 /* Make radio buttons inline */
-/* line 109, ../sass/base/_forms.scss */
+/* line 110, ../sass/base/_forms.scss */
 .form-item.form-type-radio {
   display: inline-block;
   margin-right: 10px; }
-  /* line 112, ../sass/base/_forms.scss */
+  /* line 113, ../sass/base/_forms.scss */
   .form-item.form-type-radio:last-child {
     margin-right: 0; }
 
-/* line 116, ../sass/base/_forms.scss */
+/* line 117, ../sass/base/_forms.scss */
 .grippie {
   display: none; }
 
@@ -1788,7 +1789,45 @@ table.checkout-review .pane-data-full {
       .toboggan-unified #login-links a.lt-active:hover {
         border: none;
         background-color: #ccc; }
+/* line 27, ../sass/components/_login_toboggan.scss */
+.submit-session-access-denied .toboggan-unified #register-link {
+  -moz-animation: colorPulse 0.75s 2;
+  -webkit-animation: colorPulse 0.75s 2;
+  animation: colorPulse 0.75s 2;
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
 
+@keyframes colorPulse {
+  0% {
+    background-color: transparent;
+    color: #333; }
+  50% {
+    background-color: #FCB040;
+    color: white; }
+  100% {
+    background-color: transparent;
+    color: #333; } }
+@-webkit-keyframes colorPulse {
+  0% {
+    background-color: transparent;
+    color: #333; }
+  50% {
+    background-color: #FCB040;
+    color: white; }
+  100% {
+    background-color: transparent;
+    color: #333; } }
+@-moz-keyframes colorPulse {
+  0% {
+    background-color: transparent;
+    color: #333; }
+  50% {
+    background-color: #FCB040;
+    color: white; }
+  100% {
+    background-color: transparent;
+    color: #333; } }
 /* =============================================================================
     Drupal's Messages
    ========================================================================== */
@@ -1861,6 +1900,31 @@ table.checkout-review .pane-data-full {
       .error.checkout-help:before,
       .error.theme-checkout-completion-message:before {
         content: "\f071"; } }
+  /* line 66, ../sass/components/_messages.scss */
+  .submit-session-access-denied .messages--error, .submit-session-access-denied
+  .messages.error, .submit-session-access-denied
+  .error.checkout-help, .submit-session-access-denied
+  .error.theme-checkout-completion-message {
+    background-color: #E4D400;
+    text-indent: -9999px;
+    position: relative; }
+    /* line 70, ../sass/components/_messages.scss */
+    .submit-session-access-denied .messages--error:before, .submit-session-access-denied
+    .messages.error:before, .submit-session-access-denied
+    .error.checkout-help:before, .submit-session-access-denied
+    .error.theme-checkout-completion-message:before {
+      position: absolute;
+      text-indent: 0;
+      left: 20px; }
+    /* line 75, ../sass/components/_messages.scss */
+    .submit-session-access-denied .messages--error:after, .submit-session-access-denied
+    .messages.error:after, .submit-session-access-denied
+    .error.checkout-help:after, .submit-session-access-denied
+    .error.theme-checkout-completion-message:after {
+      content: "Heyo! Please create an account to submit a session.";
+      position: absolute;
+      left: 110px;
+      text-indent: 0; }
 
 /* =============================================================================
     Primary Navigation

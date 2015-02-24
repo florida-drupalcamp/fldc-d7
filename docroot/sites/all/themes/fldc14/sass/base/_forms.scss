@@ -30,6 +30,7 @@ select {
   background-color: #ddd;
   font-size: 18px;
   max-width: 100%;
+  min-width: 300px;
   -webkit-appearance:none;
   width: 100%;
   @include breakpoint($tablet_narrow) {
