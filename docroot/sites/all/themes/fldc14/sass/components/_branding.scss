@@ -129,6 +129,9 @@ h1.site-name {
   }
   @include breakpoint($normal) {
     left: 0;
+    width: 45%;
+  }
+  @include breakpoint($wide) {
     width: 100%;
   }
 }

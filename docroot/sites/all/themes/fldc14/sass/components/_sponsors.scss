@@ -23,13 +23,17 @@
     vertical-align: middle;
     position: relative;
     width: 100%;
-    height: 250px;
+    @include breakpoint($normal) {
+      height: 250px;
+    }
     img {
       max-width: 100%;
       margin: 0 auto; // Necessary so logo images will horiz center within div
-      position: absolute;
-      @include backface-visibility(hidden);
-      @include center(xy);
+      @include breakpoint($normal) {
+        position: absolute;
+        @include backface-visibility(hidden);
+        @include center(xy);
+      }
     } 
     @include breakpoint($tablet_narrow) { 
       margin: 0;
