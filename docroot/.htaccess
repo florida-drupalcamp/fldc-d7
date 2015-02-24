@@ -56,9 +56,9 @@ DirectoryIndex index.php index.html index.htm
 <IfModule mod_rewrite.c>
   RewriteEngine on
 
-  # RewriteCond %{HTTPS} =off
-  # RewriteCond %{HTTP_HOST} ^(www\.)?fldrupal\.camp$
-  # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP_HOST} ^(www\.)?fldrupal\.camp$
+  RewriteRule ^ https://www.fldrupal.camp%{REQUEST_URI} [L,R=301]
 
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
   # if you enable "www." stripping or enforcement, in order to ensure that
