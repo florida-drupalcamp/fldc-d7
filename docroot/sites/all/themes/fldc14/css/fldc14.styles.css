@@ -2397,57 +2397,62 @@ html.js .form-autocomplete {
     /* line 26, ../sass/components/_preface.scss */
     .zone.z-preface .speaker {
       width: 24%;
-      /* Speaker 'Pop' effect */ }
-      /* line 38, ../sass/components/_preface.scss */
-      .csstransforms .zone.z-preface .speaker {
-        -moz-transform: scale(0.5, 0.5);
-        -ms-transform: scale(0.5, 0.5);
-        -webkit-transform: scale(0.5, 0.5);
-        transform: scale(0.5, 0.5); }
-        /* line 41, ../sass/components/_preface.scss */
-        .csstransforms .zone.z-preface .speaker:first-child {
-          -moz-transition: all 0.3s ease 0.1s, margin-top 0.2s 0;
-          -o-transition: all 0.3s ease 0.1s, margin-top 0.2s 0;
-          -webkit-transition: all 0.3s ease, margin-top 0.2s 0;
-          -webkit-transition-delay: 0.1s, 0s;
-          transition: all 0.3s ease 0.1s, margin-top 0.2s 0; }
-        /* line 44, ../sass/components/_preface.scss */
-        .csstransforms .zone.z-preface .speaker:nth-child(2) {
-          -moz-transition: all 0.3s ease 0.2s, margin-top 0.2s 0;
-          -o-transition: all 0.3s ease 0.2s, margin-top 0.2s 0;
-          -webkit-transition: all 0.3s ease, margin-top 0.2s 0;
-          -webkit-transition-delay: 0.2s, 0s;
-          transition: all 0.3s ease 0.2s, margin-top 0.2s 0; }
-        /* line 47, ../sass/components/_preface.scss */
-        .csstransforms .zone.z-preface .speaker:nth-child(3) {
-          -moz-transition: all 0.3s ease 0.3s, margin-top 0.2s 0;
-          -o-transition: all 0.3s ease 0.3s, margin-top 0.2s 0;
-          -webkit-transition: all 0.3s ease, margin-top 0.2s 0;
-          -webkit-transition-delay: 0.3s, 0s;
-          transition: all 0.3s ease 0.3s, margin-top 0.2s 0; }
-        /* line 50, ../sass/components/_preface.scss */
-        .csstransforms .zone.z-preface .speaker:nth-child(4) {
-          -moz-transition: all 0.4s ease 0.4s, margin-top 0.2s 0;
-          -o-transition: all 0.4s ease 0.4s, margin-top 0.2s 0;
-          -webkit-transition: all 0.4s ease, margin-top 0.2s 0;
-          -webkit-transition-delay: 0.4s, 0s;
-          transition: all 0.4s ease 0.4s, margin-top 0.2s 0; }
-      /* line 54, ../sass/components/_preface.scss */
+      /* Speaker 'Pop' effect */ } }
+  @media (min-width: 1200px) and (max-height: 800px) {
+    /* line 38, ../sass/components/_preface.scss */
+    .csstransforms .zone.z-preface .speaker {
+      -moz-transform: scale(0.5, 0.5);
+      -ms-transform: scale(0.5, 0.5);
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5); }
+      /* line 42, ../sass/components/_preface.scss */
+      .csstransforms .zone.z-preface .speaker:first-child {
+        -moz-transition: all 0.3s ease 0.1s, -moz-transform 0.2s 0;
+        -o-transition: all 0.3s ease 0.1s, -o-transform 0.2s 0;
+        -webkit-transition: all 0.3s ease, -webkit-transform 0.2s 0;
+        -webkit-transition-delay: 0.1s, 0s;
+        transition: all 0.3s ease 0.1s, transform 0.2s 0; }
+      /* line 45, ../sass/components/_preface.scss */
+      .csstransforms .zone.z-preface .speaker:nth-child(2) {
+        -moz-transition: all 0.3s ease 0.2s, -moz-transform 0.2s 0;
+        -o-transition: all 0.3s ease 0.2s, -o-transform 0.2s 0;
+        -webkit-transition: all 0.3s ease, -webkit-transform 0.2s 0;
+        -webkit-transition-delay: 0.2s, 0s;
+        transition: all 0.3s ease 0.2s, transform 0.2s 0; }
+      /* line 48, ../sass/components/_preface.scss */
+      .csstransforms .zone.z-preface .speaker:nth-child(3) {
+        -moz-transition: all 0.3s ease 0.3s, -moz-transform 0.2s 0;
+        -o-transition: all 0.3s ease 0.3s, -o-transform 0.2s 0;
+        -webkit-transition: all 0.3s ease, -webkit-transform 0.2s 0;
+        -webkit-transition-delay: 0.3s, 0s;
+        transition: all 0.3s ease 0.3s, transform 0.2s 0; }
+      /* line 51, ../sass/components/_preface.scss */
+      .csstransforms .zone.z-preface .speaker:nth-child(4) {
+        -moz-transition: all 0.4s ease 0.4s, -moz-transform 0.2s 0;
+        -o-transition: all 0.4s ease 0.4s, -o-transform 0.2s 0;
+        -webkit-transition: all 0.4s ease, -webkit-transform 0.2s 0;
+        -webkit-transition-delay: 0.4s, 0s;
+        transition: all 0.4s ease 0.4s, transform 0.2s 0; } }
+  @media (min-width: 1200px) {
+      /* line 56, ../sass/components/_preface.scss */
       .csstransforms .zone.z-preface .speaker.scroll-down {
         -moz-transform: scale(1, 1);
         -ms-transform: scale(1, 1);
         -webkit-transform: scale(1, 1);
         transform: scale(1, 1); } }
-  /* line 59, ../sass/components/_preface.scss */
+  /* line 61, ../sass/components/_preface.scss */
   .zone.z-preface .speaker:hover {
-    margin-top: -10px; }
-    /* line 61, ../sass/components/_preface.scss */
+    -moz-transform: scale(1, 1) translatey(-10px) !important;
+    -ms-transform: scale(1, 1) translatey(-10px) !important;
+    -webkit-transform: scale(1, 1) translatey(-10px) !important;
+    transform: scale(1, 1) translatey(-10px) !important; }
+    /* line 63, ../sass/components/_preface.scss */
     .zone.z-preface .speaker:hover .speaker-name {
       color: #333; }
-    /* line 64, ../sass/components/_preface.scss */
+    /* line 66, ../sass/components/_preface.scss */
     .zone.z-preface .speaker:hover .speaker-desc {
       color: #333; }
-  /* line 68, ../sass/components/_preface.scss */
+  /* line 70, ../sass/components/_preface.scss */
   .zone.z-preface .speaker .speaker-image-wrapper {
     border-radius: 50%;
     border: 5px solid #FCB040;
@@ -2456,10 +2461,10 @@ html.js .form-autocomplete {
     margin: 0 auto;
     display: inline-block; }
     @media (min-width: 700px) and (max-width: 1200px) {
-      /* line 68, ../sass/components/_preface.scss */
+      /* line 70, ../sass/components/_preface.scss */
       .zone.z-preface .speaker .speaker-image-wrapper {
         max-width: 70%; } }
-  /* line 79, ../sass/components/_preface.scss */
+  /* line 81, ../sass/components/_preface.scss */
   .zone.z-preface .speaker img {
     border-radius: 50%;
     background-color: #FCB040;
@@ -2468,7 +2473,7 @@ html.js .form-autocomplete {
     -o-transition: all 0.8s;
     -webkit-transition: all 0.8s;
     transition: all 0.8s; }
-/* line 88, ../sass/components/_preface.scss */
+/* line 90, ../sass/components/_preface.scss */
 .zone.z-preface .speaker-name {
   margin: 10px 0 0 0;
   color: #fff;
@@ -2476,7 +2481,7 @@ html.js .form-autocomplete {
   -o-transition: color 0.8s;
   -webkit-transition: color 0.8s;
   transition: color 0.8s; }
-/* line 93, ../sass/components/_preface.scss */
+/* line 95, ../sass/components/_preface.scss */
 .zone.z-preface .speaker-desc {
   margin: 0;
   color: #666;
@@ -2487,7 +2492,7 @@ html.js .form-autocomplete {
   -webkit-transition: color 0.8s;
   transition: color 0.8s; }
   @media (min-width: 1200px) {
-    /* line 93, ../sass/components/_preface.scss */
+    /* line 95, ../sass/components/_preface.scss */
     .zone.z-preface .speaker-desc {
       padding: 0 5px; } }
 
