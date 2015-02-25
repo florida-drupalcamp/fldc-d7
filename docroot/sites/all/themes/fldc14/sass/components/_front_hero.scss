@@ -111,18 +111,23 @@
 
 
 
-#bubble1,
-#bubble2,
-#bubble3,
-#bubble4,
-#bubble5 {
+.bubble1,
+.bubble2,
+.bubble3,
+.bubble4,
+.bubble5 {
   display: none;
 }
 
-.cssanimations #bubble1,
-.cssanimations #bubble2,
-.cssanimations #bubble3,
-.cssanimations #bubble4,
-.cssanimations #bubble5 {
+.cssanimations .diver-bubble {
   display: block;
+  width: 80px;
+  height: 80px;
+  > img {
+    position: absolute;
+    @include center(xy);
+    width: 100%;
+    height: 100%;
+    max-width: 9999px;
+  }
 }

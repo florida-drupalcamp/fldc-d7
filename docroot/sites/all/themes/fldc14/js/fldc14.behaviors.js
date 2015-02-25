@@ -64,22 +64,18 @@
     }
   };
   
+  // Moving exploding animation to JS because nested animation doesn't work properly in FF
   Drupal.behaviors.explodeShit = {
     attach: function ( context, settings ) {
-      // By using the 'context' variable we make sure that our code only runs on
-      // the relevant HTML. Furthermore, by using jQuery.once() we make sure that
-      // we don't run the same piece of code for an HTML snippet that we already
-      // processed previously. By using .once('foo') all processed elements will
-      // get tagged with a 'foo-processed' class, causing all future invocations
-      // of this behavior to ignore them.
-      $('.diver-bubble', context).click(function() {
-        $(this).addClass('explode-this-shit-for-dave')
+      $('.diver-bubble > img', context).click(function() {
+        $(this).addClass('explode-this-shit')
                .attr('src', '/sites/all/themes/fldc14/images/explosion.svg')
-               .removeClass('bubble1')
-               .removeClass('bubble2')
-               .removeClass('bubble3')
-               .removeClass('bubble4')
-               .removeClass('bubble5');
+               .animate({
+                 height: '300%',
+                 width: '300%'
+               }, 300, function () {
+                $(this).parent().css({ 'display' : 'none'});
+               });
       });
 
 

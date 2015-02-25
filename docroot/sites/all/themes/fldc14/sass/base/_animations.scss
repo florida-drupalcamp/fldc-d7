@@ -62,12 +62,9 @@
   100% {-moz-transform: translateX(-10px) translateY(-650px) scale(1.3);}
 }
 
-
-
 .cssanimations .bubble1 {
   cursor: crosshair;
   opacity: 0.8;  
-  display: block;
   position: absolute;
   right: 25%;
   bottom: -5%;
@@ -78,11 +75,13 @@
   -moz-animation-duration: 15s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
+  > img {
+    display: block;
+  }
 }
 
 .cssanimations .bubble2 {
   cursor: crosshair;
-  opacity: 0.8;
   display: block;
   position: absolute;
   right: 25%;
@@ -93,11 +92,13 @@
   -moz-animation-duration: 15s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
+  > img {
+    opacity: 0.8;
+  }
 }
 
 .cssanimations .bubble3 {
   cursor: crosshair;
-  opacity: 0.5;
   position: absolute;
   right: 25%;
   bottom: -5%;
@@ -108,11 +109,13 @@
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
   @include animation-fill-mode(both);
+  > img {
+    opacity: 0.5;
+  }
 }
 
 .cssanimations .bubble4 {
   cursor: crosshair;
-  opacity: 0.5;
   display: block;
   position: absolute;
   right: 25%;
@@ -123,11 +126,13 @@
   -moz-animation-duration: 17s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
+  > img {
+    opacity: 0.5;
+  }
 }
 
 .cssanimations .bubble5 {
   cursor: crosshair;
-  opacity: 0.5;
   display: block;
   position: absolute;
   right: 25%;
@@ -138,6 +143,9 @@
   -moz-animation-duration: 17s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
+  > img {
+    opacity: 0.5;
+  }
 }
 
 

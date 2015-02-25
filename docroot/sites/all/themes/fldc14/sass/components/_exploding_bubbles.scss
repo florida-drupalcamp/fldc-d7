@@ -1,22 +1,25 @@
 
 
-.explode-this-shit-for-dave {
+.explode-this-shit {
   pointer-events: none;
   position: absolute;
   @include center(xy);
-  @include animation(explode .5s linear 0 1);
-  @include animation-fill-mode(both);
+  // @include animation(explode .5s linear 0 1);
+  // @include animation-fill-mode(both);
 }
 
-@keyframes explode {
-  0% { transform: translate(-25%, -50%) scale(.2); opacity: 1; } 
-  100% { transform: translate(-25%, -50%) scale(3); opacity: 0;}
-}
-@-webkit-keyframes explode {
-  0% { -webkit-transform: translate(-25%, -50%) scale(.2); opacity: 1; } 
-  100% { -webkit-transform: translate(-25%, -50%) scale(3); opacity: 0;}
-}
-@-moz-keyframes explode {
-  0% { -moz-transform: translate(-25%, -50%) scale(.2); opacity: 1; } 
-  100% { -moz-transform: translate(-25%, -50%) scale(3); opacity: 0;}
-}
+// @keyframes explode {
+//   0% { transform: translate(-50%, -50%) scale(.2); opacity: 1; } 
+//   99% { transform: translate(-50%, -50%) scale(4); opacity: 0;}
+//   100% { transform: translate(-50%, -50%) scale(4); opacity: 0; display: none;}
+// }
+// @-webkit-keyframes explode {
+//   0% { -webkit-transform: translate(-50%, -50%) scale(.2); opacity: 1; } 
+//   99% { -webkit-transform: translate(-50%, -50%) scale(4); opacity: 0;}
+//   100% { -webkit-transform: translate(-50%, -50%) scale(4); opacity: 0; display: none;}
+// }
+// @-moz-keyframes explode {
+//   0% { -moz-transform: translate(-50%, -50%) scale(.2); opacity: 1; } 
+//   99% { -moz-transform: translate(-50%, -50%) scale(4); opacity: 0;}
+//   100% { -moz-transform: translate(-50%, -50%) scale(4); opacity: 0; display: none;}
+// }

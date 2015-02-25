@@ -12,11 +12,11 @@
           <?php if ($logo): ?>
             <div class="site-logo ie8-hide">
               <img id="main-img" class="site-logo__img" src="/<?php print path_to_theme(); ?>/images/drupal-diver-no-bubble.svg" alt="<?php print t('FLorida DrupalCamp Logo'); ?>" title="Florida DrupalCamp 2015" />
-              <img class="diver-bubble bubble1" src="/sites/all/themes/fldc14/images/bubbles.svg">
-              <img class="diver-bubble bubble2" src="/sites/all/themes/fldc14/images/bubbles.svg">
-              <img class="diver-bubble bubble3" src="/sites/all/themes/fldc14/images/bubbles.svg">
-              <img class="diver-bubble bubble4" src="/sites/all/themes/fldc14/images/bubbles.svg">
-              <img class="diver-bubble bubble5" src="/sites/all/themes/fldc14/images/bubbles.svg">
+              <div class="diver-bubble bubble1"><img src="/sites/all/themes/fldc14/images/bubbles.svg"></div>
+              <div class="diver-bubble bubble2"><img src="/sites/all/themes/fldc14/images/bubbles.svg"></div>
+              <div class="diver-bubble bubble3"><img src="/sites/all/themes/fldc14/images/bubbles.svg"></div>
+              <div class="diver-bubble bubble4"><img src="/sites/all/themes/fldc14/images/bubbles.svg"></div>
+              <div class="diver-bubble bubble5"><img src="/sites/all/themes/fldc14/images/bubbles.svg"></div>
             </div>
             <!--[if lte IE 8]>
             <div class="site-logo"><img class="site-logo__img" src="/<?php print $directory ?>/images/drupal-diver-no-bubble.png" title="Florida DrupalCamp 2014" /></div>
