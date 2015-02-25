@@ -60,9 +60,10 @@ DirectoryIndex index.php index.html index.htm
   #RewriteCond %{HTTP_HOST} ^(www\.)?fldrupal\.camp$
   #RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  #From Acquia
+  # From Acquia
   RewriteCond %{HTTPS} off
   RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteCond %{HTTP_HOST} ^(www\.)?fldrupal\.camp$
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
