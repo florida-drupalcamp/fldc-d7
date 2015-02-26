@@ -151,3 +151,9 @@ DirectoryIndex index.php index.html index.htm
     </FilesMatch>
   </IfModule>
 </IfModule>
+<IfModule mod_deflate.c>
+  # Compress SVG's
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+
