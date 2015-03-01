@@ -1,66 +1,80 @@
-
-
 /* =============================================================================
     Attendees View
    ========================================================================== */
 
- .view-cod-community-attendees {
- 	// Views Exposed Form
- 	.views-exposed-form {
- 		margin-bottom: 50px;
- 		input[type="submit"] {
- 			margin-top: 0;
- 			font-size: 25px;
- 			@include breakpoint($tablet_narrow) {
- 				margin-top: 1.4em;
- 			}
- 		}
- 		.views-exposed-widget {
- 			float: none;
- 			@include breakpoint($tablet_narrow) {
- 				float: left;
- 				text-align: left;
- 				width: 30%;
- 			}
- 		}
- 	}
-
- 	// Views Content
- 	.views-row {
- 		display: inline-block;
- 		position: relative;
- 		vertical-align: top;
- 		text-align: center;
- 		width: 48%;
- 		max-width: 180px;
- 		padding: 10px;
- 		border-radius: 5px;
- 		&:hover {
- 			.user-image {
-	 			@include transform(rotate(360deg));
-	 		}
- 		}
- 		@include breakpoint($smartphone_wide) {
- 			width: 32%;
- 		}
- 	}
- 	.user-image {
- 		border-radius: 50%;
- 		border: solid 5px $orange;
- 		display: block;
- 		text-align: center;
- 		@include transition(all .5s);
- 	}
- 	img {
- 		margin: 0 auto;
- 		border-radius: 50%;
- 		display: block;
- 	}
- 	.user-org {
- 		font-size: 14px;
- 		color: #999;
- 	}
- 	.icon {
- 		font-size: 25px;
- 	}
- }
+.attendee {
+  position: relative;
+  background: #eee;
+  border: 3px solid white;
+  float: left;
+  width: 50%;
+  height: 170px;
+  padding: 10px;
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: solid 15px white;
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
+  @include breakpoint($smartphone_wide) {
+    height: 150px;
+  }
+  @include breakpoint($tablet_wide) {
+    padding: 20px;
+    width: 33.33%;
+  }
+  @include breakpoint($wide) {
+    width: 25%;
+  }
+}
+.attendee-name {
+  @extend h2;
+  font-size: 22px;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+.attendee-org {
+  margin: 0;
+  line-height: 1.2;
+}
+.attendee-do,
+.attendee-tw {
+  display: inline-block;
+  a {
+    display:none;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    text-indent: -9999px;
+    &:hover {
+      color: $yellow;
+    }
+    &:before {
+      text-indent: 0;
+      font-family: 'Social Media Icons';
+      font-style: normal;
+      font-weight: normal;
+      position: absolute;
+      @include center(xy);
+      font-size: 20px;   
+    }
+  }
+}
+.attendee-tw a[href*="twitter"] {
+  display: inline-block;
+  &:before {
+    content: "\e000";
+  }
+}
+.attendee-do a[href*="drupal"] {
+  display: inline-block;
+  &:before {
+    content: "\e005";
+  }
+}
