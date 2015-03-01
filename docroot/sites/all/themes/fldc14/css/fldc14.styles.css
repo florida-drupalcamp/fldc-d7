@@ -2427,7 +2427,7 @@ html.js .form-autocomplete {
   text-align: center; }
 /* line 17, ../sass/components/_sponsors.scss */
 .view-sponsors .wrap {
-  margin: 0 10px 20px 10px;
+  margin-bottom: 20px;
   padding: 20px;
   list-style: none;
   display: inline-block;
