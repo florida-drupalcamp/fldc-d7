@@ -96,20 +96,24 @@
         height: 600px; } }
     /* line 49, ../sass/layouts/_layout.scss */
     .not-front .zone.z-header {
-      padding-top: 0;
-      height: 200px; }
-    /* line 53, ../sass/layouts/_layout.scss */
+      padding: 20px 0 50px 0; }
+      @media (min-width: 700px) {
+        /* line 49, ../sass/layouts/_layout.scss */
+        .not-front .zone.z-header {
+          padding: 0;
+          height: 200px; } }
+    /* line 56, ../sass/layouts/_layout.scss */
     .admin-menu .zone.z-header {
       margin-top: 90px; }
 
 @media (min-width: 900px) {
-  /* line 59, ../sass/layouts/_layout.scss */
+  /* line 62, ../sass/layouts/_layout.scss */
   .has-sidebar-first .l-content {
     width: 70%;
     float: left;
     padding-right: 20px; } }
 @media (min-width: 900px) {
-  /* line 66, ../sass/layouts/_layout.scss */
+  /* line 69, ../sass/layouts/_layout.scss */
   .has-sidebar-first .l-region--sidebar-first {
     width: 30%;
     float: left; } }
@@ -889,17 +893,12 @@ h1, .block--views-events-block-1 .views-field-title, .block--views-individual-sp
   h1.page__title, .block--views-events-block-1 .page__title.views-field-title, .block--views-individual-sponsors-block h2.page__title, .block--views-individual-sponsors-block .page__title.fieldset-legend, .block--views-individual-sponsors-block .page__title.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.page__title, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.page__title, .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-first-name,
   .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-last-name,
   .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-last-name, .block--views-individual-sponsors-block .page__title.attendee-name, .block--views-individual-sponsors-block .view-session-schedule .views-widget-filter-field_tax_track_tid > label.page__title, .view-session-schedule .block--views-individual-sponsors-block .views-widget-filter-field_tax_track_tid > label.page__title, .view-session-schedule h3 .page__title.date-display-single {
-    position: absolute;
     background-color: rgba(26, 26, 26, 0.7);
     color: #FCFCFC;
     margin: 0;
     padding: 0.5em 0.5em 0.5em;
-    top: 50%;
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%); }
-    /* line 63, ../sass/base/_typography.scss */
+    font-size: 30px; }
+    /* line 62, ../sass/base/_typography.scss */
     h1.page__title:before, .block--views-events-block-1 .page__title.views-field-title:before, .block--views-individual-sponsors-block h2.page__title:before, .block--views-individual-sponsors-block .page__title.fieldset-legend:before, .block--views-individual-sponsors-block .page__title.messages:before, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.page__title:before, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.page__title:before, .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-first-name:before, .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-first-name:before,
     .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-last-name:before,
     .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-last-name:before, .block--views-individual-sponsors-block .page__title.attendee-name:before, .block--views-individual-sponsors-block .view-session-schedule .views-widget-filter-field_tax_track_tid > label.page__title:before, .view-session-schedule .block--views-individual-sponsors-block .views-widget-filter-field_tax_track_tid > label.page__title:before, .view-session-schedule h3 .page__title.date-display-single:before {
@@ -911,8 +910,20 @@ h1, .block--views-events-block-1 .views-field-title, .block--views-individual-sp
       top: 0;
       width: 1000%;
       height: 100%; }
+    @media (min-width: 700px) {
+      /* line 56, ../sass/base/_typography.scss */
+      h1.page__title, .block--views-events-block-1 .page__title.views-field-title, .block--views-individual-sponsors-block h2.page__title, .block--views-individual-sponsors-block .page__title.fieldset-legend, .block--views-individual-sponsors-block .page__title.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.page__title, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.page__title, .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-first-name,
+      .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-last-name,
+      .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-last-name, .block--views-individual-sponsors-block .page__title.attendee-name, .block--views-individual-sponsors-block .view-session-schedule .views-widget-filter-field_tax_track_tid > label.page__title, .view-session-schedule .block--views-individual-sponsors-block .views-widget-filter-field_tax_track_tid > label.page__title, .view-session-schedule h3 .page__title.date-display-single {
+        position: absolute;
+        top: 50%;
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 45px; } }
 
-/* line 75, ../sass/base/_typography.scss */
+/* line 79, ../sass/base/_typography.scss */
 a {
   -moz-transition: all 200ms ease;
   -o-transition: all 200ms ease;
@@ -920,31 +931,31 @@ a {
   transition: all 200ms ease;
   color: #FCB040;
   text-decoration: none; }
-  /* line 79, ../sass/base/_typography.scss */
+  /* line 83, ../sass/base/_typography.scss */
   a:hover, a:focus {
     color: #fb9b0e; }
 
-/* line 84, ../sass/base/_typography.scss */
+/* line 88, ../sass/base/_typography.scss */
 a.button {
   font-size: 25px;
   padding: 10px 20px; }
-  /* line 88, ../sass/base/_typography.scss */
+  /* line 92, ../sass/base/_typography.scss */
   a.button:hover {
     color: white; }
 
-/* line 92, ../sass/base/_typography.scss */
+/* line 96, ../sass/base/_typography.scss */
 p {
   font-size: 1.1em;
   margin: 0 0 1em 0; }
-  /* line 95, ../sass/base/_typography.scss */
+  /* line 99, ../sass/base/_typography.scss */
   p:last-child {
     margin: 0; }
 
-/* line 99, ../sass/base/_typography.scss */
+/* line 103, ../sass/base/_typography.scss */
 li {
   font-size: 1.1em; }
 
-/* line 104, ../sass/base/_typography.scss */
+/* line 108, ../sass/base/_typography.scss */
 .icon {
   position: relative;
   display: inline-block;
@@ -952,7 +963,7 @@ li {
   line-height: 1;
   transition: color 800ms; }
 
-/* line 111, ../sass/base/_typography.scss */
+/* line 115, ../sass/base/_typography.scss */
 .icon-twitter:before,
 .icon-facebook:before,
 .icon-drupal:before {
@@ -961,15 +972,15 @@ li {
   font-weight: normal;
   line-height: 1; }
 
-/* line 119, ../sass/base/_typography.scss */
+/* line 123, ../sass/base/_typography.scss */
 .icon-twitter:before {
   content: "\e000"; }
 
-/* line 122, ../sass/base/_typography.scss */
+/* line 126, ../sass/base/_typography.scss */
 .icon-facebook:before {
   content: "\e003"; }
 
-/* line 125, ../sass/base/_typography.scss */
+/* line 129, ../sass/base/_typography.scss */
 .icon-drupal:before {
   content: "\e005"; }
 
@@ -2100,19 +2111,20 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
           right: 30px;
           top: 31px;
           width: 0;
-          height: 0; }
-        /* line 217, ../sass/components/_navigation.scss */
+          height: 0;
+          pointer-events: none; }
+        /* line 218, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li.expanded-active-processed:after {
           -moz-transform: rotate(180deg);
           -ms-transform: rotate(180deg);
           -webkit-transform: rotate(180deg);
           transform: rotate(180deg); } }
     @media (min-width: 1025px) {
-      /* line 227, ../sass/components/_navigation.scss */
+      /* line 228, ../sass/components/_navigation.scss */
       #block-system-main-menu > .menu li:hover > ul {
         display: block;
         top: 100%; }
-      /* line 232, ../sass/components/_navigation.scss */
+      /* line 233, ../sass/components/_navigation.scss */
       #block-system-main-menu > .menu li > ul {
         background-color: #FCB040;
         border: solid 1px #333;
@@ -2129,29 +2141,29 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
         -webkit-transition: all 0.2s;
         transition: all 0.2s; } }
   @media (min-width: 1025px) and (min-width: 1700px) {
-    /* line 232, ../sass/components/_navigation.scss */
+    /* line 233, ../sass/components/_navigation.scss */
     #block-system-main-menu > .menu li > ul {
       top: -600px;
       width: 240px; } }
     @media (min-width: 1025px) {
-        /* line 250, ../sass/components/_navigation.scss */
+        /* line 251, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li > ul > li {
           display: block;
           float: none;
           line-height: 2;
           text-align: left; }
-        /* line 257, ../sass/components/_navigation.scss */
+        /* line 258, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li > ul a {
           background-color: #FCB040;
           color: #333;
           padding: 0 10px;
           display: block;
           z-index: 5; }
-          /* line 263, ../sass/components/_navigation.scss */
+          /* line 264, ../sass/components/_navigation.scss */
           #block-system-main-menu > .menu li > ul a:hover {
             color: white !important; } }
 
-/* line 276, ../sass/components/_navigation.scss */
+/* line 277, ../sass/components/_navigation.scss */
 #mobile-menu {
   -moz-transition: all 200ms ease;
   -o-transition: all 200ms ease;
@@ -2167,7 +2179,7 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
   top: 0;
   z-index: 10;
   cursor: pointer; }
-  /* line 288, ../sass/components/_navigation.scss */
+  /* line 289, ../sass/components/_navigation.scss */
   #mobile-menu:after {
     font-family: FontAwesome;
     font-size: 40px;
@@ -2182,22 +2194,22 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
     width: 50px;
     left: 0;
     top: 0; }
-  /* line 304, ../sass/components/_navigation.scss */
+  /* line 305, ../sass/components/_navigation.scss */
   #mobile-menu:focus:after, #mobile-menu:active:after {
     color: white; }
   @media (min-width: 1025px) {
-    /* line 276, ../sass/components/_navigation.scss */
+    /* line 277, ../sass/components/_navigation.scss */
     #mobile-menu {
       display: none; } }
 
 @media (min-width: 1025px) {
-  /* line 315, ../sass/components/_navigation.scss */
+  /* line 316, ../sass/components/_navigation.scss */
   .scroll-down #header-menu,
   .scroll-down #primary-menu {
     line-height: 60px;
     height: 60px; } }
 @media (min-width: 1025px) and (min-width: 1025px) {
-  /* line 323, ../sass/components/_navigation.scss */
+  /* line 324, ../sass/components/_navigation.scss */
   .scroll-down h1.site-name, .scroll-down .block--views-events-block-1 .site-name.views-field-title, .block--views-events-block-1 .scroll-down .site-name.views-field-title, .scroll-down .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .scroll-down h2.site-name, .scroll-down .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .scroll-down .site-name.fieldset-legend, .scroll-down .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block .scroll-down .site-name.messages, .scroll-down .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .scroll-down h1.site-name, .scroll-down #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .scroll-down h1.site-name, .scroll-down .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .block--views-individual-sponsors-block .user-profile .scroll-down .site-name.field--name-field-user-first-name, .scroll-down .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .scroll-down .site-name.field--name-field-user-first-name,
   .scroll-down .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
   .block--views-individual-sponsors-block .user-profile .scroll-down .site-name.field--name-field-user-last-name,
@@ -2206,21 +2218,21 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
     line-height: 60px;
     height: 60px; } }
 @media (min-width: 1025px) {
-  /* line 330, ../sass/components/_navigation.scss */
+  /* line 331, ../sass/components/_navigation.scss */
   .scroll-down.zone.z-navigation {
     height: 60px; } }
 
 /* Some overrides to omega base to remove background images and associated http requests */
-/* line 338, ../sass/components/_navigation.scss */
+/* line 339, ../sass/components/_navigation.scss */
 .menu .expanded {
   list-style-image: none;
   list-style-type: none; }
 
-/* line 343, ../sass/components/_navigation.scss */
+/* line 344, ../sass/components/_navigation.scss */
 html.js fieldset.collapsible .fieldset-legend {
   background: none; }
 
-/* line 347, ../sass/components/_navigation.scss */
+/* line 348, ../sass/components/_navigation.scss */
 .menu .leaf {
   list-style-image: none;
   list-style-type: none; }

@@ -54,12 +54,11 @@ h1 {
   margin: 10px 0;
   line-height: 1.2;
   &.page__title {
-    position: absolute;
     background-color: rgba($black, 0.7);
     color: #FCFCFC;
     margin: 0;
     padding: 0.5em 0.5em 0.5em;
-    @include center(y);
+    font-size: 30px;
     &:before {
       background-color: rgba($black, 0.7);
       content: "";
@@ -69,6 +68,11 @@ h1 {
       top: 0;
       width: 1000%;
       height: 100%;
+    }
+    @include breakpoint($tablet_narrow) {
+      position: absolute;
+      @include center(y);
+      font-size: 45px;
     }
   }
 }

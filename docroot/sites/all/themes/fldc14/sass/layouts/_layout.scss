@@ -47,8 +47,11 @@
       height: 600px;
     }
     .not-front & {
-      padding-top: 0;
-      height: 200px;
+      padding: 20px 0 50px 0;
+      @include breakpoint($tablet_narrow) {
+        padding: 0;
+        height: 200px;
+      }
     }
     .admin-menu & {
       margin-top: 90px;
