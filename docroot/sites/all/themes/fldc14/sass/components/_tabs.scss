@@ -1,10 +1,6 @@
-
-
 /* =============================================================================
     Drupal's Tabs
    ========================================================================== */
-
-/* Omega's tabs are fine at desktop widths, so only modifying smartphone widths */
 
 @include breakpoint(max-width $tablet_narrow) {
 	ul.tabs {

@@ -1,8 +1,6 @@
-
 /* =============================================================================
     Drupal's Pager
    ========================================================================== */
-
 
 .pager .pager__item {
 	font-size: 1.5em;
@@ -10,28 +8,3 @@
 		font-size: 2em;
 	}
 }
-
-// .pager__item--next a {
-// 	@include breakpoint(max-width $tablet_narrow) {
-// 		text-indent: -100%;
-// 		display: inline-block;
-// 		border: solid 1px green;
-// 		overflow: hidden;
-// 		height: 40px;
-// 		width: 40px;
-// 		position: relative;
-// 		vertical-align: middle;
-// 		&:before {
-// 			color: $orange;
-// 			font-family: FontAwesome;
-// 			font-size: 30px;
-// 			position: absolute;
-// 			width: 100%;
-// 			height: 100%;
-// 			left: 0;
-// 			top: 0;
-// 			text-indent: 0;
-// 			content: "\f0a9";
-// 		}
-// 	}
-// }
