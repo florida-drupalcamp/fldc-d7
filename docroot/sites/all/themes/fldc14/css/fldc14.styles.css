@@ -1432,7 +1432,7 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
   @media (min-width: 1200px) {
     /* line 24, ../sass/components/_front_hero.scss */
     .block--views-events-block-1 .views-field-title {
-      font-size: 65px; } }
+      font-size: 60px; } }
   @media (min-width: 1700px) {
     /* line 24, ../sass/components/_front_hero.scss */
     .block--views-events-block-1 .views-field-title {

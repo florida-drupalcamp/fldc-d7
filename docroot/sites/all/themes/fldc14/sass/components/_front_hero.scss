@@ -43,7 +43,7 @@
       font-size: 55px;
     }
     @include breakpoint($normal) {
-      font-size: 65px;
+      font-size: 60px;
     }    
     @include breakpoint($wide) {
       font-size: 70px;
