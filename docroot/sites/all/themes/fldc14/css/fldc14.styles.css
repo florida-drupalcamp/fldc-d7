@@ -2802,8 +2802,9 @@ div.password-confirm {
   float: left;
   width: 50%;
   height: 170px;
-  padding: 10px; }
-  /* line 13, ../sass/components/_view_attendees.scss */
+  padding: 10px;
+  overflow: hidden; }
+  /* line 14, ../sass/components/_view_attendees.scss */
   .attendee:after {
     content: "";
     width: 0;
@@ -2815,6 +2816,18 @@ div.password-confirm {
     border: solid 15px white;
     border-top-color: transparent;
     border-left-color: transparent; }
+  /* line 27, ../sass/components/_view_attendees.scss */
+  .attendee.Sponsor:before {
+    content: "Individual Sponsor";
+    font-size: 12px;
+    padding-left: 10px;
+    color: white;
+    position: absolute;
+    background: #0E73AF;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    line-height: 1.5; }
   @media (min-width: 470px) {
     /* line 5, ../sass/components/_view_attendees.scss */
     .attendee {
@@ -2829,22 +2842,22 @@ div.password-confirm {
     .attendee {
       width: 25%; } }
 
-/* line 36, ../sass/components/_view_attendees.scss */
+/* line 51, ../sass/components/_view_attendees.scss */
 .attendee-name {
   font-size: 22px;
   margin-bottom: 5px;
   line-height: 1.2; }
 
-/* line 42, ../sass/components/_view_attendees.scss */
+/* line 57, ../sass/components/_view_attendees.scss */
 .attendee-org {
   margin: 0;
   line-height: 1.2; }
 
-/* line 46, ../sass/components/_view_attendees.scss */
+/* line 61, ../sass/components/_view_attendees.scss */
 .attendee-do,
 .attendee-tw {
   display: inline-block; }
-  /* line 49, ../sass/components/_view_attendees.scss */
+  /* line 64, ../sass/components/_view_attendees.scss */
   .attendee-do a,
   .attendee-tw a {
     display: none;
@@ -2852,11 +2865,11 @@ div.password-confirm {
     width: 20px;
     position: relative;
     text-indent: -9999px; }
-    /* line 55, ../sass/components/_view_attendees.scss */
+    /* line 70, ../sass/components/_view_attendees.scss */
     .attendee-do a:hover,
     .attendee-tw a:hover {
       color: #E4D400; }
-    /* line 58, ../sass/components/_view_attendees.scss */
+    /* line 73, ../sass/components/_view_attendees.scss */
     .attendee-do a:before,
     .attendee-tw a:before {
       text-indent: 0;
@@ -2872,17 +2885,17 @@ div.password-confirm {
       transform: translate(-50%, -50%);
       font-size: 20px; }
 
-/* line 69, ../sass/components/_view_attendees.scss */
+/* line 84, ../sass/components/_view_attendees.scss */
 .attendee-tw a[href*="twitter"] {
   display: inline-block; }
-  /* line 71, ../sass/components/_view_attendees.scss */
+  /* line 86, ../sass/components/_view_attendees.scss */
   .attendee-tw a[href*="twitter"]:before {
     content: "\e000"; }
 
-/* line 75, ../sass/components/_view_attendees.scss */
+/* line 90, ../sass/components/_view_attendees.scss */
 .attendee-do a[href*="drupal"] {
   display: inline-block; }
-  /* line 77, ../sass/components/_view_attendees.scss */
+  /* line 92, ../sass/components/_view_attendees.scss */
   .attendee-do a[href*="drupal"]:before {
     content: "\e005"; }
 

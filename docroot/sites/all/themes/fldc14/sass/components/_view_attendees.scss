@@ -10,6 +10,7 @@
   width: 50%;
   height: 170px;
   padding: 10px;
+  overflow: hidden;
   &:after {
     content: "";
     width: 0;
@@ -21,6 +22,20 @@
     border: solid 15px white;
     border-top-color: transparent;
     border-left-color: transparent;
+  }
+  &.Sponsor {
+    &:before {
+      content: "Individual Sponsor";
+      font-size: 12px;
+      padding-left: 10px;
+      color: white;
+      position: absolute;
+      background: $blue;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      line-height: 1.5;
+    }
   }
   @include breakpoint($smartphone_wide) {
     height: 150px;
