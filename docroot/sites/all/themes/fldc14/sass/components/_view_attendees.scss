@@ -2,6 +2,9 @@
     Attendees View
    ========================================================================== */
 
+.view-attendees {
+  @include clearfix;
+}
 .attendee {
   position: relative;
   background: #eee;
