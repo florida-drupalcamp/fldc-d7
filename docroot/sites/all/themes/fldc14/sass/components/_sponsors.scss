@@ -27,6 +27,8 @@
     }
     img {
       max-width: 100%;
+      max-height: 140px;
+      width: auto;
       margin: 0 auto; // Necessary so logo images will horiz center within div
       @include breakpoint($normal) {
         position: absolute;
