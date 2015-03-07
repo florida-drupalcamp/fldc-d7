@@ -40,9 +40,12 @@
     }
   }
   &.z-header {
-    margin-top: 60px;
+    margin-top: 3%;
     position: relative;
     padding: 60px 0;
+    @include breakpoint($tablet_narrow) {
+      margin-top: 60px;
+    }
     @include breakpoint($tablet_wide) {
       height: 600px;
     }
