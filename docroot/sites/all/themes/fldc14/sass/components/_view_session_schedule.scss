@@ -2,23 +2,21 @@
     Sessions schedule
    ========================================================================== */
 
-.view-session-schedule {
-  h3 {
-    .date-display-single {
-      @extend h1;
-      margin-top: 0;
-      font-size: 1em;
-      background-color: $blue;
-      color: white;
-      display: block;
-      text-align: center;
-      padding: 20px 0;
-      @include breakpoint($normal) {
-        padding: 0;
-        font-size: 1.2em;
-        background-color: transparent;
-        color: $blue;
-      }
+.view-schedule-items {
+  .group > h3 { // Grouping
+    @extend h1;
+    margin-top: 0;
+    font-size: 28px;
+    background-color: $blue;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    @include breakpoint($normal) {
+      padding: 0;
+      font-size: 32px;
+      background-color: transparent;
+      color: $blue;
     }
     @include breakpoint($normal) {
       float: left;
@@ -35,7 +33,7 @@
       color: $blue;
     }
   }
-  .views-field-body {
+  .session-description {
     max-height: 0;
     overflow: hidden;
     margin-bottom: 10px;
@@ -44,7 +42,9 @@
       margin-left: -26px;
     }
   }
-  .track {
+  .session-track {
+    text-indent: -999px;
+    overflow: hidden;
     position: absolute;
     display: block;
     top: 10px;
@@ -53,25 +53,25 @@
     width: 26px;
     background-image: url(../images/sprite-track-icons.png);
   }
-  .track-7 { // Theming
+  .session-track-Design-Theming-amp-Front-end-Development { // Theming
     background-position: 0 -320px;
   }
-  .track-8 { // Development & performance
+  .session-track-Development-amp-Performance { // Development & performance
     background-position: 0 -40px;
   }
-  .track-9 { // Site building
+  .session-track-Site-Building { // Site building
     background-position: 0 -160px;
   }
-  .track-10 { // Project managment
+  .session-track-Project-Management-and-Consulting { // Project managment
     background-position: 0 0;
   }
-  .track-11 { // Drupal island
+  .session-track-Sessions-Off-the-quotDrupal-Islandquot { // Drupal island
     background-position: 0 -200px;
   }
-  .track-12 { // Beginner
+  .session-track-Beginner-Track { // Beginner
     background-position: 0 -279px;
   }
-  .views-row {
+  .session {
     cursor: pointer;
     margin: 0 0 10px 0;
     padding: 10px 40px 10px 46px;
@@ -80,25 +80,28 @@
     .speaker-wrapper:nth-child(2):before {
       content: " & ";
     }
-    > .where,
-    > .speaker,
-    > .experience {
+    > .session-room,
+    > .session-speakers,
+    > .session-slot,
+    > .session-audience {
       font-size: .9em;
       margin-right: 10px;
-      display: inline-block;
       &:before {
         font-family: FontAwesome;
         display: inline-block;
         width: 15px;
       }
     }
-    > .where:before {
-      content: "\f041";
+    > .session-room {
+      margin-right: 0;
+      &:before {
+        content: "\f041";
+      }
     }
-    > .speaker:before {
+    > .session-speakers:before {
       content: "\f007";
     }
-    > .experience:before {
+    > .session-audience:before {
       content: "\f135";
     }
     &:after {
@@ -112,8 +115,8 @@
       color: $blue;
       @include transition(all .5s);
     }
-    &.session-view {
-      .views-field-body {
+    &.js-expanded {
+      .session-description {
         padding-top: 20px;
         max-height: 2000px;
       }

@@ -50,6 +50,14 @@
       });
     }
   };
+
+  Drupal.behaviors.sessionExpand = {
+    attach: function ( context, settings ) {
+      $('.view-schedule-items .session', context).click(function() {
+        $(this).toggleClass('js-expanded');
+      });
+    }
+  };
   
   Drupal.behaviors.headingHeightOnScroll = {
     attach: function ( context, settings ) {
