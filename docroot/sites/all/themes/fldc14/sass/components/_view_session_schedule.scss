@@ -154,80 +154,61 @@
       padding-top: 20px;
     }
   }
-}
-
-// Specific to the Exposed Filters on this 
-
-.view-session-schedule {
-  // Exposed Filter Label 
-  .views-widget-filter-field_tax_track_tid > label {
-    @extend h2;    
-    text-align: center;
-    display: none;
-    @include breakpoint($normal) {
-      display: block;
-      font-size: 2em;
-      margin-top: 10px;
-      padding: 0;
+  .view-header {
+    padding: 20px 0;
+    @include clearfix;
+  }
+  .track-item {
+    position: relative;
+    line-height: 1.2;
+    font-family: $font-narrow;
+    font-size: 1.1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 8px 0 8px 45px;
+    @include breakpoint(399px) {
+      font-size: 1.3em;
+    }
+    @include breakpoint($tablet_narrow) {
+      width: 50%;
       float: left;
-      width: 150px;
     }
-  }
-  .views-widget {
-    padding: 10px 0;
-    @include breakpoint($normal) {
-      margin-left: 160px;
-      padding: 0;
-    }
-  }
-  .bef-checkboxes {
-    label {
-      padding-left: 45px;
-      position: relative;
-      line-height: 1.2;
-      font-family: $font-narrow;
+    @include breakpoint($tablet_wide) {
       font-size: 1.1em;
-      @include breakpoint(399px) {
-        font-size: 1.3em;
-      }
-      @include breakpoint($tablet_wide) {
-        font-size: 1.1em;
-      }
-      &:before {
-        content: "";
-        position: absolute;
-        display: block;
-        top: 50%;
-        margin-top: -13px;
-        left: 10px;
-        height: 27px;
-        width: 26px;
-        background-image: url(../images/sprite-track-icons.png);
-        background-repeat: no-repeat;
-      }
-      
+    }
+    @include breakpoint($normal) {
+      width: 33%;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 50%;
+      margin-top: -13px;
+      left: 10px;
+      height: 27px;
+      width: 26px;
+      background-image: url(../images/sprite-track-icons.png);
+      background-repeat: no-repeat;
     }
   }
-  .form-item-edit-field-tax-track-tid-7 label:before { // Theming
+  .track-item--theming:before { // Theming
     background-position: 0 -320px;
   }
-  .form-item-edit-field-tax-track-tid-8 label:before { // Development & performance
+  .track-item--dev:before { // Development & performance
     background-position: 0 -40px;
   }
-  .form-item-edit-field-tax-track-tid-9 label:before { // Site building
+  .track-item--site:before { // Site building
     background-position: 0 -160px;
   }
-  .form-item-edit-field-tax-track-tid-10 label:before { // Project managment
+  .track-item--proj:before { // Project managment
     background-position: 0 0;
   }
-  .form-item-edit-field-tax-track-tid-11 label:before { // Drupal island
+  .track-item--island:before { // Drupal island
     background-position: 0 -200px;
   }
-  .form-item-edit-field-tax-track-tid-12 label:before { // Beginner
+  .track-item--beg:before { // Beginner
     background-position: 0 -279px;
   }
-
 }
-
-
-
