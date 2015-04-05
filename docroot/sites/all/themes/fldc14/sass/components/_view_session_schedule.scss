@@ -3,7 +3,8 @@
    ========================================================================== */
 
 .view-schedule-items {
-  .group > h3 { // Grouping
+  .legend-title,
+  .session-slot--title { // Grouping
     @extend h1;
     margin-top: 0;
     font-size: 28px;
@@ -72,11 +73,13 @@
     background-position: 0 -279px;
   }
   .session {
-    cursor: pointer;
     margin: 0 0 10px 0;
-    padding: 10px 40px 10px 46px;
+    padding: 10px 60px 10px 46px;
     background: #eee;
     position: relative;
+    @include breakpoint($normal) {
+      margin: 0 0 20px 160px; // Make room for the time to the left
+    }
     .speaker-wrapper:nth-child(2):before {
       content: " & ";
     }
@@ -84,6 +87,7 @@
     > .session-speakers,
     > .session-slot,
     > .session-audience {
+      display: inline-block; // Make sure icons are on the same line
       font-size: .9em;
       margin-right: 10px;
       &:before {
@@ -100,28 +104,48 @@
     }
     > .session-speakers:before {
       content: "\f007";
+      margin-right: 3px;
     }
     > .session-audience:before {
       content: "\f135";
+      margin-right: 3px;
     }
-    &:after {
+    .session-expand {
+      cursor: pointer;
       position: absolute;
-      content: "\f054";
-      font-family: FontAwesome;
-      font-size: 16px;
-      display: block;
-      right: 20px;
-      top: 30px;
-      color: $blue;
-      @include transition(all .5s);
+      height: 80px;
+      width: 60px;
+      right: 0;
+      top: 0;
+      &:hover:before {
+        background: #e5e5e5;
+      }
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+        @include transform(translate(-50%, -50%));
+        content: "\f054";
+        font-family: FontAwesome;
+        font-size: 16px;
+        display: block;
+        color: $blue;
+        border-radius: 50%;
+        @include transition(all .5s);
+      }      
     }
     &.js-expanded {
       .session-description {
         padding-top: 20px;
         max-height: 2000px;
       }
-      &:after {
-        @include transform(rotate(90deg));
+      .session-expand:before {
+        @include transform(translate(-50%, -50%) rotate(90deg));
       }
     }
     &.Schedule { // Hide track, speaker, etc for Schedule items like lunch
@@ -142,12 +166,8 @@
         display: none;
       }
     }
-    @include breakpoint($normal) {
-      margin: 0 0 20px 160px; // Make room for the time to the left
-    }
-    // End .views-row
   }
-  .group {
+  .session-wrapper {
     clear: both;
     @include breakpoint($normal) {
       border-top: solid 2px $blue;
@@ -177,9 +197,6 @@
     @include breakpoint($tablet_wide) {
       font-size: 1.1em;
     }
-    @include breakpoint($normal) {
-      width: 33%;
-    }
     &:before {
       content: "";
       position: absolute;
@@ -191,6 +208,12 @@
       width: 26px;
       background-image: url(../images/sprite-track-icons.png);
       background-repeat: no-repeat;
+    }
+  }
+  .legend {
+    margin: 0 0 10px 0;
+    @include breakpoint($normal) {
+      margin: 0 0 20px 160px;
     }
   }
   .track-item--theming:before { // Theming
