@@ -3115,7 +3115,14 @@ div.password-confirm {
   .view-schedule-items .user-profile .field--name-field-user-last-name a,
   .user-profile .view-schedule-items .field--name-field-user-last-name a, .view-schedule-items .attendee-name a {
     color: #0E73AF; }
-/* line 37, ../sass/components/_view_session_schedule.scss */
+    /* line 35, ../sass/components/_view_session_schedule.scss */
+    .view-schedule-items h2 a:hover, .view-schedule-items .fieldset-legend a:hover, .view-schedule-items .messages a:hover, .view-schedule-items #block-views-sponsors-block-block-1 h1 a:hover, #block-views-sponsors-block-block-1 .view-schedule-items h1 a:hover, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:hover, #block-views-sponsors-block-block-1 .block--views-events-block-1 .view-schedule-items .views-field-title a:hover, .view-schedule-items .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:hover, .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .views-field-title a:hover, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .view-schedule-items h2 a:hover, .view-schedule-items .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-schedule-items h2 a:hover, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:hover, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:hover,
+    #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:hover,
+    .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:hover, .view-schedule-items .user-profile .field--name-field-user-first-name a:hover, .user-profile .view-schedule-items .field--name-field-user-first-name a:hover,
+    .view-schedule-items .user-profile .field--name-field-user-last-name a:hover,
+    .user-profile .view-schedule-items .field--name-field-user-last-name a:hover, .view-schedule-items .attendee-name a:hover {
+      color: #1292de; }
+/* line 40, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .session-description {
   max-height: 0;
   overflow: hidden;
@@ -3125,10 +3132,10 @@ div.password-confirm {
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
   @media (max-width: 470px) {
-    /* line 37, ../sass/components/_view_session_schedule.scss */
+    /* line 40, ../sass/components/_view_session_schedule.scss */
     .view-schedule-items .session-description {
       margin-left: -26px; } }
-/* line 46, ../sass/components/_view_session_schedule.scss */
+/* line 49, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .session-track {
   text-indent: -999px;
   overflow: hidden;
@@ -3139,38 +3146,38 @@ div.password-confirm {
   height: 26px;
   width: 26px;
   background-image: url(../images/sprite-track-icons.png); }
-/* line 57, ../sass/components/_view_session_schedule.scss */
+/* line 60, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .session-track-Design-Theming-amp-Front-end-Development {
   background-position: 0 -320px; }
-/* line 60, ../sass/components/_view_session_schedule.scss */
+/* line 63, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .session-track-Development-amp-Performance {
   background-position: 0 -40px; }
-/* line 63, ../sass/components/_view_session_schedule.scss */
+/* line 66, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .session-track-Site-Building {
   background-position: 0 -160px; }
-/* line 66, ../sass/components/_view_session_schedule.scss */
+/* line 69, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .session-track-Project-Management-and-Consulting {
   background-position: 0 0; }
-/* line 69, ../sass/components/_view_session_schedule.scss */
+/* line 72, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .session-track-Sessions-Off-the-quotDrupal-Islandquot {
   background-position: 0 -200px; }
-/* line 72, ../sass/components/_view_session_schedule.scss */
+/* line 75, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .session-track-Beginner-Track {
   background-position: 0 -279px; }
-/* line 75, ../sass/components/_view_session_schedule.scss */
+/* line 78, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .session {
   margin: 0 0 10px 0;
   padding: 10px 60px 10px 46px;
   background: #eee;
   position: relative; }
   @media (min-width: 1200px) {
-    /* line 75, ../sass/components/_view_session_schedule.scss */
+    /* line 78, ../sass/components/_view_session_schedule.scss */
     .view-schedule-items .session {
       margin: 0 0 20px 160px; } }
-  /* line 83, ../sass/components/_view_session_schedule.scss */
+  /* line 86, ../sass/components/_view_session_schedule.scss */
   .view-schedule-items .session .speaker-wrapper:nth-child(2):before {
     content: " & "; }
-  /* line 86, ../sass/components/_view_session_schedule.scss */
+  /* line 89, ../sass/components/_view_session_schedule.scss */
   .view-schedule-items .session > .session-room,
   .view-schedule-items .session > .session-speakers,
   .view-schedule-items .session > .session-slot,
@@ -3178,7 +3185,7 @@ div.password-confirm {
     display: inline-block;
     font-size: .9em;
     margin-right: 10px; }
-    /* line 93, ../sass/components/_view_session_schedule.scss */
+    /* line 96, ../sass/components/_view_session_schedule.scss */
     .view-schedule-items .session > .session-room:before,
     .view-schedule-items .session > .session-speakers:before,
     .view-schedule-items .session > .session-slot:before,
@@ -3186,21 +3193,21 @@ div.password-confirm {
       font-family: FontAwesome;
       display: inline-block;
       width: 15px; }
-  /* line 99, ../sass/components/_view_session_schedule.scss */
+  /* line 102, ../sass/components/_view_session_schedule.scss */
   .view-schedule-items .session > .session-room {
     margin-right: 0; }
-    /* line 101, ../sass/components/_view_session_schedule.scss */
+    /* line 104, ../sass/components/_view_session_schedule.scss */
     .view-schedule-items .session > .session-room:before {
       content: "\f041"; }
-  /* line 105, ../sass/components/_view_session_schedule.scss */
+  /* line 108, ../sass/components/_view_session_schedule.scss */
   .view-schedule-items .session > .session-speakers:before {
     content: "\f007";
     margin-right: 3px; }
-  /* line 109, ../sass/components/_view_session_schedule.scss */
+  /* line 112, ../sass/components/_view_session_schedule.scss */
   .view-schedule-items .session > .session-audience:before {
     content: "\f135";
     margin-right: 3px; }
-  /* line 113, ../sass/components/_view_session_schedule.scss */
+  /* line 116, ../sass/components/_view_session_schedule.scss */
   .view-schedule-items .session .session-expand {
     cursor: pointer;
     position: absolute;
@@ -3208,10 +3215,10 @@ div.password-confirm {
     width: 60px;
     right: 0;
     top: 0; }
-    /* line 120, ../sass/components/_view_session_schedule.scss */
+    /* line 123, ../sass/components/_view_session_schedule.scss */
     .view-schedule-items .session .session-expand:hover:before {
       background: #e5e5e5; }
-    /* line 123, ../sass/components/_view_session_schedule.scss */
+    /* line 126, ../sass/components/_view_session_schedule.scss */
     .view-schedule-items .session .session-expand:before {
       position: absolute;
       top: 50%;
@@ -3235,41 +3242,41 @@ div.password-confirm {
       -o-transition: all 0.5s;
       -webkit-transition: all 0.5s;
       transition: all 0.5s; }
-  /* line 143, ../sass/components/_view_session_schedule.scss */
+  /* line 146, ../sass/components/_view_session_schedule.scss */
   .view-schedule-items .session.js-expanded .session-description {
     padding-top: 20px;
     max-height: 2000px; }
-  /* line 147, ../sass/components/_view_session_schedule.scss */
+  /* line 150, ../sass/components/_view_session_schedule.scss */
   .view-schedule-items .session.js-expanded .session-expand:before {
     -moz-transform: translate(-50%, -50%) rotate(90deg);
     -ms-transform: translate(-50%, -50%) rotate(90deg);
     -webkit-transform: translate(-50%, -50%) rotate(90deg);
     transform: translate(-50%, -50%) rotate(90deg); }
-  /* line 151, ../sass/components/_view_session_schedule.scss */
+  /* line 154, ../sass/components/_view_session_schedule.scss */
   .view-schedule-items .session.Schedule {
     cursor: auto; }
-    /* line 153, ../sass/components/_view_session_schedule.scss */
+    /* line 156, ../sass/components/_view_session_schedule.scss */
     .view-schedule-items .session.Schedule:after {
       display: none; }
-    /* line 156, ../sass/components/_view_session_schedule.scss */
+    /* line 159, ../sass/components/_view_session_schedule.scss */
     .view-schedule-items .session.Schedule .track,
     .view-schedule-items .session.Schedule .where,
     .view-schedule-items .session.Schedule .speaker,
     .view-schedule-items .session.Schedule .experience {
       display: none; }
-  /* line 164, ../sass/components/_view_session_schedule.scss */
+  /* line 167, ../sass/components/_view_session_schedule.scss */
   .view-schedule-items .session.nid-146 .speaker,
   .view-schedule-items .session.nid-146 .experience {
     display: none; }
-/* line 170, ../sass/components/_view_session_schedule.scss */
+/* line 173, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .session-wrapper {
   clear: both; }
   @media (min-width: 1200px) {
-    /* line 170, ../sass/components/_view_session_schedule.scss */
+    /* line 173, ../sass/components/_view_session_schedule.scss */
     .view-schedule-items .session-wrapper {
       border-top: solid 2px #0E73AF;
       padding-top: 20px; } }
-/* line 177, ../sass/components/_view_session_schedule.scss */
+/* line 180, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .view-header {
   padding: 20px 0; }
   /* line 2, ../sass/abstractions/_mixins.scss */
@@ -3279,7 +3286,7 @@ div.password-confirm {
   /* line 7, ../sass/abstractions/_mixins.scss */
   .view-schedule-items .view-header:after {
     clear: both; }
-/* line 181, ../sass/components/_view_session_schedule.scss */
+/* line 184, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .track-item {
   position: relative;
   line-height: 1.2;
@@ -3290,19 +3297,19 @@ div.password-confirm {
   text-overflow: ellipsis;
   padding: 8px 0 8px 45px; }
   @media (min-width: 399px) {
-    /* line 181, ../sass/components/_view_session_schedule.scss */
+    /* line 184, ../sass/components/_view_session_schedule.scss */
     .view-schedule-items .track-item {
       font-size: 1.3em; } }
   @media (min-width: 700px) {
-    /* line 181, ../sass/components/_view_session_schedule.scss */
+    /* line 184, ../sass/components/_view_session_schedule.scss */
     .view-schedule-items .track-item {
       width: 50%;
       float: left; } }
   @media (min-width: 900px) {
-    /* line 181, ../sass/components/_view_session_schedule.scss */
+    /* line 184, ../sass/components/_view_session_schedule.scss */
     .view-schedule-items .track-item {
       font-size: 1.1em; } }
-  /* line 200, ../sass/components/_view_session_schedule.scss */
+  /* line 203, ../sass/components/_view_session_schedule.scss */
   .view-schedule-items .track-item:before {
     content: "";
     position: absolute;
@@ -3314,29 +3321,29 @@ div.password-confirm {
     width: 26px;
     background-image: url(../images/sprite-track-icons.png);
     background-repeat: no-repeat; }
-/* line 213, ../sass/components/_view_session_schedule.scss */
+/* line 216, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .legend {
   margin: 0 0 10px 0; }
   @media (min-width: 1200px) {
-    /* line 213, ../sass/components/_view_session_schedule.scss */
+    /* line 216, ../sass/components/_view_session_schedule.scss */
     .view-schedule-items .legend {
       margin: 0 0 20px 160px; } }
-/* line 219, ../sass/components/_view_session_schedule.scss */
+/* line 222, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .track-item--theming:before {
   background-position: 0 -320px; }
-/* line 222, ../sass/components/_view_session_schedule.scss */
+/* line 225, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .track-item--dev:before {
   background-position: 0 -40px; }
-/* line 225, ../sass/components/_view_session_schedule.scss */
+/* line 228, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .track-item--site:before {
   background-position: 0 -160px; }
-/* line 228, ../sass/components/_view_session_schedule.scss */
+/* line 231, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .track-item--proj:before {
   background-position: 0 0; }
-/* line 231, ../sass/components/_view_session_schedule.scss */
+/* line 234, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .track-item--island:before {
   background-position: 0 -200px; }
-/* line 234, ../sass/components/_view_session_schedule.scss */
+/* line 237, ../sass/components/_view_session_schedule.scss */
 .view-schedule-items .track-item--beg:before {
   background-position: 0 -279px; }
 

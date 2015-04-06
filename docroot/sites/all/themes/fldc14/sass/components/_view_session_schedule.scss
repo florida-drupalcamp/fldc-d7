@@ -32,6 +32,9 @@
     //z-index: 5;
     a {
       color: $blue;
+      &:hover {
+        color: lighten($blue, 10%);
+      }
     }
   }
   .session-description {
