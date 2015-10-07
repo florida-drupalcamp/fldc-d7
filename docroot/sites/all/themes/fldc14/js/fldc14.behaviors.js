@@ -50,6 +50,15 @@
       });
     }
   };
+
+  Drupal.behaviors.sessionExpand = {
+    attach: function ( context, settings ) {
+      $('.session-expand', context).click(function() {
+        // $('.session', context).removeClass('js-expanded');
+        $(this).parent().toggleClass('js-expanded');
+      });
+    }
+  };
   
   Drupal.behaviors.headingHeightOnScroll = {
     attach: function ( context, settings ) {
