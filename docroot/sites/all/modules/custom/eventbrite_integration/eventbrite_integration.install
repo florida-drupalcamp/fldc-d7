@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_update_N().
+ *
+ * Increase the size of max_length from 40 to 60 to accomodate Eventbrite ticket type name.
+ */
+function eventbrite_integration_update_7001(&$sandbox){
+  $field = field_read_field('field_bio_eb_ticket_type');
+  $field['columns']['value']['length'] = 60;
+  db_change_field('field_data_field_bio_eb_ticket_type', 'field_bio_eb_ticket_type_value', 'field_bio_eb_ticket_type_value', $field['columns']['value']);
+  db_change_field('field_revision_field_bio_eb_ticket_type', 'field_bio_eb_ticket_type_value', 'field_bio_eb_ticket_type_value', $field['columns']['value']);
+  // the following fails, because Drupal doesn't allow modifying field settings if data present
+  // $field['settings']['max_length'] = 60;
+  // field_update_field($field);
+}
