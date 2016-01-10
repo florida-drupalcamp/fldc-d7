@@ -6,12 +6,12 @@
  */
 
 /**
- * Implementation of hook_context_plugins().
+ * Implements hook_context_plugins().
  */
 function context_omega_context_plugins() {
   $plugins['context_omega_reaction_omega_layout'] = array(
     'handler' => array(
-      'path' => drupal_get_path('module', 'context_omega') .'/plugins',
+      'path' => drupal_get_path('module', 'context_omega') . '/plugins',
       'file' => 'context_omega_reaction_omega_layout.inc',
       'class' => 'context_omega_reaction_omega_layout',
       'parent' => 'context_reaction_block',
@@ -22,7 +22,7 @@ function context_omega_context_plugins() {
 }
 
 /**
- * Implementation of hook_context_registry_alter().
+ * Implements hook_context_registry_alter().
  */
 function context_omega_context_registry_alter(&$registry) {
   if (isset($registry['reactions']['block'])) {
@@ -32,7 +32,7 @@ function context_omega_context_registry_alter(&$registry) {
 }
 
 /**
- * Implementation of hook_omega_layout_alter().
+ * Implements hook_omega_layout_alter().
  */
 function context_omega_omega_layout_alter(&$layout) {
   if ($plugin = context_get_plugin('reaction', 'block')) {
@@ -66,7 +66,7 @@ function context_omega_get_layouts() {
 }
 
 /**
- * Implementation of hook_init().
+ * Implements hook_init().
  */
 function context_omega_init() {
   if ($plugin = context_get_plugin('condition', 'sitewide')) {

@@ -5,9 +5,14 @@ description = "Provide a reaction to switch layout for omega theme."
 package = "Context"
 core = "7.x"
 
-; Information added by drupal.org packaging script on 2013-09-30
-version = "7.x-1.1+0-dev"
+files[] = plugins/context_omega_reaction_omega_layout.inc
+
+; Tests
+files[] = context_omega.test
+
+; Information added by Drupal.org packaging script on 2015-04-10
+version = "7.x-1.1+1-dev"
 core = "7.x"
 project = "context_omega"
-datestamp = "1380567426"
+datestamp = "1428663182"
 

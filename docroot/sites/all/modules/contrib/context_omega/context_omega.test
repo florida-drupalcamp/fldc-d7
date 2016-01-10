@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * @file
+ * Contains the tests for the context_omega module.
+ */
+
+/**
+ * Class ContextOmegaWebTests.
+ */
+class ContextOmegaWebTests extends DrupalWebTestCase {
+
+  /**
+   * Implements parent::getInfo().
+   */
+  public static function getInfo() {
+    return array(
+      'name' => 'Context Omega web tests.',
+      'description' => 'All the webtests for the Context omega module.',
+      'group' => 'ContextOmegaWeb',
+    );
+  }
+
+  /**
+   * Extends parent::setUp().
+   */
+  public function setUp() {
+    // Turn on the test module.
+    parent::setUp(array('context_omega_test'));
+  }
+
+  /**
+   * The block inside the context_omega_test module should be visible.
+   *
+   * When a user visits the custom-omega-test URL the block should be visible.
+   * This only works with test available fix.
+   */
+  public function testBlockVisibility() {
+    // Go to the URL.
+    $this->drupalGet('custom-omega-test');
+
+    // The page should be available.
+    $this->assertResponse(200);
+    // The block title should be visible.
+    $this->assertText(t('Omega Test Block'));
+  }
+}

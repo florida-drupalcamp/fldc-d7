@@ -1,0 +1,63 @@
+<?php
+
+/**
+ * @file
+ * The main module file for the context_omega_test module.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function context_omega_test_menu() {
+  $items['custom-omega-test'] = array(
+    'title' => 'Custom omega test',
+    'description' => 'Defines the omega test page.',
+    'page callback' => 'context_omega_test_page',
+    'access callback' => TRUE,
+  );
+  return $items;
+}
+
+/**
+ * Page callback of the test page.
+ */
+function context_omega_test_page() {
+  // Just return an empty page.
+  return array(
+    '#markup' => 'demo page',
+  );
+}
+
+/**
+ * Implements hook_ctools_plugin_api().
+ */
+function context_omega_test_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == 'context' && $api == 'context') {
+    return array('version' => "3");
+  }
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function context_omega_test_block_info() {
+  return array(
+    'custom_block' => array(
+      'info' => t('Custom block'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function context_omega_test_block_view($delta = '') {
+  $block = array();
+
+  if ($delta == 'custom_block') {
+    $block['subject'] = 'Omega Test Block';
+    $block['content'] = 'The content of the block';
+  }
+
+  return $block;
+}
