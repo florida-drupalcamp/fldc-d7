@@ -34,7 +34,8 @@
       @include transition(all .3s ease .1s);
     }
     @include breakpoint($normal) {
-      width: 24%;
+      width: 33%;
+      padding: 20px;
       /* Speaker 'Pop' effect */
       .csstransforms & {
         @include breakpoint(max-height 800px) { // Only show the pop if height is less than 800px
