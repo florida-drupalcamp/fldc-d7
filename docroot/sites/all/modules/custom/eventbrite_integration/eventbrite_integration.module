@@ -268,7 +268,8 @@ function eventbrite_integration_update_attendee($data) {
 function eventbrite_integration_get_events() {
   $query = new EntityFieldQuery();
   $query->entityCondition('entity_type', 'node')
-    ->entityCondition('bundle', 'even');
+    ->entityCondition('bundle', 'even')
+    ->propertyCondition('status', 1);
   $result = $query->execute();
   if (!empty($result['node'])) {
     return $result['node'];
