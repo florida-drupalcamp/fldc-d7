@@ -49,6 +49,9 @@
     @include breakpoint($tablet_wide) {
       height: 600px;
     }
+    @include breakpoint($wide) {
+      height: 700px;
+    }
     .not-front & {
       padding: 20px 0 50px 0;
       margin-top: 60px;

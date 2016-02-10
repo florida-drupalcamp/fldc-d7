@@ -98,27 +98,31 @@
       /* line 42, ../sass/layouts/_layout.scss */
       .zone.z-header {
         height: 600px; } }
-    /* line 52, ../sass/layouts/_layout.scss */
+    @media (min-width: 1700px) {
+      /* line 42, ../sass/layouts/_layout.scss */
+      .zone.z-header {
+        height: 700px; } }
+    /* line 55, ../sass/layouts/_layout.scss */
     .not-front .zone.z-header {
       padding: 20px 0 50px 0;
       margin-top: 60px; }
       @media (min-width: 700px) {
-        /* line 52, ../sass/layouts/_layout.scss */
+        /* line 55, ../sass/layouts/_layout.scss */
         .not-front .zone.z-header {
           padding: 0;
           height: 200px; } }
-    /* line 60, ../sass/layouts/_layout.scss */
+    /* line 63, ../sass/layouts/_layout.scss */
     .admin-menu .zone.z-header {
       margin-top: 90px; }
 
 @media (min-width: 900px) {
-  /* line 66, ../sass/layouts/_layout.scss */
+  /* line 69, ../sass/layouts/_layout.scss */
   .has-sidebar-first .l-content {
     width: 70%;
     float: left;
     padding-right: 20px; } }
 @media (min-width: 900px) {
-  /* line 73, ../sass/layouts/_layout.scss */
+  /* line 76, ../sass/layouts/_layout.scss */
   .has-sidebar-first .l-region--sidebar-first {
     width: 30%;
     float: left; } }
