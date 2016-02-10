@@ -17,7 +17,7 @@
       if (($.browser.msie && $.browser.version >= 9) || (!!navigator.userAgent.match(/Trident\/7\./))) {
         var img = document.getElementById('main-img');
         var width = img.clientWidth;
-        var height = width * 0.906;  // the ratio of width to height of the drupal diver svg
+        var height = width * 1.29;  // the ratio of width to height of the drupal diver svg
         $('#main-img', context).css('height', height);
       }
     }
