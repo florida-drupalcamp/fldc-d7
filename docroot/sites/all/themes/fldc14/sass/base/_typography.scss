@@ -92,6 +92,10 @@ a.button {
   &:hover {
     color: white;
   }
+  &.register {
+    display: inline-block;
+    font-size: 50px;
+  }
 }
 p {
   font-size: 1.1em;

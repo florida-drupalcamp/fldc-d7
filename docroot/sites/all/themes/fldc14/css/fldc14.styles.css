@@ -987,20 +987,24 @@ a.button {
   /* line 92, ../sass/base/_typography.scss */
   a.button:hover {
     color: white; }
+  /* line 95, ../sass/base/_typography.scss */
+  a.button.register {
+    display: inline-block;
+    font-size: 50px; }
 
-/* line 96, ../sass/base/_typography.scss */
+/* line 100, ../sass/base/_typography.scss */
 p {
   font-size: 1.1em;
   margin: 0 0 1em 0; }
-  /* line 99, ../sass/base/_typography.scss */
+  /* line 103, ../sass/base/_typography.scss */
   p:last-child {
     margin: 0; }
 
-/* line 103, ../sass/base/_typography.scss */
+/* line 107, ../sass/base/_typography.scss */
 li {
   font-size: 1.1em; }
 
-/* line 108, ../sass/base/_typography.scss */
+/* line 112, ../sass/base/_typography.scss */
 .icon {
   position: relative;
   display: inline-block;
@@ -1008,7 +1012,7 @@ li {
   line-height: 1;
   transition: color 800ms; }
 
-/* line 115, ../sass/base/_typography.scss */
+/* line 119, ../sass/base/_typography.scss */
 .icon-twitter:before,
 .icon-facebook:before,
 .icon-drupal:before {
@@ -1017,15 +1021,15 @@ li {
   font-weight: normal;
   line-height: 1; }
 
-/* line 123, ../sass/base/_typography.scss */
+/* line 127, ../sass/base/_typography.scss */
 .icon-twitter:before {
   content: "\e000"; }
 
-/* line 126, ../sass/base/_typography.scss */
+/* line 130, ../sass/base/_typography.scss */
 .icon-facebook:before {
   content: "\e003"; }
 
-/* line 129, ../sass/base/_typography.scss */
+/* line 133, ../sass/base/_typography.scss */
 .icon-drupal:before {
   content: "\e005"; }
 
