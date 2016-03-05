@@ -1166,7 +1166,7 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
     .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:after,
     .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:after, .block--views-individual-sponsors-block .site-name.attendee-name a:after, .view-schedule-items .site-name.legend-title a:after,
     .view-schedule-items .site-name.session-slot--title a:after {
-      content: "#FLDC15";
+      content: "#FLDC16";
       position: absolute;
       top: 0;
       left: 100%;
