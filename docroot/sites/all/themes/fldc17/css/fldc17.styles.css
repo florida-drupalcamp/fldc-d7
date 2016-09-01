@@ -579,11 +579,11 @@ th {
 body.front {
   background-color: black; }
 
-/* line 10, ../sass/base/_theme.zones.layout.scss */
+/* line 11, ../sass/base/_theme.zones.layout.scss */
 .l-page {
   background-color: #FFF; }
 
-/* line 14, ../sass/base/_theme.zones.layout.scss */
+/* line 16, ../sass/base/_theme.zones.layout.scss */
 .zone.z-navigation {
   -moz-transition: all 200ms ease;
   -o-transition: all 200ms ease;
@@ -601,65 +601,65 @@ body.front {
   position: fixed;
   z-index: 15; }
   @media (min-width: 1025px) {
-    /* line 14, ../sass/base/_theme.zones.layout.scss */
+    /* line 16, ../sass/base/_theme.zones.layout.scss */
     .zone.z-navigation {
       height: 100px; } }
-/* line 31, ../sass/base/_theme.zones.layout.scss */
+/* line 35, ../sass/base/_theme.zones.layout.scss */
 .zone.z-content {
   padding-bottom: 30px; }
 
-/* line 35, ../sass/base/_theme.zones.layout.scss */
+/* line 40, ../sass/base/_theme.zones.layout.scss */
 .l-region--navigation {
   position: relative; }
 
-/* line 39, ../sass/base/_theme.zones.layout.scss */
+/* line 45, ../sass/base/_theme.zones.layout.scss */
 .l-branding video {
   width: 100%; }
-/* line 43, ../sass/base/_theme.zones.layout.scss */
+/* line 49, ../sass/base/_theme.zones.layout.scss */
 .not-front .l-branding {
   display: none; }
 
-/* line 47, ../sass/base/_theme.zones.layout.scss */
+/* line 54, ../sass/base/_theme.zones.layout.scss */
 .zone.z-header {
   overflow: hidden;
   margin-top: 20px; }
-  /* line 51, ../sass/base/_theme.zones.layout.scss */
+  /* line 58, ../sass/base/_theme.zones.layout.scss */
   .not-front .zone.z-header {
     background-image: url("../images/fldc13_group-blur-smartphone_narrow.jpg");
     background-position: center center; }
     @media (min-width: 470px) {
-      /* line 51, ../sass/base/_theme.zones.layout.scss */
+      /* line 58, ../sass/base/_theme.zones.layout.scss */
       .not-front .zone.z-header {
         background-image: url("../images/fldc13_group-blur-smartphone_wide.jpg"); } }
     @media (min-width: 700px) {
-      /* line 51, ../sass/base/_theme.zones.layout.scss */
+      /* line 58, ../sass/base/_theme.zones.layout.scss */
       .not-front .zone.z-header {
         background-image: url("../images/fldc13_group-blur-tablet_narrow.jpg"); } }
     @media (min-width: 900px) {
-      /* line 51, ../sass/base/_theme.zones.layout.scss */
+      /* line 58, ../sass/base/_theme.zones.layout.scss */
       .not-front .zone.z-header {
         background-image: url("../images/fldc13_group-blur-tablet_wide.jpg"); } }
     @media (min-width: 1200px) {
-      /* line 51, ../sass/base/_theme.zones.layout.scss */
+      /* line 58, ../sass/base/_theme.zones.layout.scss */
       .not-front .zone.z-header {
         background-image: url("../images/fldc13_group-blur.jpg"); } }
-  /* line 67, ../sass/base/_theme.zones.layout.scss */
+  /* line 79, ../sass/base/_theme.zones.layout.scss */
   .section-location .zone.z-header {
     background-image: url("../images/ftc-blur.jpg"); }
 
-/* line 71, ../sass/base/_theme.zones.layout.scss */
+/* line 84, ../sass/base/_theme.zones.layout.scss */
 .zone.z-preface {
   background-color: #55C2C2;
   position: relative;
   padding-top: 2em;
-  margin: 40px 0; }
+  margin: 20px 0; }
 
-/* line 77, ../sass/base/_theme.zones.layout.scss */
+/* line 91, ../sass/base/_theme.zones.layout.scss */
 .zone.z-footer {
   background-color: #0E73AF;
   padding-top: 2em;
   position: relative; }
-  /* line 82, ../sass/base/_theme.zones.layout.scss */
+  /* line 96, ../sass/base/_theme.zones.layout.scss */
   .zone.z-footer:before {
     top: 0;
     bottom: auto; }
@@ -1047,7 +1047,6 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
   height: 60px;
   margin: 0;
   z-index: 10;
-  /*   width: 100%; */
   top: 0; }
   @media (min-width: 470px) {
     /* line 5, ../sass/components/_branding.scss */
@@ -1079,7 +1078,7 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
       -o-transition: line-height, 0s;
       -webkit-transition: line-height, 0s;
       transition: line-height, 0s; }
-      /* line 34, ../sass/components/_branding.scss */
+      /* line 31, ../sass/components/_branding.scss */
       h1.site-name.scroll-down, .block--views-events-block-1 .site-name.scroll-down.views-field-title, .block--views-individual-sponsors-block h2.site-name.scroll-down, .block--views-individual-sponsors-block .site-name.scroll-down.fieldset-legend, .block--views-individual-sponsors-block .site-name.scroll-down.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name.scroll-down, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name.scroll-down, .block--views-individual-sponsors-block .user-profile .site-name.scroll-down.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.scroll-down.field--name-field-user-first-name,
       .block--views-individual-sponsors-block .user-profile .site-name.scroll-down.field--name-field-user-last-name,
       .user-profile .block--views-individual-sponsors-block .site-name.scroll-down.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.scroll-down.attendee-name, .view-schedule-items .site-name.scroll-down.legend-title,
@@ -1104,14 +1103,7 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
     .view-schedule-items .site-name.session-slot--title {
       font-size: 55px;
       margin: 0 auto; } }
-  @media (min-width: 1700px) {
-    /* line 5, ../sass/components/_branding.scss */
-    h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
-    .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
-    .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.attendee-name, .view-schedule-items .site-name.legend-title,
-    .view-schedule-items .site-name.session-slot--title {
-      font-size: 65px; } }
-  /* line 53, ../sass/components/_branding.scss */
+  /* line 46, ../sass/components/_branding.scss */
   h1.site-name a, .block--views-events-block-1 .site-name.views-field-title a, .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a,
   .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
   .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a, .block--views-individual-sponsors-block .site-name.attendee-name a, .view-schedule-items .site-name.legend-title a,
@@ -1129,7 +1121,7 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
     left: 0;
     z-index: 10;
     background-position-y: -12px; }
-    /* line 68, ../sass/components/_branding.scss */
+    /* line 61, ../sass/components/_branding.scss */
     h1.site-name a:after, .block--views-events-block-1 .site-name.views-field-title a:after, .block--views-individual-sponsors-block h2.site-name a:after, .block--views-individual-sponsors-block .site-name.fieldset-legend a:after, .block--views-individual-sponsors-block .site-name.messages a:after, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:after, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:after, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:after, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:after,
     .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:after,
     .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:after, .block--views-individual-sponsors-block .site-name.attendee-name a:after, .view-schedule-items .site-name.legend-title a:after,
@@ -1140,7 +1132,7 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
       left: 100%;
       text-indent: 0; }
     @media (min-width: 700px) {
-      /* line 53, ../sass/components/_branding.scss */
+      /* line 46, ../sass/components/_branding.scss */
       h1.site-name a, .block--views-events-block-1 .site-name.views-field-title a, .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a,
       .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
       .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a, .block--views-individual-sponsors-block .site-name.attendee-name a, .view-schedule-items .site-name.legend-title a,
@@ -1150,28 +1142,28 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
         margin-right: 0;
         width: auto;
         height: 80px; }
-        /* line 83, ../sass/components/_branding.scss */
+        /* line 76, ../sass/components/_branding.scss */
         h1.site-name a:after, .block--views-events-block-1 .site-name.views-field-title a:after, .block--views-individual-sponsors-block h2.site-name a:after, .block--views-individual-sponsors-block .site-name.fieldset-legend a:after, .block--views-individual-sponsors-block .site-name.messages a:after, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:after, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:after, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:after, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:after,
         .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:after,
         .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:after, .block--views-individual-sponsors-block .site-name.attendee-name a:after, .view-schedule-items .site-name.legend-title a:after,
         .view-schedule-items .site-name.session-slot--title a:after {
           content: ""; } }
     @media (min-width: 900px) {
-      /* line 53, ../sass/components/_branding.scss */
+      /* line 46, ../sass/components/_branding.scss */
       h1.site-name a, .block--views-events-block-1 .site-name.views-field-title a, .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a,
       .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
       .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a, .block--views-individual-sponsors-block .site-name.attendee-name a, .view-schedule-items .site-name.legend-title a,
       .view-schedule-items .site-name.session-slot--title a {
         left: -20px;
         background-position-y: 0; } }
-    /* line 93, ../sass/components/_branding.scss */
+    /* line 86, ../sass/components/_branding.scss */
     h1.site-name a:hover, .block--views-events-block-1 .site-name.views-field-title a:hover, .block--views-individual-sponsors-block h2.site-name a:hover, .block--views-individual-sponsors-block .site-name.fieldset-legend a:hover, .block--views-individual-sponsors-block .site-name.messages a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:hover, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:hover, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:hover,
     .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:hover,
     .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:hover, .block--views-individual-sponsors-block .site-name.attendee-name a:hover, .view-schedule-items .site-name.legend-title a:hover,
     .view-schedule-items .site-name.session-slot--title a:hover {
       color: #fdc572; }
   @media (min-width: 700px) {
-    /* line 99, ../sass/components/_branding.scss */
+    /* line 92, ../sass/components/_branding.scss */
     .front h1.site-name a, .front .block--views-events-block-1 .site-name.views-field-title a, .block--views-events-block-1 .front .site-name.views-field-title a, .front .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .front h2.site-name a, .front .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .front .site-name.fieldset-legend a, .front .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block .front .site-name.messages a, .front .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .front h1.site-name a, .front #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .front h1.site-name a, .front .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .block--views-individual-sponsors-block .user-profile .front .site-name.field--name-field-user-first-name a, .front .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .front .site-name.field--name-field-user-first-name a,
     .front .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
     .block--views-individual-sponsors-block .user-profile .front .site-name.field--name-field-user-last-name a,
@@ -1179,7 +1171,7 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
     .user-profile .block--views-individual-sponsors-block .front .site-name.field--name-field-user-last-name a, .front .block--views-individual-sponsors-block .site-name.attendee-name a, .block--views-individual-sponsors-block .front .site-name.attendee-name a, .front .view-schedule-items .site-name.legend-title a, .view-schedule-items .front .site-name.legend-title a,
     .front .view-schedule-items .site-name.session-slot--title a,
     .view-schedule-items .front .site-name.session-slot--title a {
-      margin: 0 0 0 10px;
+      margin: 0;
       text-indent: 0;
       background-image: none;
       width: auto;
@@ -1187,11 +1179,11 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
       display: inline;
       left: 0; } }
 
-/* line 113, ../sass/components/_branding.scss */
+/* line 106, ../sass/components/_branding.scss */
 .site-logo {
   display: none; }
   @media (min-width: 700px) {
-    /* line 113, ../sass/components/_branding.scss */
+    /* line 106, ../sass/components/_branding.scss */
     .site-logo {
       display: inline-block;
       position: relative;
@@ -1202,7 +1194,7 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
       -webkit-transform: translatex(-50%);
       transform: translatex(-50%); } }
   @media (min-width: 900px) {
-    /* line 113, ../sass/components/_branding.scss */
+    /* line 106, ../sass/components/_branding.scss */
     .site-logo {
       position: absolute;
       top: 50%;
@@ -1214,12 +1206,12 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
       width: 40%;
       max-width: 550px; } }
   @media (min-width: 1200px) {
-    /* line 113, ../sass/components/_branding.scss */
+    /* line 106, ../sass/components/_branding.scss */
     .site-logo {
       left: 0;
       width: 45%; } }
   @media (min-width: 1700px) {
-    /* line 113, ../sass/components/_branding.scss */
+    /* line 106, ../sass/components/_branding.scss */
     .site-logo {
       width: 100%; } }
 
@@ -2101,13 +2093,13 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
       -webkit-transition: color 0.4s;
       transition: color 0.4s; }
       /* line 124, ../sass/components/_navigation.scss */
-      #block-system-main-menu > .menu li a.highlight:hover {
+      #block-system-main-menu > .menu li a.highlight:hover, #block-system-main-menu > .menu li a.highlight:focus {
         background-color: #55C2C2; }
-    /* line 129, ../sass/components/_navigation.scss */
-    #block-system-main-menu > .menu li:hover a {
+    /* line 130, ../sass/components/_navigation.scss */
+    #block-system-main-menu > .menu li:hover a, #block-system-main-menu > .menu li:focus a {
       background-color: #FCB040;
       color: #333; }
-    /* line 134, ../sass/components/_navigation.scss */
+    /* line 136, ../sass/components/_navigation.scss */
     #block-system-main-menu > .menu li .icon {
       line-height: inherit; }
     @media (max-width: 1025px) {
@@ -2116,46 +2108,46 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
         line-height: 3;
         font-size: 25px;
         position: relative; }
-        /* line 147, ../sass/components/_navigation.scss */
+        /* line 149, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li > ul {
           display: none;
           background-color: #666;
           padding: 0;
           margin: 0; }
-          /* line 153, ../sass/components/_navigation.scss */
+          /* line 155, ../sass/components/_navigation.scss */
           #block-system-main-menu > .menu li > ul > li {
             line-height: 2; }
-            /* line 156, ../sass/components/_navigation.scss */
+            /* line 158, ../sass/components/_navigation.scss */
             #block-system-main-menu > .menu li > ul > li > a {
               background-color: transparent; }
-              /* line 159, ../sass/components/_navigation.scss */
-              #block-system-main-menu > .menu li > ul > li > a:hover {
+              /* line 161, ../sass/components/_navigation.scss */
+              #block-system-main-menu > .menu li > ul > li > a:hover, #block-system-main-menu > .menu li > ul > li > a:focus {
                 background-color: #999; }
-        /* line 166, ../sass/components/_navigation.scss */
+        /* line 169, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li a.highlight {
           background-color: #3ca8a8; }
-          /* line 169, ../sass/components/_navigation.scss */
-          #block-system-main-menu > .menu li a.highlight:hover {
-            background-color: #55C2C2; }
           /* line 172, ../sass/components/_navigation.scss */
+          #block-system-main-menu > .menu li a.highlight:hover, #block-system-main-menu > .menu li a.highlight:focus {
+            background-color: #55C2C2; }
+          /* line 176, ../sass/components/_navigation.scss */
           #block-system-main-menu > .menu li a.highlight:before {
             font-family: FontAwesome;
             display: inline-block;
             width: 35px;
             filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
             opacity: 0.8; }
-        /* line 180, ../sass/components/_navigation.scss */
+        /* line 184, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li .logout:before,
         #block-system-main-menu > .menu li .login:before {
           content: "\f007"; }
-        /* line 185, ../sass/components/_navigation.scss */
+        /* line 189, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li .register:before {
           content: "\f145"; }
-        /* line 189, ../sass/components/_navigation.scss */
-        #block-system-main-menu > .menu li:hover a {
+        /* line 193, ../sass/components/_navigation.scss */
+        #block-system-main-menu > .menu li:hover a, #block-system-main-menu > .menu li:focus a {
           background-color: transparent;
           color: white; }
-        /* line 194, ../sass/components/_navigation.scss */
+        /* line 199, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li.expanded:after {
           border-left: 10px solid transparent;
           border-right: 10px solid transparent;
@@ -2172,18 +2164,18 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
           width: 0;
           height: 0;
           pointer-events: none; }
-        /* line 209, ../sass/components/_navigation.scss */
+        /* line 214, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li.expanded-active-processed:after {
           -moz-transform: rotate(180deg);
           -ms-transform: rotate(180deg);
           -webkit-transform: rotate(180deg);
           transform: rotate(180deg); } }
     @media (min-width: 1025px) {
-      /* line 219, ../sass/components/_navigation.scss */
-      #block-system-main-menu > .menu li:hover > ul {
+      /* line 224, ../sass/components/_navigation.scss */
+      #block-system-main-menu > .menu li:focus > ul, #block-system-main-menu > .menu li:hover > ul {
         display: block;
         top: 100%; }
-      /* line 224, ../sass/components/_navigation.scss */
+      /* line 230, ../sass/components/_navigation.scss */
       #block-system-main-menu > .menu li > ul {
         background-color: #FCB040;
         border-top: 0;
@@ -2199,29 +2191,29 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
         -webkit-transition: all 0.2s;
         transition: all 0.2s; } }
   @media (min-width: 1025px) and (min-width: 1700px) {
-    /* line 224, ../sass/components/_navigation.scss */
+    /* line 230, ../sass/components/_navigation.scss */
     #block-system-main-menu > .menu li > ul {
       top: -600px;
       width: 240px; } }
     @media (min-width: 1025px) {
-        /* line 241, ../sass/components/_navigation.scss */
+        /* line 247, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li > ul > li {
           display: block;
           float: none;
           line-height: 2;
           text-align: left; }
-        /* line 248, ../sass/components/_navigation.scss */
+        /* line 254, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li > ul a {
           background-color: #FCB040;
           color: #333;
           padding: 0 10px;
           display: block;
           z-index: 5; }
-          /* line 254, ../sass/components/_navigation.scss */
+          /* line 260, ../sass/components/_navigation.scss */
           #block-system-main-menu > .menu li > ul a:hover {
             color: white !important; } }
 
-/* line 267, ../sass/components/_navigation.scss */
+/* line 273, ../sass/components/_navigation.scss */
 #mobile-menu {
   -moz-transition: all 200ms ease;
   -o-transition: all 200ms ease;
@@ -2237,7 +2229,7 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
   top: 0;
   z-index: 10;
   cursor: pointer; }
-  /* line 279, ../sass/components/_navigation.scss */
+  /* line 285, ../sass/components/_navigation.scss */
   #mobile-menu:after {
     font-family: FontAwesome;
     font-size: 40px;
@@ -2252,22 +2244,22 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
     width: 50px;
     left: 0;
     top: 0; }
-  /* line 295, ../sass/components/_navigation.scss */
+  /* line 301, ../sass/components/_navigation.scss */
   #mobile-menu:focus:after, #mobile-menu:active:after {
     color: white; }
   @media (min-width: 1025px) {
-    /* line 267, ../sass/components/_navigation.scss */
+    /* line 273, ../sass/components/_navigation.scss */
     #mobile-menu {
       display: none; } }
 
 @media (min-width: 1025px) {
-  /* line 306, ../sass/components/_navigation.scss */
+  /* line 312, ../sass/components/_navigation.scss */
   #header-menu,
   #primary-menu {
     line-height: 60px;
     height: 60px; } }
 @media (min-width: 1025px) and (min-width: 1025px) {
-  /* line 314, ../sass/components/_navigation.scss */
+  /* line 320, ../sass/components/_navigation.scss */
   h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
   .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
   .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.attendee-name, .view-schedule-items .site-name.legend-title,
@@ -2276,20 +2268,20 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
     height: 60px; } }
 
 @media (min-width: 1025px) {
-  /* line 321, ../sass/components/_navigation.scss */
+  /* line 327, ../sass/components/_navigation.scss */
   .zone.z-navigation {
     height: 60px; } }
 /* Some overrides to omega base to remove background images and associated http requests */
-/* line 329, ../sass/components/_navigation.scss */
+/* line 335, ../sass/components/_navigation.scss */
 .menu .expanded {
   list-style-image: none;
   list-style-type: none; }
 
-/* line 334, ../sass/components/_navigation.scss */
+/* line 340, ../sass/components/_navigation.scss */
 html.js fieldset.collapsible .fieldset-legend {
   background: none; }
 
-/* line 338, ../sass/components/_navigation.scss */
+/* line 344, ../sass/components/_navigation.scss */
 .menu .leaf {
   list-style-image: none;
   list-style-type: none; }
@@ -2482,7 +2474,7 @@ html.js .form-autocomplete {
   @media (min-width: 700px) {
     /* line 17, ../sass/components/_sponsors.scss */
     .view-sponsors .wrap {
-      margin: 0;
+      margin: 0 0 4px 0;
       max-width: 24%; } }
   @media (min-width: 1200px) {
     /* line 17, ../sass/components/_sponsors.scss */
@@ -2491,8 +2483,7 @@ html.js .form-autocomplete {
       -moz-perspective: 1000px;
       -webkit-perspective: 1000px;
       perspective: 1000px;
-      /* disable turn-around effect for IE */
-      /* Pop the sponsor logos on frontpage when scrolled to */ }
+      /* disable turn-around effect for IE */ }
       /* line 46, ../sass/components/_sponsors.scss */
       .csstransforms3d .view-sponsors .wrap:hover a, .csstransforms3d .view-sponsors .wrap:focus a {
         -moz-transform: rotateY(180deg);
@@ -2508,28 +2499,29 @@ html.js .form-autocomplete {
         -moz-backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden; } }
-/* line 79, ../sass/components/_sponsors.scss */
+/* line 64, ../sass/components/_sponsors.scss */
 .view-sponsors a {
   display: block;
   height: 100%;
   width: 100%;
-  color: #666; }
+  color: #666;
+  background: #fafafa; }
   @media (min-width: 1200px) {
-    /* line 79, ../sass/components/_sponsors.scss */
+    /* line 64, ../sass/components/_sponsors.scss */
     .view-sponsors a {
       -moz-transform-style: preserve-3d;
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
-      -moz-transition: 1s;
-      -o-transition: 1s;
-      -webkit-transition: 1s;
-      transition: 1s; } }
-/* line 89, ../sass/components/_sponsors.scss */
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; } }
+/* line 75, ../sass/components/_sponsors.scss */
 .view-sponsors .wrap-front,
 .view-sponsors .wrap-back {
   display: block; }
   @media (min-width: 1200px) {
-    /* line 89, ../sass/components/_sponsors.scss */
+    /* line 75, ../sass/components/_sponsors.scss */
     .view-sponsors .wrap-front,
     .view-sponsors .wrap-back {
       position: absolute;
@@ -2540,103 +2532,98 @@ html.js .form-autocomplete {
       padding: 10px;
       -moz-backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
-      backface-visibility: hidden; }
-      /* line 100, ../sass/components/_sponsors.scss */
-      .csstransforms3d .view-sponsors .wrap-front, .csstransforms3d
-      .view-sponsors .wrap-back {
-        border: solid 1px white; } }
-/* line 105, ../sass/components/_sponsors.scss */
+      backface-visibility: hidden; } }
+/* line 88, ../sass/components/_sponsors.scss */
 .view-sponsors .wrap-back {
   display: none; }
   @media (min-width: 1200px) {
-    /* line 105, ../sass/components/_sponsors.scss */
+    /* line 88, ../sass/components/_sponsors.scss */
     .view-sponsors .wrap-back {
       background-color: #f5f5f5;
-      border: solid 1px #ddd;
       border-radius: 3px;
       line-height: 1.3; }
-      /* line 112, ../sass/components/_sponsors.scss */
+      /* line 94, ../sass/components/_sponsors.scss */
       .csstransforms3d .view-sponsors .wrap-back {
         -moz-transform: rotateY(180deg);
         -ms-transform: rotateY(180deg);
         -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg);
         display: block; }
-      /* line 116, ../sass/components/_sponsors.scss */
+      /* line 98, ../sass/components/_sponsors.scss */
       .wrap:hover .view-sponsors .wrap-back {
         -moz-transform: rotateY(180deg);
         -ms-transform: rotateY(180deg);
         -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg); } }
-/* line 121, ../sass/components/_sponsors.scss */
+/* line 103, ../sass/components/_sponsors.scss */
 .view-sponsors h3 {
   line-height: 1; }
 @media (min-width: 1200px) {
-  /* line 128, ../sass/components/_sponsors.scss */
+  /* line 110, ../sass/components/_sponsors.scss */
   .view-sponsors .view-content .wrap-front {
     width: 90%;
     max-width: 350px;
     height: 200px; }
-  /* line 134, ../sass/components/_sponsors.scss */
+  /* line 116, ../sass/components/_sponsors.scss */
   .view-sponsors .view-display-id-attachment_1 .wrap {
     max-width: 24%; }
-  /* line 137, ../sass/components/_sponsors.scss */
+  /* line 119, ../sass/components/_sponsors.scss */
   .view-sponsors .view-display-id-attachment_1 .wrap-front {
     width: 80%;
     max-width: 250px;
     height: 200px; }
-  /* line 142, ../sass/components/_sponsors.scss */
+  /* line 124, ../sass/components/_sponsors.scss */
   .view-sponsors .view-display-id-attachment_1 h3 {
     font-size: 1.5em; }
-  /* line 147, ../sass/components/_sponsors.scss */
+  /* line 129, ../sass/components/_sponsors.scss */
   .view-sponsors .view-display-id-attachment_2 .wrap {
     max-width: 24%; }
-  /* line 150, ../sass/components/_sponsors.scss */
+  /* line 132, ../sass/components/_sponsors.scss */
   .view-sponsors .view-display-id-attachment_2 .wrap-front {
     width: 80%;
     max-width: 200px;
     height: 170px; }
-  /* line 155, ../sass/components/_sponsors.scss */
+  /* line 137, ../sass/components/_sponsors.scss */
   .view-sponsors .view-display-id-attachment_2 h3 {
     font-size: 1.5em; }
-  /* line 161, ../sass/components/_sponsors.scss */
+  /* line 143, ../sass/components/_sponsors.scss */
   .view-sponsors .view-display-id-attachment_3 .wrap,
   .view-sponsors .view-display-id-attachment_4 .wrap {
     max-width: 24%; }
-  /* line 164, ../sass/components/_sponsors.scss */
+  /* line 146, ../sass/components/_sponsors.scss */
   .view-sponsors .view-display-id-attachment_3 .wrap-front,
   .view-sponsors .view-display-id-attachment_4 .wrap-front {
     width: 80%;
     max-width: 150px;
     height: 150px; }
-  /* line 169, ../sass/components/_sponsors.scss */
+  /* line 151, ../sass/components/_sponsors.scss */
   .view-sponsors .view-display-id-attachment_3 h3,
   .view-sponsors .view-display-id-attachment_4 h3 {
     font-size: 1.2em; } }
 
-/* line 179, ../sass/components/_sponsors.scss */
+/* line 161, ../sass/components/_sponsors.scss */
 .sponsor-platinum {
   color: #666; }
 
-/* line 182, ../sass/components/_sponsors.scss */
+/* line 164, ../sass/components/_sponsors.scss */
 .sponsor-gold {
   color: #e6c200; }
 
-/* line 185, ../sass/components/_sponsors.scss */
+/* line 167, ../sass/components/_sponsors.scss */
 .sponsor-silver {
   color: #999; }
 
-/* line 188, ../sass/components/_sponsors.scss */
+/* line 170, ../sass/components/_sponsors.scss */
 .sponsor-bronze {
   color: #998100; }
 
 /* =============================================================================
     Sponsors Block
    ========================================================================== */
-/* line 197, ../sass/components/_sponsors.scss */
+/* line 179, ../sass/components/_sponsors.scss */
 #block-views-sponsors-block-block-1 ul {
   padding: 0; }
-/* line 200, ../sass/components/_sponsors.scss */
+/* line 182, ../sass/components/_sponsors.scss */
 #block-views-sponsors-block-block-1 li {
   padding: 10px;
   margin: 0;

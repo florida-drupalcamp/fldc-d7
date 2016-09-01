@@ -22,7 +22,7 @@
       }
     }
   };
-  
+
   // Moving exploding animation to JS because nested animation doesn't work properly in FF
   Drupal.behaviors.explodeShit = {
     attach: function ( context, settings ) {
@@ -38,7 +38,7 @@
       });
     }
   };
-  
+
   Drupal.behaviors.fldc14MobileMenu = {
     attach: function ( context, settings ) {
       $('#block-system-main-menu', context).after($('<div id="mobile-menu"></div>'));
@@ -59,7 +59,7 @@
       });
     }
   };
-  
+
   Drupal.behaviors.headingHeightOnScroll = {
     attach: function ( context, settings ) {
       $('body', context).once('scroll', function () {
@@ -79,7 +79,7 @@
       });
     }
   };
- 
+
   Drupal.behaviors.coolShitOnScroll = {
     attach: function ( context, settings ) {
       var $speaker = $('.speaker', context);
@@ -108,12 +108,12 @@
       $('#block-system-main-menu > .menu li.expanded', context).once('expanded-active', function () {
         $(this).each( function () {
           var windowWidth = $(window).width();
-          
+
           if ( windowWidth <= 1025 ) {
             $('> a', this).click( function ( e ) {
               e.preventDefault();
             });
-            
+
             $(this).click( function () {
               $(this).siblings('.expanded:not(.expanded-active-processed)').addClass('expanded-active-processed').children('.menu').slideToggle('fast');
               $(this).toggleClass('expanded-active-processed');
@@ -134,5 +134,16 @@
       alert('Your browser is a bit outdated. For the best user experience, it is recommended that you upgrade from Internet Exporer ' + $.browser.version + ' to IE 10 or to another browser all together, like Firefox, Chrome, Safari or Opera. <a href="http://blogs.technet.com/b/security/archive/2013/08/15/the-risk-of-running-windows-xp-after-support-ends.aspx" target="_blank">Win XP Support ends April 2014</a>');
     }
   };
+
+  // // A11y helper doesn't work yet
+  // Drupal.behaviors.a11yHelper = {
+  //   attach: function ( context, settings ) {
+  //     $('#block-system-main-menu a', context).focus(function() {
+  //       console.log('here');
+  //       $(this).closest('.expanded').focus;
+  //     });
+  //   }
+  // };
+
 
 })(jQuery);

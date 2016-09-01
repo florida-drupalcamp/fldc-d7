@@ -7,9 +7,11 @@ body {
     background-color: black;
   }
 }
+
 .l-page {
   background-color: $true-white;
 }
+
 .zone {
   &.z-navigation {
     @include transition(all 200ms ease);
@@ -24,17 +26,21 @@ body {
     height: 60px;
     position: fixed;
     z-index: 15;
+
     @include breakpoint($mobile-nav) {
       height: 100px;
     }
   }
+
   &.z-content {
     padding-bottom: 30px;
   }
 }
+
 .l-region--navigation {
   position: relative;
 }
+
 .l-branding {
   video {
     width: 100%;
@@ -44,6 +50,7 @@ body {
     display: none;
   }
 }
+
 .zone.z-header {
   overflow: hidden;
   margin-top: 20px;
@@ -51,29 +58,36 @@ body {
   .not-front & {
     background-image: url("../images/fldc13_group-blur-smartphone_narrow.jpg");
     background-position: center center;
+
     @include breakpoint($smartphone_wide) {
       background-image: url("../images/fldc13_group-blur-smartphone_wide.jpg");
     }
+
     @include breakpoint($tablet_narrow) {
       background-image: url("../images/fldc13_group-blur-tablet_narrow.jpg");
     }
+
     @include breakpoint($tablet_wide) {
       background-image: url("../images/fldc13_group-blur-tablet_wide.jpg");
     }
+
     @include breakpoint($normal) {
       background-image: url("../images/fldc13_group-blur.jpg");
     }
   }
+
   .section-location & {
     background-image: url("../images/ftc-blur.jpg");
   }
 }
+
 .zone.z-preface {
   background-color: $turquois;
   position: relative;
   padding-top: 2em;
-  margin: 40px 0;
+  margin: 20px 0;
 }
+
 .zone.z-footer {
  	background-color: $blue;
  	padding-top: 2em;

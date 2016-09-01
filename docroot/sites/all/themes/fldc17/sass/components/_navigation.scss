@@ -121,12 +121,14 @@
       background-color: $turquois;
       @include transition(color .4s);
 
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: $turquois;
       }
     }
 
-    &:hover a {
+    &:hover a,
+    &:focus a {
       background-color: $orange;
       color: #333;
     }
@@ -156,7 +158,8 @@
           > a {
             background-color: transparent;
 
-            &:hover {
+            &:hover,
+            &:focus {
               background-color: #999;
             }
           }
@@ -166,7 +169,8 @@
       a.highlight {
         background-color: darken($turquois, 10%);
 
-        &:hover {
+        &:hover,
+        &:focus {
           background-color: $turquois;
         }
         &:before {
@@ -186,7 +190,8 @@
         content: "\f145";
       }
 
-      &:hover a {
+      &:hover a,
+      &:focus a {
         background-color: transparent;
         color: white;
       }
@@ -216,6 +221,7 @@
        ========================================================================== */
 
     @include breakpoint($mobile-nav) {
+      &:focus > ul,
       &:hover > ul {
         display: block;
         top: 100%;
