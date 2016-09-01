@@ -1,0 +1,240 @@
+/* =============================================================================
+    Sessions schedule
+   ========================================================================== */
+
+.view-schedule-items {
+  .legend-title,
+  .session-slot--title { // Grouping
+    @extend h1;
+    margin-top: 0;
+    font-size: 28px;
+    background-color: $blue;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    @include breakpoint($normal) {
+      padding: 0;
+      font-size: 32px;
+      background-color: transparent;
+      color: $blue;
+    }
+    @include breakpoint($normal) {
+      float: left;
+      width: 150px;
+      margin-top: 0;
+    }
+  }
+  h2 {
+    font-size: 1.5em;
+    margin: 0;
+    position: relative;
+    //z-index: 5;
+    a {
+      color: $blue;
+      &:hover {
+        color: lighten($blue, 10%);
+      }
+    }
+  }
+  .session-description {
+    max-height: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+    @include transition(all .5s);
+    @include breakpoint(max-width $smartphone_wide) {
+      margin-left: -26px;
+    }
+  }
+  .session-track {
+    text-indent: -999px;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    top: 10px;
+    left: 10px;
+    height: 26px;
+    width: 26px;
+    background-image: url(../images/sprite-track-icons.png);
+  }
+  .session-track-Design-Theming-amp-Front-end-Development { // Theming
+    background-position: 0 -320px;
+  }
+  .session-track-Development-amp-Performance { // Development & performance
+    background-position: 0 -40px;
+  }
+  .session-track-Site-Building { // Site building
+    background-position: 0 -160px;
+  }
+  .session-track-Project-Management-and-Consulting { // Project managment
+    background-position: 0 0;
+  }
+  .session-track-Sessions-Off-the-quotDrupal-Islandquot { // Drupal island
+    background-position: 0 -200px;
+  }
+  .session-track-Beginner-Track { // Beginner
+    background-position: 0 -279px;
+  }
+  .session {
+    margin: 0 0 10px 0;
+    padding: 10px 60px 10px 46px;
+    background: #eee;
+    position: relative;
+    @include breakpoint($normal) {
+      margin: 0 0 20px 160px; // Make room for the time to the left
+    }
+    .speaker-wrapper:nth-child(2):before {
+      content: " & ";
+    }
+    > .session-room,
+    > .session-speakers,
+    > .session-slot,
+    > .session-audience {
+      display: inline-block; // Make sure icons are on the same line
+      font-size: .9em;
+      margin-right: 10px;
+      &:before {
+        font-family: FontAwesome;
+        display: inline-block;
+        width: 15px;
+      }
+    }
+    > .session-room {
+      margin-right: 0;
+      &:before {
+        content: "\f041";
+      }
+    }
+    > .session-speakers:before {
+      content: "\f007";
+      margin-right: 3px;
+    }
+    > .session-audience:before {
+      content: "\f135";
+      margin-right: 3px;
+    }
+    .session-expand {
+      cursor: pointer;
+      position: absolute;
+      height: 80px;
+      width: 60px;
+      right: 0;
+      top: 0;
+      &:hover:before {
+        background: #e5e5e5;
+      }
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+        @include transform(translate(-50%, -50%));
+        content: "\f054";
+        font-family: FontAwesome;
+        font-size: 16px;
+        display: block;
+        color: $blue;
+        border-radius: 50%;
+        @include transition(all .5s);
+      }      
+    }
+    &.js-expanded {
+      .session-description {
+        padding-top: 20px;
+        max-height: 2000px;
+      }
+      .session-expand:before {
+        @include transform(translate(-50%, -50%) rotate(90deg));
+      }
+    }
+    &.Schedule { // Hide track, speaker, etc for Schedule items like lunch
+      cursor: auto;
+      &:after {
+        display: none;
+      }
+      .track,
+      .where,
+      .speaker,
+      .experience {
+        display: none;
+      }
+    }
+    &.nid-146 { // Hide the speaker and experience for the BOF session
+      .speaker,
+      .experience {
+        display: none;
+      }
+    }
+  }
+  .session-wrapper {
+    clear: both;
+    @include breakpoint($normal) {
+      border-top: solid 2px $blue;
+      padding-top: 20px;
+    }
+  }
+  .view-header {
+    padding: 20px 0;
+    @include clearfix;
+  }
+  .track-item {
+    position: relative;
+    line-height: 1.2;
+    font-family: $font-narrow;
+    font-size: 1.1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 8px 0 8px 45px;
+    @include breakpoint(399px) {
+      font-size: 1.3em;
+    }
+    @include breakpoint($tablet_narrow) {
+      width: 50%;
+      float: left;
+    }
+    @include breakpoint($tablet_wide) {
+      font-size: 1.1em;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 50%;
+      margin-top: -13px;
+      left: 10px;
+      height: 27px;
+      width: 26px;
+      background-image: url(../images/sprite-track-icons.png);
+      background-repeat: no-repeat;
+    }
+  }
+  .legend {
+    margin: 0 0 10px 0;
+    @include breakpoint($normal) {
+      margin: 0 0 20px 160px;
+    }
+  }
+  .track-item--theming:before { // Theming
+    background-position: 0 -320px;
+  }
+  .track-item--dev:before { // Development & performance
+    background-position: 0 -40px;
+  }
+  .track-item--site:before { // Site building
+    background-position: 0 -160px;
+  }
+  .track-item--proj:before { // Project managment
+    background-position: 0 0;
+  }
+  .track-item--island:before { // Drupal island
+    background-position: 0 -200px;
+  }
+  .track-item--beg:before { // Beginner
+    background-position: 0 -279px;
+  }
+}

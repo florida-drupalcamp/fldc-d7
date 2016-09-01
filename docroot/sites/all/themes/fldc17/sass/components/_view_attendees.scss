@@ -1,0 +1,98 @@
+/* =============================================================================
+    Attendees View
+   ========================================================================== */
+
+.view-attendees {
+  @include clearfix;
+}
+.attendee {
+  position: relative;
+  background: #eee;
+  border: 3px solid white;
+  float: left;
+  width: 50%;
+  height: 170px;
+  padding: 10px;
+  overflow: hidden;
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: solid 15px white;
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
+  &.Sponsor {
+    &:before {
+      content: "Individual Sponsor";
+      font-size: 12px;
+      padding-left: 10px;
+      color: white;
+      position: absolute;
+      background: $blue;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      line-height: 1.5;
+    }
+  }
+  @include breakpoint($smartphone_wide) {
+    height: 150px;
+  }
+  @include breakpoint($tablet_wide) {
+    padding: 20px;
+    width: 33.33%;
+  }
+  @include breakpoint($wide) {
+    width: 25%;
+  }
+}
+.attendee-name {
+  @extend h2;
+  font-size: 22px;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+.attendee-org {
+  margin: 0;
+  line-height: 1.2;
+}
+.attendee-do,
+.attendee-tw {
+  display: inline-block;
+  a {
+    display:none;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    text-indent: -9999px;
+    &:hover {
+      color: $yellow;
+    }
+    &:before {
+      text-indent: 0;
+      font-family: 'Social Media Icons';
+      font-style: normal;
+      font-weight: normal;
+      position: absolute;
+      @include center(xy);
+      font-size: 20px;   
+    }
+  }
+}
+.attendee-tw a[href*="twitter"] {
+  display: inline-block;
+  &:before {
+    content: "\e000";
+  }
+}
+.attendee-do a[href*="drupal"] {
+  display: inline-block;
+  &:before {
+    content: "\e005";
+  }
+}

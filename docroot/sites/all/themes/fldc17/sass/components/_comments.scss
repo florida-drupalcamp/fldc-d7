@@ -1,0 +1,27 @@
+/* =============================================================================
+    Comments
+   ========================================================================== */
+
+.comment__submitted {
+	color: #ccc;
+	font-size: .9em;
+	text-transform: uppercase;
+	&:before {
+		font-family: FontAwesome;
+		content: "\f007";
+		display: inline-block;
+		margin-right: 5px;
+	}
+}
+
+.comment__links {
+	margin-top: 5px;
+	a {
+		@extend button;
+		font-size: 20px;
+		padding: 0 10px;
+		&:hover {
+			color: white;
+		}
+	}
+}

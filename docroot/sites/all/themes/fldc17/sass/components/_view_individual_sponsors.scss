@@ -1,0 +1,23 @@
+/* =============================================================================
+    Individual Sponsors View
+   ========================================================================== */
+
+.block--views-individual-sponsors-block {
+	text-align: center;
+	h2 {
+		@extend h1;
+		text-align: center;
+		color: #666;
+	}
+	.group > div {
+		line-height: 2;
+		font-size: 1.8em;
+		@include breakpoint($tablet_narrow) {
+			display: inline-block;
+			width: 25%;
+		}
+		@include breakpoint($tablet_wide) {
+			width: 20%;
+		}
+	}
+}   

@@ -1,0 +1,27 @@
+%shape--arrow__up {
+  content: "";
+  width: 0; 
+  height: 0; 
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  margin-left: -40px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 40px solid white;
+  z-index: 5;
+}
+
+%shape--arrow__down {
+  content: "";
+  width: 0; 
+  height: 0; 
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -40px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid white;
+  z-index: 5;
+}

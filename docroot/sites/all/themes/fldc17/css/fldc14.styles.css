@@ -1,0 +1,3533 @@
+@charset "UTF-8";
+/* line 1, ../sass/variables/_decorations.scss */
+.zone.z-header + .z-content:before, .zone.z-preface:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  margin-left: -40px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 40px solid white;
+  z-index: 5; }
+
+/* line 15, ../sass/variables/_decorations.scss */
+.zone.z-preface:after, .zone.z-footer:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -40px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid white;
+  z-index: 5; }
+
+/* $header-letter-spacing: -0.05em; -1px; */
+/* =============================================================================
+    Layout
+   ========================================================================== */
+/* line 5, ../sass/layouts/_layout.scss */
+.l-page {
+  overflow: hidden; }
+
+/* line 8, ../sass/layouts/_layout.scss */
+.l-navigation,
+.l-preface,
+.l-header,
+.l-main,
+.l-footer {
+  width: 94%;
+  max-width: 1100px;
+  margin: 0 auto; }
+  @media (min-width: 1700px) {
+    /* line 8, ../sass/layouts/_layout.scss */
+    .l-navigation,
+    .l-preface,
+    .l-header,
+    .l-main,
+    .l-footer {
+      max-width: 1500px; } }
+
+@media (min-width: 900px) {
+  /* line 20, ../sass/layouts/_layout.scss */
+  .l-header {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); } }
+
+/* line 29, ../sass/layouts/_layout.scss */
+.zone {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0.83em 0;
+  position: relative; }
+  /* line 2, ../sass/abstractions/_mixins.scss */
+  .zone:before, .zone:after {
+    content: " ";
+    display: table; }
+  /* line 7, ../sass/abstractions/_mixins.scss */
+  .zone:after {
+    clear: both; }
+  /* line 36, ../sass/layouts/_layout.scss */
+  .zone.z-navigation {
+    top: 0; }
+    /* line 38, ../sass/layouts/_layout.scss */
+    .admin-menu .zone.z-navigation {
+      top: 30px; }
+  /* line 42, ../sass/layouts/_layout.scss */
+  .zone.z-header {
+    margin-top: 3%;
+    position: relative;
+    padding: 60px 0; }
+    @media (min-width: 700px) {
+      /* line 42, ../sass/layouts/_layout.scss */
+      .zone.z-header {
+        margin-top: 60px; } }
+    @media (min-width: 900px) {
+      /* line 42, ../sass/layouts/_layout.scss */
+      .zone.z-header {
+        height: 600px; } }
+    @media (min-width: 1700px) {
+      /* line 42, ../sass/layouts/_layout.scss */
+      .zone.z-header {
+        height: 700px; } }
+    /* line 55, ../sass/layouts/_layout.scss */
+    .not-front .zone.z-header {
+      padding: 20px 0 50px 0;
+      margin-top: 60px; }
+      @media (min-width: 700px) {
+        /* line 55, ../sass/layouts/_layout.scss */
+        .not-front .zone.z-header {
+          padding: 0;
+          height: 200px; } }
+    /* line 63, ../sass/layouts/_layout.scss */
+    .admin-menu .zone.z-header {
+      margin-top: 90px; }
+
+@media (min-width: 900px) {
+  /* line 69, ../sass/layouts/_layout.scss */
+  .has-sidebar-first .l-content {
+    width: 70%;
+    float: left;
+    padding-right: 20px; } }
+@media (min-width: 900px) {
+  /* line 76, ../sass/layouts/_layout.scss */
+  .has-sidebar-first .l-region--sidebar-first {
+    width: 30%;
+    float: left; } }
+
+/* =============================================================================
+    Animations
+   ========================================================================== */
+/* Logo Animation */
+/* No Prefix */
+@keyframes bubblerise1 {
+  0% {
+    transform: translateX(0) translateY(-60px) scale(0.5); }
+  20% {
+    transform: translateX(10px) translateY(-160px) scale(0.65); }
+  40% {
+    transform: translateX(0) translateY(-250px) scale(0.8); }
+  60% {
+    transform: translateX(-10px) translateY(-390px) scale(1); }
+  80% {
+    transform: translateX(0) translateY(-510px) scale(1.15); }
+  100% {
+    transform: translateX(10px) translateY(-650px) scale(1.3); } }
+@keyframes bubblerise2 {
+  0% {
+    transform: translateX(0) translateY(-60px) scale(0.5); }
+  20% {
+    transform: translateX(-10px) translateY(-160px) scale(0.65); }
+  40% {
+    transform: translateX(0) translateY(-250px) scale(0.8); }
+  60% {
+    transform: translateX(10px) translateY(-390px) scale(1); }
+  80% {
+    transform: translateX(0) translateY(-510px) scale(1.15); }
+  100% {
+    transform: translateX(-10px) translateY(-650px) scale(1.3); } }
+/* Webkit */
+@-webkit-keyframes bubblerise1 {
+  0% {
+    -webkit-transform: translateX(0) translateY(-60px) scale(0.5); }
+  20% {
+    -webkit-transform: translateX(10px) translateY(-160px) scale(0.65); }
+  40% {
+    -webkit-transform: translateX(0) translateY(-250px) scale(0.8); }
+  60% {
+    -webkit-transform: translateX(-10px) translateY(-390px) scale(1); }
+  80% {
+    -webkit-transform: translateX(0) translateY(-510px) scale(1.15); }
+  100% {
+    -webkit-transform: translateX(10px) translateY(-650px) scale(1.3); } }
+@-webkit-keyframes bubblerise2 {
+  0% {
+    -webkit-transform: translateX(0) translateY(-60px) scale(0.5); }
+  20% {
+    -webkit-transform: translateX(-10px) translateY(-160px) scale(0.65); }
+  40% {
+    -webkit-transform: translateX(0) translateY(-250px) scale(0.8); }
+  60% {
+    -webkit-transform: translateX(10px) translateY(-390px) scale(1); }
+  80% {
+    -webkit-transform: translateX(0) translateY(-510px) scale(1.15); }
+  100% {
+    -webkit-transform: translateX(-10px) translateY(-650px) scale(1.3); } }
+/* mozilla */
+@-moz-keyframes bubblerise1 {
+  0% {
+    -moz-transform: translateX(0) translateY(-60px) scale(0.5); }
+  20% {
+    -moz-transform: translateX(10px) translateY(-160px) scale(0.65); }
+  40% {
+    -moz-transform: translateX(0) translateY(-250px) scale(0.8); }
+  60% {
+    -moz-transform: translateX(-10px) translateY(-390px) scale(1); }
+  80% {
+    -moz-transform: translateX(0) translateY(-510px) scale(1.15); }
+  100% {
+    -moz-transform: translateX(10px) translateY(-650px) scale(1.3); } }
+@-moz-keyframes bubblerise2 {
+  0% {
+    -moz-transform: translateX(0) translateY(-60px) scale(0.5); }
+  20% {
+    -moz-transform: translateX(-10px) translateY(-160px) scale(0.65); }
+  40% {
+    -moz-transform: translateX(0) translateY(-250px) scale(0.8); }
+  60% {
+    -moz-transform: translateX(10px) translateY(-390px) scale(1); }
+  80% {
+    -moz-transform: translateX(0) translateY(-510px) scale(1.15); }
+  100% {
+    -moz-transform: translateX(-10px) translateY(-650px) scale(1.3); } }
+/* line 65, ../sass/base/_animations.scss */
+.cssanimations .bubble1 {
+  cursor: crosshair;
+  opacity: 0.8;
+  position: absolute;
+  right: 45%;
+  bottom: 7%;
+  -webkit-transform: translateZ(0);
+  -webkit-animation: bubblerise1 15s linear 0s infinite;
+  animation: bubblerise1 15s linear 0 infinite;
+  -moz-animation-name: bubblerise1;
+  /* Firefox does not like shorthand */
+  -moz-animation-duration: 15s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear; }
+  /* line 78, ../sass/base/_animations.scss */
+  .cssanimations .bubble1 > img {
+    display: block; }
+
+/* line 83, ../sass/base/_animations.scss */
+.cssanimations .bubble2 {
+  cursor: crosshair;
+  display: block;
+  position: absolute;
+  right: 45%;
+  bottom: 7%;
+  -webkit-animation: bubblerise2 15s linear -8s infinite;
+  animation: bubblerise2 15s linear -8s infinite;
+  -moz-animation-name: bubblerise2;
+  /* Firefox does not like shorthand */
+  -moz-animation-duration: 15s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear; }
+  /* line 95, ../sass/base/_animations.scss */
+  .cssanimations .bubble2 > img {
+    opacity: 0.8; }
+
+/* line 100, ../sass/base/_animations.scss */
+.cssanimations .bubble3 {
+  cursor: crosshair;
+  position: absolute;
+  right: 45%;
+  bottom: 7%;
+  -webkit-animation: bubblerise1 13s linear 0s infinite;
+  animation: bubblerise1 13s linear 0s infinite;
+  -moz-animation-name: bubblerise1;
+  /* Firefox does not like shorthand */
+  -moz-animation-duration: 13s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+  /* line 112, ../sass/base/_animations.scss */
+  .cssanimations .bubble3 > img {
+    opacity: 0.5; }
+
+/* line 117, ../sass/base/_animations.scss */
+.cssanimations .bubble4 {
+  cursor: crosshair;
+  display: block;
+  position: absolute;
+  right: 45%;
+  bottom: 7%;
+  -webkit-animation: bubblerise2 17s linear -14s infinite;
+  animation: bubblerise2 17s linear -14s infinite;
+  -moz-animation-name: bubblerise2;
+  /* Firefox does not like shorthand */
+  -moz-animation-duration: 17s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear; }
+  /* line 129, ../sass/base/_animations.scss */
+  .cssanimations .bubble4 > img {
+    opacity: 0.5; }
+
+/* line 134, ../sass/base/_animations.scss */
+.cssanimations .bubble5 {
+  cursor: crosshair;
+  display: block;
+  position: absolute;
+  right: 45%;
+  bottom: 7%;
+  -webkit-animation: bubblerise1 17s linear -6s infinite;
+  animation: bubblerise1 17s linear -6s infinite;
+  -moz-animation-name: bubblerise1;
+  /* Firefox does not like shorthand */
+  -moz-animation-duration: 17s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear; }
+  /* line 146, ../sass/base/_animations.scss */
+  .cssanimations .bubble5 > img {
+    opacity: 0.5; }
+
+@keyframes bubblewhite {
+  0% {
+    background-position: 110% 600px; }
+  33% {
+    background-position: 115% 200px; }
+  66% {
+    background-position: 110% -200px; }
+  100% {
+    background-position: 105% -600px; } }
+@-webkit-keyframes bubblewhite {
+  0% {
+    background-position: 110% 600px; }
+  33% {
+    background-position: 115% 200px; }
+  66% {
+    background-position: 110% -200px; }
+  100% {
+    background-position: 105% -600px; } }
+@-moz-keyframes bubblewhite {
+  0% {
+    background-position: 110% 600px; }
+  33% {
+    background-position: 115% 200px; }
+  66% {
+    background-position: 110% -200px; }
+  100% {
+    background-position: 105% -600px; } }
+/* line 189, ../sass/base/_animations.scss */
+.cssanimations #images {
+  background-image: url(../images/white-bubble.svg);
+  background-repeat: no-repeat;
+  background-position: 110% 600px;
+  background-size: 600px;
+  -webkit-transform: translateZ(0);
+  -webkit-animation: bubblewhite 20s linear 0 infinite;
+  animation: bubblewhite 20s linear 0 infinite;
+  -moz-animation-name: bubblewhite;
+  /* Firefox does not like shorthand */
+  -moz-animation-duration: 20s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear; }
+
+@media (min-width: 700px) and (max-width: 1025px) {
+  /* line 204, ../sass/base/_animations.scss */
+  .cssanimations #block-system-main-menu {
+    background-image: url(../images/white-bubble.svg);
+    background-repeat: no-repeat;
+    background-position: 110% 600px;
+    background-size: 600px;
+    -webkit-transform: translateZ(0);
+    -webkit-animation: bubblewhite 40s linear 0 infinite;
+    animation: bubblewhite 40s linear 0 infinite;
+    -moz-animation-name: bubblewhite;
+    /* Firefox does not like shorthand */
+    -moz-animation-duration: 40s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear; } }
+
+/* Arrow fade in within mobile navigation */
+@keyframes mobilenav {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes mobilenav {
+  0% {
+    -webkit-opacity: 0; }
+  30% {
+    -webkit-opacity: 0; }
+  100% {
+    -webkit-opacity: 1; } }
+@-moz-keyframes mobilenav {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/* line 241, ../sass/base/_animations.scss */
+.cssanimations .header-menu-active .expanded:after {
+  animation: mobilenav 1s linear 0s 1;
+  -webkit-animation: mobilenav 1s linear 0s 1;
+  -moz-animation-name: mobilenav;
+  /* Firefox does not like shorthand */
+  -moz-animation-duration: 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: linear; }
+
+/* =============================================================================
+    Base Styles
+   ========================================================================== */
+/* line 5, ../sass/base/_base.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* =============================================================================
+    Fonts
+   ========================================================================== */
+@font-face {
+  font-family: 'bebas_neueregular';
+  src: url("../fonts/BebasNeue-webfont.eot");
+  src: url("../fonts/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue-webfont.woff") format("woff"), url("../fonts/BebasNeue-webfont.ttf") format("truetype"), url("../fonts/BebasNeue-webfont.svg#bebas_neueregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Social Media Icons";
+  src: url("../fonts/social-media-icons.eot");
+  src: url("../fonts/social-media-icons.eot?#iefix") format("eot"), url("../fonts/social-media-icons.woff") format("woff"), url("../fonts/social-media-icons.ttf") format("truetype"), url("../fonts/social-media-icons.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.0.3");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* =============================================================================
+    Forms
+   ========================================================================== */
+/* line 5, ../sass/base/_forms.scss */
+button, input[type="submit"], a.button, .comment__links a, .flag a, .view-session-list .read-more {
+  font-family: "bebas_neueregular", "arial narrow", arial, sans-serif;
+  text-transform: uppercase;
+  border: 0;
+  font-size: 50px;
+  cursor: pointer;
+  background-color: #FCB040;
+  color: white;
+  -webkit-appearance: none;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+  /* line 16, ../sass/base/_forms.scss */
+  button:hover, input[type="submit"]:hover, a.button:hover, .comment__links a:hover, .flag a:hover, .view-session-list .read-more:hover {
+    background-color: #fca627; }
+
+/* line 21, ../sass/base/_forms.scss */
+input[type="text"]:not(#recaptcha_response_field),
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  padding: 10px;
+  border: 0;
+  background-color: #ddd;
+  font-size: 18px;
+  max-width: 100%;
+  min-width: 300px;
+  -webkit-appearance: none;
+  width: 100%; }
+  @media (min-width: 700px) {
+    /* line 21, ../sass/base/_forms.scss */
+    input[type="text"]:not(#recaptcha_response_field),
+    input[type="email"],
+    input[type="password"],
+    textarea,
+    select {
+      width: auto;
+      max-width: 600px; } }
+  /* line 38, ../sass/base/_forms.scss */
+  input[type="text"]:not(#recaptcha_response_field):focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    background-color: #c5c5c5; }
+
+/* line 43, ../sass/base/_forms.scss */
+label {
+  display: block; }
+  /* line 45, ../sass/base/_forms.scss */
+  label.error {
+    color: red; }
+    /* line 47, ../sass/base/_forms.scss */
+    label.error:before {
+      font-family: FontAwesome;
+      content: "\f119 ";
+      margin-right: 5px; }
+
+/* line 56, ../sass/base/_forms.scss */
+form .description {
+  color: #999;
+  font-style: italic;
+  font-size: 14px; }
+
+/* line 63, ../sass/base/_forms.scss */
+.form-item {
+  padding: 10px 0; }
+
+/* line 67, ../sass/base/_forms.scss */
+input[type="submit"] {
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 40px; }
+  /* line 73, ../sass/base/_forms.scss */
+  input[type="submit"]:last-child {
+    margin-right: 0; }
+
+/* line 79, ../sass/base/_forms.scss */
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin: 0; }
+  @media (min-width: 700px) {
+    /* line 79, ../sass/base/_forms.scss */
+    .views-exposed-form .views-exposed-widget .form-submit {
+      margin: 1.4em; } }
+
+/* line 86, ../sass/base/_forms.scss */
+.views-exposed-form .views-exposed-widget {
+  float: none; }
+  @media (min-width: 700px) {
+    /* line 86, ../sass/base/_forms.scss */
+    .views-exposed-form .views-exposed-widget {
+      float: left; } }
+
+/* line 93, ../sass/base/_forms.scss */
+fieldset {
+  border: 0;
+  border-bottom: solid 2px #0E73AF;
+  margin-bottom: 20px; }
+  /* line 97, ../sass/base/_forms.scss */
+  fieldset:last-child {
+    border-bottom: none;
+    margin-bottom: 5px; }
+
+/* Make radio buttons inline */
+/* line 108, ../sass/base/_forms.scss */
+.form-item.form-type-radio {
+  display: inline-block;
+  margin-right: 10px; }
+  /* line 111, ../sass/base/_forms.scss */
+  .form-item.form-type-radio:last-child {
+    margin-right: 0; }
+
+/* line 115, ../sass/base/_forms.scss */
+.grippie {
+  display: none; }
+
+/* =============================================================================
+    Media default styles
+   ========================================================================== */
+/* line 5, ../sass/base/_media.scss */
+img, media {
+  max-width: 100%;
+  height: auto;
+  border: 0; }
+
+/* =============================================================================
+    Tables
+   ========================================================================== */
+/* line 5, ../sass/base/_tables.scss */
+table {
+  width: 100%;
+  border-color: none; }
+  /* line 8, ../sass/base/_tables.scss */
+  table .form-item {
+    margin: 0;
+    padding: 0; }
+
+/* line 15, ../sass/base/_tables.scss */
+tr.odd,
+tr.even {
+  background-color: transparent; }
+
+/* line 20, ../sass/base/_tables.scss */
+td {
+  padding: 5px; }
+
+/* line 24, ../sass/base/_tables.scss */
+th {
+  padding: 5px;
+  background-color: #eee; }
+
+/* =============================================================================
+    Theme Zone Layouts
+   ========================================================================== */
+/* line 6, ../sass/base/_theme.zones.layout.scss */
+body.front {
+  background-color: black; }
+
+/* line 10, ../sass/base/_theme.zones.layout.scss */
+.l-page {
+  background-color: #FFF; }
+
+/* line 14, ../sass/base/_theme.zones.layout.scss */
+.zone.z-navigation {
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  background-color: #1A1A1A;
+  color: #FCFCFC;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  min-height: 60px;
+  height: 60px;
+  position: fixed;
+  z-index: 15; }
+  @media (min-width: 1025px) {
+    /* line 14, ../sass/base/_theme.zones.layout.scss */
+    .zone.z-navigation {
+      height: 100px; } }
+/* line 31, ../sass/base/_theme.zones.layout.scss */
+.zone.z-content {
+  padding-bottom: 30px; }
+
+/* line 35, ../sass/base/_theme.zones.layout.scss */
+.l-region--navigation {
+  position: relative; }
+
+/* line 39, ../sass/base/_theme.zones.layout.scss */
+.not-front .l-branding {
+  display: none; }
+
+/* line 43, ../sass/base/_theme.zones.layout.scss */
+.zone.z-header {
+  background-size: cover;
+  background-image: url("../images/auditorium_blur-smartphone_wide.jpg"); }
+  @media (min-width: 700px) {
+    /* line 43, ../sass/base/_theme.zones.layout.scss */
+    .zone.z-header {
+      background-image: url("../images/auditorium_blur-tablet_narrow.jpg"); } }
+  @media (min-width: 900px) {
+    /* line 43, ../sass/base/_theme.zones.layout.scss */
+    .zone.z-header {
+      background-image: url("../images/auditorium_blur-tablet_wide.jpg"); } }
+  @media (min-width: 1200px) {
+    /* line 43, ../sass/base/_theme.zones.layout.scss */
+    .zone.z-header {
+      background-image: url("../images/auditorium_blur-normal.jpg"); } }
+  @media (min-width: 1700px) {
+    /* line 43, ../sass/base/_theme.zones.layout.scss */
+    .zone.z-header {
+      background-image: url("../images/auditorium_blur.jpg"); } }
+  /* line 63, ../sass/base/_theme.zones.layout.scss */
+  .not-front .zone.z-header {
+    background-image: url("../images/fldc13_group-blur-smartphone_narrow.jpg");
+    background-position: center center; }
+    @media (min-width: 470px) {
+      /* line 63, ../sass/base/_theme.zones.layout.scss */
+      .not-front .zone.z-header {
+        background-image: url("../images/fldc13_group-blur-smartphone_wide.jpg"); } }
+    @media (min-width: 700px) {
+      /* line 63, ../sass/base/_theme.zones.layout.scss */
+      .not-front .zone.z-header {
+        background-image: url("../images/fldc13_group-blur-tablet_narrow.jpg"); } }
+    @media (min-width: 900px) {
+      /* line 63, ../sass/base/_theme.zones.layout.scss */
+      .not-front .zone.z-header {
+        background-image: url("../images/fldc13_group-blur-tablet_wide.jpg"); } }
+    @media (min-width: 1200px) {
+      /* line 63, ../sass/base/_theme.zones.layout.scss */
+      .not-front .zone.z-header {
+        background-image: url("../images/fldc13_group-blur.jpg"); } }
+  /* line 79, ../sass/base/_theme.zones.layout.scss */
+  .section-location .zone.z-header {
+    background-image: url("../images/ftc-blur.jpg"); }
+
+/* line 83, ../sass/base/_theme.zones.layout.scss */
+.zone.z-preface {
+  background-color: #55C2C2;
+  position: relative;
+  padding-top: 2em; }
+  /* line 87, ../sass/base/_theme.zones.layout.scss */
+  .zone.z-preface:before {
+    border-bottom-color: #55C2C2; }
+  /* line 91, ../sass/base/_theme.zones.layout.scss */
+  .zone.z-preface:after {
+    border-top-color: #55C2C2; }
+
+/* line 96, ../sass/base/_theme.zones.layout.scss */
+.zone.z-footer {
+  background-color: #0E73AF;
+  padding-top: 2em;
+  position: relative; }
+  /* line 101, ../sass/base/_theme.zones.layout.scss */
+  .zone.z-footer:before {
+    top: 0;
+    bottom: auto; }
+
+/* =============================================================================
+    Typography
+   ========================================================================== */
+/* line 5, ../sass/base/_typography.scss */
+body {
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.7;
+  color: #666;
+  margin: 0; }
+
+/* line 15, ../sass/base/_typography.scss */
+h1, .block--views-events-block-1 .views-field-title, .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block .fieldset-legend, .block--views-individual-sponsors-block .messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name,
+.block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name,
+.user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name, .block--views-individual-sponsors-block .attendee-name, .view-schedule-items .legend-title,
+.view-schedule-items .session-slot--title {
+  font-size: 2.8125em;
+  font-family: "bebas_neueregular", "arial narrow", arial, sans-serif;
+  font-style: normal;
+  color: #0E73AF;
+  line-height: 1.2;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: .5em 0; }
+  /* line 25, ../sass/base/_typography.scss */
+  h1 a:link, .block--views-events-block-1 .views-field-title a:link, .block--views-individual-sponsors-block h2 a:link, .block--views-individual-sponsors-block .fieldset-legend a:link, .block--views-individual-sponsors-block .messages a:link, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:link, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:link, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:link, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:link,
+  .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a:link,
+  .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a:link, .block--views-individual-sponsors-block .attendee-name a:link, .view-schedule-items .legend-title a:link,
+  .view-schedule-items .session-slot--title a:link, h1 a:visited, .block--views-events-block-1 .views-field-title a:visited, .block--views-individual-sponsors-block h2 a:visited, .block--views-individual-sponsors-block .fieldset-legend a:visited, .block--views-individual-sponsors-block .messages a:visited, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:visited, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:visited, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:visited, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:visited,
+  .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a:visited,
+  .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a:visited, .block--views-individual-sponsors-block .attendee-name a:visited, .view-schedule-items .legend-title a:visited,
+  .view-schedule-items .session-slot--title a:visited {
+    color: #FCB040;
+    text-decoration: none; }
+  /* line 30, ../sass/base/_typography.scss */
+  h1 a:hover, .block--views-events-block-1 .views-field-title a:hover, .block--views-individual-sponsors-block h2 a:hover, .block--views-individual-sponsors-block .fieldset-legend a:hover, .block--views-individual-sponsors-block .messages a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:hover, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:hover, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:hover,
+  .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a:hover,
+  .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a:hover, .block--views-individual-sponsors-block .attendee-name a:hover, .view-schedule-items .legend-title a:hover,
+  .view-schedule-items .session-slot--title a:hover, h1 a:focus, .block--views-events-block-1 .views-field-title a:focus, .block--views-individual-sponsors-block h2 a:focus, .block--views-individual-sponsors-block .fieldset-legend a:focus, .block--views-individual-sponsors-block .messages a:focus, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:focus, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:focus, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:focus, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:focus,
+  .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a:focus,
+  .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a:focus, .block--views-individual-sponsors-block .attendee-name a:focus, .view-schedule-items .legend-title a:focus,
+  .view-schedule-items .session-slot--title a:focus {
+    color: #fb9b0e; }
+  /* line 34, ../sass/base/_typography.scss */
+  h1 a:link, .block--views-events-block-1 .views-field-title a:link, .block--views-individual-sponsors-block h2 a:link, .block--views-individual-sponsors-block .fieldset-legend a:link, .block--views-individual-sponsors-block .messages a:link, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:link, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:link, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:link, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:link,
+  .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a:link,
+  .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a:link, .block--views-individual-sponsors-block .attendee-name a:link, .view-schedule-items .legend-title a:link,
+  .view-schedule-items .session-slot--title a:link, h1 a:visited, .block--views-events-block-1 .views-field-title a:visited, .block--views-individual-sponsors-block h2 a:visited, .block--views-individual-sponsors-block .fieldset-legend a:visited, .block--views-individual-sponsors-block .messages a:visited, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:visited, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:visited, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:visited, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:visited,
+  .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a:visited,
+  .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a:visited, .block--views-individual-sponsors-block .attendee-name a:visited, .view-schedule-items .legend-title a:visited,
+  .view-schedule-items .session-slot--title a:visited, h1 a:hover, .block--views-events-block-1 .views-field-title a:hover, .block--views-individual-sponsors-block h2 a:hover, .block--views-individual-sponsors-block .fieldset-legend a:hover, .block--views-individual-sponsors-block .messages a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:hover, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:hover, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:hover,
+  .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a:hover,
+  .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a:hover, .block--views-individual-sponsors-block .attendee-name a:hover, .view-schedule-items .legend-title a:hover,
+  .view-schedule-items .session-slot--title a:hover, h1 a:focus, .block--views-events-block-1 .views-field-title a:focus, .block--views-individual-sponsors-block h2 a:focus, .block--views-individual-sponsors-block .fieldset-legend a:focus, .block--views-individual-sponsors-block .messages a:focus, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:focus, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:focus, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:focus, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:focus,
+  .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a:focus,
+  .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a:focus, .block--views-individual-sponsors-block .attendee-name a:focus, .view-schedule-items .legend-title a:focus,
+  .view-schedule-items .session-slot--title a:focus, h1 a:active, .block--views-events-block-1 .views-field-title a:active, .block--views-individual-sponsors-block h2 a:active, .block--views-individual-sponsors-block .fieldset-legend a:active, .block--views-individual-sponsors-block .messages a:active, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:active, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:active, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:active, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:active,
+  .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a:active,
+  .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a:active, .block--views-individual-sponsors-block .attendee-name a:active, .view-schedule-items .legend-title a:active,
+  .view-schedule-items .session-slot--title a:active, h1 a.active, .block--views-events-block-1 .views-field-title a.active, .block--views-individual-sponsors-block h2 a.active, .block--views-individual-sponsors-block .fieldset-legend a.active, .block--views-individual-sponsors-block .messages a.active, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a.active, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a.active, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a.active, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a.active,
+  .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a.active,
+  .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a.active, .block--views-individual-sponsors-block .attendee-name a.active, .view-schedule-items .legend-title a.active,
+  .view-schedule-items .session-slot--title a.active, h1 a.active-trail, .block--views-events-block-1 .views-field-title a.active-trail, .block--views-individual-sponsors-block h2 a.active-trail, .block--views-individual-sponsors-block .fieldset-legend a.active-trail, .block--views-individual-sponsors-block .messages a.active-trail, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a.active-trail, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a.active-trail, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a.active-trail, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a.active-trail,
+  .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a.active-trail,
+  .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a.active-trail, .block--views-individual-sponsors-block .attendee-name a.active-trail, .view-schedule-items .legend-title a.active-trail,
+  .view-schedule-items .session-slot--title a.active-trail {
+    font-family: "bebas_neueregular", "arial narrow", arial, sans-serif; }
+
+/* line 15, ../sass/base/_typography.scss */
+h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
+#block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+.view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
+.user-profile .field--name-field-user-last-name, .attendee-name {
+  font-size: 2.25em;
+  font-family: "bebas_neueregular", "arial narrow", arial, sans-serif;
+  font-style: normal;
+  color: #0E73AF;
+  line-height: 1.2;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: .5em 0; }
+  /* line 25, ../sass/base/_typography.scss */
+  h2 a:link, .fieldset-legend a:link, .messages a:link, #block-views-sponsors-block-block-1 h1 a:link, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:link, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:link, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:link, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:link, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:link, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:link,
+  #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:link,
+  .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:link, .user-profile .field--name-field-user-first-name a:link,
+  .user-profile .field--name-field-user-last-name a:link, .attendee-name a:link, h2 a:visited, .fieldset-legend a:visited, .messages a:visited, #block-views-sponsors-block-block-1 h1 a:visited, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:visited, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:visited, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:visited, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:visited, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:visited, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:visited,
+  #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:visited,
+  .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:visited, .user-profile .field--name-field-user-first-name a:visited,
+  .user-profile .field--name-field-user-last-name a:visited, .attendee-name a:visited {
+    color: #FCB040;
+    text-decoration: none; }
+  /* line 30, ../sass/base/_typography.scss */
+  h2 a:hover, .fieldset-legend a:hover, .messages a:hover, #block-views-sponsors-block-block-1 h1 a:hover, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:hover, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:hover, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:hover, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:hover,
+  #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:hover,
+  .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:hover, .user-profile .field--name-field-user-first-name a:hover,
+  .user-profile .field--name-field-user-last-name a:hover, .attendee-name a:hover, h2 a:focus, .fieldset-legend a:focus, .messages a:focus, #block-views-sponsors-block-block-1 h1 a:focus, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:focus, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:focus, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:focus, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:focus, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:focus, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:focus,
+  #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:focus,
+  .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:focus, .user-profile .field--name-field-user-first-name a:focus,
+  .user-profile .field--name-field-user-last-name a:focus, .attendee-name a:focus {
+    color: #fb9b0e; }
+  /* line 34, ../sass/base/_typography.scss */
+  h2 a:link, .fieldset-legend a:link, .messages a:link, #block-views-sponsors-block-block-1 h1 a:link, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:link, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:link, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:link, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:link, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:link, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:link,
+  #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:link,
+  .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:link, .user-profile .field--name-field-user-first-name a:link,
+  .user-profile .field--name-field-user-last-name a:link, .attendee-name a:link, h2 a:visited, .fieldset-legend a:visited, .messages a:visited, #block-views-sponsors-block-block-1 h1 a:visited, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:visited, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:visited, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:visited, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:visited, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:visited, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:visited,
+  #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:visited,
+  .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:visited, .user-profile .field--name-field-user-first-name a:visited,
+  .user-profile .field--name-field-user-last-name a:visited, .attendee-name a:visited, h2 a:hover, .fieldset-legend a:hover, .messages a:hover, #block-views-sponsors-block-block-1 h1 a:hover, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:hover, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:hover, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:hover, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:hover,
+  #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:hover,
+  .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:hover, .user-profile .field--name-field-user-first-name a:hover,
+  .user-profile .field--name-field-user-last-name a:hover, .attendee-name a:hover, h2 a:focus, .fieldset-legend a:focus, .messages a:focus, #block-views-sponsors-block-block-1 h1 a:focus, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:focus, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:focus, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:focus, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:focus, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:focus, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:focus,
+  #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:focus,
+  .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:focus, .user-profile .field--name-field-user-first-name a:focus,
+  .user-profile .field--name-field-user-last-name a:focus, .attendee-name a:focus, h2 a:active, .fieldset-legend a:active, .messages a:active, #block-views-sponsors-block-block-1 h1 a:active, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:active, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:active, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:active, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:active, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:active, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:active,
+  #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:active,
+  .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:active, .user-profile .field--name-field-user-first-name a:active,
+  .user-profile .field--name-field-user-last-name a:active, .attendee-name a:active, h2 a.active, .fieldset-legend a.active, .messages a.active, #block-views-sponsors-block-block-1 h1 a.active, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a.active, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a.active, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a.active, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a.active, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a.active, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a.active,
+  #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a.active,
+  .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a.active, .user-profile .field--name-field-user-first-name a.active,
+  .user-profile .field--name-field-user-last-name a.active, .attendee-name a.active, h2 a.active-trail, .fieldset-legend a.active-trail, .messages a.active-trail, #block-views-sponsors-block-block-1 h1 a.active-trail, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a.active-trail, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a.active-trail, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a.active-trail, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a.active-trail, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a.active-trail, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a.active-trail,
+  #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a.active-trail,
+  .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a.active-trail, .user-profile .field--name-field-user-first-name a.active-trail,
+  .user-profile .field--name-field-user-last-name a.active-trail, .attendee-name a.active-trail {
+    font-family: "bebas_neueregular", "arial narrow", arial, sans-serif; }
+
+/* line 15, ../sass/base/_typography.scss */
+h3 {
+  font-size: 1.75em;
+  font-family: "bebas_neueregular", "arial narrow", arial, sans-serif;
+  font-style: normal;
+  color: #0E73AF;
+  line-height: 1.2;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: .5em 0; }
+  /* line 25, ../sass/base/_typography.scss */
+  h3 a:link, h3 a:visited {
+    color: #FCB040;
+    text-decoration: none; }
+  /* line 30, ../sass/base/_typography.scss */
+  h3 a:hover, h3 a:focus {
+    color: #fb9b0e; }
+  /* line 34, ../sass/base/_typography.scss */
+  h3 a:link, h3 a:visited, h3 a:hover, h3 a:focus, h3 a:active, h3 a.active, h3 a.active-trail {
+    font-family: "bebas_neueregular", "arial narrow", arial, sans-serif; }
+
+/* line 15, ../sass/base/_typography.scss */
+h4 {
+  font-size: 1.5em;
+  font-family: "bebas_neueregular", "arial narrow", arial, sans-serif;
+  font-style: normal;
+  color: #0E73AF;
+  line-height: 1.2;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: .5em 0; }
+  /* line 25, ../sass/base/_typography.scss */
+  h4 a:link, h4 a:visited {
+    color: #FCB040;
+    text-decoration: none; }
+  /* line 30, ../sass/base/_typography.scss */
+  h4 a:hover, h4 a:focus {
+    color: #fb9b0e; }
+  /* line 34, ../sass/base/_typography.scss */
+  h4 a:link, h4 a:visited, h4 a:hover, h4 a:focus, h4 a:active, h4 a.active, h4 a.active-trail {
+    font-family: "bebas_neueregular", "arial narrow", arial, sans-serif; }
+
+/* line 15, ../sass/base/_typography.scss */
+h5 {
+  font-size: 1.125em;
+  font-family: "bebas_neueregular", "arial narrow", arial, sans-serif;
+  font-style: normal;
+  color: #0E73AF;
+  line-height: 1.2;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: .5em 0; }
+  /* line 25, ../sass/base/_typography.scss */
+  h5 a:link, h5 a:visited {
+    color: #FCB040;
+    text-decoration: none; }
+  /* line 30, ../sass/base/_typography.scss */
+  h5 a:hover, h5 a:focus {
+    color: #fb9b0e; }
+  /* line 34, ../sass/base/_typography.scss */
+  h5 a:link, h5 a:visited, h5 a:hover, h5 a:focus, h5 a:active, h5 a.active, h5 a.active-trail {
+    font-family: "bebas_neueregular", "arial narrow", arial, sans-serif; }
+
+/* line 15, ../sass/base/_typography.scss */
+h6 {
+  font-size: 1em;
+  font-family: "bebas_neueregular", "arial narrow", arial, sans-serif;
+  font-style: normal;
+  color: #0E73AF;
+  line-height: 1.2;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: .5em 0; }
+  /* line 25, ../sass/base/_typography.scss */
+  h6 a:link, h6 a:visited {
+    color: #FCB040;
+    text-decoration: none; }
+  /* line 30, ../sass/base/_typography.scss */
+  h6 a:hover, h6 a:focus {
+    color: #fb9b0e; }
+  /* line 34, ../sass/base/_typography.scss */
+  h6 a:link, h6 a:visited, h6 a:hover, h6 a:focus, h6 a:active, h6 a.active, h6 a.active-trail {
+    font-family: "bebas_neueregular", "arial narrow", arial, sans-serif; }
+
+/* line 47, ../sass/base/_typography.scss */
+h3 {
+  color: #333;
+  font-family: "arial narrow", arial, helvetica, sans-serif;
+  line-height: 1.2; }
+
+/* line 47, ../sass/base/_typography.scss */
+h4 {
+  color: #333;
+  font-family: "arial narrow", arial, helvetica, sans-serif;
+  line-height: 1.2; }
+
+/* line 47, ../sass/base/_typography.scss */
+h5 {
+  color: #333;
+  font-family: "arial narrow", arial, helvetica, sans-serif;
+  line-height: 1.2; }
+
+/* line 47, ../sass/base/_typography.scss */
+h6 {
+  color: #333;
+  font-family: "arial narrow", arial, helvetica, sans-serif;
+  line-height: 1.2; }
+
+/* line 53, ../sass/base/_typography.scss */
+h1, .block--views-events-block-1 .views-field-title, .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block .fieldset-legend, .block--views-individual-sponsors-block .messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name,
+.block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name,
+.user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name, .block--views-individual-sponsors-block .attendee-name, .view-schedule-items .legend-title,
+.view-schedule-items .session-slot--title {
+  margin: 10px 0;
+  line-height: 1.2; }
+  /* line 56, ../sass/base/_typography.scss */
+  h1.page__title, .block--views-events-block-1 .page__title.views-field-title, .block--views-individual-sponsors-block h2.page__title, .block--views-individual-sponsors-block .page__title.fieldset-legend, .block--views-individual-sponsors-block .page__title.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.page__title, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.page__title, .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-first-name,
+  .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-last-name,
+  .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-last-name, .block--views-individual-sponsors-block .page__title.attendee-name, .view-schedule-items .page__title.legend-title,
+  .view-schedule-items .page__title.session-slot--title {
+    background-color: rgba(26, 26, 26, 0.7);
+    color: #FCFCFC;
+    margin: 0;
+    padding: 0.5em 0.5em 0.5em;
+    font-size: 30px; }
+    /* line 62, ../sass/base/_typography.scss */
+    h1.page__title:before, .block--views-events-block-1 .page__title.views-field-title:before, .block--views-individual-sponsors-block h2.page__title:before, .block--views-individual-sponsors-block .page__title.fieldset-legend:before, .block--views-individual-sponsors-block .page__title.messages:before, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.page__title:before, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.page__title:before, .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-first-name:before, .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-first-name:before,
+    .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-last-name:before,
+    .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-last-name:before, .block--views-individual-sponsors-block .page__title.attendee-name:before, .view-schedule-items .page__title.legend-title:before,
+    .view-schedule-items .page__title.session-slot--title:before {
+      background-color: rgba(26, 26, 26, 0.7);
+      content: "";
+      display: inline-block;
+      position: absolute;
+      right: 100%;
+      top: 0;
+      width: 1000%;
+      height: 100%; }
+    @media (min-width: 700px) {
+      /* line 56, ../sass/base/_typography.scss */
+      h1.page__title, .block--views-events-block-1 .page__title.views-field-title, .block--views-individual-sponsors-block h2.page__title, .block--views-individual-sponsors-block .page__title.fieldset-legend, .block--views-individual-sponsors-block .page__title.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.page__title, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.page__title, .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-first-name,
+      .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-last-name,
+      .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-last-name, .block--views-individual-sponsors-block .page__title.attendee-name, .view-schedule-items .page__title.legend-title,
+      .view-schedule-items .page__title.session-slot--title {
+        position: absolute;
+        top: 50%;
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 45px; } }
+
+/* line 79, ../sass/base/_typography.scss */
+a {
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  color: #FCB040;
+  text-decoration: none; }
+  /* line 83, ../sass/base/_typography.scss */
+  a:hover, a:focus {
+    color: #fb9b0e; }
+
+/* line 88, ../sass/base/_typography.scss */
+a.button {
+  font-size: 25px;
+  padding: 10px 20px; }
+  /* line 92, ../sass/base/_typography.scss */
+  a.button:hover {
+    color: white; }
+  /* line 95, ../sass/base/_typography.scss */
+  a.button.register {
+    display: inline-block;
+    font-size: 50px; }
+    /* line 98, ../sass/base/_typography.scss */
+    a.button.register:focus {
+      color: white; }
+
+/* line 103, ../sass/base/_typography.scss */
+p {
+  font-size: 1.1em;
+  margin: 0 0 1em 0; }
+  /* line 106, ../sass/base/_typography.scss */
+  p:last-child {
+    margin: 0; }
+
+/* line 110, ../sass/base/_typography.scss */
+li {
+  font-size: 1.1em; }
+
+/* line 115, ../sass/base/_typography.scss */
+.icon {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1;
+  transition: color 800ms; }
+
+/* line 122, ../sass/base/_typography.scss */
+.icon-twitter:before,
+.icon-facebook:before,
+.icon-drupal:before {
+  font-family: 'Social Media Icons';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1; }
+
+/* line 130, ../sass/base/_typography.scss */
+.icon-twitter:before {
+  content: "\e000"; }
+
+/* line 133, ../sass/base/_typography.scss */
+.icon-facebook:before {
+  content: "\e003"; }
+
+/* line 136, ../sass/base/_typography.scss */
+.icon-drupal:before {
+  content: "\e005"; }
+
+/* =============================================================================
+    Some general theming for the sidebar
+   ========================================================================== */
+/* line 5, ../sass/components/_aside.scss */
+.l-region--sidebar-second {
+  /* Provide a deliniation between the content and aside while stacked */ }
+  /* line 6, ../sass/components/_aside.scss */
+  .l-region--sidebar-second h2, .l-region--sidebar-second .fieldset-legend, .l-region--sidebar-second .messages, .l-region--sidebar-second #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .l-region--sidebar-second h1, .l-region--sidebar-second #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 .l-region--sidebar-second .views-field-title, .l-region--sidebar-second .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .l-region--sidebar-second .views-field-title, .l-region--sidebar-second #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .l-region--sidebar-second h2, .l-region--sidebar-second .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .l-region--sidebar-second h2, .l-region--sidebar-second #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .l-region--sidebar-second .legend-title, .l-region--sidebar-second .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .l-region--sidebar-second .legend-title,
+  .l-region--sidebar-second #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+  #block-views-sponsors-block-block-1 .view-schedule-items .l-region--sidebar-second .session-slot--title,
+  .l-region--sidebar-second .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
+  .view-schedule-items #block-views-sponsors-block-block-1 .l-region--sidebar-second .session-slot--title, .l-region--sidebar-second .user-profile .field--name-field-user-first-name, .user-profile .l-region--sidebar-second .field--name-field-user-first-name,
+  .l-region--sidebar-second .user-profile .field--name-field-user-last-name,
+  .user-profile .l-region--sidebar-second .field--name-field-user-last-name, .l-region--sidebar-second .attendee-name {
+    margin: 0 0 10px 0; }
+  @media (max-width: 900px) {
+    /* line 5, ../sass/components/_aside.scss */
+    .l-region--sidebar-second {
+      border: solid 1px #ddd;
+      padding: 10px;
+      margin: 5px;
+      -moz-box-shadow: 2px 2px 2px 2px #999;
+      -webkit-box-shadow: 2px 2px 2px 2px #999;
+      box-shadow: 2px 2px 2px 2px #999; } }
+
+/* =============================================================================
+    Branding
+   ========================================================================== */
+/* line 5, ../sass/components/_branding.scss */
+h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
+.block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
+.user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.attendee-name, .view-schedule-items .site-name.legend-title,
+.view-schedule-items .site-name.session-slot--title {
+  display: inline-block;
+  text-align: left;
+  line-height: 60px;
+  height: 60px;
+  margin: 0;
+  z-index: 10;
+  /*   width: 100%; */
+  top: 0; }
+  @media (min-width: 470px) {
+    /* line 5, ../sass/components/_branding.scss */
+    h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
+    .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
+    .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.attendee-name, .view-schedule-items .site-name.legend-title,
+    .view-schedule-items .site-name.session-slot--title {
+      position: relative; } }
+  @media (min-width: 700px) {
+    /* line 5, ../sass/components/_branding.scss */
+    h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
+    .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
+    .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.attendee-name, .view-schedule-items .site-name.legend-title,
+    .view-schedule-items .site-name.session-slot--title {
+      font-size: 45px;
+      /* background-color: rgba(0,0,0,0.9); */ } }
+  @media (min-width: 1025px) {
+    /* line 5, ../sass/components/_branding.scss */
+    h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
+    .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
+    .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.attendee-name, .view-schedule-items .site-name.legend-title,
+    .view-schedule-items .site-name.session-slot--title {
+      width: auto;
+      display: inline-block;
+      line-height: 100px;
+      font-size: 42px;
+      z-index: 20;
+      -moz-transition: line-height, 0s;
+      -o-transition: line-height, 0s;
+      -webkit-transition: line-height, 0s;
+      transition: line-height, 0s; }
+      /* line 34, ../sass/components/_branding.scss */
+      h1.site-name.scroll-down, .block--views-events-block-1 .site-name.scroll-down.views-field-title, .block--views-individual-sponsors-block h2.site-name.scroll-down, .block--views-individual-sponsors-block .site-name.scroll-down.fieldset-legend, .block--views-individual-sponsors-block .site-name.scroll-down.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name.scroll-down, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name.scroll-down, .block--views-individual-sponsors-block .user-profile .site-name.scroll-down.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.scroll-down.field--name-field-user-first-name,
+      .block--views-individual-sponsors-block .user-profile .site-name.scroll-down.field--name-field-user-last-name,
+      .user-profile .block--views-individual-sponsors-block .site-name.scroll-down.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.scroll-down.attendee-name, .view-schedule-items .site-name.scroll-down.legend-title,
+      .view-schedule-items .site-name.scroll-down.session-slot--title {
+        line-height: 60px;
+        -moz-transition: line-height, 0.2s;
+        -o-transition: line-height, 0.2s;
+        -webkit-transition: line-height, 0.2s;
+        transition: line-height, 0.2s; } }
+  @media (min-width: 1000px) {
+    /* line 5, ../sass/components/_branding.scss */
+    h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
+    .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
+    .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.attendee-name, .view-schedule-items .site-name.legend-title,
+    .view-schedule-items .site-name.session-slot--title {
+      font-size: 48px; } }
+  @media (min-width: 1200px) {
+    /* line 5, ../sass/components/_branding.scss */
+    h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
+    .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
+    .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.attendee-name, .view-schedule-items .site-name.legend-title,
+    .view-schedule-items .site-name.session-slot--title {
+      font-size: 55px;
+      margin: 0 auto; } }
+  @media (min-width: 1700px) {
+    /* line 5, ../sass/components/_branding.scss */
+    h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
+    .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
+    .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.attendee-name, .view-schedule-items .site-name.legend-title,
+    .view-schedule-items .site-name.session-slot--title {
+      font-size: 65px; } }
+  /* line 53, ../sass/components/_branding.scss */
+  h1.site-name a, .block--views-events-block-1 .site-name.views-field-title a, .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a,
+  .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
+  .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a, .block--views-individual-sponsors-block .site-name.attendee-name a, .view-schedule-items .site-name.legend-title a,
+  .view-schedule-items .site-name.session-slot--title a {
+    display: inline-block;
+    text-indent: -9999px;
+    background-image: url('../images/drupal-diver_small.png?1452276902');
+    width: 90px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #FCB040;
+    padding: 0;
+    position: relative;
+    left: 0;
+    z-index: 10;
+    background-position-y: -12px; }
+    /* line 68, ../sass/components/_branding.scss */
+    h1.site-name a:after, .block--views-events-block-1 .site-name.views-field-title a:after, .block--views-individual-sponsors-block h2.site-name a:after, .block--views-individual-sponsors-block .site-name.fieldset-legend a:after, .block--views-individual-sponsors-block .site-name.messages a:after, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:after, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:after, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:after, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:after,
+    .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:after,
+    .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:after, .block--views-individual-sponsors-block .site-name.attendee-name a:after, .view-schedule-items .site-name.legend-title a:after,
+    .view-schedule-items .site-name.session-slot--title a:after {
+      content: "#FLDC16";
+      position: absolute;
+      top: 0;
+      left: 100%;
+      text-indent: 0; }
+    @media (min-width: 700px) {
+      /* line 53, ../sass/components/_branding.scss */
+      h1.site-name a, .block--views-events-block-1 .site-name.views-field-title a, .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a,
+      .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
+      .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a, .block--views-individual-sponsors-block .site-name.attendee-name a, .view-schedule-items .site-name.legend-title a,
+      .view-schedule-items .site-name.session-slot--title a {
+        text-indent: 90px;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+        height: 80px; }
+        /* line 83, ../sass/components/_branding.scss */
+        h1.site-name a:after, .block--views-events-block-1 .site-name.views-field-title a:after, .block--views-individual-sponsors-block h2.site-name a:after, .block--views-individual-sponsors-block .site-name.fieldset-legend a:after, .block--views-individual-sponsors-block .site-name.messages a:after, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:after, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:after, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:after, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:after,
+        .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:after,
+        .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:after, .block--views-individual-sponsors-block .site-name.attendee-name a:after, .view-schedule-items .site-name.legend-title a:after,
+        .view-schedule-items .site-name.session-slot--title a:after {
+          content: ""; } }
+    @media (min-width: 900px) {
+      /* line 53, ../sass/components/_branding.scss */
+      h1.site-name a, .block--views-events-block-1 .site-name.views-field-title a, .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a,
+      .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
+      .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a, .block--views-individual-sponsors-block .site-name.attendee-name a, .view-schedule-items .site-name.legend-title a,
+      .view-schedule-items .site-name.session-slot--title a {
+        left: -20px;
+        background-position-y: 0; } }
+    /* line 93, ../sass/components/_branding.scss */
+    h1.site-name a:hover, .block--views-events-block-1 .site-name.views-field-title a:hover, .block--views-individual-sponsors-block h2.site-name a:hover, .block--views-individual-sponsors-block .site-name.fieldset-legend a:hover, .block--views-individual-sponsors-block .site-name.messages a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:hover, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:hover, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:hover,
+    .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:hover,
+    .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:hover, .block--views-individual-sponsors-block .site-name.attendee-name a:hover, .view-schedule-items .site-name.legend-title a:hover,
+    .view-schedule-items .site-name.session-slot--title a:hover {
+      color: #fdc572; }
+  @media (min-width: 700px) {
+    /* line 99, ../sass/components/_branding.scss */
+    .front h1.site-name a, .front .block--views-events-block-1 .site-name.views-field-title a, .block--views-events-block-1 .front .site-name.views-field-title a, .front .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .front h2.site-name a, .front .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .front .site-name.fieldset-legend a, .front .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block .front .site-name.messages a, .front .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .front h1.site-name a, .front #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .front h1.site-name a, .front .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .block--views-individual-sponsors-block .user-profile .front .site-name.field--name-field-user-first-name a, .front .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .front .site-name.field--name-field-user-first-name a,
+    .front .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
+    .block--views-individual-sponsors-block .user-profile .front .site-name.field--name-field-user-last-name a,
+    .front .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a,
+    .user-profile .block--views-individual-sponsors-block .front .site-name.field--name-field-user-last-name a, .front .block--views-individual-sponsors-block .site-name.attendee-name a, .block--views-individual-sponsors-block .front .site-name.attendee-name a, .front .view-schedule-items .site-name.legend-title a, .view-schedule-items .front .site-name.legend-title a,
+    .front .view-schedule-items .site-name.session-slot--title a,
+    .view-schedule-items .front .site-name.session-slot--title a {
+      margin: 0 0 0 10px;
+      text-indent: 0;
+      background-image: none;
+      width: auto;
+      height: auto;
+      display: inline;
+      left: 0; } }
+
+/* line 113, ../sass/components/_branding.scss */
+.site-logo {
+  display: none; }
+  @media (min-width: 700px) {
+    /* line 113, ../sass/components/_branding.scss */
+    .site-logo {
+      display: inline-block;
+      position: relative;
+      width: 70%;
+      left: 45%;
+      -moz-transform: translatex(-50%);
+      -ms-transform: translatex(-50%);
+      -webkit-transform: translatex(-50%);
+      transform: translatex(-50%); } }
+  @media (min-width: 900px) {
+    /* line 113, ../sass/components/_branding.scss */
+    .site-logo {
+      position: absolute;
+      top: 50%;
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 4%;
+      width: 40%;
+      max-width: 550px; } }
+  @media (min-width: 1200px) {
+    /* line 113, ../sass/components/_branding.scss */
+    .site-logo {
+      left: 0;
+      width: 45%; } }
+  @media (min-width: 1700px) {
+    /* line 113, ../sass/components/_branding.scss */
+    .site-logo {
+      width: 100%; } }
+
+/* =============================================================================
+    Comments
+   ========================================================================== */
+/* line 5, ../sass/components/_comments.scss */
+.comment__submitted {
+  color: #ccc;
+  font-size: .9em;
+  text-transform: uppercase; }
+  /* line 9, ../sass/components/_comments.scss */
+  .comment__submitted:before {
+    font-family: FontAwesome;
+    content: "\f007";
+    display: inline-block;
+    margin-right: 5px; }
+
+/* line 17, ../sass/components/_comments.scss */
+.comment__links {
+  margin-top: 5px; }
+  /* line 19, ../sass/components/_comments.scss */
+  .comment__links a {
+    font-size: 20px;
+    padding: 0 10px; }
+    /* line 23, ../sass/components/_comments.scss */
+    .comment__links a:hover {
+      color: white; }
+
+/* =============================================================================
+    Exploding bubbles
+   ========================================================================== */
+/* line 5, ../sass/components/_exploding_bubbles.scss */
+.explode-this-shit {
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+/* =============================================================================
+    Flag buttons
+   ========================================================================== */
+/* line 6, ../sass/components/_flag.scss */
+.flag a {
+  font-size: 20px;
+  padding: 10px 20px; }
+  /* line 10, ../sass/components/_flag.scss */
+  .flag a:hover {
+    color: white; }
+  /* line 13, ../sass/components/_flag.scss */
+  .flag a:before {
+    display: inline;
+    font-family: FontAwesome;
+    content: "\f14a";
+    margin-right: 10px; }
+  /* line 20, ../sass/components/_flag.scss */
+  .flag a.unflag-action {
+    background-color: #d37f03; }
+    /* line 22, ../sass/components/_flag.scss */
+    .flag a.unflag-action:before {
+      content: ""; }
+
+/* line 28, ../sass/components/_flag.scss */
+.flag-message {
+  margin-top: 10px; }
+
+/* =============================================================================
+    Footer Section
+   ========================================================================== */
+/* line 5, ../sass/components/_footer.scss */
+.zone.z-footer {
+  background-color: #0E73AF;
+  padding: 30px 10px 20px 10px; }
+  /* line 8, ../sass/components/_footer.scss */
+  .zone.z-footer .footer-copyright {
+    color: #eee;
+    padding: 10px 0;
+    text-align: center; }
+    @media (min-width: 700px) {
+      /* line 8, ../sass/components/_footer.scss */
+      .zone.z-footer .footer-copyright {
+        text-align: left;
+        float: left;
+        padding: 0 20px;
+        width: 70%;
+        text-align: left; } }
+    @media (min-width: 900px) {
+      /* line 8, ../sass/components/_footer.scss */
+      .zone.z-footer .footer-copyright {
+        width: 100%; } }
+    @media (min-width: 1200px) {
+      /* line 8, ../sass/components/_footer.scss */
+      .zone.z-footer .footer-copyright {
+        width: auto;
+        clear: both; } }
+    /* line 26, ../sass/components/_footer.scss */
+    .zone.z-footer .footer-copyright a {
+      color: #fff; }
+  /* line 30, ../sass/components/_footer.scss */
+  .zone.z-footer:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -40px;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid white; }
+
+/* line 44, ../sass/components/_footer.scss */
+#block-system-main-menu--2 {
+  padding: 0;
+  margin: 0;
+  text-align: left; }
+  /* line 48, ../sass/components/_footer.scss */
+  #block-system-main-menu--2 .highlight {
+    display: none; }
+  @media (min-width: 700px) {
+    /* line 44, ../sass/components/_footer.scss */
+    #block-system-main-menu--2 {
+      float: left; } }
+  /* line 54, ../sass/components/_footer.scss */
+  #block-system-main-menu--2 ul {
+    padding: 0;
+    margin: 0; }
+  /* line 58, ../sass/components/_footer.scss */
+  #block-system-main-menu--2 li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "bebas_neueregular", "arial narrow", arial, sans-serif;
+    display: block; }
+    /* line 64, ../sass/components/_footer.scss */
+    #block-system-main-menu--2 li a {
+      font-size: 32px;
+      color: #FCB040; }
+      /* line 67, ../sass/components/_footer.scss */
+      #block-system-main-menu--2 li a:hover {
+        color: #fb9b0e; }
+    /* line 71, ../sass/components/_footer.scss */
+    #block-system-main-menu--2 li li {
+      font-family: helvetica, arial, sans-serif;
+      margin: 0;
+      line-height: 1.4;
+      display: block; }
+      /* line 76, ../sass/components/_footer.scss */
+      #block-system-main-menu--2 li li a {
+        color: white;
+        font-size: 22px; }
+    @media (min-width: 700px) {
+      /* line 58, ../sass/components/_footer.scss */
+      #block-system-main-menu--2 li {
+        display: inline-block;
+        vertical-align: top;
+        padding: 20px; }
+        /* line 85, ../sass/components/_footer.scss */
+        #block-system-main-menu--2 li li {
+          display: block;
+          padding: 0; } }
+
+/* line 93, ../sass/components/_footer.scss */
+.social-icons-footer {
+  padding-top: 20px;
+  text-align: center; }
+  @media (min-width: 700px) {
+    /* line 93, ../sass/components/_footer.scss */
+    .social-icons-footer {
+      float: right; } }
+  /* line 99, ../sass/components/_footer.scss */
+  .social-icons-footer .icon {
+    position: relative;
+    font-size: 35px;
+    padding: 5px;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    color: white;
+    background-color: transparent;
+    border-radius: 50%;
+    border: solid 2px white;
+    display: inline-block;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+    /* line 113, ../sass/components/_footer.scss */
+    .social-icons-footer .icon:hover {
+      color: #0E73AF;
+      background-color: white; }
+    /* line 117, ../sass/components/_footer.scss */
+    .social-icons-footer .icon:before {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  /* line 122, ../sass/components/_footer.scss */
+  .social-icons-footer .icon-facebook {
+    position: relative;
+    top: -1px; }
+    /* line 125, ../sass/components/_footer.scss */
+    .social-icons-footer .icon-facebook:before {
+      font-family: FontAwesome;
+      content: "\f09a"; }
+
+/* =============================================================================
+    Front Hero
+   ========================================================================== */
+/* line 6, ../sass/components/_front_hero.scss */
+.block--views-events-block-1 .block__content {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); }
+  @media (min-width: 700px) {
+    /* line 6, ../sass/components/_front_hero.scss */
+    .block--views-events-block-1 .block__content {
+      padding: 20px; } }
+  @media (min-width: 900px) {
+    /* line 6, ../sass/components/_front_hero.scss */
+    .block--views-events-block-1 .block__content {
+      position: absolute;
+      width: 50%;
+      top: 50%;
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      right: 20px; } }
+  @media (min-width: 1200px) {
+    /* line 6, ../sass/components/_front_hero.scss */
+    .block--views-events-block-1 .block__content {
+      right: 0; } }
+/* line 24, ../sass/components/_front_hero.scss */
+.block--views-events-block-1 .views-field-title {
+  line-height: 1.2;
+  display: inline-block;
+  font-size: 55px;
+  color: white;
+  border-bottom: solid 1px white;
+  -webkit-text-stroke: 1px white; }
+  /* line 32, ../sass/components/_front_hero.scss */
+  .block--views-events-block-1 .views-field-title a {
+    color: inherit; }
+    /* line 34, ../sass/components/_front_hero.scss */
+    .block--views-events-block-1 .views-field-title a:link, .block--views-events-block-1 .views-field-title a:visited {
+      color: inherit; }
+  @media (min-width: 470px) {
+    /* line 24, ../sass/components/_front_hero.scss */
+    .block--views-events-block-1 .views-field-title {
+      font-size: 65px; } }
+  @media (min-width: 900px) {
+    /* line 24, ../sass/components/_front_hero.scss */
+    .block--views-events-block-1 .views-field-title {
+      font-size: 55px; } }
+  @media (min-width: 1200px) {
+    /* line 24, ../sass/components/_front_hero.scss */
+    .block--views-events-block-1 .views-field-title {
+      font-size: 60px; } }
+  @media (min-width: 1700px) {
+    /* line 24, ../sass/components/_front_hero.scss */
+    .block--views-events-block-1 .views-field-title {
+      font-size: 70px; } }
+/* line 52, ../sass/components/_front_hero.scss */
+.block--views-events-block-1 h2, .block--views-events-block-1 .fieldset-legend, .block--views-events-block-1 .messages, .block--views-events-block-1 #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-events-block-1 h1, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .block--views-events-block-1 h2, .block--views-events-block-1 .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .block--views-events-block-1 h2, .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .block--views-events-block-1 .legend-title, .block--views-events-block-1 .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .legend-title,
+.block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+#block-views-sponsors-block-block-1 .view-schedule-items .block--views-events-block-1 .session-slot--title,
+.block--views-events-block-1 .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
+.view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .session-slot--title, .block--views-events-block-1 .user-profile .field--name-field-user-first-name, .user-profile .block--views-events-block-1 .field--name-field-user-first-name,
+.block--views-events-block-1 .user-profile .field--name-field-user-last-name,
+.user-profile .block--views-events-block-1 .field--name-field-user-last-name, .block--views-events-block-1 .attendee-name {
+  font-size: 30px;
+  margin: 0;
+  line-height: 1.2;
+  color: #FCB040; }
+  @media (min-width: 470px) {
+    /* line 52, ../sass/components/_front_hero.scss */
+    .block--views-events-block-1 h2, .block--views-events-block-1 .fieldset-legend, .block--views-events-block-1 .messages, .block--views-events-block-1 #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-events-block-1 h1, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .block--views-events-block-1 h2, .block--views-events-block-1 .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .block--views-events-block-1 h2, .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .block--views-events-block-1 .legend-title, .block--views-events-block-1 .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .legend-title,
+    .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+    #block-views-sponsors-block-block-1 .view-schedule-items .block--views-events-block-1 .session-slot--title,
+    .block--views-events-block-1 .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
+    .view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .session-slot--title, .block--views-events-block-1 .user-profile .field--name-field-user-first-name, .user-profile .block--views-events-block-1 .field--name-field-user-first-name,
+    .block--views-events-block-1 .user-profile .field--name-field-user-last-name,
+    .user-profile .block--views-events-block-1 .field--name-field-user-last-name, .block--views-events-block-1 .attendee-name {
+      line-height: 1.5; } }
+  @media (min-width: 1700px) {
+    /* line 52, ../sass/components/_front_hero.scss */
+    .block--views-events-block-1 h2, .block--views-events-block-1 .fieldset-legend, .block--views-events-block-1 .messages, .block--views-events-block-1 #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-events-block-1 h1, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .block--views-events-block-1 h2, .block--views-events-block-1 .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .block--views-events-block-1 h2, .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .block--views-events-block-1 .legend-title, .block--views-events-block-1 .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .legend-title,
+    .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+    #block-views-sponsors-block-block-1 .view-schedule-items .block--views-events-block-1 .session-slot--title,
+    .block--views-events-block-1 .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
+    .view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .session-slot--title, .block--views-events-block-1 .user-profile .field--name-field-user-first-name, .user-profile .block--views-events-block-1 .field--name-field-user-first-name,
+    .block--views-events-block-1 .user-profile .field--name-field-user-last-name,
+    .user-profile .block--views-events-block-1 .field--name-field-user-last-name, .block--views-events-block-1 .attendee-name {
+      font-size: 40px; } }
+/* line 64, ../sass/components/_front_hero.scss */
+.block--views-events-block-1 p {
+  margin: 10px; }
+  @media (min-width: 1700px) {
+    /* line 64, ../sass/components/_front_hero.scss */
+    .block--views-events-block-1 p {
+      font-size: 25px; } }
+/* line 71, ../sass/components/_front_hero.scss */
+.block--views-events-block-1 button, .block--views-events-block-1 input[type="submit"], .block--views-events-block-1 a.button, .block--views-events-block-1 .comment__links a, .comment__links .block--views-events-block-1 a, .block--views-events-block-1 .flag a, .flag .block--views-events-block-1 a, .block--views-events-block-1 .view-session-list .read-more, .view-session-list .block--views-events-block-1 .read-more {
+  width: 90%;
+  max-width: 380px;
+  height: 90px;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 90px;
+  margin: 10px 0 20px 0; }
+/* line 81, ../sass/components/_front_hero.scss */
+.block--views-events-block-1 .date {
+  display: block;
+  font-size: 35px; }
+  @media (min-width: 470px) {
+    /* line 81, ../sass/components/_front_hero.scss */
+    .block--views-events-block-1 .date {
+      display: inline;
+      font-size: 30px; }
+      /* line 87, ../sass/components/_front_hero.scss */
+      .block--views-events-block-1 .date:after {
+        content: " | "; } }
+  @media (min-width: 1700px) {
+    /* line 81, ../sass/components/_front_hero.scss */
+    .block--views-events-block-1 .date {
+      font-size: inherit; } }
+/* line 95, ../sass/components/_front_hero.scss */
+.block--views-events-block-1 .loc {
+  display: block; }
+  @media (min-width: 470px) {
+    /* line 95, ../sass/components/_front_hero.scss */
+    .block--views-events-block-1 .loc {
+      display: inline; } }
+/* line 103, ../sass/components/_front_hero.scss */
+.block--views-events-block-1 .icon {
+  color: #fff;
+  font-size: 50px; }
+/* line 108, ../sass/components/_front_hero.scss */
+.block--views-events-block-1 .icon:hover {
+  color: #E4D400; }
+
+/* line 118, ../sass/components/_front_hero.scss */
+.bubble1,
+.bubble2,
+.bubble3,
+.bubble4,
+.bubble5 {
+  display: none; }
+
+/* line 126, ../sass/components/_front_hero.scss */
+.cssanimations .diver-bubble {
+  display: block;
+  width: 80px;
+  height: 80px; }
+  /* line 130, ../sass/components/_front_hero.scss */
+  .cssanimations .diver-bubble > img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    max-width: 9999px; }
+
+/* =============================================================================
+    Location Map
+   ========================================================================== */
+/* line 5, ../sass/components/_location_map_front.scss */
+.z-preface2 {
+  background-position: center center;
+  position: relative;
+  overflow: hidden; }
+  @media (max-width: 470px) {
+    /* line 5, ../sass/components/_location_map_front.scss */
+    .z-preface2 {
+      background-image: url(../images/map-background-smartphone_narrow.jpg); } }
+  @media (min-width: 470px) and (max-width: 700px) {
+    /* line 5, ../sass/components/_location_map_front.scss */
+    .z-preface2 {
+      background-image: url(../images/map-background-smartphone_wide.jpg); } }
+  @media (min-width: 700px) and (max-width: 900px) {
+    /* line 5, ../sass/components/_location_map_front.scss */
+    .z-preface2 {
+      background-image: url(../images/map-background-tablet_narrow.jpg); } }
+  @media (min-width: 900px) and (max-width: 1200px) {
+    /* line 5, ../sass/components/_location_map_front.scss */
+    .z-preface2 {
+      background-image: url(../images/map-background-tablet_wide.jpg); } }
+  @media (min-width: 1200px) and (max-width: 1700px) {
+    /* line 5, ../sass/components/_location_map_front.scss */
+    .z-preface2 {
+      background-image: url(../images/map-background-normal.jpg); } }
+  @media (min-width: 1700px) {
+    /* line 5, ../sass/components/_location_map_front.scss */
+    .z-preface2 {
+      background-image: url(../images/map-background-wide.jpg); } }
+
+/* line 28, ../sass/components/_location_map_front.scss */
+#map-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-indent: -100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
+/* line 38, ../sass/components/_location_map_front.scss */
+.contextual-links-region {
+  position: static; }
+
+/* line 41, ../sass/components/_location_map_front.scss */
+#location-info {
+  margin: 50px auto;
+  padding: 20px 30px;
+  width: 95%;
+  z-index: 5;
+  position: relative;
+  background-color: #0E73AF;
+  color: white;
+  overflow: visible;
+  /* Location Info Slide-in Effect */ }
+  /* line 2, ../sass/abstractions/_mixins.scss */
+  #location-info:before, #location-info:after {
+    content: " ";
+    display: table; }
+  /* line 7, ../sass/abstractions/_mixins.scss */
+  #location-info:after {
+    clear: both; }
+  @media (min-width: 470px) {
+    /* line 41, ../sass/components/_location_map_front.scss */
+    #location-info {
+      width: 80%; } }
+  @media (min-width: 700px) {
+    /* line 41, ../sass/components/_location_map_front.scss */
+    #location-info {
+      max-width: 350px;
+      margin: 75px 0 75px 100px;
+      left: 20%; }
+      /* line 58, ../sass/components/_location_map_front.scss */
+      #location-info:before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: -40px;
+        top: 58%;
+        margin-top: -60px;
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-right: 40px solid #0E73AF;
+        -moz-transition: left 0.2s ease 0.75s;
+        -o-transition: left 0.2s ease 0.75s;
+        -webkit-transition: left 0.2s ease;
+        -webkit-transition-delay: 0.75s;
+        transition: left 0.2s ease 0.75s; } }
+  @media (min-width: 900px) {
+    /* line 41, ../sass/components/_location_map_front.scss */
+    #location-info {
+      left: 50%; } }
+  @media (min-width: 1200px) {
+    /* line 77, ../sass/components/_location_map_front.scss */
+    .csstransitions #location-info {
+      left: 130%;
+      -moz-transition: left 0.5s 0.2s;
+      -o-transition: left 0.5s 0.2s;
+      -webkit-transition: left 0.5s;
+      -webkit-transition-delay: 0.2s;
+      transition: left 0.5s 0.2s; }
+      /* line 80, ../sass/components/_location_map_front.scss */
+      .csstransitions #location-info:before {
+        left: 0; }
+      /* line 83, ../sass/components/_location_map_front.scss */
+      .csstransitions #location-info.scroll-down {
+        left: 50%; }
+        /* line 85, ../sass/components/_location_map_front.scss */
+        .csstransitions #location-info.scroll-down:before {
+          left: -40px; } }
+  /* line 91, ../sass/components/_location_map_front.scss */
+  #location-info h1, #location-info .block--views-events-block-1 .views-field-title, .block--views-events-block-1 #location-info .views-field-title, #location-info .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #location-info h2, #location-info .block--views-individual-sponsors-block .fieldset-legend, .block--views-individual-sponsors-block #location-info .fieldset-legend, #location-info .block--views-individual-sponsors-block .messages, .block--views-individual-sponsors-block #location-info .messages, #location-info .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name, .block--views-individual-sponsors-block .user-profile #location-info .field--name-field-user-first-name, #location-info .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block #location-info .field--name-field-user-first-name,
+  #location-info .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name,
+  .block--views-individual-sponsors-block .user-profile #location-info .field--name-field-user-last-name,
+  #location-info .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name,
+  .user-profile .block--views-individual-sponsors-block #location-info .field--name-field-user-last-name, #location-info .block--views-individual-sponsors-block .attendee-name, .block--views-individual-sponsors-block #location-info .attendee-name, #location-info .view-schedule-items .legend-title, .view-schedule-items #location-info .legend-title,
+  #location-info .view-schedule-items .session-slot--title,
+  .view-schedule-items #location-info .session-slot--title {
+    color: #E4D400;
+    margin: 0; }
+  /* line 95, ../sass/components/_location_map_front.scss */
+  #location-info h2, #location-info .fieldset-legend, #location-info .messages, #location-info #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 #location-info h1, #location-info #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 #location-info .views-field-title, #location-info .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 #location-info .views-field-title, #location-info #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items #location-info .legend-title, #location-info .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 #location-info .legend-title,
+  #location-info #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+  #block-views-sponsors-block-block-1 .view-schedule-items #location-info .session-slot--title,
+  #location-info .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
+  .view-schedule-items #block-views-sponsors-block-block-1 #location-info .session-slot--title, #location-info .user-profile .field--name-field-user-first-name, .user-profile #location-info .field--name-field-user-first-name,
+  #location-info .user-profile .field--name-field-user-last-name,
+  .user-profile #location-info .field--name-field-user-last-name, #location-info .attendee-name {
+    color: white;
+    margin: 0;
+    text-align: left;
+    font-size: 30px;
+    line-height: 1.1; }
+    @media (min-width: 470px) {
+      /* line 95, ../sass/components/_location_map_front.scss */
+      #location-info h2, #location-info .fieldset-legend, #location-info .messages, #location-info #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 #location-info h1, #location-info #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 #location-info .views-field-title, #location-info .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 #location-info .views-field-title, #location-info #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items #location-info .legend-title, #location-info .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 #location-info .legend-title,
+      #location-info #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+      #block-views-sponsors-block-block-1 .view-schedule-items #location-info .session-slot--title,
+      #location-info .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
+      .view-schedule-items #block-views-sponsors-block-block-1 #location-info .session-slot--title, #location-info .user-profile .field--name-field-user-first-name, .user-profile #location-info .field--name-field-user-first-name,
+      #location-info .user-profile .field--name-field-user-last-name,
+      .user-profile #location-info .field--name-field-user-last-name, #location-info .attendee-name {
+        line-height: 1.5; } }
+  /* line 105, ../sass/components/_location_map_front.scss */
+  #location-info h3 {
+    color: white;
+    margin: 0;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 1.3em; }
+  /* line 112, ../sass/components/_location_map_front.scss */
+  #location-info p {
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    text-align: left; }
+  /* line 118, ../sass/components/_location_map_front.scss */
+  #location-info .addr {
+    display: block; }
+  /* line 121, ../sass/components/_location_map_front.scss */
+  #location-info .city {
+    display: block; }
+  /* line 124, ../sass/components/_location_map_front.scss */
+  #location-info .inline-map {
+    color: #E4D400;
+    font-weight: normal;
+    margin-left: 5px;
+    font-family: "arial narrow", arial, helvetica, sans-serif; }
+    /* line 129, ../sass/components/_location_map_front.scss */
+    #location-info .inline-map:before {
+      font-family: FontAwesome;
+      display: inline;
+      content: "\f041";
+      margin-right: 3px; }
+    /* line 135, ../sass/components/_location_map_front.scss */
+    #location-info .inline-map:hover {
+      color: #FCB040; }
+
+/* line 143, ../sass/components/_location_map_front.scss */
+#location-img {
+  display: none; }
+  @media (min-width: 700px) {
+    /* line 143, ../sass/components/_location_map_front.scss */
+    #location-img {
+      display: block;
+      position: absolute;
+      left: 20%;
+      top: 50%;
+      width: 75px;
+      height: 75px;
+      margin-left: -38px;
+      margin-top: -60px; } }
+  @media (min-width: 900px) {
+    /* line 143, ../sass/components/_location_map_front.scss */
+    #location-img {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 75px;
+      height: 75px;
+      margin-left: -38px;
+      margin-top: -60px; } }
+
+/* =============================================================================
+    Login Toboggan
+   ========================================================================== */
+/* line 6, ../sass/components/_login_toboggan.scss */
+.toboggan-unified #login-message {
+  display: none; }
+/* line 9, ../sass/components/_login_toboggan.scss */
+.toboggan-unified #login-links {
+  text-align: left;
+  border-bottom: solid 1px #ddd; }
+  /* line 2, ../sass/abstractions/_mixins.scss */
+  .toboggan-unified #login-links:before, .toboggan-unified #login-links:after {
+    content: " ";
+    display: table; }
+  /* line 7, ../sass/abstractions/_mixins.scss */
+  .toboggan-unified #login-links:after {
+    clear: both; }
+  /* line 13, ../sass/components/_login_toboggan.scss */
+  .toboggan-unified #login-links a {
+    color: #333;
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 16px; }
+    /* line 20, ../sass/components/_login_toboggan.scss */
+    .toboggan-unified #login-links a.lt-active {
+      background-color: #ddd;
+      border: none; }
+      /* line 23, ../sass/components/_login_toboggan.scss */
+      .toboggan-unified #login-links a.lt-active:hover {
+        border: none;
+        background-color: #ccc; }
+/* line 31, ../sass/components/_login_toboggan.scss */
+.submit-session-access-denied .toboggan-unified #register-link {
+  -moz-animation: colorPulse 0.75s 2;
+  -webkit-animation: colorPulse 0.75s 2;
+  animation: colorPulse 0.75s 2;
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
+
+@keyframes colorPulse {
+  0% {
+    background-color: transparent;
+    color: #333; }
+  50% {
+    background-color: #FCB040;
+    color: white; }
+  100% {
+    background-color: transparent;
+    color: #333; } }
+@-webkit-keyframes colorPulse {
+  0% {
+    background-color: transparent;
+    color: #333; }
+  50% {
+    background-color: #FCB040;
+    color: white; }
+  100% {
+    background-color: transparent;
+    color: #333; } }
+@-moz-keyframes colorPulse {
+  0% {
+    background-color: transparent;
+    color: #333; }
+  50% {
+    background-color: #FCB040;
+    color: white; }
+  100% {
+    background-color: transparent;
+    color: #333; } }
+/* =============================================================================
+    Drupal's Messages
+   ========================================================================== */
+/* line 5, ../sass/components/_messages.scss */
+.messages {
+  position: relative;
+  background-image: none;
+  border: none;
+  padding: 20px;
+  color: white; }
+  /* line 12, ../sass/components/_messages.scss */
+  .messages .placeholder {
+    margin-right: 10px; }
+  /* line 15, ../sass/components/_messages.scss */
+  .messages a {
+    color: white !important;
+    text-decoration: underline !important; }
+    /* line 18, ../sass/components/_messages.scss */
+    .messages a:hover {
+      text-decoration: none !important; }
+  @media (min-width: 700px) {
+    /* line 23, ../sass/components/_messages.scss */
+    .messages:before {
+      font-family: FontAwesome;
+      position: absolute;
+      font-size: 70px;
+      line-height: 1;
+      left: 20px;
+      top: 50%;
+      margin-top: -35px; } }
+
+/* line 35, ../sass/components/_messages.scss */
+.messages--status {
+  background-color: #FCB040; }
+  @media (min-width: 700px) {
+    /* line 35, ../sass/components/_messages.scss */
+    .messages--status {
+      padding-left: 100px; }
+      /* line 39, ../sass/components/_messages.scss */
+      .messages--status:before {
+        content: "\f087"; } }
+
+/* line 45, ../sass/components/_messages.scss */
+.messages--warning {
+  background-color: #E4D400; }
+  @media (min-width: 700px) {
+    /* line 45, ../sass/components/_messages.scss */
+    .messages--warning {
+      padding-left: 100px; }
+      /* line 49, ../sass/components/_messages.scss */
+      .messages--warning:before {
+        content: "\f0a4"; } }
+
+/* line 55, ../sass/components/_messages.scss */
+.messages--error,
+.messages.error {
+  background-color: darkred; }
+  @media (min-width: 700px) {
+    /* line 55, ../sass/components/_messages.scss */
+    .messages--error,
+    .messages.error {
+      padding-left: 110px; }
+      /* line 60, ../sass/components/_messages.scss */
+      .messages--error:before,
+      .messages.error:before {
+        content: "\f071"; } }
+  /* line 64, ../sass/components/_messages.scss */
+  .submit-session-access-denied .messages--error, .submit-session-access-denied
+  .messages.error {
+    background-color: #E4D400;
+    text-indent: -9999px;
+    position: relative; }
+    /* line 68, ../sass/components/_messages.scss */
+    .submit-session-access-denied .messages--error:before, .submit-session-access-denied
+    .messages.error:before {
+      position: absolute;
+      text-indent: 0;
+      left: 20px; }
+    /* line 73, ../sass/components/_messages.scss */
+    .submit-session-access-denied .messages--error:after, .submit-session-access-denied
+    .messages.error:after {
+      content: "Heyo! Please create an account to submit a session.";
+      position: absolute;
+      left: 110px;
+      text-indent: 0; }
+
+/* =============================================================================
+    Primary Navigation
+   ========================================================================== */
+/* line 5, ../sass/components/_navigation.scss */
+.z-navigation {
+  overflow: visible; }
+
+/* line 8, ../sass/components/_navigation.scss */
+#block-system-main-menu {
+  background-color: #1A1A1A;
+  /* clear: both; */
+  font-family: "bebas_neueregular", "arial narrow", arial, sans-serif;
+  line-height: 100px;
+  text-transform: uppercase; }
+  @media (max-width: 1025px) {
+    /* line 8, ../sass/components/_navigation.scss */
+    #block-system-main-menu {
+      -moz-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      width: 0;
+      overflow: scroll;
+      position: fixed;
+      top: 60px;
+      right: 0;
+      height: 100%;
+      padding-bottom: 60px;
+      z-index: 6; }
+      /* line 26, ../sass/components/_navigation.scss */
+      #block-system-main-menu::-webkit-scrollbar {
+        display: none; }
+      /* line 30, ../sass/components/_navigation.scss */
+      #block-system-main-menu.header-menu-active {
+        width: 100%;
+        max-width: 400px; } }
+  @media (min-width: 470px) and (max-width: 700px) {
+    /* line 37, ../sass/components/_navigation.scss */
+    #block-system-main-menu.header-menu-active {
+      width: 80%; } }
+  @media (min-width: 700px) and (max-width: 1025px) {
+    /* line 43, ../sass/components/_navigation.scss */
+    #block-system-main-menu.header-menu-active {
+      width: 300px; } }
+  @media (min-width: 1025px) {
+    /* line 8, ../sass/components/_navigation.scss */
+    #block-system-main-menu {
+      -moz-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      height: 100px;
+      z-index: 10; }
+      /* line 56, ../sass/components/_navigation.scss */
+      #block-system-main-menu.scroll-down {
+        line-height: 60px;
+        height: 60px; } }
+
+/* line 63, ../sass/components/_navigation.scss */
+#block-system-main-menu > .menu {
+  /* @include clearfix; */
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  font-size: 0; }
+  /* line 70, ../sass/components/_navigation.scss */
+  .scrolldown #block-system-main-menu > .menu {
+    top: 60px; }
+  /* line 74, ../sass/components/_navigation.scss */
+  #block-system-main-menu > .menu .dropdown-menu {
+    margin: 0; }
+  @media (min-width: 1025px) {
+    /* line 63, ../sass/components/_navigation.scss */
+    #block-system-main-menu > .menu {
+      text-align: right;
+      max-width: 1100px;
+      margin: 0 auto;
+      height: 60px; } }
+  @media (min-width: 1700px) {
+    /* line 63, ../sass/components/_navigation.scss */
+    #block-system-main-menu > .menu {
+      max-width: 1500px; } }
+  /* line 88, ../sass/components/_navigation.scss */
+  #block-system-main-menu > .menu a {
+    -moz-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    display: block; }
+    @media (min-width: 1025px) {
+      /* line 88, ../sass/components/_navigation.scss */
+      #block-system-main-menu > .menu a {
+        background-color: #1A1A1A;
+        position: relative;
+        z-index: 10;
+        padding: 0 10px; } }
+  /* line 104, ../sass/components/_navigation.scss */
+  #block-system-main-menu > .menu li {
+    margin: 0;
+    display: block;
+    font-size: 20px;
+    position: relative;
+    z-index: 5;
+    /* =============================================================================
+        Submenu Structure for mobile
+       ========================================================================== */
+    /* =============================================================================
+        Submenu Structure for desktop
+       ========================================================================== */ }
+    @media (min-width: 1025px) {
+      /* line 104, ../sass/components/_navigation.scss */
+      #block-system-main-menu > .menu li {
+        display: inline-block;
+        z-index: auto; }
+        /* line 115, ../sass/components/_navigation.scss */
+        #block-system-main-menu > .menu li.faq > a {
+          padding-right: 20px !important; } }
+    @media (min-width: 1025px) {
+      /* line 104, ../sass/components/_navigation.scss */
+      #block-system-main-menu > .menu li {
+        font-size: 25px; } }
+    @media (min-width: 1700px) {
+      /* line 104, ../sass/components/_navigation.scss */
+      #block-system-main-menu > .menu li {
+        font-size: 35px; } }
+    /* line 129, ../sass/components/_navigation.scss */
+    #block-system-main-menu > .menu li a.highlight {
+      background-color: #55C2C2;
+      -moz-transition: color 0.4s;
+      -o-transition: color 0.4s;
+      -webkit-transition: color 0.4s;
+      transition: color 0.4s; }
+      /* line 133, ../sass/components/_navigation.scss */
+      #block-system-main-menu > .menu li a.highlight:hover {
+        background-color: #55C2C2; }
+    /* line 138, ../sass/components/_navigation.scss */
+    #block-system-main-menu > .menu li:hover a {
+      background-color: #FCB040;
+      color: #333; }
+    /* line 143, ../sass/components/_navigation.scss */
+    #block-system-main-menu > .menu li .icon {
+      line-height: inherit; }
+    @media (max-width: 1025px) {
+      /* line 104, ../sass/components/_navigation.scss */
+      #block-system-main-menu > .menu li {
+        line-height: 3;
+        font-size: 25px;
+        position: relative; }
+        /* line 156, ../sass/components/_navigation.scss */
+        #block-system-main-menu > .menu li > ul {
+          display: none;
+          background-color: #666;
+          padding: 0;
+          margin: 0; }
+          /* line 162, ../sass/components/_navigation.scss */
+          #block-system-main-menu > .menu li > ul > li {
+            line-height: 2; }
+            /* line 165, ../sass/components/_navigation.scss */
+            #block-system-main-menu > .menu li > ul > li > a {
+              background-color: transparent; }
+              /* line 168, ../sass/components/_navigation.scss */
+              #block-system-main-menu > .menu li > ul > li > a:hover {
+                background-color: #999; }
+        /* line 175, ../sass/components/_navigation.scss */
+        #block-system-main-menu > .menu li a.highlight {
+          background-color: #3ca8a8; }
+          /* line 178, ../sass/components/_navigation.scss */
+          #block-system-main-menu > .menu li a.highlight:hover {
+            background-color: #55C2C2; }
+          /* line 181, ../sass/components/_navigation.scss */
+          #block-system-main-menu > .menu li a.highlight:before {
+            font-family: FontAwesome;
+            display: inline-block;
+            width: 35px;
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+            opacity: 0.8; }
+        /* line 189, ../sass/components/_navigation.scss */
+        #block-system-main-menu > .menu li .logout:before,
+        #block-system-main-menu > .menu li .login:before {
+          content: "\f007"; }
+        /* line 194, ../sass/components/_navigation.scss */
+        #block-system-main-menu > .menu li .register:before {
+          content: "\f145"; }
+        /* line 198, ../sass/components/_navigation.scss */
+        #block-system-main-menu > .menu li:hover a {
+          background-color: transparent;
+          color: white; }
+        /* line 203, ../sass/components/_navigation.scss */
+        #block-system-main-menu > .menu li.expanded:after {
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 15px solid #999;
+          -moz-transition: -moz-transform 0.5s;
+          -o-transition: -o-transform 0.5s;
+          -webkit-transition: -webkit-transform 0.5s;
+          transition: transform 0.5s;
+          content: "";
+          display: block;
+          position: absolute;
+          right: 30px;
+          top: 31px;
+          width: 0;
+          height: 0;
+          pointer-events: none; }
+        /* line 218, ../sass/components/_navigation.scss */
+        #block-system-main-menu > .menu li.expanded-active-processed:after {
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); } }
+    @media (min-width: 1025px) {
+      /* line 228, ../sass/components/_navigation.scss */
+      #block-system-main-menu > .menu li:hover > ul {
+        display: block;
+        top: 100%; }
+      /* line 233, ../sass/components/_navigation.scss */
+      #block-system-main-menu > .menu li > ul {
+        background-color: #FCB040;
+        border: solid 1px #333;
+        border-top: 0;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: -600px;
+        left: -1px;
+        width: 180px;
+        z-index: 5;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s; } }
+  @media (min-width: 1025px) and (min-width: 1700px) {
+    /* line 233, ../sass/components/_navigation.scss */
+    #block-system-main-menu > .menu li > ul {
+      top: -600px;
+      width: 240px; } }
+    @media (min-width: 1025px) {
+        /* line 251, ../sass/components/_navigation.scss */
+        #block-system-main-menu > .menu li > ul > li {
+          display: block;
+          float: none;
+          line-height: 2;
+          text-align: left; }
+        /* line 258, ../sass/components/_navigation.scss */
+        #block-system-main-menu > .menu li > ul a {
+          background-color: #FCB040;
+          color: #333;
+          padding: 0 10px;
+          display: block;
+          z-index: 5; }
+          /* line 264, ../sass/components/_navigation.scss */
+          #block-system-main-menu > .menu li > ul a:hover {
+            color: white !important; } }
+
+/* line 277, ../sass/components/_navigation.scss */
+#mobile-menu {
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  text-indent: 100%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  cursor: pointer; }
+  /* line 289, ../sass/components/_navigation.scss */
+  #mobile-menu:after {
+    font-family: FontAwesome;
+    font-size: 40px;
+    text-indent: 0;
+    text-align: center;
+    line-height: 50px;
+    content: "\f0c9";
+    color: #ccc;
+    display: block;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 0;
+    top: 0; }
+  /* line 305, ../sass/components/_navigation.scss */
+  #mobile-menu:focus:after, #mobile-menu:active:after {
+    color: white; }
+  @media (min-width: 1025px) {
+    /* line 277, ../sass/components/_navigation.scss */
+    #mobile-menu {
+      display: none; } }
+
+@media (min-width: 1025px) {
+  /* line 316, ../sass/components/_navigation.scss */
+  .scroll-down #header-menu,
+  .scroll-down #primary-menu {
+    line-height: 60px;
+    height: 60px; } }
+@media (min-width: 1025px) and (min-width: 1025px) {
+  /* line 324, ../sass/components/_navigation.scss */
+  .scroll-down h1.site-name, .scroll-down .block--views-events-block-1 .site-name.views-field-title, .block--views-events-block-1 .scroll-down .site-name.views-field-title, .scroll-down .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .scroll-down h2.site-name, .scroll-down .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .scroll-down .site-name.fieldset-legend, .scroll-down .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block .scroll-down .site-name.messages, .scroll-down .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .scroll-down h1.site-name, .scroll-down #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .scroll-down h1.site-name, .scroll-down .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .block--views-individual-sponsors-block .user-profile .scroll-down .site-name.field--name-field-user-first-name, .scroll-down .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .scroll-down .site-name.field--name-field-user-first-name,
+  .scroll-down .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
+  .block--views-individual-sponsors-block .user-profile .scroll-down .site-name.field--name-field-user-last-name,
+  .scroll-down .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name,
+  .user-profile .block--views-individual-sponsors-block .scroll-down .site-name.field--name-field-user-last-name, .scroll-down .block--views-individual-sponsors-block .site-name.attendee-name, .block--views-individual-sponsors-block .scroll-down .site-name.attendee-name, .scroll-down .view-schedule-items .site-name.legend-title, .view-schedule-items .scroll-down .site-name.legend-title,
+  .scroll-down .view-schedule-items .site-name.session-slot--title,
+  .view-schedule-items .scroll-down .site-name.session-slot--title {
+    line-height: 60px;
+    height: 60px; } }
+@media (min-width: 1025px) {
+  /* line 331, ../sass/components/_navigation.scss */
+  .scroll-down.zone.z-navigation {
+    height: 60px; } }
+
+/* Some overrides to omega base to remove background images and associated http requests */
+/* line 339, ../sass/components/_navigation.scss */
+.menu .expanded {
+  list-style-image: none;
+  list-style-type: none; }
+
+/* line 344, ../sass/components/_navigation.scss */
+html.js fieldset.collapsible .fieldset-legend {
+  background: none; }
+
+/* line 348, ../sass/components/_navigation.scss */
+.menu .leaf {
+  list-style-image: none;
+  list-style-type: none; }
+
+/* =============================================================================
+    Node/Add pages (especially node/add/session)
+   ========================================================================== */
+/* line 6, ../sass/components/_node_add.scss */
+html.js .form-autocomplete {
+  background-image: none; }
+
+/* line 12, ../sass/components/_node_add.scss */
+.page-node-add-session .tabledrag-toggle-weight-wrapper {
+  display: none; }
+
+/* line 18, ../sass/components/_node_add.scss */
+#edit-field-speakers-und-add-more {
+  font-size: 25px; }
+
+/* =============================================================================
+    Session Node
+   ========================================================================== */
+/* =============================================================================
+    Drupal's Pager
+   ========================================================================== */
+/* line 5, ../sass/components/_pager.scss */
+.pager .pager__item {
+  font-size: 1.5em; }
+  @media (min-width: 1200px) {
+    /* line 5, ../sass/components/_pager.scss */
+    .pager .pager__item {
+      font-size: 2em; } }
+
+/* =============================================================================
+    Preface Region and featured speakers
+   ========================================================================== */
+/* line 6, ../sass/components/_preface.scss */
+.zone.z-preface h2, .zone.z-preface .fieldset-legend, .zone.z-preface .messages, .zone.z-preface #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .zone.z-preface h1, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 .zone.z-preface .views-field-title, .zone.z-preface .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .zone.z-preface .views-field-title, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .zone.z-preface h2, .zone.z-preface .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .zone.z-preface h2, .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .legend-title, .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .legend-title,
+.zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+#block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .session-slot--title,
+.zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
+.view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .session-slot--title, .zone.z-preface .user-profile .field--name-field-user-first-name, .user-profile .zone.z-preface .field--name-field-user-first-name,
+.zone.z-preface .user-profile .field--name-field-user-last-name,
+.user-profile .zone.z-preface .field--name-field-user-last-name, .zone.z-preface .attendee-name {
+  margin: 20px 0;
+  font-size: 50px;
+  line-height: 1;
+  color: white;
+  text-align: center; }
+  @media (min-width: 700px) {
+    /* line 6, ../sass/components/_preface.scss */
+    .zone.z-preface h2, .zone.z-preface .fieldset-legend, .zone.z-preface .messages, .zone.z-preface #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .zone.z-preface h1, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 .zone.z-preface .views-field-title, .zone.z-preface .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .zone.z-preface .views-field-title, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .zone.z-preface h2, .zone.z-preface .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .zone.z-preface h2, .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .legend-title, .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .legend-title,
+    .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+    #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .session-slot--title,
+    .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
+    .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .session-slot--title, .zone.z-preface .user-profile .field--name-field-user-first-name, .user-profile .zone.z-preface .field--name-field-user-first-name,
+    .zone.z-preface .user-profile .field--name-field-user-last-name,
+    .user-profile .zone.z-preface .field--name-field-user-last-name, .zone.z-preface .attendee-name {
+      font-size: 38px; } }
+  @media (min-width: 900px) {
+    /* line 6, ../sass/components/_preface.scss */
+    .zone.z-preface h2, .zone.z-preface .fieldset-legend, .zone.z-preface .messages, .zone.z-preface #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .zone.z-preface h1, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 .zone.z-preface .views-field-title, .zone.z-preface .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .zone.z-preface .views-field-title, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .zone.z-preface h2, .zone.z-preface .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .zone.z-preface h2, .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .legend-title, .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .legend-title,
+    .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+    #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .session-slot--title,
+    .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
+    .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .session-slot--title, .zone.z-preface .user-profile .field--name-field-user-first-name, .user-profile .zone.z-preface .field--name-field-user-first-name,
+    .zone.z-preface .user-profile .field--name-field-user-last-name,
+    .user-profile .zone.z-preface .field--name-field-user-last-name, .zone.z-preface .attendee-name {
+      font-size: 45px; } }
+  @media (min-width: 1200px) {
+    /* line 6, ../sass/components/_preface.scss */
+    .zone.z-preface h2, .zone.z-preface .fieldset-legend, .zone.z-preface .messages, .zone.z-preface #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .zone.z-preface h1, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 .zone.z-preface .views-field-title, .zone.z-preface .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .zone.z-preface .views-field-title, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .zone.z-preface h2, .zone.z-preface .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .zone.z-preface h2, .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .legend-title, .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .legend-title,
+    .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+    #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .session-slot--title,
+    .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
+    .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .session-slot--title, .zone.z-preface .user-profile .field--name-field-user-first-name, .user-profile .zone.z-preface .field--name-field-user-first-name,
+    .zone.z-preface .user-profile .field--name-field-user-last-name,
+    .user-profile .zone.z-preface .field--name-field-user-last-name, .zone.z-preface .attendee-name {
+      font-size: 41px; } }
+/* line 22, ../sass/components/_preface.scss */
+.zone.z-preface li,
+.zone.z-preface ul {
+  padding: 0;
+  list-style-type: none; }
+/* line 27, ../sass/components/_preface.scss */
+.zone.z-preface .speaker {
+  text-align: center;
+  margin-bottom: 50px; }
+  @media (min-width: 700px) {
+    /* line 27, ../sass/components/_preface.scss */
+    .zone.z-preface .speaker {
+      display: inline-block;
+      vertical-align: top;
+      width: 48%;
+      -moz-transition: all 0.3s ease 0.1s;
+      -o-transition: all 0.3s ease 0.1s;
+      -webkit-transition: all 0.3s ease;
+      -webkit-transition-delay: 0.1s;
+      transition: all 0.3s ease 0.1s; } }
+  @media (min-width: 1200px) {
+    /* line 27, ../sass/components/_preface.scss */
+    .zone.z-preface .speaker {
+      width: 33%;
+      padding: 20px;
+      /* Speaker 'Pop' effect */ } }
+  @media (min-width: 1200px) and (max-height: 800px) {
+    /* line 40, ../sass/components/_preface.scss */
+    .csstransforms .zone.z-preface .speaker {
+      -moz-transform: scale(0.5, 0.5);
+      -ms-transform: scale(0.5, 0.5);
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5); }
+      /* line 44, ../sass/components/_preface.scss */
+      .csstransforms .zone.z-preface .speaker:first-child {
+        -moz-transition: all 0.3s ease 0.1s, -moz-transform 0.2s 0;
+        -o-transition: all 0.3s ease 0.1s, -o-transform 0.2s 0;
+        -webkit-transition: all 0.3s ease, -webkit-transform 0.2s 0;
+        -webkit-transition-delay: 0.1s, 0s;
+        transition: all 0.3s ease 0.1s, transform 0.2s 0; }
+      /* line 47, ../sass/components/_preface.scss */
+      .csstransforms .zone.z-preface .speaker:nth-child(2) {
+        -moz-transition: all 0.3s ease 0.2s, -moz-transform 0.2s 0;
+        -o-transition: all 0.3s ease 0.2s, -o-transform 0.2s 0;
+        -webkit-transition: all 0.3s ease, -webkit-transform 0.2s 0;
+        -webkit-transition-delay: 0.2s, 0s;
+        transition: all 0.3s ease 0.2s, transform 0.2s 0; }
+      /* line 50, ../sass/components/_preface.scss */
+      .csstransforms .zone.z-preface .speaker:nth-child(3) {
+        -moz-transition: all 0.3s ease 0.3s, -moz-transform 0.2s 0;
+        -o-transition: all 0.3s ease 0.3s, -o-transform 0.2s 0;
+        -webkit-transition: all 0.3s ease, -webkit-transform 0.2s 0;
+        -webkit-transition-delay: 0.3s, 0s;
+        transition: all 0.3s ease 0.3s, transform 0.2s 0; }
+      /* line 53, ../sass/components/_preface.scss */
+      .csstransforms .zone.z-preface .speaker:nth-child(4) {
+        -moz-transition: all 0.4s ease 0.4s, -moz-transform 0.2s 0;
+        -o-transition: all 0.4s ease 0.4s, -o-transform 0.2s 0;
+        -webkit-transition: all 0.4s ease, -webkit-transform 0.2s 0;
+        -webkit-transition-delay: 0.4s, 0s;
+        transition: all 0.4s ease 0.4s, transform 0.2s 0; } }
+  @media (min-width: 1200px) {
+      /* line 58, ../sass/components/_preface.scss */
+      .csstransforms .zone.z-preface .speaker.scroll-down {
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1); } }
+  /* line 63, ../sass/components/_preface.scss */
+  .zone.z-preface .speaker:hover {
+    -moz-transform: scale(1, 1) translatey(-10px) !important;
+    -ms-transform: scale(1, 1) translatey(-10px) !important;
+    -webkit-transform: scale(1, 1) translatey(-10px) !important;
+    transform: scale(1, 1) translatey(-10px) !important; }
+    /* line 65, ../sass/components/_preface.scss */
+    .zone.z-preface .speaker:hover .speaker-name {
+      color: #333; }
+    /* line 68, ../sass/components/_preface.scss */
+    .zone.z-preface .speaker:hover .speaker-desc {
+      color: #333; }
+  /* line 72, ../sass/components/_preface.scss */
+  .zone.z-preface .speaker .speaker-image-wrapper {
+    border-radius: 50%;
+    border: 5px solid #FCB040;
+    background-color: #FCB040;
+    max-width: 90%;
+    margin: 0 auto;
+    display: inline-block; }
+    @media (min-width: 700px) and (max-width: 1200px) {
+      /* line 72, ../sass/components/_preface.scss */
+      .zone.z-preface .speaker .speaker-image-wrapper {
+        max-width: 70%; } }
+  /* line 83, ../sass/components/_preface.scss */
+  .zone.z-preface .speaker img {
+    border-radius: 50%;
+    background-color: #FCB040;
+    display: block;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s; }
+/* line 92, ../sass/components/_preface.scss */
+.zone.z-preface .speaker-name {
+  margin: 10px 0 0 0;
+  color: #fff;
+  -moz-transition: color 0.8s;
+  -o-transition: color 0.8s;
+  -webkit-transition: color 0.8s;
+  transition: color 0.8s; }
+/* line 97, ../sass/components/_preface.scss */
+.zone.z-preface .speaker-desc {
+  margin: 0;
+  color: #666;
+  font-size: 20px;
+  line-height: 1.5;
+  -moz-transition: color 0.8s;
+  -o-transition: color 0.8s;
+  -webkit-transition: color 0.8s;
+  transition: color 0.8s; }
+  @media (min-width: 1200px) {
+    /* line 97, ../sass/components/_preface.scss */
+    .zone.z-preface .speaker-desc {
+      padding: 0 5px; } }
+
+/* =============================================================================
+    Sponsors (Front page, Sponsors page, and block)
+   ========================================================================== */
+/* line 6, ../sass/components/_sponsors.scss */
+.view-sponsors ul {
+  padding: 0;
+  margin: 0;
+  text-align: center; }
+/* line 11, ../sass/components/_sponsors.scss */
+.view-sponsors.view-display-id-page_1 {
+  padding-top: 50px; }
+/* line 14, ../sass/components/_sponsors.scss */
+.view-sponsors h1, .view-sponsors .block--views-events-block-1 .views-field-title, .block--views-events-block-1 .view-sponsors .views-field-title, .view-sponsors .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block .view-sponsors h2, .view-sponsors .block--views-individual-sponsors-block .fieldset-legend, .block--views-individual-sponsors-block .view-sponsors .fieldset-legend, .view-sponsors .block--views-individual-sponsors-block .messages, .block--views-individual-sponsors-block .view-sponsors .messages, .view-sponsors .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-sponsors h1, .view-sponsors #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .view-sponsors h1, .view-sponsors .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name, .block--views-individual-sponsors-block .user-profile .view-sponsors .field--name-field-user-first-name, .view-sponsors .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .view-sponsors .field--name-field-user-first-name,
+.view-sponsors .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name,
+.block--views-individual-sponsors-block .user-profile .view-sponsors .field--name-field-user-last-name,
+.view-sponsors .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name,
+.user-profile .block--views-individual-sponsors-block .view-sponsors .field--name-field-user-last-name, .view-sponsors .block--views-individual-sponsors-block .attendee-name, .block--views-individual-sponsors-block .view-sponsors .attendee-name, .view-sponsors .view-schedule-items .legend-title, .view-schedule-items .view-sponsors .legend-title,
+.view-sponsors .view-schedule-items .session-slot--title,
+.view-schedule-items .view-sponsors .session-slot--title {
+  text-align: center; }
+/* line 17, ../sass/components/_sponsors.scss */
+.view-sponsors .wrap {
+  margin-bottom: 20px;
+  padding: 20px;
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 100%; }
+  @media (min-width: 1200px) {
+    /* line 17, ../sass/components/_sponsors.scss */
+    .view-sponsors .wrap {
+      height: 250px; } }
+  /* line 28, ../sass/components/_sponsors.scss */
+  .view-sponsors .wrap img {
+    max-width: 100%;
+    max-height: 140px;
+    width: auto;
+    margin: 0 auto; }
+    @media (min-width: 1200px) {
+      /* line 28, ../sass/components/_sponsors.scss */
+      .view-sponsors .wrap img {
+        position: absolute;
+        -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        left: 50%;
+        top: 50%;
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); } }
+  @media (min-width: 700px) {
+    /* line 17, ../sass/components/_sponsors.scss */
+    .view-sponsors .wrap {
+      margin: 0;
+      max-width: 24%; } }
+  @media (min-width: 1200px) {
+    /* line 17, ../sass/components/_sponsors.scss */
+    .view-sponsors .wrap {
+      padding: 0;
+      -moz-perspective: 1000px;
+      -webkit-perspective: 1000px;
+      perspective: 1000px;
+      /* disable turn-around effect for IE */
+      /* Pop the sponsor logos on frontpage when scrolled to */ }
+      /* line 46, ../sass/components/_sponsors.scss */
+      .csstransforms3d .view-sponsors .wrap:hover a, .csstransforms3d .view-sponsors .wrap:focus a {
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg); }
+      /* line 52, ../sass/components/_sponsors.scss */
+      .no-csstransforms3d .view-sponsors .wrap:hover a, .no-csstransforms3d .view-sponsors .wrap:focus a, .ie10 .view-sponsors .wrap:hover a, .ie10 .view-sponsors .wrap:focus a, .ie11 .view-sponsors .wrap:hover a, .ie11 .view-sponsors .wrap:focus a {
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden; } }
+/* line 79, ../sass/components/_sponsors.scss */
+.view-sponsors a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: #666; }
+  @media (min-width: 1200px) {
+    /* line 79, ../sass/components/_sponsors.scss */
+    .view-sponsors a {
+      -moz-transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      -moz-transition: 1s;
+      -o-transition: 1s;
+      -webkit-transition: 1s;
+      transition: 1s; } }
+/* line 89, ../sass/components/_sponsors.scss */
+.view-sponsors .wrap-front,
+.view-sponsors .wrap-back {
+  display: block; }
+  @media (min-width: 1200px) {
+    /* line 89, ../sass/components/_sponsors.scss */
+    .view-sponsors .wrap-front,
+    .view-sponsors .wrap-back {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      -moz-backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
+      /* line 100, ../sass/components/_sponsors.scss */
+      .csstransforms3d .view-sponsors .wrap-front, .csstransforms3d
+      .view-sponsors .wrap-back {
+        border: solid 1px white; } }
+/* line 105, ../sass/components/_sponsors.scss */
+.view-sponsors .wrap-back {
+  display: none; }
+  @media (min-width: 1200px) {
+    /* line 105, ../sass/components/_sponsors.scss */
+    .view-sponsors .wrap-back {
+      background-color: #f5f5f5;
+      border: solid 1px #ddd;
+      border-radius: 3px;
+      line-height: 1.3; }
+      /* line 112, ../sass/components/_sponsors.scss */
+      .csstransforms3d .view-sponsors .wrap-back {
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        display: block; }
+      /* line 116, ../sass/components/_sponsors.scss */
+      .wrap:hover .view-sponsors .wrap-back {
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg); } }
+/* line 121, ../sass/components/_sponsors.scss */
+.view-sponsors h3 {
+  line-height: 1; }
+@media (min-width: 1200px) {
+  /* line 128, ../sass/components/_sponsors.scss */
+  .view-sponsors .view-content .wrap-front {
+    width: 90%;
+    max-width: 350px;
+    height: 200px; }
+  /* line 134, ../sass/components/_sponsors.scss */
+  .view-sponsors .view-display-id-attachment_1 .wrap {
+    max-width: 24%; }
+  /* line 137, ../sass/components/_sponsors.scss */
+  .view-sponsors .view-display-id-attachment_1 .wrap-front {
+    width: 80%;
+    max-width: 250px;
+    height: 200px; }
+  /* line 142, ../sass/components/_sponsors.scss */
+  .view-sponsors .view-display-id-attachment_1 h3 {
+    font-size: 1.5em; }
+  /* line 147, ../sass/components/_sponsors.scss */
+  .view-sponsors .view-display-id-attachment_2 .wrap {
+    max-width: 24%; }
+  /* line 150, ../sass/components/_sponsors.scss */
+  .view-sponsors .view-display-id-attachment_2 .wrap-front {
+    width: 80%;
+    max-width: 200px;
+    height: 170px; }
+  /* line 155, ../sass/components/_sponsors.scss */
+  .view-sponsors .view-display-id-attachment_2 h3 {
+    font-size: 1.5em; }
+  /* line 161, ../sass/components/_sponsors.scss */
+  .view-sponsors .view-display-id-attachment_3 .wrap,
+  .view-sponsors .view-display-id-attachment_4 .wrap {
+    max-width: 24%; }
+  /* line 164, ../sass/components/_sponsors.scss */
+  .view-sponsors .view-display-id-attachment_3 .wrap-front,
+  .view-sponsors .view-display-id-attachment_4 .wrap-front {
+    width: 80%;
+    max-width: 150px;
+    height: 150px; }
+  /* line 169, ../sass/components/_sponsors.scss */
+  .view-sponsors .view-display-id-attachment_3 h3,
+  .view-sponsors .view-display-id-attachment_4 h3 {
+    font-size: 1.2em; } }
+
+/* line 179, ../sass/components/_sponsors.scss */
+.sponsor-platinum {
+  color: #666; }
+
+/* line 182, ../sass/components/_sponsors.scss */
+.sponsor-gold {
+  color: #e6c200; }
+
+/* line 185, ../sass/components/_sponsors.scss */
+.sponsor-silver {
+  color: #999; }
+
+/* line 188, ../sass/components/_sponsors.scss */
+.sponsor-bronze {
+  color: #998100; }
+
+/* =============================================================================
+    Sponsors Block
+   ========================================================================== */
+/* line 197, ../sass/components/_sponsors.scss */
+#block-views-sponsors-block-block-1 ul {
+  padding: 0; }
+/* line 200, ../sass/components/_sponsors.scss */
+#block-views-sponsors-block-block-1 li {
+  padding: 10px;
+  margin: 0;
+  display: inline-block;
+  width: 48%;
+  vertical-align: middle; }
+
+/* =============================================================================
+    Drupal's Tabs
+   ========================================================================== */
+@media (max-width: 700px) {
+  /* line 6, ../sass/components/_tabs.scss */
+  ul.tabs {
+    background-color: #eee;
+    border-bottom: none;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    padding-bottom: 1px;
+    display: table-row; }
+    /* line 2, ../sass/abstractions/_mixins.scss */
+    ul.tabs:before, ul.tabs:after {
+      content: " ";
+      display: table; }
+    /* line 7, ../sass/abstractions/_mixins.scss */
+    ul.tabs:after {
+      clear: both; }
+
+  /* line 15, ../sass/components/_tabs.scss */
+  .links--inline li {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    line-height: 1.2;
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+    border-right: solid 1px white;
+    position: relative;
+    padding: 20px 0; }
+    /* line 27, ../sass/components/_tabs.scss */
+    .links--inline li:first-child:nth-last-child(2n), .links--inline li:first-child:nth-last-child(2n) ~ li, .links--inline li:first-child:nth-last-child(4n), .links--inline li:first-child:nth-last-child(4n) ~ li {
+      width: 50%; }
+    /* line 33, ../sass/components/_tabs.scss */
+    .links--inline li:first-child:nth-last-child(3n), .links--inline li:first-child:nth-last-child(3n) ~ li {
+      width: 33.33%; }
+    /* line 37, ../sass/components/_tabs.scss */
+    .links--inline li.active {
+      background-color: #ccc; }
+      /* line 39, ../sass/components/_tabs.scss */
+      .links--inline li.active:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        margin-left: -10px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff; }
+    /* line 52, ../sass/components/_tabs.scss */
+    .links--inline li:last-child {
+      border: none; }
+    /* line 55, ../sass/components/_tabs.scss */
+    .links--inline li a {
+      background-color: transparent; }
+      /* line 57, ../sass/components/_tabs.scss */
+      .links--inline li a:hover {
+        background-color: transparent;
+        color: #666; } }
+/* =============================================================================
+    Theming the javascript twitter feed
+   ========================================================================== */
+/* line 6, ../sass/components/_twitter_feed.scss */
+#fldc14-tweets ul {
+  padding: 0; }
+/* line 9, ../sass/components/_twitter_feed.scss */
+#fldc14-tweets li {
+  padding: 10px;
+  list-style-type: none;
+  border-bottom: solid 1px #eee; }
+  /* line 13, ../sass/components/_twitter_feed.scss */
+  #fldc14-tweets li:last-child {
+    border-bottom: none; }
+  /* line 16, ../sass/components/_twitter_feed.scss */
+  #fldc14-tweets li:hover {
+    background-color: #f5f5f5; }
+/* line 20, ../sass/components/_twitter_feed.scss */
+#fldc14-tweets a {
+  word-break: break-all; }
+/* line 23, ../sass/components/_twitter_feed.scss */
+#fldc14-tweets img {
+  float: left;
+  margin-right: 5px;
+  border-radius: 50%; }
+/* line 28, ../sass/components/_twitter_feed.scss */
+#fldc14-tweets .tweet {
+  font-size: 1em; }
+/* line 31, ../sass/components/_twitter_feed.scss */
+#fldc14-tweets p {
+  margin: 0; }
+/* line 35, ../sass/components/_twitter_feed.scss */
+#fldc14-tweets .user .span {
+  display: block; }
+/* line 39, ../sass/components/_twitter_feed.scss */
+#fldc14-tweets .interact {
+  text-align: right;
+  font-size: 13px; }
+  /* line 42, ../sass/components/_twitter_feed.scss */
+  #fldc14-tweets .interact a {
+    color: #ddd;
+    margin: 0 5px; }
+  /* line 47, ../sass/components/_twitter_feed.scss */
+  #fldc14-tweets .interact:hover a {
+    color: #aaa; }
+    /* line 49, ../sass/components/_twitter_feed.scss */
+    #fldc14-tweets .interact:hover a:hover {
+      color: #666; }
+
+/* =============================================================================
+    User Profile
+   ========================================================================== */
+/* line 6, ../sass/components/_user_profile.scss */
+.user-profile .field--name-field-user-first-name,
+.user-profile .field--name-field-user-last-name {
+  display: inline; }
+  /* line 10, ../sass/components/_user_profile.scss */
+  .user-profile .field--name-field-user-first-name div,
+  .user-profile .field--name-field-user-last-name div {
+    display: inline; }
+  /* line 13, ../sass/components/_user_profile.scss */
+  .user-profile .field--name-field-user-first-name:after,
+  .user-profile .field--name-field-user-last-name:after {
+    content: " "; }
+
+/* =============================================================================
+    User Register Form
+   ========================================================================== */
+/* line 5, ../sass/components/_user_register_form.scss */
+.password-strength {
+  display: none; }
+  @media (min-width: 700px) {
+    /* line 5, ../sass/components/_user_register_form.scss */
+    .password-strength {
+      display: block; } }
+
+/* line 12, ../sass/components/_user_register_form.scss */
+div.password-confirm {
+  width: 100%; }
+  @media (min-width: 700px) {
+    /* line 12, ../sass/components/_user_register_form.scss */
+    div.password-confirm {
+      width: 17em; } }
+
+/* line 19, ../sass/components/_user_register_form.scss */
+.optional-info {
+  background-color: #f5f5f5;
+  padding: .2em .8em;
+  margin-bottom: 1em; }
+
+/* line 25, ../sass/components/_user_register_form.scss */
+.image-widget input[type="submit"] {
+  font-size: 25px; }
+
+/* =============================================================================
+    Attendees View
+   ========================================================================== */
+/* line 2, ../sass/abstractions/_mixins.scss */
+.view-attendees:before, .view-attendees:after {
+  content: " ";
+  display: table; }
+/* line 7, ../sass/abstractions/_mixins.scss */
+.view-attendees:after {
+  clear: both; }
+
+/* line 8, ../sass/components/_view_attendees.scss */
+.attendee {
+  position: relative;
+  background: #eee;
+  border: 3px solid white;
+  float: left;
+  width: 50%;
+  height: 170px;
+  padding: 10px;
+  overflow: hidden; }
+  /* line 17, ../sass/components/_view_attendees.scss */
+  .attendee:after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: solid 15px white;
+    border-top-color: transparent;
+    border-left-color: transparent; }
+  /* line 30, ../sass/components/_view_attendees.scss */
+  .attendee.Sponsor:before {
+    content: "Individual Sponsor";
+    font-size: 12px;
+    padding-left: 10px;
+    color: white;
+    position: absolute;
+    background: #0E73AF;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    line-height: 1.5; }
+  @media (min-width: 470px) {
+    /* line 8, ../sass/components/_view_attendees.scss */
+    .attendee {
+      height: 150px; } }
+  @media (min-width: 900px) {
+    /* line 8, ../sass/components/_view_attendees.scss */
+    .attendee {
+      padding: 20px;
+      width: 33.33%; } }
+  @media (min-width: 1700px) {
+    /* line 8, ../sass/components/_view_attendees.scss */
+    .attendee {
+      width: 25%; } }
+
+/* line 54, ../sass/components/_view_attendees.scss */
+.attendee-name {
+  font-size: 22px;
+  margin-bottom: 5px;
+  line-height: 1.2; }
+
+/* line 60, ../sass/components/_view_attendees.scss */
+.attendee-org {
+  margin: 0;
+  line-height: 1.2; }
+
+/* line 64, ../sass/components/_view_attendees.scss */
+.attendee-do,
+.attendee-tw {
+  display: inline-block; }
+  /* line 67, ../sass/components/_view_attendees.scss */
+  .attendee-do a,
+  .attendee-tw a {
+    display: none;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    text-indent: -9999px; }
+    /* line 73, ../sass/components/_view_attendees.scss */
+    .attendee-do a:hover,
+    .attendee-tw a:hover {
+      color: #E4D400; }
+    /* line 76, ../sass/components/_view_attendees.scss */
+    .attendee-do a:before,
+    .attendee-tw a:before {
+      text-indent: 0;
+      font-family: 'Social Media Icons';
+      font-style: normal;
+      font-weight: normal;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      font-size: 20px; }
+
+/* line 87, ../sass/components/_view_attendees.scss */
+.attendee-tw a[href*="twitter"] {
+  display: inline-block; }
+  /* line 89, ../sass/components/_view_attendees.scss */
+  .attendee-tw a[href*="twitter"]:before {
+    content: "\e000"; }
+
+/* line 93, ../sass/components/_view_attendees.scss */
+.attendee-do a[href*="drupal"] {
+  display: inline-block; }
+  /* line 95, ../sass/components/_view_attendees.scss */
+  .attendee-do a[href*="drupal"]:before {
+    content: "\e005"; }
+
+/* =============================================================================
+    Individual Sponsors View
+   ========================================================================== */
+/* line 5, ../sass/components/_view_individual_sponsors.scss */
+.block--views-individual-sponsors-block {
+  text-align: center; }
+  /* line 7, ../sass/components/_view_individual_sponsors.scss */
+  .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block .fieldset-legend, .block--views-individual-sponsors-block .messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 .block--views-individual-sponsors-block .views-field-title, .block--views-individual-sponsors-block .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .views-field-title, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .block--views-individual-sponsors-block .legend-title, .block--views-individual-sponsors-block .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .legend-title,
+  .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+  #block-views-sponsors-block-block-1 .view-schedule-items .block--views-individual-sponsors-block .session-slot--title,
+  .block--views-individual-sponsors-block .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
+  .view-schedule-items #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .session-slot--title, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name,
+  .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name,
+  .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name, .block--views-individual-sponsors-block .attendee-name {
+    text-align: center;
+    color: #666; }
+  /* line 12, ../sass/components/_view_individual_sponsors.scss */
+  .block--views-individual-sponsors-block .group > div {
+    line-height: 2;
+    font-size: 1.8em; }
+    @media (min-width: 700px) {
+      /* line 12, ../sass/components/_view_individual_sponsors.scss */
+      .block--views-individual-sponsors-block .group > div {
+        display: inline-block;
+        width: 25%; } }
+    @media (min-width: 900px) {
+      /* line 12, ../sass/components/_view_individual_sponsors.scss */
+      .block--views-individual-sponsors-block .group > div {
+        width: 20%; } }
+
+/* =============================================================================
+    News View
+   ========================================================================== */
+/* line 6, ../sass/components/_view_news.scss */
+.view-news .posted {
+  color: #999; }
+
+/* line 11, ../sass/components/_view_news.scss */
+.view-display-id-multi_news_block h2, .view-display-id-multi_news_block .fieldset-legend, .view-display-id-multi_news_block .messages, .view-display-id-multi_news_block #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .view-display-id-multi_news_block h1, .view-display-id-multi_news_block #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 .view-display-id-multi_news_block .views-field-title, .view-display-id-multi_news_block .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-display-id-multi_news_block .views-field-title, .view-display-id-multi_news_block #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .view-display-id-multi_news_block h2, .view-display-id-multi_news_block .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-display-id-multi_news_block h2, .view-display-id-multi_news_block #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .view-display-id-multi_news_block .legend-title, .view-display-id-multi_news_block .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .view-display-id-multi_news_block .legend-title,
+.view-display-id-multi_news_block #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+#block-views-sponsors-block-block-1 .view-schedule-items .view-display-id-multi_news_block .session-slot--title,
+.view-display-id-multi_news_block .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
+.view-schedule-items #block-views-sponsors-block-block-1 .view-display-id-multi_news_block .session-slot--title, .view-display-id-multi_news_block .user-profile .field--name-field-user-first-name, .user-profile .view-display-id-multi_news_block .field--name-field-user-first-name,
+.view-display-id-multi_news_block .user-profile .field--name-field-user-last-name,
+.user-profile .view-display-id-multi_news_block .field--name-field-user-last-name, .view-display-id-multi_news_block .attendee-name {
+  font-size: 30px; }
+/* line 14, ../sass/components/_view_news.scss */
+.view-display-id-multi_news_block ul {
+  padding: 0; }
+/* line 17, ../sass/components/_view_news.scss */
+.view-display-id-multi_news_block li {
+  margin: 0 0 2em 0;
+  padding: 0;
+  list-style-type: none; }
+
+/* =============================================================================
+    Sessions schedule
+   ========================================================================== */
+/* line 6, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .legend-title,
+.view-schedule-items .session-slot--title {
+  margin-top: 0;
+  font-size: 28px;
+  background-color: #0E73AF;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 20px 0; }
+  @media (min-width: 1200px) {
+    /* line 6, ../sass/components/_view_session_schedule.scss */
+    .view-schedule-items .legend-title,
+    .view-schedule-items .session-slot--title {
+      padding: 0;
+      font-size: 32px;
+      background-color: transparent;
+      color: #0E73AF; } }
+  @media (min-width: 1200px) {
+    /* line 6, ../sass/components/_view_session_schedule.scss */
+    .view-schedule-items .legend-title,
+    .view-schedule-items .session-slot--title {
+      float: left;
+      width: 150px;
+      margin-top: 0; } }
+/* line 28, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items h2, .view-schedule-items .fieldset-legend, .view-schedule-items .messages, .view-schedule-items #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .view-schedule-items h1, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 .view-schedule-items .views-field-title, .view-schedule-items .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .views-field-title, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .view-schedule-items h2, .view-schedule-items .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-schedule-items h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
+#block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+.view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .view-schedule-items .user-profile .field--name-field-user-first-name, .user-profile .view-schedule-items .field--name-field-user-first-name,
+.view-schedule-items .user-profile .field--name-field-user-last-name,
+.user-profile .view-schedule-items .field--name-field-user-last-name, .view-schedule-items .attendee-name {
+  font-size: 1.5em;
+  margin: 0;
+  position: relative; }
+  /* line 33, ../sass/components/_view_session_schedule.scss */
+  .view-schedule-items h2 a, .view-schedule-items .fieldset-legend a, .view-schedule-items .messages a, .view-schedule-items #block-views-sponsors-block-block-1 h1 a, #block-views-sponsors-block-block-1 .view-schedule-items h1 a, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a, #block-views-sponsors-block-block-1 .block--views-events-block-1 .view-schedule-items .views-field-title a, .view-schedule-items .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a, .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .views-field-title a, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .view-schedule-items h2 a, .view-schedule-items .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-schedule-items h2 a, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a,
+  #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a,
+  .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a, .view-schedule-items .user-profile .field--name-field-user-first-name a, .user-profile .view-schedule-items .field--name-field-user-first-name a,
+  .view-schedule-items .user-profile .field--name-field-user-last-name a,
+  .user-profile .view-schedule-items .field--name-field-user-last-name a, .view-schedule-items .attendee-name a {
+    color: #0E73AF; }
+    /* line 35, ../sass/components/_view_session_schedule.scss */
+    .view-schedule-items h2 a:hover, .view-schedule-items .fieldset-legend a:hover, .view-schedule-items .messages a:hover, .view-schedule-items #block-views-sponsors-block-block-1 h1 a:hover, #block-views-sponsors-block-block-1 .view-schedule-items h1 a:hover, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:hover, #block-views-sponsors-block-block-1 .block--views-events-block-1 .view-schedule-items .views-field-title a:hover, .view-schedule-items .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:hover, .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .views-field-title a:hover, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .view-schedule-items h2 a:hover, .view-schedule-items .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-schedule-items h2 a:hover, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:hover, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:hover,
+    #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:hover,
+    .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:hover, .view-schedule-items .user-profile .field--name-field-user-first-name a:hover, .user-profile .view-schedule-items .field--name-field-user-first-name a:hover,
+    .view-schedule-items .user-profile .field--name-field-user-last-name a:hover,
+    .user-profile .view-schedule-items .field--name-field-user-last-name a:hover, .view-schedule-items .attendee-name a:hover {
+      color: #1292de; }
+/* line 40, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .session-description {
+  max-height: 0;
+  overflow: hidden;
+  margin-bottom: 10px;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  @media (max-width: 470px) {
+    /* line 40, ../sass/components/_view_session_schedule.scss */
+    .view-schedule-items .session-description {
+      margin-left: -26px; } }
+/* line 49, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .session-track {
+  text-indent: -999px;
+  overflow: hidden;
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: 10px;
+  height: 26px;
+  width: 26px;
+  background-image: url(../images/sprite-track-icons.png); }
+/* line 60, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .session-track-Design-Theming-amp-Front-end-Development {
+  background-position: 0 -320px; }
+/* line 63, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .session-track-Development-amp-Performance {
+  background-position: 0 -40px; }
+/* line 66, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .session-track-Site-Building {
+  background-position: 0 -160px; }
+/* line 69, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .session-track-Project-Management-and-Consulting {
+  background-position: 0 0; }
+/* line 72, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .session-track-Sessions-Off-the-quotDrupal-Islandquot {
+  background-position: 0 -200px; }
+/* line 75, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .session-track-Beginner-Track {
+  background-position: 0 -279px; }
+/* line 78, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .session {
+  margin: 0 0 10px 0;
+  padding: 10px 60px 10px 46px;
+  background: #eee;
+  position: relative; }
+  @media (min-width: 1200px) {
+    /* line 78, ../sass/components/_view_session_schedule.scss */
+    .view-schedule-items .session {
+      margin: 0 0 20px 160px; } }
+  /* line 86, ../sass/components/_view_session_schedule.scss */
+  .view-schedule-items .session .speaker-wrapper:nth-child(2):before {
+    content: " & "; }
+  /* line 89, ../sass/components/_view_session_schedule.scss */
+  .view-schedule-items .session > .session-room,
+  .view-schedule-items .session > .session-speakers,
+  .view-schedule-items .session > .session-slot,
+  .view-schedule-items .session > .session-audience {
+    display: inline-block;
+    font-size: .9em;
+    margin-right: 10px; }
+    /* line 96, ../sass/components/_view_session_schedule.scss */
+    .view-schedule-items .session > .session-room:before,
+    .view-schedule-items .session > .session-speakers:before,
+    .view-schedule-items .session > .session-slot:before,
+    .view-schedule-items .session > .session-audience:before {
+      font-family: FontAwesome;
+      display: inline-block;
+      width: 15px; }
+  /* line 102, ../sass/components/_view_session_schedule.scss */
+  .view-schedule-items .session > .session-room {
+    margin-right: 0; }
+    /* line 104, ../sass/components/_view_session_schedule.scss */
+    .view-schedule-items .session > .session-room:before {
+      content: "\f041"; }
+  /* line 108, ../sass/components/_view_session_schedule.scss */
+  .view-schedule-items .session > .session-speakers:before {
+    content: "\f007";
+    margin-right: 3px; }
+  /* line 112, ../sass/components/_view_session_schedule.scss */
+  .view-schedule-items .session > .session-audience:before {
+    content: "\f135";
+    margin-right: 3px; }
+  /* line 116, ../sass/components/_view_session_schedule.scss */
+  .view-schedule-items .session .session-expand {
+    cursor: pointer;
+    position: absolute;
+    height: 80px;
+    width: 60px;
+    right: 0;
+    top: 0; }
+    /* line 123, ../sass/components/_view_session_schedule.scss */
+    .view-schedule-items .session .session-expand:hover:before {
+      background: #e5e5e5; }
+    /* line 126, ../sass/components/_view_session_schedule.scss */
+    .view-schedule-items .session .session-expand:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      text-align: center;
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      content: "\f054";
+      font-family: FontAwesome;
+      font-size: 16px;
+      display: block;
+      color: #0E73AF;
+      border-radius: 50%;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
+  /* line 146, ../sass/components/_view_session_schedule.scss */
+  .view-schedule-items .session.js-expanded .session-description {
+    padding-top: 20px;
+    max-height: 2000px; }
+  /* line 150, ../sass/components/_view_session_schedule.scss */
+  .view-schedule-items .session.js-expanded .session-expand:before {
+    -moz-transform: translate(-50%, -50%) rotate(90deg);
+    -ms-transform: translate(-50%, -50%) rotate(90deg);
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+    transform: translate(-50%, -50%) rotate(90deg); }
+  /* line 154, ../sass/components/_view_session_schedule.scss */
+  .view-schedule-items .session.Schedule {
+    cursor: auto; }
+    /* line 156, ../sass/components/_view_session_schedule.scss */
+    .view-schedule-items .session.Schedule:after {
+      display: none; }
+    /* line 159, ../sass/components/_view_session_schedule.scss */
+    .view-schedule-items .session.Schedule .track,
+    .view-schedule-items .session.Schedule .where,
+    .view-schedule-items .session.Schedule .speaker,
+    .view-schedule-items .session.Schedule .experience {
+      display: none; }
+  /* line 167, ../sass/components/_view_session_schedule.scss */
+  .view-schedule-items .session.nid-146 .speaker,
+  .view-schedule-items .session.nid-146 .experience {
+    display: none; }
+/* line 173, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .session-wrapper {
+  clear: both; }
+  @media (min-width: 1200px) {
+    /* line 173, ../sass/components/_view_session_schedule.scss */
+    .view-schedule-items .session-wrapper {
+      border-top: solid 2px #0E73AF;
+      padding-top: 20px; } }
+/* line 180, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .view-header {
+  padding: 20px 0; }
+  /* line 2, ../sass/abstractions/_mixins.scss */
+  .view-schedule-items .view-header:before, .view-schedule-items .view-header:after {
+    content: " ";
+    display: table; }
+  /* line 7, ../sass/abstractions/_mixins.scss */
+  .view-schedule-items .view-header:after {
+    clear: both; }
+/* line 184, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .track-item {
+  position: relative;
+  line-height: 1.2;
+  font-family: "arial narrow", arial, helvetica, sans-serif;
+  font-size: 1.1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 8px 0 8px 45px; }
+  @media (min-width: 399px) {
+    /* line 184, ../sass/components/_view_session_schedule.scss */
+    .view-schedule-items .track-item {
+      font-size: 1.3em; } }
+  @media (min-width: 700px) {
+    /* line 184, ../sass/components/_view_session_schedule.scss */
+    .view-schedule-items .track-item {
+      width: 50%;
+      float: left; } }
+  @media (min-width: 900px) {
+    /* line 184, ../sass/components/_view_session_schedule.scss */
+    .view-schedule-items .track-item {
+      font-size: 1.1em; } }
+  /* line 203, ../sass/components/_view_session_schedule.scss */
+  .view-schedule-items .track-item:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    margin-top: -13px;
+    left: 10px;
+    height: 27px;
+    width: 26px;
+    background-image: url(../images/sprite-track-icons.png);
+    background-repeat: no-repeat; }
+/* line 216, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .legend {
+  margin: 0 0 10px 0; }
+  @media (min-width: 1200px) {
+    /* line 216, ../sass/components/_view_session_schedule.scss */
+    .view-schedule-items .legend {
+      margin: 0 0 20px 160px; } }
+/* line 222, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .track-item--theming:before {
+  background-position: 0 -320px; }
+/* line 225, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .track-item--dev:before {
+  background-position: 0 -40px; }
+/* line 228, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .track-item--site:before {
+  background-position: 0 -160px; }
+/* line 231, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .track-item--proj:before {
+  background-position: 0 0; }
+/* line 234, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .track-item--island:before {
+  background-position: 0 -200px; }
+/* line 237, ../sass/components/_view_session_schedule.scss */
+.view-schedule-items .track-item--beg:before {
+  background-position: 0 -279px; }
+
+/* =============================================================================
+    Sessions Views (Accepted and Proposed)
+   ========================================================================== */
+/* line 6, ../sass/components/_view_sessions.scss */
+.view-session-list .propose-session {
+  font-size: 25px;
+  padding: 10px 20px;
+  margin-top: 10px; }
+  @media (min-width: 700px) {
+    /* line 6, ../sass/components/_view_sessions.scss */
+    .view-session-list .propose-session {
+      margin-top: 0; } }
+/* line 15, ../sass/components/_view_sessions.scss */
+.view-session-list .views-exposed-form input[type="submit"] {
+  font-size: 25px; }
+@media (min-width: 700px) {
+  /* line 19, ../sass/components/_view_sessions.scss */
+  .view-session-list .views-exposed-widget {
+    max-width: 33%; } }
+/* line 24, ../sass/components/_view_sessions.scss */
+.view-session-list .views-row {
+  margin-bottom: 50px; }
+  /* line 26, ../sass/components/_view_sessions.scss */
+  .view-session-list .views-row > .speaker,
+  .view-session-list .views-row > .experience,
+  .view-session-list .views-row > .track {
+    font-size: 1.2em; }
+    /* line 30, ../sass/components/_view_sessions.scss */
+    .view-session-list .views-row > .speaker:before,
+    .view-session-list .views-row > .experience:before,
+    .view-session-list .views-row > .track:before {
+      font-family: FontAwesome;
+      display: inline-block;
+      width: 20px; }
+  /* line 37, ../sass/components/_view_sessions.scss */
+  .view-session-list .views-row > .speaker:before {
+    content: "\f007"; }
+  /* line 43, ../sass/components/_view_sessions.scss */
+  .view-session-list .views-row > .experience:before {
+    content: "\f135"; }
+  /* line 49, ../sass/components/_view_sessions.scss */
+  .view-session-list .views-row > .track:before {
+    content: "\f02e"; }
+  /* line 54, ../sass/components/_view_sessions.scss */
+  .view-session-list .views-row > .views-field-body {
+    margin: 20px 0; }
+/* line 60, ../sass/components/_view_sessions.scss */
+.view-session-list .expandable .views-field-body {
+  max-height: 200px;
+  overflow: hidden;
+  position: relative;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  /* line 65, ../sass/components/_view_sessions.scss */
+  .view-session-list .expandable .views-field-body:after {
+    background: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0));
+    display: block;
+    height: 75px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    content: ""; }
+/* line 76, ../sass/components/_view_sessions.scss */
+.view-session-list .expandable-expanded .views-field-body {
+  max-height: 1000px; }
+  /* line 78, ../sass/components/_view_sessions.scss */
+  .view-session-list .expandable-expanded .views-field-body:after {
+    background: none; }
+/* line 82, ../sass/components/_view_sessions.scss */
+.view-session-list .read-more {
+  cursor: pointer;
+  font-size: 25px;
+  padding: 0px 20px 0px 10px;
+  text-align: center;
+  max-width: 175px;
+  margin: 0 auto; }
+  /* line 90, ../sass/components/_view_sessions.scss */
+  .view-session-list .read-more:before {
+    font-family: FontAwesome;
+    content: "\f078";
+    display: inline-block;
+    margin-right: 10px; }
+  /* line 96, ../sass/components/_view_sessions.scss */
+  .view-session-list .read-more:after {
+    display: inline;
+    content: "Read More"; }
+  /* line 100, ../sass/components/_view_sessions.scss */
+  .view-session-list .read-more.read-more-processed:before {
+    content: "\f077"; }
+  /* line 103, ../sass/components/_view_sessions.scss */
+  .view-session-list .read-more.read-more-processed:after {
+    display: inline;
+    content: "Read Less"; }
+  @media (min-width: 700px) {
+    /* line 82, ../sass/components/_view_sessions.scss */
+    .view-session-list .read-more {
+      display: inline-block;
+      margin: 0;
+      font-size: 20px;
+      text-align: left;
+      max-width: 100%; } }
+
+/* =============================================================================
+    Views Exposed Forms
+   ========================================================================== */
+/* line 6, ../sass/components/_views_header_exposed_forms.scss */
+.views-exposed-form input[type="submit"] {
+  margin-top: 0;
+  font-size: 25px; }
+  @media (min-width: 700px) {
+    /* line 6, ../sass/components/_views_header_exposed_forms.scss */
+    .views-exposed-form input[type="submit"] {
+      margin-top: 1.4em; } }
+/* line 13, ../sass/components/_views_header_exposed_forms.scss */
+.views-exposed-form .views-exposed-widget {
+  float: none; }
+  @media (min-width: 700px) {
+    /* line 13, ../sass/components/_views_header_exposed_forms.scss */
+    .views-exposed-form .views-exposed-widget {
+      float: left;
+      text-align: left;
+      width: 30%; } }
+
+/* line 25, ../sass/components/_views_header_exposed_forms.scss */
+.view-header a.button {
+  margin-top: 10px; }
+  @media (min-width: 700px) {
+    /* line 25, ../sass/components/_views_header_exposed_forms.scss */
+    .view-header a.button {
+      margin-top: 0; } }
+/* line 31, ../sass/components/_views_header_exposed_forms.scss */
+.view-header p {
+  font-size: 1em;
+  margin-top: 10px;
+  color: #999; }
+
+/* line 42, ../sass/components/_views_header_exposed_forms.scss */
+.ctools-auto-submit-full-form .views-exposed-form .views-exposed-widget {
+  width: 100%;
+  padding: 0; }
+
+/* line 47, ../sass/components/_views_header_exposed_forms.scss */
+.bef-checkboxes .form-type-bef-checkbox {
+  padding: 0 0;
+  margin-bottom: 10px; }
+  /* line 51, ../sass/components/_views_header_exposed_forms.scss */
+  .bef-checkboxes .form-type-bef-checkbox.highlight label {
+    background: #eee; }
+    /* line 53, ../sass/components/_views_header_exposed_forms.scss */
+    .bef-checkboxes .form-type-bef-checkbox.highlight label:hover {
+      background: #ddd; }
+  @media (min-width: 700px) {
+    /* line 47, ../sass/components/_views_header_exposed_forms.scss */
+    .bef-checkboxes .form-type-bef-checkbox {
+      width: 50%;
+      float: left; } }
+/* line 63, ../sass/components/_views_header_exposed_forms.scss */
+.bef-checkboxes input[type="checkbox"] {
+  display: none; }
+/* line 66, ../sass/components/_views_header_exposed_forms.scss */
+.bef-checkboxes label {
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 1em;
+  padding: 10px;
+  display: block; }
+  /* line 72, ../sass/components/_views_header_exposed_forms.scss */
+  .bef-checkboxes label:hover {
+    background: #f5f5f5; }

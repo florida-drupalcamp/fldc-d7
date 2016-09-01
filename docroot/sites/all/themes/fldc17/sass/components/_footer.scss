@@ -1,0 +1,130 @@
+/* =============================================================================
+    Footer Section
+   ========================================================================== */
+
+ .zone.z-footer {
+ 	background-color: $blue;
+ 	padding: 30px 10px 20px 10px;
+ 	.footer-copyright{ // Copyright info and such
+ 		color: #eee;
+ 		padding: 10px 0;
+ 		text-align: center;
+ 		@include breakpoint($tablet_narrow) {
+ 			text-align: left;
+ 			float: left;
+ 			padding: 0 20px;
+ 			width: 70%;
+ 			text-align: left;
+ 		}
+ 		@include breakpoint($tablet_wide) {
+ 			width: 100%;
+ 		} 		
+ 		@include breakpoint($normal) {
+ 			width: auto;
+ 			clear: both;
+ 		} 		
+ 		a {
+ 			color: #fff;
+ 		}
+ 	}
+	&:before {
+		content: "";
+		width: 0; 
+		height: 0; 
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -40px;
+		border-left: 40px solid transparent;
+		border-right: 40px solid transparent;
+		border-top: 40px solid white;
+	} 	
+ }
+
+ #block-system-main-menu--2 {  // The menu in the footer
+ 	padding: 0;
+ 	margin: 0;
+ 	text-align: left;
+ 	.highlight {
+ 		display: none; // hide em in the footer
+ 	}
+ 	@include breakpoint($tablet_narrow) {
+ 		float: left;
+ 	}
+ 	ul {
+ 		padding: 0;
+ 		margin: 0;
+ 	}
+ 	li {
+ 		margin: 0;
+ 		padding: 0;
+ 		list-style: none;
+ 		font-family: $font-heading;
+ 		display: block;
+ 		a {
+ 			font-size: 32px;
+ 			color: $orange;
+ 			&:hover {
+ 				color: darken($orange, 10%);
+ 			}
+ 		}
+ 		li {
+ 			font-family: $font-normal;
+ 			margin: 0;
+ 			line-height: 1.4;
+ 			display: block;
+ 			a {
+ 				color: white;
+ 				font-size: 22px;
+ 			}
+ 		}
+ 		@include breakpoint($tablet_narrow) {
+ 			display: inline-block;
+ 			vertical-align: top;
+ 			padding: 20px;
+ 			li {
+ 				display: block;
+ 				padding: 0;
+ 			}
+ 		}
+ 	}
+ }
+
+ .social-icons-footer {
+ 	padding-top: 20px;
+ 	text-align: center;
+ 	@include breakpoint($tablet_narrow) {
+ 		float: right;
+ 	}
+ 	.icon {
+ 		position: relative;
+ 		font-size: 35px;
+ 		padding: 5px;
+ 		margin: 0 5px;
+ 		width: 50px;
+ 		height: 50px;
+ 		line-height: 40px;
+ 		color: white;
+	 	background-color: transparent;
+	 	border-radius: 50%;
+	 	border: solid 2px white;
+	 	display: inline-block;
+	 	@include transition(all .5s);
+	 	&:hover {
+	 		color: $blue;
+	 		background-color: white;
+	 	}
+	 	&:before {
+	 		position: absolute;
+	 		@include center(xy);
+	 	}
+ 	}
+ 	.icon-facebook { // Move to the regular 'f' logo without the square around it in the footer.
+ 		position: relative;
+ 		top: -1px;
+ 		&:before {
+ 			font-family: FontAwesome;
+ 			content: "\f09a";
+ 		}
+ 	}
+ }

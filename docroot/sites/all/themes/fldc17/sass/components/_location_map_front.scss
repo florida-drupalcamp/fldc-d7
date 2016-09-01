@@ -1,0 +1,165 @@
+/* =============================================================================
+    Location Map
+   ========================================================================== */
+
+.z-preface2 {
+  background-position: center center;
+  position: relative;
+  overflow: hidden; // No scrollbars when #location-info is outside window
+  @include breakpoint(max-width $smartphone_wide) {
+    background-image: url(../images/map-background-smartphone_narrow.jpg);
+  }  
+  @include breakpoint($smartphone_wide $tablet_narrow) {
+    background-image: url(../images/map-background-smartphone_wide.jpg);
+  }
+  @include breakpoint($tablet_narrow $tablet_wide) {
+    background-image: url(../images/map-background-tablet_narrow.jpg);
+  }
+  @include breakpoint($tablet_wide $normal) {
+    background-image: url(../images/map-background-tablet_wide.jpg);
+  }
+  @include breakpoint($normal $wide) {
+    background-image: url(../images/map-background-normal.jpg);
+  }
+  @include breakpoint($wide) {
+    background-image: url(../images/map-background-wide.jpg);
+  }  
+}
+#map-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-indent: -100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.contextual-links-region {
+  position: static; // The #map link isn't placed correctly with this set to relative.
+}
+#location-info {
+  margin: 50px auto;
+  padding: 20px 30px;
+  width: 95%;
+  z-index: 5;
+  position: relative;
+  @include clearfix;
+  background-color: $blue;
+  color: white;
+  overflow: visible;
+  @include breakpoint($smartphone_wide) {
+    width: 80%;
+  }
+  @include breakpoint($tablet_narrow) {
+    max-width: 350px;
+    margin: 75px 0 75px 100px;
+    left: 20%;
+      &:before {
+      content: "";
+      width: 0; 
+      height: 0; 
+      position: absolute;
+      left: -40px;
+      top: 58%;
+      margin-top: -60px;
+      border-top: 40px solid transparent;
+      border-bottom: 40px solid transparent;
+      border-right: 40px solid $blue;
+      @include transition(left .2s ease .75s);
+    } 
+  }
+  @include breakpoint($tablet_wide) {
+    left: 50%;
+  }  
+  /* Location Info Slide-in Effect */
+  @include breakpoint($normal) {
+    .csstransitions & {
+      left: 130%;
+      @include transition(left .5s .2s); // duration .5s, delay .2s
+      &:before {
+        left: 0;
+      }
+      &.scroll-down {
+        left: 50%;
+        &:before {
+          left: -40px;
+        }
+      }
+    }
+  }
+  h1 {
+    color: $yellow;
+    margin: 0;
+  }
+  h2 {
+    color: white;
+    margin: 0;
+    text-align: left;
+    font-size: 30px;   
+    line-height: 1.1;
+    @include breakpoint($smartphone_wide) {
+      line-height: 1.5;
+    } 
+  }
+  h3 {
+    color: white;
+    margin: 0;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+  }  
+  p {
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    text-align: left;    
+  }
+  .addr {
+    display: block;
+  }
+  .city {
+    display: block;
+  }
+  .inline-map {
+    color: $yellow;
+    font-weight: normal;
+    margin-left: 5px;
+    font-family: $font-narrow;
+    &:before {
+      font-family: FontAwesome;
+      display: inline;
+      content: "\f041";
+      margin-right: 3px
+    }
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  // /#location-info
+}
+
+#location-img {
+  display: none;
+  @include breakpoint($tablet-narrow) {
+    display: block;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    width: 75px;
+    height: 75px;
+    margin-left: -38px;
+    margin-top: -60px;
+  }
+  @include breakpoint($tablet-wide) {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 75px;
+    height: 75px;
+    margin-left: -38px;
+    margin-top: -60px;
+  }  
+}

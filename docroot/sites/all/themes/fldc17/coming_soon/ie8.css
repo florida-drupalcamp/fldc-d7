@@ -1,0 +1,24 @@
+#water {
+	height: 450px;
+	padding-bottom: 0;
+}
+
+#logo {
+	position: absolute;
+	left: -9999px;
+	height: 1px;
+	width: 1px;
+}
+
+#logo-container {
+	background-image: url(drupaldiver-fallback.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 400px;
+	width: 350px;
+	margin-left: -165px;
+}
+
+#diver-bubble-static {
+	display: none;
+}
