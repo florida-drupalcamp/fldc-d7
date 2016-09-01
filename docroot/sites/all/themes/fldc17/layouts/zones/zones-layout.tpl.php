@@ -9,20 +9,9 @@
     <div class="zone z-header">
       <header class="l-header" role="banner">
         <div class="l-branding">
-          <?php if ($logo): ?>
-            <div class="site-logo ie8-hide">
-              <img id="main-img" class="site-logo__img" src="/<?php print path_to_theme(); ?>/images/drupal-diver-no-bubble.svg" alt="<?php print t('FLorida DrupalCamp Logo'); ?>" title="Florida DrupalCamp 2015" />
-              <div class="diver-bubble bubble1"><img src="/sites/all/themes/fldc17/images/bubbles.svg"></div>
-              <div class="diver-bubble bubble2"><img src="/sites/all/themes/fldc17/images/bubbles.svg"></div>
-              <div class="diver-bubble bubble3"><img src="/sites/all/themes/fldc17/images/bubbles.svg"></div>
-              <div class="diver-bubble bubble4"><img src="/sites/all/themes/fldc17/images/bubbles.svg"></div>
-              <div class="diver-bubble bubble5"><img src="/sites/all/themes/fldc17/images/bubbles.svg"></div>
-            </div>
-            <!--[if lte IE 8]>
-            <div class="site-logo"><img class="site-logo__img" src="/<?php print $directory ?>/images/drupal-diver-no-bubble.png" title="Florida DrupalCamp 2014" /></div>
-            <![endif]-->
-          <?php endif; ?>
-
+        <video autoplay="" class="layout-homepage__hi__video" loop="" muted="" poster="" preload="auto">
+          <source src="/sites/default/files/FLDC17%20Promo-high.mp4" type="video/mp4">
+        </video>
           <?php print render($page['branding']); ?>
         </div>
         <?php print render($page['header']); ?>

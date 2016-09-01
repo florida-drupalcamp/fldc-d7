@@ -5,13 +5,14 @@
 .z-navigation {
   overflow: visible;
 }
+
 #block-system-main-menu {
-  background-color: $black;
+  background-color: white;
   /* clear: both; */
   font-family: $font-heading;
   line-height: 100px;
   text-transform: uppercase;
-  
+
   @include breakpoint(max-width $mobile-nav) {
     @include transition(all 0.2s);
     width: 0;
@@ -22,41 +23,37 @@
     height: 100%;
     padding-bottom: 60px; // Same as 'top' value
     z-index: 6;
-    
+
     &::-webkit-scrollbar { // Hide the scrollbar in desktop browsers
       display: none;
     }
-    
+
     &.header-menu-active {
       width: 100%;
       max-width: 400px;
     }
   }
-  
-  @include breakpoint($smartphone_wide $tablet_narrow) {  
+
+  @include breakpoint($smartphone_wide $tablet_narrow) {
     &.header-menu-active {
       width: 80%;
-    }    
+    }
   }
-  
+
   @include breakpoint($tablet_narrow $mobile-nav) {
     &.header-menu-active {
       width: 300px;
-    }    
+    }
   }
-  
+
   @include breakpoint($mobile-nav) {
     @include transition(all .2s);
     width: 100%;
     position: absolute;
     top: 0;
-    height: 100px; // Necessary so that bubbles go behind in desktop view
     z-index: 10;
-    
-    &.scroll-down {
-      line-height: 60px;
-      height: 60px;
-    }
+    line-height: 60px;
+    height: 60px;
   }
 }
 
@@ -66,15 +63,12 @@
   width: 100%;
   padding: 0;
   font-size: 0; // Remove the spacing from in between blocks
-  
-  .scrolldown & {
-    top: 60px;
-  }
-  
+  top: 60px;
+
   .dropdown-menu {
     margin: 0;
   }
-  
+
   @include breakpoint($mobile-nav) {
     text-align: right;
     max-width: 1100px;
@@ -84,57 +78,54 @@
   @include breakpoint($wide) {
     max-width: 1500px;
   }
-  
+
   a {
     @include transition(color .2s);
     @include transition(background-color .2s);
     padding: 0 20px;
-    color: white;
+    color: $blue;
     text-decoration: none;
     display: block;
-    
+
     @include breakpoint($mobile-nav) {
-      background-color: $black; // Hide the transitioning dropdowns
+      background-color: white; // Hide the transitioning dropdowns
       position: relative;
       z-index: 10;
       padding: 0 10px;
     }
   }
-    
+
   li {
     margin: 0;
     display: block;
     font-size: 20px;
     position: relative;
     z-index: 5; // Fixing an issue where menu can disappear on android.
-    
+
     @include breakpoint($mobile-nav) {
       display: inline-block;
       z-index: auto;
-      
+
       &.faq > a {
         padding-right: 20px!important; // Give some extra space next to the login/register links
       }
     }
-        
+
     @include breakpoint($mobile-nav) {
       font-size: 25px;
     }
-        
-    @include breakpoint($wide) {
-      font-size: 35px;
-    }
-    
-    
+
+
     a.highlight {
+      color: white;
       background-color: $turquois;
       @include transition(color .4s);
-      
+
       &:hover {
         background-color: $turquois;
       }
     }
-    
+
     &:hover a {
       background-color: $orange;
       color: #333;
@@ -152,29 +143,29 @@
       line-height: 3;
       font-size: 25px;
       position: relative;
-      
+
       > ul {
         display: none;
         background-color: #666;
         padding: 0;
         margin: 0;
-        
+
         > li {
           line-height: 2;
-          
+
           > a {
             background-color: transparent;
-            
+
             &:hover {
               background-color: #999;
             }
           }
         }
       }
-      
+
       a.highlight {
         background-color: darken($turquois, 10%);
-        
+
         &:hover {
           background-color: $turquois;
         }
@@ -194,12 +185,12 @@
       .register:before {
         content: "\f145";
       }
-      
+
       &:hover a {
         background-color: transparent;
         color: white;
       }
-      
+
       &.expanded:after {
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
@@ -210,16 +201,16 @@
         position: absolute;
         right: 30px;
         top: 31px;
-        width: 0; 
+        width: 0;
         height: 0;
         pointer-events: none;
       }
-      
+
       &.expanded-active-processed:after {
         @include transform(rotate(180deg));
-      }      
+      }
     }
-    
+
     /* =============================================================================
         Submenu Structure for desktop
        ========================================================================== */
@@ -228,25 +219,24 @@
       &:hover > ul {
         display: block;
         top: 100%;
-      }    
+      }
 
       > ul {
         background-color: $orange;
-        border: solid 1px #333;
         border-top: 0;
         margin: 0;
         padding: 0;
         position: absolute;
         top: -600px;
-        left: -1px; // to compensate for the border below
+        left: 0;
         width: 180px;
         z-index: 5;
-        
+
         @include breakpoint($wide) {
           top: -600px;
           width: 240px;
         }
-        
+
         @include transition(all .2s); // Speed of the dropdown
         > li {
           display: block;
@@ -254,24 +244,24 @@
           line-height: 2;
           text-align: left;
         }
-        
+
         a {
           background-color: $orange;
           color: #333;
           padding: 0 10px;
-          display: block;    
+          display: block;
           z-index: 5; // Necessary so they don't inherit parent style
           &:hover {
             color: white!important;
           }
-        }         
-      // /ul     
+        }
+      // /ul
       }
-    // /tablet-wide breakpoint 
+    // /tablet-wide breakpoint
     }
   // /li
   }
-// /#primary-menu     
+// /#primary-menu
 }
 
 #mobile-menu {
@@ -300,7 +290,7 @@
     width: 50px;
     left: 0;
     top: 0;
-    
+
   }
   &:focus:after,
   &:active:after  {
@@ -311,28 +301,28 @@
   }
 }
 
-.scroll-down {
-  @include breakpoint($mobile-nav) {
-    #header-menu,
-    #primary-menu {
+
+@include breakpoint($mobile-nav) {
+  #header-menu,
+  #primary-menu {
+    line-height: 60px;
+    height: 60px;
+  }
+
+  #primary-menu {}
+
+  h1.site-name {
+    @include breakpoint($mobile-nav) {
       line-height: 60px;
       height: 60px;
     }
-    
-    #primary-menu {}
-    
-    h1.site-name {
-      @include breakpoint($mobile-nav) {
-        line-height: 60px;
-        height: 60px;
-      }
-    }
-    
-    &.zone.z-navigation {
-      height: 60px
-    }
+  }
+
+  .zone.z-navigation {
+    height: 60px
   }
 }
+
 
 /* Some overrides to omega base to remove background images and associated http requests */
 
@@ -341,11 +331,11 @@
   list-style-type:none;
 }
 
-html.js fieldset.collapsible .fieldset-legend { 
+html.js fieldset.collapsible .fieldset-legend {
   background:none;
 }
 
-.menu .leaf{ 
+.menu .leaf{
   list-style-image:none;
   list-style-type:none;
 }

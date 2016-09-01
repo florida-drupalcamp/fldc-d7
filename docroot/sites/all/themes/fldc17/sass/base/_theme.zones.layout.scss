@@ -13,7 +13,7 @@ body {
 .zone {
   &.z-navigation {
     @include transition(all 200ms ease);
-    background-color: $black;
+    background-color: white;
     color: $white;
     width: 100%;
     left: 0;
@@ -36,30 +36,18 @@ body {
   position: relative;
 }
 .l-branding {
+  video {
+    width: 100%;
+  }
+
   .not-front & {
     display: none;
   }
 }
 .zone.z-header {
-  background-size: cover;
-  background-image: url("../images/auditorium_blur-smartphone_wide.jpg");
-  @include breakpoint($tablet_narrow) {
-    background-image: url("../images/auditorium_blur-tablet_narrow.jpg");
-  }
-  @include breakpoint($tablet_wide) {
-    background-image: url("../images/auditorium_blur-tablet_wide.jpg");
-  }
-  @include breakpoint($normal) {
-    background-image: url("../images/auditorium_blur-normal.jpg");
-  }  
-  @include breakpoint($wide) {
-    background-image: url("../images/auditorium_blur.jpg");
-  }  
-  + .z-content {
-    &:before {
-     	@extend %shape--arrow__up;
-    }
-  }
+  overflow: hidden;
+  margin-top: 20px;
+
   .not-front & {
     background-image: url("../images/fldc13_group-blur-smartphone_narrow.jpg");
     background-position: center center;
@@ -84,20 +72,13 @@ body {
   background-color: $turquois;
   position: relative;
   padding-top: 2em;
-  &:before {
-    @extend %shape--arrow__up;
-    border-bottom-color: $turquois;
-  }
-  &:after {
-    @extend %shape--arrow__down;
-    border-top-color: $turquois;
-  }
+  margin: 40px 0;
 }
 .zone.z-footer {
  	background-color: $blue;
  	padding-top: 2em;
  	position: relative;
- 	
+
  	&:before {
    	@extend %shape--arrow__down;
    	top: 0;
