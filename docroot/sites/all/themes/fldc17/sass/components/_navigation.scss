@@ -16,6 +16,7 @@
     @include transition(all 0.2s);
     width: 0;
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
     position: fixed;
     top: 0;
     right: 0;

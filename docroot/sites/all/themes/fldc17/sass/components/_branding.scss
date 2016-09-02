@@ -17,7 +17,16 @@ h1.site-name {
 
   @include breakpoint($tablet_narrow) {
     font-size: 45px;
-    /* background-color: rgba(0,0,0,0.9); */
+  }
+
+  // Make sure mobile menu doesn't appear on top of header
+  @include breakpoint(max-width $mobile-nav) {
+    background: white;
+    height: 60px;
+    width: 100%;
+    z-index: 7;
+    position: fixed;
+    left: 0;
   }
 
   @include breakpoint($mobile-nav) {
@@ -28,10 +37,6 @@ h1.site-name {
     //height: 100px;
     z-index: 20;
     @include transition(line-height, 0s);
-    &.scroll-down {
-      line-height: 60px;
-      @include transition(line-height, .2s);
-    }
   }
 
   @include breakpoint(1000px) {
@@ -58,7 +63,7 @@ h1.site-name {
     z-index: 10;
     background-position-y: -12px;
     &:after {
-      content: "#FLDC16";
+      content: "#FLDC17";
       position: absolute;
       top: 0;
       left: 100%;
