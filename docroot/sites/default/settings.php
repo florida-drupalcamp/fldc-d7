@@ -212,7 +212,15 @@
  *   );
  * @endcode
  */
-$databases = array();
+$databases['default']['default'] = array(
+     'driver' => 'mysql',
+     'database' => 'fldrupalcamp',
+     'username' => 'root',
+     'password' => 'root',
+     'host' => 'localhost',
+     'prefix' => '',
+);
+
 
 /**
  * Access control for update.php script.
@@ -581,3 +589,12 @@ if (file_exists('/var/www/site-php')) {
 if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/cld_prod_fldrupalcamp_dev_default.inc'))
   require($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/cld_prod_fldrupalcamp_dev_default.inc');
 //</DDSETTINGS>
+$conf['stage_file_proxy_origin'] = 'https://fldrupal.camp';
+$conf['stage_file_proxy_origin_dir'] = 'sites/default/files';
+$conf['file_private_path'] = '';
+$conf['file_temporary_path'] = '/tmp';
+$conf['theme_debug'] = true;
+$conf['preprocess_css'] = 0;      // disable css aggregation
+$conf['preprocess_js'] = 0;       // disable js aggregation
+$conf['image_toolkit'] = 'gd';
+$conf['ignore_site_directory_permissions'] = TRUE;
