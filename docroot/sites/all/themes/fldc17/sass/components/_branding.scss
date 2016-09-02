@@ -44,7 +44,6 @@ h1.site-name {
   }
 
   a {
-
     display: inline-block;
     text-indent: -9999px;
     background-image: image-url("drupal-diver_small.png");
@@ -52,7 +51,7 @@ h1.site-name {
     height: 80px;
     background-size: contain;
     background-repeat: no-repeat;
-    color: $orange;
+    color: darken($orange, 10%);
     padding: 0;
     position: relative;
     left: 0;

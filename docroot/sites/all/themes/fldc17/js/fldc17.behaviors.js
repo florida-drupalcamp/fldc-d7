@@ -135,15 +135,18 @@
     }
   };
 
-  // // A11y helper doesn't work yet
-  // Drupal.behaviors.a11yHelper = {
-  //   attach: function ( context, settings ) {
-  //     $('#block-system-main-menu a', context).focus(function() {
-  //       console.log('here');
-  //       $(this).closest('.expanded').focus;
-  //     });
-  //   }
-  // };
+  // Helena will be proud of this
+  Drupal.behaviors.a11yNavHelper = {
+    attach: function ( context, settings ) {
+      $('#block-system-main-menu a', context).focus(function() {
+        $(this).closest('.expanded').addClass('js-tabbed-expanded');
+      });
+
+      $('#block-system-main-menu a', context).blur(function() {
+        $(this).closest('.expanded').removeClass('js-tabbed-expanded');
+      });
+    }
+  };
 
 
 })(jQuery);

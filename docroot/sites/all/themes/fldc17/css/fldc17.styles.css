@@ -390,6 +390,15 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* line 9, ../sass/base/_base.scss */
+.element-invisible.element-focusable:active,
+.element-invisible.element-focusable:focus {
+  position: absolute !important;
+  background: #0E73AF;
+  z-index: 20;
+  padding: 5px 10px;
+  color: white; }
+
 /* =============================================================================
     Fonts
    ========================================================================== */
@@ -429,10 +438,11 @@ button, input[type="submit"], a.button, .comment__links a, .flag a, .view-sessio
   -webkit-transition: all 0.2s;
   transition: all 0.2s; }
   /* line 15, ../sass/base/_forms.scss */
-  button:hover, input[type="submit"]:hover, a.button:hover, .comment__links a:hover, .flag a:hover, .view-session-list .read-more:hover {
-    background-color: #fca627; }
+  button:hover, input[type="submit"]:hover, a.button:hover, .comment__links a:hover, .flag a:hover, .view-session-list .read-more:hover, button:focus, input[type="submit"]:focus, a.button:focus, .comment__links a:focus, .flag a:focus, .view-session-list .read-more:focus {
+    background-color: #fca627;
+    color: white; }
 
-/* line 20, ../sass/base/_forms.scss */
+/* line 22, ../sass/base/_forms.scss */
 input[type="text"]:not(#recaptcha_response_field),
 input[type="email"],
 input[type="password"],
@@ -447,7 +457,7 @@ select {
   -webkit-appearance: none;
   width: 100%; }
   @media (min-width: 700px) {
-    /* line 20, ../sass/base/_forms.scss */
+    /* line 22, ../sass/base/_forms.scss */
     input[type="text"]:not(#recaptcha_response_field),
     input[type="email"],
     input[type="password"],
@@ -455,7 +465,7 @@ select {
     select {
       width: auto;
       max-width: 600px; } }
-  /* line 37, ../sass/base/_forms.scss */
+  /* line 39, ../sass/base/_forms.scss */
   input[type="text"]:not(#recaptcha_response_field):focus,
   input[type="email"]:focus,
   input[type="password"]:focus,
@@ -463,74 +473,74 @@ select {
   select:focus {
     background-color: #c5c5c5; }
 
-/* line 42, ../sass/base/_forms.scss */
+/* line 44, ../sass/base/_forms.scss */
 label {
   display: block; }
-  /* line 44, ../sass/base/_forms.scss */
+  /* line 46, ../sass/base/_forms.scss */
   label.error {
     color: red; }
-    /* line 46, ../sass/base/_forms.scss */
+    /* line 48, ../sass/base/_forms.scss */
     label.error:before {
       font-family: FontAwesome;
       content: "\f119 ";
       margin-right: 5px; }
 
-/* line 55, ../sass/base/_forms.scss */
+/* line 57, ../sass/base/_forms.scss */
 form .description {
   color: #999;
   font-style: italic;
   font-size: 14px; }
 
-/* line 62, ../sass/base/_forms.scss */
+/* line 64, ../sass/base/_forms.scss */
 .form-item {
   padding: 10px 0; }
 
-/* line 66, ../sass/base/_forms.scss */
+/* line 68, ../sass/base/_forms.scss */
 input[type="submit"] {
   padding: 10px 20px;
   margin-top: 10px;
   margin-right: 10px;
   font-size: 40px; }
-  /* line 72, ../sass/base/_forms.scss */
+  /* line 74, ../sass/base/_forms.scss */
   input[type="submit"]:last-child {
     margin-right: 0; }
 
-/* line 78, ../sass/base/_forms.scss */
+/* line 80, ../sass/base/_forms.scss */
 .views-exposed-form .views-exposed-widget .form-submit {
   margin: 0; }
   @media (min-width: 700px) {
-    /* line 78, ../sass/base/_forms.scss */
+    /* line 80, ../sass/base/_forms.scss */
     .views-exposed-form .views-exposed-widget .form-submit {
       margin: 1.4em; } }
 
-/* line 85, ../sass/base/_forms.scss */
+/* line 87, ../sass/base/_forms.scss */
 .views-exposed-form .views-exposed-widget {
   float: none; }
   @media (min-width: 700px) {
-    /* line 85, ../sass/base/_forms.scss */
+    /* line 87, ../sass/base/_forms.scss */
     .views-exposed-form .views-exposed-widget {
       float: left; } }
 
-/* line 92, ../sass/base/_forms.scss */
+/* line 94, ../sass/base/_forms.scss */
 fieldset {
   border: 0;
   border-bottom: solid 2px #0E73AF;
   margin-bottom: 20px; }
-  /* line 96, ../sass/base/_forms.scss */
+  /* line 98, ../sass/base/_forms.scss */
   fieldset:last-child {
     border-bottom: none;
     margin-bottom: 5px; }
 
 /* Make radio buttons inline */
-/* line 107, ../sass/base/_forms.scss */
+/* line 109, ../sass/base/_forms.scss */
 .form-item.form-type-radio {
   display: inline-block;
   margin-right: 10px; }
-  /* line 110, ../sass/base/_forms.scss */
+  /* line 112, ../sass/base/_forms.scss */
   .form-item.form-type-radio:last-child {
     margin-right: 0; }
 
-/* line 114, ../sass/base/_forms.scss */
+/* line 116, ../sass/base/_forms.scss */
 .grippie {
   display: none; }
 
@@ -1112,13 +1122,13 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
     height: 80px;
     background-size: contain;
     background-repeat: no-repeat;
-    color: #FCB040;
+    color: #fb9b0e;
     padding: 0;
     position: relative;
     left: 0;
     z-index: 10;
     background-position-y: -12px; }
-    /* line 61, ../sass/components/_branding.scss */
+    /* line 60, ../sass/components/_branding.scss */
     h1.site-name a:after, .block--views-individual-sponsors-block h2.site-name a:after, .block--views-individual-sponsors-block .site-name.fieldset-legend a:after, .block--views-individual-sponsors-block .site-name.messages a:after, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:after, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:after, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:after, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:after,
     .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:after,
     .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:after, .block--views-individual-sponsors-block .site-name.attendee-name a:after, .view-schedule-items .site-name.legend-title a:after,
@@ -1139,7 +1149,7 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
         margin-right: 0;
         width: auto;
         height: 80px; }
-        /* line 76, ../sass/components/_branding.scss */
+        /* line 75, ../sass/components/_branding.scss */
         h1.site-name a:after, .block--views-individual-sponsors-block h2.site-name a:after, .block--views-individual-sponsors-block .site-name.fieldset-legend a:after, .block--views-individual-sponsors-block .site-name.messages a:after, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:after, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:after, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:after, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:after,
         .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:after,
         .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:after, .block--views-individual-sponsors-block .site-name.attendee-name a:after, .view-schedule-items .site-name.legend-title a:after,
@@ -1153,14 +1163,14 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       .view-schedule-items .site-name.session-slot--title a {
         left: -20px;
         background-position-y: 0; } }
-    /* line 86, ../sass/components/_branding.scss */
+    /* line 85, ../sass/components/_branding.scss */
     h1.site-name a:hover, .block--views-individual-sponsors-block h2.site-name a:hover, .block--views-individual-sponsors-block .site-name.fieldset-legend a:hover, .block--views-individual-sponsors-block .site-name.messages a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:hover, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:hover, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:hover,
     .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:hover,
     .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:hover, .block--views-individual-sponsors-block .site-name.attendee-name a:hover, .view-schedule-items .site-name.legend-title a:hover,
     .view-schedule-items .site-name.session-slot--title a:hover {
       color: #fdc572; }
   @media (min-width: 700px) {
-    /* line 92, ../sass/components/_branding.scss */
+    /* line 91, ../sass/components/_branding.scss */
     .front h1.site-name a, .front .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .front h2.site-name a, .front .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .front .site-name.fieldset-legend a, .front .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block .front .site-name.messages a, .front .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .front h1.site-name a, .front #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .front h1.site-name a, .front .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .block--views-individual-sponsors-block .user-profile .front .site-name.field--name-field-user-first-name a, .front .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .front .site-name.field--name-field-user-first-name a,
     .front .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
     .block--views-individual-sponsors-block .user-profile .front .site-name.field--name-field-user-last-name a,
@@ -1176,11 +1186,11 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       display: inline;
       left: 0; } }
 
-/* line 106, ../sass/components/_branding.scss */
+/* line 105, ../sass/components/_branding.scss */
 .site-logo {
   display: none; }
   @media (min-width: 700px) {
-    /* line 106, ../sass/components/_branding.scss */
+    /* line 105, ../sass/components/_branding.scss */
     .site-logo {
       display: inline-block;
       position: relative;
@@ -1191,7 +1201,7 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       -webkit-transform: translatex(-50%);
       transform: translatex(-50%); } }
   @media (min-width: 900px) {
-    /* line 106, ../sass/components/_branding.scss */
+    /* line 105, ../sass/components/_branding.scss */
     .site-logo {
       position: absolute;
       top: 50%;
@@ -1203,12 +1213,12 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       width: 40%;
       max-width: 550px; } }
   @media (min-width: 1200px) {
-    /* line 106, ../sass/components/_branding.scss */
+    /* line 105, ../sass/components/_branding.scss */
     .site-logo {
       left: 0;
       width: 45%; } }
   @media (min-width: 1700px) {
-    /* line 106, ../sass/components/_branding.scss */
+    /* line 105, ../sass/components/_branding.scss */
     .site-logo {
       width: 100%; } }
 
@@ -2019,7 +2029,10 @@ a.hero-button {
         position: relative;
         z-index: 10;
         padding: 0 10px; } }
-  /* line 98, ../sass/components/_navigation.scss */
+    /* line 97, ../sass/components/_navigation.scss */
+    #block-system-main-menu > .menu a:hover, #block-system-main-menu > .menu a:focus {
+      background-color: #FCB040; }
+  /* line 103, ../sass/components/_navigation.scss */
   #block-system-main-menu > .menu li {
     margin: 0;
     display: block;
@@ -2033,18 +2046,18 @@ a.hero-button {
         Submenu Structure for desktop
        ========================================================================== */ }
     @media (min-width: 1025px) {
-      /* line 98, ../sass/components/_navigation.scss */
+      /* line 103, ../sass/components/_navigation.scss */
       #block-system-main-menu > .menu li {
         display: inline-block;
         z-index: auto; }
-        /* line 109, ../sass/components/_navigation.scss */
+        /* line 114, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li.faq > a {
           padding-right: 20px !important; } }
     @media (min-width: 1025px) {
-      /* line 98, ../sass/components/_navigation.scss */
+      /* line 103, ../sass/components/_navigation.scss */
       #block-system-main-menu > .menu li {
         font-size: 25px; } }
-    /* line 119, ../sass/components/_navigation.scss */
+    /* line 124, ../sass/components/_navigation.scss */
     #block-system-main-menu > .menu li a.highlight {
       color: white;
       background-color: #55C2C2;
@@ -2052,62 +2065,63 @@ a.hero-button {
       -o-transition: color 0.4s;
       -webkit-transition: color 0.4s;
       transition: color 0.4s; }
-      /* line 124, ../sass/components/_navigation.scss */
+      /* line 129, ../sass/components/_navigation.scss */
       #block-system-main-menu > .menu li a.highlight:hover, #block-system-main-menu > .menu li a.highlight:focus {
-        background-color: #55C2C2; }
-    /* line 130, ../sass/components/_navigation.scss */
-    #block-system-main-menu > .menu li:hover a, #block-system-main-menu > .menu li:focus a {
+        background-color: #55C2C2;
+        color: #333; }
+    /* line 136, ../sass/components/_navigation.scss */
+    #block-system-main-menu > .menu li:hover a, #block-system-main-menu > .menu li.js-tabbed-expanded a {
       background-color: #FCB040;
       color: #333; }
-    /* line 136, ../sass/components/_navigation.scss */
+    /* line 142, ../sass/components/_navigation.scss */
     #block-system-main-menu > .menu li .icon {
       line-height: inherit; }
     @media (max-width: 1025px) {
-      /* line 98, ../sass/components/_navigation.scss */
+      /* line 103, ../sass/components/_navigation.scss */
       #block-system-main-menu > .menu li {
         line-height: 3;
         font-size: 25px;
         position: relative; }
-        /* line 149, ../sass/components/_navigation.scss */
+        /* line 155, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li > ul {
           display: none;
           background-color: #666;
           padding: 0;
           margin: 0; }
-          /* line 155, ../sass/components/_navigation.scss */
+          /* line 161, ../sass/components/_navigation.scss */
           #block-system-main-menu > .menu li > ul > li {
             line-height: 2; }
-            /* line 158, ../sass/components/_navigation.scss */
+            /* line 164, ../sass/components/_navigation.scss */
             #block-system-main-menu > .menu li > ul > li > a {
               background-color: transparent; }
-              /* line 161, ../sass/components/_navigation.scss */
+              /* line 167, ../sass/components/_navigation.scss */
               #block-system-main-menu > .menu li > ul > li > a:hover, #block-system-main-menu > .menu li > ul > li > a:focus {
                 background-color: #999; }
-        /* line 169, ../sass/components/_navigation.scss */
+        /* line 175, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li a.highlight {
           background-color: #3ca8a8; }
-          /* line 172, ../sass/components/_navigation.scss */
+          /* line 178, ../sass/components/_navigation.scss */
           #block-system-main-menu > .menu li a.highlight:hover, #block-system-main-menu > .menu li a.highlight:focus {
             background-color: #55C2C2; }
-          /* line 176, ../sass/components/_navigation.scss */
+          /* line 182, ../sass/components/_navigation.scss */
           #block-system-main-menu > .menu li a.highlight:before {
             font-family: FontAwesome;
             display: inline-block;
             width: 35px;
             filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
             opacity: 0.8; }
-        /* line 184, ../sass/components/_navigation.scss */
+        /* line 190, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li .logout:before,
         #block-system-main-menu > .menu li .login:before {
           content: "\f007"; }
-        /* line 189, ../sass/components/_navigation.scss */
+        /* line 195, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li .register:before {
           content: "\f145"; }
-        /* line 193, ../sass/components/_navigation.scss */
+        /* line 199, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li:hover a, #block-system-main-menu > .menu li:focus a {
           background-color: transparent;
           color: white; }
-        /* line 199, ../sass/components/_navigation.scss */
+        /* line 205, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li.expanded:after {
           border-left: 10px solid transparent;
           border-right: 10px solid transparent;
@@ -2124,18 +2138,18 @@ a.hero-button {
           width: 0;
           height: 0;
           pointer-events: none; }
-        /* line 214, ../sass/components/_navigation.scss */
+        /* line 220, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li.expanded-active-processed:after {
           -moz-transform: rotate(180deg);
           -ms-transform: rotate(180deg);
           -webkit-transform: rotate(180deg);
           transform: rotate(180deg); } }
     @media (min-width: 1025px) {
-      /* line 224, ../sass/components/_navigation.scss */
-      #block-system-main-menu > .menu li:focus > ul, #block-system-main-menu > .menu li:hover > ul {
+      /* line 230, ../sass/components/_navigation.scss */
+      #block-system-main-menu > .menu li.js-tabbed-expanded > ul, #block-system-main-menu > .menu li:hover > ul {
         display: block;
         top: 100%; }
-      /* line 230, ../sass/components/_navigation.scss */
+      /* line 236, ../sass/components/_navigation.scss */
       #block-system-main-menu > .menu li > ul {
         background-color: #FCB040;
         border-top: 0;
@@ -2151,29 +2165,29 @@ a.hero-button {
         -webkit-transition: all 0.2s;
         transition: all 0.2s; } }
   @media (min-width: 1025px) and (min-width: 1700px) {
-    /* line 230, ../sass/components/_navigation.scss */
+    /* line 236, ../sass/components/_navigation.scss */
     #block-system-main-menu > .menu li > ul {
       top: -600px;
       width: 240px; } }
     @media (min-width: 1025px) {
-        /* line 247, ../sass/components/_navigation.scss */
+        /* line 253, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li > ul > li {
           display: block;
           float: none;
           line-height: 2;
           text-align: left; }
-        /* line 254, ../sass/components/_navigation.scss */
+        /* line 260, ../sass/components/_navigation.scss */
         #block-system-main-menu > .menu li > ul a {
           background-color: #FCB040;
           color: #333;
           padding: 0 10px;
           display: block;
           z-index: 5; }
-          /* line 260, ../sass/components/_navigation.scss */
-          #block-system-main-menu > .menu li > ul a:hover {
+          /* line 266, ../sass/components/_navigation.scss */
+          #block-system-main-menu > .menu li > ul a:hover, #block-system-main-menu > .menu li > ul a:focus {
             color: white !important; } }
 
-/* line 273, ../sass/components/_navigation.scss */
+/* line 280, ../sass/components/_navigation.scss */
 #mobile-menu {
   -moz-transition: all 200ms ease;
   -o-transition: all 200ms ease;
@@ -2189,7 +2203,7 @@ a.hero-button {
   top: 0;
   z-index: 10;
   cursor: pointer; }
-  /* line 285, ../sass/components/_navigation.scss */
+  /* line 292, ../sass/components/_navigation.scss */
   #mobile-menu:after {
     font-family: FontAwesome;
     font-size: 40px;
@@ -2204,22 +2218,22 @@ a.hero-button {
     width: 50px;
     left: 0;
     top: 0; }
-  /* line 301, ../sass/components/_navigation.scss */
+  /* line 308, ../sass/components/_navigation.scss */
   #mobile-menu:focus:after, #mobile-menu:active:after {
     color: white; }
   @media (min-width: 1025px) {
-    /* line 273, ../sass/components/_navigation.scss */
+    /* line 280, ../sass/components/_navigation.scss */
     #mobile-menu {
       display: none; } }
 
 @media (min-width: 1025px) {
-  /* line 312, ../sass/components/_navigation.scss */
+  /* line 319, ../sass/components/_navigation.scss */
   #header-menu,
   #primary-menu {
     line-height: 60px;
     height: 60px; } }
 @media (min-width: 1025px) and (min-width: 1025px) {
-  /* line 320, ../sass/components/_navigation.scss */
+  /* line 327, ../sass/components/_navigation.scss */
   h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
   .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
   .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.attendee-name, .view-schedule-items .site-name.legend-title,
@@ -2228,20 +2242,20 @@ a.hero-button {
     height: 60px; } }
 
 @media (min-width: 1025px) {
-  /* line 327, ../sass/components/_navigation.scss */
+  /* line 334, ../sass/components/_navigation.scss */
   .zone.z-navigation {
     height: 60px; } }
 /* Some overrides to omega base to remove background images and associated http requests */
-/* line 335, ../sass/components/_navigation.scss */
+/* line 342, ../sass/components/_navigation.scss */
 .menu .expanded {
   list-style-image: none;
   list-style-type: none; }
 
-/* line 340, ../sass/components/_navigation.scss */
+/* line 347, ../sass/components/_navigation.scss */
 html.js fieldset.collapsible .fieldset-legend {
   background: none; }
 
-/* line 344, ../sass/components/_navigation.scss */
+/* line 351, ../sass/components/_navigation.scss */
 .menu .leaf {
   list-style-image: none;
   list-style-type: none; }

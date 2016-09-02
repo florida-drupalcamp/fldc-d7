@@ -93,6 +93,11 @@
       z-index: 10;
       padding: 0 10px;
     }
+
+    &:hover,
+    &:focus {
+      background-color: $orange;
+    }
   }
 
   li {
@@ -124,11 +129,12 @@
       &:hover,
       &:focus {
         background-color: $turquois;
+        color: #333;
       }
     }
 
     &:hover a,
-    &:focus a {
+    &.js-tabbed-expanded a {
       background-color: $orange;
       color: #333;
     }
@@ -221,7 +227,7 @@
        ========================================================================== */
 
     @include breakpoint($mobile-nav) {
-      &:focus > ul,
+      &.js-tabbed-expanded > ul,
       &:hover > ul {
         display: block;
         top: 100%;
@@ -257,7 +263,8 @@
           padding: 0 10px;
           display: block;
           z-index: 5; // Necessary so they don't inherit parent style
-          &:hover {
+          &:hover,
+          &:focus {
             color: white!important;
           }
         }
