@@ -218,7 +218,7 @@
           this.context.strokeStyle = '#FFFFFF';
           this.context.strokeRect(gridx*GRID_SIZE+2, gridy*GRID_SIZE+2, GRID_SIZE-4, GRID_SIZE-4);
           this.context.strokeStyle = '#FFFFFF';
-          this.context.lineWidth = 1.0;
+          this.context.lineWidth = 5.0;
         }
       };
       this.configureTransform = function () {
@@ -249,6 +249,7 @@
         }
 
         this.context.closePath();
+        this.context.strokeStyle = '#FFFFFF';
         this.context.stroke();
       };
       this.findCollisionCanidates = function () {
@@ -598,6 +599,7 @@
           this.context.lineTo(this.x+1, this.y+1);
           this.context.moveTo(this.x+1, this.y-1);
           this.context.lineTo(this.x-1, this.y+1);
+          this.context.strokeStyle = '#FFFFFF';
           this.context.stroke();
           this.context.restore();
         }
@@ -634,6 +636,7 @@
           this.context.beginPath();
           this.context.moveTo(this.x, this.y);
           this.context.lineTo(this.x-this.vel.x, this.y-this.vel.y);
+          this.context.strokeStyle = '#FFFFFF';
           this.context.stroke();
           this.context.restore();
         }
@@ -708,6 +711,7 @@
             this.context.moveTo(line[0], line[1]);
             this.context.lineTo(line[2], line[3]);
           }
+          this.context.strokeStyle = '#FFFFFF';
           this.context.stroke();
           this.context.restore();
         }
@@ -835,7 +839,11 @@
         for (var i = 0; i < charsLength; i++) {
           this.renderGlyph(this.context, this.face, chars[i]);
         }
+
+        this.context.fillStyle = '#FFFFFF';
         this.context.fill();
+
+
 
         this.context.restore();
       },

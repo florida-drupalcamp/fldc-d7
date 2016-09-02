@@ -25,7 +25,7 @@
             </div> -->
 
              <div id="game-container">
-                <canvas id="canvas" width="1000" height="540"></canvas>
+                <canvas id="canvas" width="1500" height="843"></canvas>
                 <div id="left-controls">
                   <div id="up" class='button'>THRUST</div>
                   <div id="left" class='button'>LEFT</div>
