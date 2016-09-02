@@ -60,6 +60,49 @@
     }
   };
 
+  // Drupal.behaviors.headingHeightOnScroll = {
+  //   attach: function ( context, settings ) {
+  //     $('body', context).once('scroll', function () {
+  //       var $nav = $('#block-system-main-menu', context);
+  //       var $heading = $('.z-navigation', context);
+  //       $(window).scroll( function (){
+  //         var scrollTop = $(window, context).scrollTop();
+  //         if ( scrollTop >= 100 ) {
+  //           $heading.addClass('scroll-down');
+  //           $nav.addClass('scroll-down');
+  //         }
+  //         else if (scrollTop < 100) {
+  //           $heading.removeClass('scroll-down');
+  //           $nav.removeClass('scroll-down');
+  //         }
+  //       });
+  //     });
+  //   }
+  // };
+
+  Drupal.behaviors.coolShitOnScroll = {
+    attach: function ( context, settings ) {
+      // var $speaker = $('.speaker', context);
+      var $locationInfo = $('#location-info', context);
+      $(window).scroll( function (){
+        // Featured Speaker Pop
+        // if($(window).scrollTop() + $(window).height() >= $speaker.offset().top) {
+        //   $speaker.addClass('scroll-down');
+        // }
+        // if($(window).scrollTop() + $(window).height() < $speaker.offset().top) {
+        //   $speaker.removeClass('scroll-down');
+        // }
+        // Location Slide in
+        if($(window).scrollTop() + $(window).height() >= $locationInfo.offset().top) {
+          $locationInfo.addClass('scroll-down');
+        }
+        if($(window).scrollTop() + $(window).height() < $locationInfo.offset().top) {
+          $locationInfo.removeClass('scroll-down');
+        }
+      });
+    }
+  };
+
   Drupal.behaviors.expandedMenuItems = {
     attach: function ( context, settings ) {
       $('#block-system-main-menu > .menu li.expanded', context).once('expanded-active', function () {
