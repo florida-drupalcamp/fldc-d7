@@ -1,12 +1,12 @@
 
-#game-container {
+.hero-game {
+  display: none;
   position: absolute;
   @include center;
-}
 
-.button {
-  position:absolute;
-  border:1px solid black;
+  .js-show-game & {
+    display: block;
+  }
 }
 
 #left-controls {
@@ -28,6 +28,7 @@
   height:100px;
   bottom:100px;
 }
+
 #left {
   width:100px;
   height:100px;
@@ -46,4 +47,3 @@
   bottom:0px;
   right:0px;
 }
-

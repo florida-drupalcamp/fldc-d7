@@ -1506,8 +1506,21 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
     /* line 26, ../sass/components/_front_hero.scss */
     .hero-teaser {
       width: 50%; } }
+  /* line 49, ../sass/components/_front_hero.scss */
+  .js-show-game .hero-teaser {
+    display: none; }
 
-/* line 50, ../sass/components/_front_hero.scss */
+/* line 54, ../sass/components/_front_hero.scss */
+.hero-game-teaser {
+  font-size: 14px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7); }
+  /* line 60, ../sass/components/_front_hero.scss */
+  .hero-game-teaser:hover {
+    color: white; }
+
+/* line 65, ../sass/components/_front_hero.scss */
 .hero-title {
   line-height: 1.2;
   display: inline-block;
@@ -1516,22 +1529,22 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
   margin-top: 0;
   border-bottom: solid 1px white;
   -webkit-text-stroke: 1px white; }
-  /* line 59, ../sass/components/_front_hero.scss */
+  /* line 74, ../sass/components/_front_hero.scss */
   .hero-title a {
     color: inherit; }
-    /* line 62, ../sass/components/_front_hero.scss */
+    /* line 77, ../sass/components/_front_hero.scss */
     .hero-title a:link, .hero-title a:visited {
       color: inherit; }
   @media (min-width: 1200px) {
-    /* line 50, ../sass/components/_front_hero.scss */
+    /* line 65, ../sass/components/_front_hero.scss */
     .hero-title {
       font-size: 60px; } }
   @media (min-width: 1700px) {
-    /* line 50, ../sass/components/_front_hero.scss */
+    /* line 65, ../sass/components/_front_hero.scss */
     .hero-title {
       font-size: 70px; } }
 
-/* line 77, ../sass/components/_front_hero.scss */
+/* line 92, ../sass/components/_front_hero.scss */
 h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
 #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
 .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
@@ -1541,67 +1554,68 @@ h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-
   line-height: 1.2;
   color: #FCB040; }
   @media (min-width: 470px) {
-    /* line 77, ../sass/components/_front_hero.scss */
+    /* line 92, ../sass/components/_front_hero.scss */
     h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
     #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
     .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
     .user-profile .field--name-field-user-last-name, .attendee-name {
       line-height: 1.5; } }
   @media (min-width: 1700px) {
-    /* line 77, ../sass/components/_front_hero.scss */
+    /* line 92, ../sass/components/_front_hero.scss */
     h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
     #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
     .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
     .user-profile .field--name-field-user-last-name, .attendee-name {
       font-size: 40px; } }
 
-/* line 92, ../sass/components/_front_hero.scss */
+/* line 107, ../sass/components/_front_hero.scss */
 a.hero-button {
   padding: 20px;
   text-transform: uppercase;
   text-align: center;
   font-size: 40px; }
   @media (min-width: 700px) {
-    /* line 92, ../sass/components/_front_hero.scss */
+    /* line 107, ../sass/components/_front_hero.scss */
     a.hero-button {
       font-size: 50px; } }
 
-/* line 103, ../sass/components/_front_hero.scss */
+/* line 118, ../sass/components/_front_hero.scss */
 .date {
   display: block;
   font-size: 35px; }
   @media (min-width: 470px) {
-    /* line 103, ../sass/components/_front_hero.scss */
+    /* line 118, ../sass/components/_front_hero.scss */
     .date {
       display: inline;
       font-size: 30px; }
-      /* line 111, ../sass/components/_front_hero.scss */
+      /* line 126, ../sass/components/_front_hero.scss */
       .date:after {
         content: " | "; } }
   @media (min-width: 1700px) {
-    /* line 103, ../sass/components/_front_hero.scss */
+    /* line 118, ../sass/components/_front_hero.scss */
     .date {
       font-size: inherit; } }
 
-/* line 121, ../sass/components/_front_hero.scss */
+/* line 136, ../sass/components/_front_hero.scss */
 .loc {
   display: block; }
   @media (min-width: 470px) {
-    /* line 121, ../sass/components/_front_hero.scss */
+    /* line 136, ../sass/components/_front_hero.scss */
     .loc {
       display: inline; } }
 
-/* line 130, ../sass/components/_front_hero.scss */
+/* line 145, ../sass/components/_front_hero.scss */
 .icon {
   color: #fff;
   font-size: 50px; }
 
-/* line 135, ../sass/components/_front_hero.scss */
+/* line 150, ../sass/components/_front_hero.scss */
 .icon:hover {
   color: #E4D400; }
 
 /* line 2, ../sass/components/_game.scss */
-#game-container {
+.hero-game {
+  display: none;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1609,11 +1623,9 @@ a.hero-button {
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
-
-/* line 7, ../sass/components/_game.scss */
-.button {
-  position: absolute;
-  border: 1px solid black; }
+  /* line 7, ../sass/components/_game.scss */
+  .js-show-game .hero-game {
+    display: block; }
 
 /* line 12, ../sass/components/_game.scss */
 #left-controls {
@@ -1635,20 +1647,20 @@ a.hero-button {
   height: 100px;
   bottom: 100px; }
 
-/* line 31, ../sass/components/_game.scss */
+/* line 32, ../sass/components/_game.scss */
 #left {
   width: 100px;
   height: 100px;
   bottom: 0px; }
 
-/* line 36, ../sass/components/_game.scss */
+/* line 37, ../sass/components/_game.scss */
 #right {
   width: 100px;
   height: 100px;
   bottom: 0px;
   left: 100px; }
 
-/* line 43, ../sass/components/_game.scss */
+/* line 44, ../sass/components/_game.scss */
 #space {
   width: 200px;
   height: 200px;
