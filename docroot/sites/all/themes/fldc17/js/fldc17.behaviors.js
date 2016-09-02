@@ -155,6 +155,12 @@
         $.getScript( '/sites/all/themes/fldc17/js/vendor/vector_battle_regular.typeface.js');
         $.getScript( '/sites/all/themes/fldc17/js/vendor/game.js');
       });
+
+      $(document, context).keyup(function (e) {
+        if (e.keyCode == 27) {
+          $('.z-header', context).removeClass('js-show-game');
+        }
+      });
     }
   };
 

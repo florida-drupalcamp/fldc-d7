@@ -1627,40 +1627,52 @@ a.hero-button {
   .js-show-game .hero-game {
     display: block; }
 
-/* line 12, ../sass/components/_game.scss */
+/* line 13, ../sass/components/_game.scss */
+.js-show-game:after {
+  content: "Press ESC to Cancel";
+  position: absolute;
+  bottom: 5px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  text-align: right;
+  max-width: 1500px;
+  left: 50%;
+  transform: translatex(-50%); }
+
+/* line 26, ../sass/components/_game.scss */
 #left-controls {
   position: absolute;
   left: 1px;
   bottom: 0px;
   display: none; }
 
-/* line 19, ../sass/components/_game.scss */
+/* line 33, ../sass/components/_game.scss */
 #right-controls {
   position: absolute;
   right: 1px;
   bottom: 0px;
   display: none; }
 
-/* line 26, ../sass/components/_game.scss */
+/* line 40, ../sass/components/_game.scss */
 #up {
   width: 200px;
   height: 100px;
   bottom: 100px; }
 
-/* line 32, ../sass/components/_game.scss */
+/* line 46, ../sass/components/_game.scss */
 #left {
   width: 100px;
   height: 100px;
   bottom: 0px; }
 
-/* line 37, ../sass/components/_game.scss */
+/* line 51, ../sass/components/_game.scss */
 #right {
   width: 100px;
   height: 100px;
   bottom: 0px;
   left: 100px; }
 
-/* line 44, ../sass/components/_game.scss */
+/* line 58, ../sass/components/_game.scss */
 #space {
   width: 200px;
   height: 200px;
