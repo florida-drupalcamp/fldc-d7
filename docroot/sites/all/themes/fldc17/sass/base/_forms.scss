@@ -116,3 +116,19 @@ fieldset {
 .grippie {
   display: none;
 }
+
+.button-hollow {
+  display: inline-block;
+  color: $blue;
+  text-decoration: none;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border: solid 2px $blue;
+  transition: all 0.2s;
+
+  &:hover,
+  &:focus {
+    background: $blue;
+    color: white;
+  }
+}

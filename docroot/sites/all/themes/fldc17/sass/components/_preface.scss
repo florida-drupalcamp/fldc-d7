@@ -1,77 +1,53 @@
 /* =============================================================================
     Preface Region and featured speakers
    ========================================================================== */
+$preface-break: $tablet_narrow;
 
 .zone.z-preface {
 
-  h2 {
-    margin: 20px 0;
-    font-size: 50px;
-    line-height: 1;
-    color: white;
-    text-align: center;
-    @include breakpoint($tablet_narrow) {
-      font-size: 38px;
-    }
-    @include breakpoint($tablet_wide) {
-      font-size: 45px;
-    }
-    @include breakpoint($normal) {
-      font-size: 41px;
-    }
+  @include breakpoint($preface-break) {
+    margin: 21% 0 0 0;
   }
-  li,
-  ul {
+
+  .l-region--preface {
     padding: 0;
-    list-style-type: none;
+
+    @include breakpoint($preface-break) {
+      margin: -28% 0 10px 0;
+    }
   }
 
   ul {
-    display: flex;
+    margin: 0;
+    padding: 0;
+
+    @include breakpoint($preface-break) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .speaker {
-    position: relative;
-    height: 0;
+    margin: 40px 0;
+    padding: 0;
+    list-style-type: none;
+    color: white;
 
-    @include breakpoint($tablet_narrow) {
-      width: 33.33%;
-      padding: 33% 0 0 0;
-    }
-
-    img {
-      position: absolute;
-      left: 50%;
-      top: 0;
-      min-width: 100%;
-      min-height: 100%;
-      @include transform(translatex(-50%));
+    @include breakpoint($preface-break) {
+      margin: 0;
+      width: 30%;
     }
   }
 
   .speaker-name {
-    position: absolute;;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 40px;
-    color: #fff;
-    @include transition(color .8s);
+    color: inherit;
   }
 
-  .speaker-desc {
-    position: absolute;;
-    bottom: 0;
-    left: 0;
-    padding: 40px;
-    color: white;
-    font-size: 20px;
-    line-height: 1.5;
-    @include transition(color .8s);
+  .speaker-bio {
+    font-size: 16px;
+
     @include breakpoint($normal) {
-      padding: 0 5px;
+      font-size: 20px;
     }
   }
 }
-
-

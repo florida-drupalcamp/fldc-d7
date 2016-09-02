@@ -99,7 +99,7 @@
           height: 200px; } }
     /* line 63, ../sass/layouts/_layout.scss */
     .admin-menu .zone.z-header {
-      margin-top: 90px; }
+      margin-top: 60px; }
 
 @media (min-width: 900px) {
   /* line 69, ../sass/layouts/_layout.scss */
@@ -544,6 +544,20 @@ fieldset {
 .grippie {
   display: none; }
 
+/* line 120, ../sass/base/_forms.scss */
+.button-hollow {
+  display: inline-block;
+  color: #0E73AF;
+  text-decoration: none;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border: solid 2px #0E73AF;
+  transition: all 0.2s; }
+  /* line 129, ../sass/base/_forms.scss */
+  .button-hollow:hover, .button-hollow:focus {
+    background: #0E73AF;
+    color: white; }
+
 /* =============================================================================
     Media default styles
    ========================================================================== */
@@ -620,53 +634,50 @@ body.front {
   position: relative; }
 
 /* line 45, ../sass/base/_theme.zones.layout.scss */
-.l-branding video {
-  width: 100%; }
-/* line 49, ../sass/base/_theme.zones.layout.scss */
 .not-front .l-branding {
   display: none; }
 
-/* line 54, ../sass/base/_theme.zones.layout.scss */
+/* line 50, ../sass/base/_theme.zones.layout.scss */
 .zone.z-header {
   overflow: hidden;
-  margin-top: 70px; }
-  /* line 58, ../sass/base/_theme.zones.layout.scss */
+  margin-top: 60px; }
+  /* line 54, ../sass/base/_theme.zones.layout.scss */
   .not-front .zone.z-header {
     background-image: url("../images/fldc13_group-blur-smartphone_narrow.jpg");
     background-position: center center; }
     @media (min-width: 470px) {
-      /* line 58, ../sass/base/_theme.zones.layout.scss */
+      /* line 54, ../sass/base/_theme.zones.layout.scss */
       .not-front .zone.z-header {
         background-image: url("../images/fldc13_group-blur-smartphone_wide.jpg"); } }
     @media (min-width: 700px) {
-      /* line 58, ../sass/base/_theme.zones.layout.scss */
+      /* line 54, ../sass/base/_theme.zones.layout.scss */
       .not-front .zone.z-header {
         background-image: url("../images/fldc13_group-blur-tablet_narrow.jpg"); } }
     @media (min-width: 900px) {
-      /* line 58, ../sass/base/_theme.zones.layout.scss */
+      /* line 54, ../sass/base/_theme.zones.layout.scss */
       .not-front .zone.z-header {
         background-image: url("../images/fldc13_group-blur-tablet_wide.jpg"); } }
     @media (min-width: 1200px) {
-      /* line 58, ../sass/base/_theme.zones.layout.scss */
+      /* line 54, ../sass/base/_theme.zones.layout.scss */
       .not-front .zone.z-header {
         background-image: url("../images/fldc13_group-blur.jpg"); } }
-  /* line 79, ../sass/base/_theme.zones.layout.scss */
+  /* line 75, ../sass/base/_theme.zones.layout.scss */
   .section-location .zone.z-header {
     background-image: url("../images/ftc-blur.jpg"); }
 
-/* line 84, ../sass/base/_theme.zones.layout.scss */
+/* line 80, ../sass/base/_theme.zones.layout.scss */
 .zone.z-preface {
   background-color: #55C2C2;
   position: relative;
   padding-top: 2em;
   margin: 20px 0; }
 
-/* line 91, ../sass/base/_theme.zones.layout.scss */
+/* line 87, ../sass/base/_theme.zones.layout.scss */
 .zone.z-footer {
   background-color: #0E73AF;
   padding-top: 2em;
   position: relative; }
-  /* line 96, ../sass/base/_theme.zones.layout.scss */
+  /* line 92, ../sass/base/_theme.zones.layout.scss */
   .zone.z-footer:before {
     top: 0;
     bottom: auto; }
@@ -1117,7 +1128,7 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
   .view-schedule-items .site-name.session-slot--title a {
     display: inline-block;
     text-indent: -9999px;
-    background-image: url('../images/drupal-diver_small.png?1472731867');
+    background-image: url('../images/drupal-diver_small.png?1472783182');
     width: 90px;
     height: 80px;
     background-size: contain;
@@ -1144,7 +1155,7 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
       .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a, .block--views-individual-sponsors-block .site-name.attendee-name a, .view-schedule-items .site-name.legend-title a,
       .view-schedule-items .site-name.session-slot--title a {
-        text-indent: 90px;
+        text-indent: 80px;
         margin-left: 0;
         margin-right: 0;
         width: auto;
@@ -1445,16 +1456,40 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
 /* =============================================================================
     Front Hero
    ========================================================================== */
-/* line 5, ../sass/components/_front_hero.scss */
+@media (max-width: 700px) {
+  /* line 9, ../sass/components/_front_hero.scss */
+  .l-branding .video-wrapper {
+    position: relative;
+    padding-top: 100%;
+    height: 0; }
+    /* line 15, ../sass/components/_front_hero.scss */
+    .l-branding .video-wrapper video {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: auto;
+      min-width: 100%;
+      min-height: 100%; } }
+
+/* line 26, ../sass/components/_front_hero.scss */
+video {
+  width: 100%; }
+
+/* line 30, ../sass/components/_front_hero.scss */
 .hero-teaser {
   text-align: center;
-  padding: 20px 20px 30px 20px;
-  color: white;
-  border: solid 2px white; }
+  padding: 0;
+  color: white; }
   @media (min-width: 900px) {
-    /* line 5, ../sass/components/_front_hero.scss */
+    /* line 30, ../sass/components/_front_hero.scss */
     .hero-teaser {
       position: absolute;
+      border: solid 2px white;
+      padding: 20px 20px 40px 20px;
       width: 50%;
       left: 50%;
       top: 50%;
@@ -1463,39 +1498,35 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); } }
 
-/* line 18, ../sass/components/_front_hero.scss */
+/* line 44, ../sass/components/_front_hero.scss */
 .hero-title {
   line-height: 1.2;
   display: inline-block;
-  font-size: 55px;
-  color: white;
+  font-size: 50px;
+  color: #0E73AF;
   margin-top: 0;
   border-bottom: solid 1px white;
   -webkit-text-stroke: 1px white; }
-  /* line 27, ../sass/components/_front_hero.scss */
+  /* line 53, ../sass/components/_front_hero.scss */
   .hero-title a {
     color: inherit; }
-    /* line 30, ../sass/components/_front_hero.scss */
+    /* line 56, ../sass/components/_front_hero.scss */
     .hero-title a:link, .hero-title a:visited {
       color: inherit; }
-  @media (min-width: 470px) {
-    /* line 18, ../sass/components/_front_hero.scss */
+  @media (min-width: 700px) {
+    /* line 44, ../sass/components/_front_hero.scss */
     .hero-title {
-      font-size: 65px; } }
-  @media (min-width: 900px) {
-    /* line 18, ../sass/components/_front_hero.scss */
-    .hero-title {
-      font-size: 55px; } }
+      color: white; } }
   @media (min-width: 1200px) {
-    /* line 18, ../sass/components/_front_hero.scss */
+    /* line 44, ../sass/components/_front_hero.scss */
     .hero-title {
       font-size: 60px; } }
   @media (min-width: 1700px) {
-    /* line 18, ../sass/components/_front_hero.scss */
+    /* line 44, ../sass/components/_front_hero.scss */
     .hero-title {
       font-size: 70px; } }
 
-/* line 53, ../sass/components/_front_hero.scss */
+/* line 75, ../sass/components/_front_hero.scss */
 h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
 #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
 .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
@@ -1505,14 +1536,14 @@ h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-
   line-height: 1.2;
   color: #FCB040; }
   @media (min-width: 470px) {
-    /* line 53, ../sass/components/_front_hero.scss */
+    /* line 75, ../sass/components/_front_hero.scss */
     h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
     #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
     .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
     .user-profile .field--name-field-user-last-name, .attendee-name {
       line-height: 1.5; } }
   @media (min-width: 1700px) {
-    /* line 53, ../sass/components/_front_hero.scss */
+    /* line 75, ../sass/components/_front_hero.scss */
     h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
     #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
     .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
@@ -1520,44 +1551,44 @@ h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-
       font-size: 40px;
       margin-bottom: 20px; } }
 
-/* line 69, ../sass/components/_front_hero.scss */
+/* line 91, ../sass/components/_front_hero.scss */
 a.hero-button {
   padding: 20px;
   text-transform: uppercase;
   text-align: center;
   font-size: 50px; }
 
-/* line 76, ../sass/components/_front_hero.scss */
+/* line 98, ../sass/components/_front_hero.scss */
 .date {
   display: block;
   font-size: 35px; }
   @media (min-width: 470px) {
-    /* line 76, ../sass/components/_front_hero.scss */
+    /* line 98, ../sass/components/_front_hero.scss */
     .date {
       display: inline;
       font-size: 30px; }
-      /* line 84, ../sass/components/_front_hero.scss */
+      /* line 106, ../sass/components/_front_hero.scss */
       .date:after {
         content: " | "; } }
   @media (min-width: 1700px) {
-    /* line 76, ../sass/components/_front_hero.scss */
+    /* line 98, ../sass/components/_front_hero.scss */
     .date {
       font-size: inherit; } }
 
-/* line 94, ../sass/components/_front_hero.scss */
+/* line 116, ../sass/components/_front_hero.scss */
 .loc {
   display: block; }
   @media (min-width: 470px) {
-    /* line 94, ../sass/components/_front_hero.scss */
+    /* line 116, ../sass/components/_front_hero.scss */
     .loc {
       display: inline; } }
 
-/* line 103, ../sass/components/_front_hero.scss */
+/* line 125, ../sass/components/_front_hero.scss */
 .icon {
   color: #fff;
   font-size: 50px; }
 
-/* line 108, ../sass/components/_front_hero.scss */
+/* line 130, ../sass/components/_front_hero.scss */
 .icon:hover {
   color: #E4D400; }
 
@@ -2292,106 +2323,47 @@ html.js .form-autocomplete {
 /* =============================================================================
     Preface Region and featured speakers
    ========================================================================== */
-/* line 7, ../sass/components/_preface.scss */
-.zone.z-preface h2, .zone.z-preface .fieldset-legend, .zone.z-preface .messages, .zone.z-preface #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .zone.z-preface h1, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .zone.z-preface h2, .zone.z-preface .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .zone.z-preface h2, .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .legend-title, .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .legend-title,
-.zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
-#block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .session-slot--title,
-.zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
-.view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .session-slot--title, .zone.z-preface .user-profile .field--name-field-user-first-name, .user-profile .zone.z-preface .field--name-field-user-first-name,
-.zone.z-preface .user-profile .field--name-field-user-last-name,
-.user-profile .zone.z-preface .field--name-field-user-last-name, .zone.z-preface .attendee-name {
-  margin: 20px 0;
-  font-size: 50px;
-  line-height: 1;
-  color: white;
-  text-align: center; }
+@media (min-width: 700px) {
+  /* line 6, ../sass/components/_preface.scss */
+  .zone.z-preface {
+    margin: 21% 0 0 0; } }
+/* line 12, ../sass/components/_preface.scss */
+.zone.z-preface .l-region--preface {
+  padding: 0; }
   @media (min-width: 700px) {
-    /* line 7, ../sass/components/_preface.scss */
-    .zone.z-preface h2, .zone.z-preface .fieldset-legend, .zone.z-preface .messages, .zone.z-preface #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .zone.z-preface h1, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .zone.z-preface h2, .zone.z-preface .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .zone.z-preface h2, .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .legend-title, .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .legend-title,
-    .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
-    #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .session-slot--title,
-    .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
-    .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .session-slot--title, .zone.z-preface .user-profile .field--name-field-user-first-name, .user-profile .zone.z-preface .field--name-field-user-first-name,
-    .zone.z-preface .user-profile .field--name-field-user-last-name,
-    .user-profile .zone.z-preface .field--name-field-user-last-name, .zone.z-preface .attendee-name {
-      font-size: 38px; } }
-  @media (min-width: 900px) {
-    /* line 7, ../sass/components/_preface.scss */
-    .zone.z-preface h2, .zone.z-preface .fieldset-legend, .zone.z-preface .messages, .zone.z-preface #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .zone.z-preface h1, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .zone.z-preface h2, .zone.z-preface .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .zone.z-preface h2, .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .legend-title, .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .legend-title,
-    .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
-    #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .session-slot--title,
-    .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
-    .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .session-slot--title, .zone.z-preface .user-profile .field--name-field-user-first-name, .user-profile .zone.z-preface .field--name-field-user-first-name,
-    .zone.z-preface .user-profile .field--name-field-user-last-name,
-    .user-profile .zone.z-preface .field--name-field-user-last-name, .zone.z-preface .attendee-name {
-      font-size: 45px; } }
-  @media (min-width: 1200px) {
-    /* line 7, ../sass/components/_preface.scss */
-    .zone.z-preface h2, .zone.z-preface .fieldset-legend, .zone.z-preface .messages, .zone.z-preface #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .zone.z-preface h1, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .zone.z-preface h2, .zone.z-preface .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .zone.z-preface h2, .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .legend-title, .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .legend-title,
-    .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
-    #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .session-slot--title,
-    .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
-    .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .session-slot--title, .zone.z-preface .user-profile .field--name-field-user-first-name, .user-profile .zone.z-preface .field--name-field-user-first-name,
-    .zone.z-preface .user-profile .field--name-field-user-last-name,
-    .user-profile .zone.z-preface .field--name-field-user-last-name, .zone.z-preface .attendee-name {
-      font-size: 41px; } }
-/* line 23, ../sass/components/_preface.scss */
-.zone.z-preface li,
+    /* line 12, ../sass/components/_preface.scss */
+    .zone.z-preface .l-region--preface {
+      margin: -28% 0 10px 0; } }
+/* line 20, ../sass/components/_preface.scss */
 .zone.z-preface ul {
-  padding: 0;
-  list-style-type: none; }
-/* line 29, ../sass/components/_preface.scss */
-.zone.z-preface ul {
-  display: flex; }
-/* line 33, ../sass/components/_preface.scss */
-.zone.z-preface .speaker {
-  position: relative;
-  height: 0; }
-  @media (min-width: 700px) {
-    /* line 33, ../sass/components/_preface.scss */
-    .zone.z-preface .speaker {
-      width: 33.33%;
-      padding: 33% 0 0 0; } }
-  /* line 42, ../sass/components/_preface.scss */
-  .zone.z-preface .speaker img {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    min-width: 100%;
-    min-height: 100%;
-    -moz-transform: translatex(-50%);
-    -ms-transform: translatex(-50%);
-    -webkit-transform: translatex(-50%);
-    transform: translatex(-50%); }
-/* line 52, ../sass/components/_preface.scss */
-.zone.z-preface .speaker-name {
-  position: absolute;
-  top: 0;
-  left: 0;
   margin: 0;
-  padding: 40px;
-  color: #fff;
-  -moz-transition: color 0.8s;
-  -o-transition: color 0.8s;
-  -webkit-transition: color 0.8s;
-  transition: color 0.8s; }
-/* line 62, ../sass/components/_preface.scss */
-.zone.z-preface .speaker-desc {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 40px;
-  color: white;
-  font-size: 20px;
-  line-height: 1.5;
-  -moz-transition: color 0.8s;
-  -o-transition: color 0.8s;
-  -webkit-transition: color 0.8s;
-  transition: color 0.8s; }
+  padding: 0; }
+  @media (min-width: 700px) {
+    /* line 20, ../sass/components/_preface.scss */
+    .zone.z-preface ul {
+      display: flex;
+      justify-content: space-between; } }
+/* line 30, ../sass/components/_preface.scss */
+.zone.z-preface .speaker {
+  margin: 40px 0;
+  padding: 0;
+  list-style-type: none;
+  color: white; }
+  @media (min-width: 700px) {
+    /* line 30, ../sass/components/_preface.scss */
+    .zone.z-preface .speaker {
+      margin: 0;
+      width: 30%; } }
+/* line 42, ../sass/components/_preface.scss */
+.zone.z-preface .speaker-name {
+  color: inherit; }
+/* line 46, ../sass/components/_preface.scss */
+.zone.z-preface .speaker-bio {
+  font-size: 16px; }
   @media (min-width: 1200px) {
-    /* line 62, ../sass/components/_preface.scss */
-    .zone.z-preface .speaker-desc {
-      padding: 0 5px; } }
+    /* line 46, ../sass/components/_preface.scss */
+    .zone.z-preface .speaker-bio {
+      font-size: 20px; } }
 
 /* =============================================================================
     Sponsors (Front page, Sponsors page, and block)

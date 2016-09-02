@@ -42,10 +42,6 @@ body {
 }
 
 .l-branding {
-  video {
-    width: 100%;
-  }
-
   .not-front & {
     display: none;
   }
@@ -53,7 +49,7 @@ body {
 
 .zone.z-header {
   overflow: hidden;
-  margin-top: 70px;
+  margin-top: 60px;
 
   .not-front & {
     background-image: url("../images/fldc13_group-blur-smartphone_narrow.jpg");
