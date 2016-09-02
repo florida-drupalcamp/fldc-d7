@@ -401,57 +401,6 @@
   padding: 5px 10px;
   color: white; }
 
-/* line 18, ../sass/base/_base.scss */
-#canvas {
-  border: 1px solid black;
-  top: 0px;
-  left: 0px; }
-
-/* line 19, ../sass/base/_base.scss */
-.button {
-  position: absolute;
-  border: 1px solid black; }
-
-/* line 20, ../sass/base/_base.scss */
-#left-controls {
-  position: absolute;
-  left: 1px;
-  bottom: 0px;
-  display: none; }
-
-/* line 21, ../sass/base/_base.scss */
-#right-controls {
-  position: absolute;
-  right: 1px;
-  bottom: 0px;
-  display: none; }
-
-/* line 22, ../sass/base/_base.scss */
-#up {
-  width: 200px;
-  height: 100px;
-  bottom: 100px; }
-
-/* line 23, ../sass/base/_base.scss */
-#left {
-  width: 100px;
-  height: 100px;
-  bottom: 0px; }
-
-/* line 24, ../sass/base/_base.scss */
-#right {
-  width: 100px;
-  height: 100px;
-  bottom: 0px;
-  left: 100px; }
-
-/* line 25, ../sass/base/_base.scss */
-#space {
-  width: 200px;
-  height: 200px;
-  bottom: 0px;
-  right: 0px; }
-
 /* =============================================================================
     Fonts
    ========================================================================== */
@@ -3394,49 +3343,47 @@ div.password-confirm {
 
 /* line 28, ../sass/fldc17.styles.scss */
 #canvas {
-  border: 1px solid black;
-  top: 0px;
-  left: 0px; }
+  border: 1px solid black; }
 
-/* line 29, ../sass/fldc17.styles.scss */
+/* line 32, ../sass/fldc17.styles.scss */
 .button {
   position: absolute;
   border: 1px solid black; }
 
-/* line 30, ../sass/fldc17.styles.scss */
+/* line 37, ../sass/fldc17.styles.scss */
 #left-controls {
   position: absolute;
   left: 1px;
   bottom: 0px;
   display: none; }
 
-/* line 31, ../sass/fldc17.styles.scss */
+/* line 44, ../sass/fldc17.styles.scss */
 #right-controls {
   position: absolute;
   right: 1px;
   bottom: 0px;
   display: none; }
 
-/* line 32, ../sass/fldc17.styles.scss */
+/* line 51, ../sass/fldc17.styles.scss */
 #up {
   width: 200px;
   height: 100px;
   bottom: 100px; }
 
-/* line 33, ../sass/fldc17.styles.scss */
+/* line 56, ../sass/fldc17.styles.scss */
 #left {
   width: 100px;
   height: 100px;
   bottom: 0px; }
 
-/* line 34, ../sass/fldc17.styles.scss */
+/* line 61, ../sass/fldc17.styles.scss */
 #right {
   width: 100px;
   height: 100px;
   bottom: 0px;
   left: 100px; }
 
-/* line 35, ../sass/fldc17.styles.scss */
+/* line 68, ../sass/fldc17.styles.scss */
 #space {
   width: 200px;
   height: 200px;
