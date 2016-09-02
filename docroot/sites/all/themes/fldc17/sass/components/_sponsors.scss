@@ -3,6 +3,9 @@
    ========================================================================== */
 
 .view-sponsors {
+  // Tricky sneak to shrink everything
+  @include transform(scale(0.8));
+
   ul {
     padding: 0;
     margin: 0;
@@ -45,7 +48,7 @@
       @include perspective(1000px);
       .csstransforms3d &:hover a, // Only show transforms to browsers can support them
       .csstransforms3d &:focus a {
-         @include transform(rotateY(180deg));
+         @include transform(rotatex(180deg));
       }
 
       /* disable turn-around effect for IE */
@@ -55,7 +58,7 @@
       .ie10 &:focus a,
       .ie11 &:hover a,
       .ie11 &:focus a  {
-         @include transform(rotateY(0deg));
+         @include transform(rotatex(0deg));
          @include backface-visibility(hidden); // ie
       }
     }
@@ -88,16 +91,21 @@
   .wrap-back {
     display: none; // Hide from old browsers
     @include breakpoint($normal) {
-      background-color: #f5f5f5;
+      background-color: $blue;
       border-radius: 3px;
       line-height: 1.3;
+      color: white;
       .csstransforms3d & {
-        @include transform(rotateY(180deg));
+        @include transform(rotatex(180deg));
         display: block;
       }
       .wrap:hover & {
-         @include transform(rotateY(180deg));
+         @include transform(rotatex(180deg));
       }
+    }
+
+    h3 {
+      color: inherit;
     }
   }
   h3 {
@@ -105,54 +113,54 @@
   }
 
 
-  // Width and height styling for different sponsorship levels
-  @include breakpoint($normal) {
-    .view-content .wrap-front { // Platinum
-      width: 90%;
-      max-width: 350px;
-      height: 200px;
-    }
-    .view-display-id-attachment_1 { // Gold
-      .wrap {
-        max-width: 24%;
-      }
-      .wrap-front {
-        width: 80%;
-        max-width: 250px;
-        height: 200px;
-      }
-      h3 {
-        font-size: 1.5em;
-      }
-    }
-    .view-display-id-attachment_2 { // Silver
-      .wrap {
-        max-width: 24%;
-      }
-      .wrap-front {
-        width: 80%;
-        max-width: 200px;
-        height: 170px;
-      }
-      h3 {
-        font-size: 1.5em;
-      }
-    }
-    .view-display-id-attachment_3,  // Bronze
-    .view-display-id-attachment_4 { // In Kind
-      .wrap {
-        max-width: 24%;
-      }
-      .wrap-front {
-        width: 80%;
-        max-width: 150px;
-        height: 150px;
-      }
-      h3 {
-        font-size: 1.2em;
-      }
-    }
-  }
+  // // Width and height styling for different sponsorship levels
+  // @include breakpoint($normal) {
+  //   .view-content .wrap-front { // Platinum
+  //     width: 90%;
+  //     max-width: 350px;
+  //     height: 200px;
+  //   }
+  //   .view-display-id-attachment_1 { // Gold
+  //     .wrap {
+  //       max-width: 24%;
+  //     }
+  //     .wrap-front {
+  //       width: 80%;
+  //       max-width: 250px;
+  //       height: 200px;
+  //     }
+  //     h3 {
+  //       font-size: 1.5em;
+  //     }
+  //   }
+  //   .view-display-id-attachment_2 { // Silver
+  //     .wrap {
+  //       max-width: 24%;
+  //     }
+  //     .wrap-front {
+  //       width: 80%;
+  //       max-width: 200px;
+  //       height: 170px;
+  //     }
+  //     h3 {
+  //       font-size: 1.5em;
+  //     }
+  //   }
+  //   .view-display-id-attachment_3,  // Bronze
+  //   .view-display-id-attachment_4 { // In Kind
+  //     .wrap {
+  //       max-width: 24%;
+  //     }
+  //     .wrap-front {
+  //       width: 80%;
+  //       max-width: 150px;
+  //       height: 150px;
+  //     }
+  //     h3 {
+  //       font-size: 1.2em;
+  //     }
+  //   }
+  // }
   // /#Sponsors
 }
 

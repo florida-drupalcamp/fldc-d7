@@ -9,9 +9,8 @@ button {
   font-size: 50px;
   cursor: pointer;
   background-color: $orange;
-  color: white;  
+  color: white;
   -webkit-appearance:none;
-  @include border-radius(3px);
   @include transition(all .2s);
   &:hover {
     background-color: darken($orange, 5%);
@@ -75,7 +74,7 @@ input[type="submit"] {
   }
 }
 
-// Views Exposed Forms 
+// Views Exposed Forms
 .views-exposed-form .views-exposed-widget .form-submit {
   margin: 0;
   @include breakpoint($tablet_narrow) {

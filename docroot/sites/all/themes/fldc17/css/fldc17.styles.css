@@ -424,18 +424,15 @@ button, input[type="submit"], a.button, .comment__links a, .flag a, .view-sessio
   background-color: #FCB040;
   color: white;
   -webkit-appearance: none;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
   -webkit-transition: all 0.2s;
   transition: all 0.2s; }
-  /* line 16, ../sass/base/_forms.scss */
+  /* line 15, ../sass/base/_forms.scss */
   button:hover, input[type="submit"]:hover, a.button:hover, .comment__links a:hover, .flag a:hover, .view-session-list .read-more:hover {
     background-color: #fca627; }
 
-/* line 21, ../sass/base/_forms.scss */
+/* line 20, ../sass/base/_forms.scss */
 input[type="text"]:not(#recaptcha_response_field),
 input[type="email"],
 input[type="password"],
@@ -450,7 +447,7 @@ select {
   -webkit-appearance: none;
   width: 100%; }
   @media (min-width: 700px) {
-    /* line 21, ../sass/base/_forms.scss */
+    /* line 20, ../sass/base/_forms.scss */
     input[type="text"]:not(#recaptcha_response_field),
     input[type="email"],
     input[type="password"],
@@ -458,7 +455,7 @@ select {
     select {
       width: auto;
       max-width: 600px; } }
-  /* line 38, ../sass/base/_forms.scss */
+  /* line 37, ../sass/base/_forms.scss */
   input[type="text"]:not(#recaptcha_response_field):focus,
   input[type="email"]:focus,
   input[type="password"]:focus,
@@ -466,74 +463,74 @@ select {
   select:focus {
     background-color: #c5c5c5; }
 
-/* line 43, ../sass/base/_forms.scss */
+/* line 42, ../sass/base/_forms.scss */
 label {
   display: block; }
-  /* line 45, ../sass/base/_forms.scss */
+  /* line 44, ../sass/base/_forms.scss */
   label.error {
     color: red; }
-    /* line 47, ../sass/base/_forms.scss */
+    /* line 46, ../sass/base/_forms.scss */
     label.error:before {
       font-family: FontAwesome;
       content: "\f119 ";
       margin-right: 5px; }
 
-/* line 56, ../sass/base/_forms.scss */
+/* line 55, ../sass/base/_forms.scss */
 form .description {
   color: #999;
   font-style: italic;
   font-size: 14px; }
 
-/* line 63, ../sass/base/_forms.scss */
+/* line 62, ../sass/base/_forms.scss */
 .form-item {
   padding: 10px 0; }
 
-/* line 67, ../sass/base/_forms.scss */
+/* line 66, ../sass/base/_forms.scss */
 input[type="submit"] {
   padding: 10px 20px;
   margin-top: 10px;
   margin-right: 10px;
   font-size: 40px; }
-  /* line 73, ../sass/base/_forms.scss */
+  /* line 72, ../sass/base/_forms.scss */
   input[type="submit"]:last-child {
     margin-right: 0; }
 
-/* line 79, ../sass/base/_forms.scss */
+/* line 78, ../sass/base/_forms.scss */
 .views-exposed-form .views-exposed-widget .form-submit {
   margin: 0; }
   @media (min-width: 700px) {
-    /* line 79, ../sass/base/_forms.scss */
+    /* line 78, ../sass/base/_forms.scss */
     .views-exposed-form .views-exposed-widget .form-submit {
       margin: 1.4em; } }
 
-/* line 86, ../sass/base/_forms.scss */
+/* line 85, ../sass/base/_forms.scss */
 .views-exposed-form .views-exposed-widget {
   float: none; }
   @media (min-width: 700px) {
-    /* line 86, ../sass/base/_forms.scss */
+    /* line 85, ../sass/base/_forms.scss */
     .views-exposed-form .views-exposed-widget {
       float: left; } }
 
-/* line 93, ../sass/base/_forms.scss */
+/* line 92, ../sass/base/_forms.scss */
 fieldset {
   border: 0;
   border-bottom: solid 2px #0E73AF;
   margin-bottom: 20px; }
-  /* line 97, ../sass/base/_forms.scss */
+  /* line 96, ../sass/base/_forms.scss */
   fieldset:last-child {
     border-bottom: none;
     margin-bottom: 5px; }
 
 /* Make radio buttons inline */
-/* line 108, ../sass/base/_forms.scss */
+/* line 107, ../sass/base/_forms.scss */
 .form-item.form-type-radio {
   display: inline-block;
   margin-right: 10px; }
-  /* line 111, ../sass/base/_forms.scss */
+  /* line 110, ../sass/base/_forms.scss */
   .form-item.form-type-radio:last-child {
     margin-right: 0; }
 
-/* line 115, ../sass/base/_forms.scss */
+/* line 114, ../sass/base/_forms.scss */
 .grippie {
   display: none; }
 
@@ -622,7 +619,7 @@ body.front {
 /* line 54, ../sass/base/_theme.zones.layout.scss */
 .zone.z-header {
   overflow: hidden;
-  margin-top: 20px; }
+  margin-top: 70px; }
   /* line 58, ../sass/base/_theme.zones.layout.scss */
   .not-front .zone.z-header {
     background-image: url("../images/fldc13_group-blur-smartphone_narrow.jpg");
@@ -675,7 +672,7 @@ body {
   margin: 0; }
 
 /* line 15, ../sass/base/_typography.scss */
-h1, .block--views-events-block-1 .views-field-title, .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block .fieldset-legend, .block--views-individual-sponsors-block .messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name,
+h1, .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block .fieldset-legend, .block--views-individual-sponsors-block .messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name,
 .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name,
 .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name, .block--views-individual-sponsors-block .attendee-name, .view-schedule-items .legend-title,
 .view-schedule-items .session-slot--title {
@@ -688,51 +685,51 @@ h1, .block--views-events-block-1 .views-field-title, .block--views-individual-sp
   text-transform: uppercase;
   margin: .5em 0; }
   /* line 25, ../sass/base/_typography.scss */
-  h1 a:link, .block--views-events-block-1 .views-field-title a:link, .block--views-individual-sponsors-block h2 a:link, .block--views-individual-sponsors-block .fieldset-legend a:link, .block--views-individual-sponsors-block .messages a:link, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:link, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:link, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:link, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:link,
+  h1 a:link, .block--views-individual-sponsors-block h2 a:link, .block--views-individual-sponsors-block .fieldset-legend a:link, .block--views-individual-sponsors-block .messages a:link, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:link, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:link, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:link, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:link,
   .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a:link,
   .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a:link, .block--views-individual-sponsors-block .attendee-name a:link, .view-schedule-items .legend-title a:link,
-  .view-schedule-items .session-slot--title a:link, h1 a:visited, .block--views-events-block-1 .views-field-title a:visited, .block--views-individual-sponsors-block h2 a:visited, .block--views-individual-sponsors-block .fieldset-legend a:visited, .block--views-individual-sponsors-block .messages a:visited, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:visited, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:visited, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:visited, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:visited,
+  .view-schedule-items .session-slot--title a:link, h1 a:visited, .block--views-individual-sponsors-block h2 a:visited, .block--views-individual-sponsors-block .fieldset-legend a:visited, .block--views-individual-sponsors-block .messages a:visited, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:visited, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:visited, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:visited, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:visited,
   .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a:visited,
   .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a:visited, .block--views-individual-sponsors-block .attendee-name a:visited, .view-schedule-items .legend-title a:visited,
   .view-schedule-items .session-slot--title a:visited {
     color: #FCB040;
     text-decoration: none; }
   /* line 30, ../sass/base/_typography.scss */
-  h1 a:hover, .block--views-events-block-1 .views-field-title a:hover, .block--views-individual-sponsors-block h2 a:hover, .block--views-individual-sponsors-block .fieldset-legend a:hover, .block--views-individual-sponsors-block .messages a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:hover, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:hover, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:hover,
+  h1 a:hover, .block--views-individual-sponsors-block h2 a:hover, .block--views-individual-sponsors-block .fieldset-legend a:hover, .block--views-individual-sponsors-block .messages a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:hover, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:hover, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:hover,
   .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a:hover,
   .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a:hover, .block--views-individual-sponsors-block .attendee-name a:hover, .view-schedule-items .legend-title a:hover,
-  .view-schedule-items .session-slot--title a:hover, h1 a:focus, .block--views-events-block-1 .views-field-title a:focus, .block--views-individual-sponsors-block h2 a:focus, .block--views-individual-sponsors-block .fieldset-legend a:focus, .block--views-individual-sponsors-block .messages a:focus, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:focus, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:focus, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:focus, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:focus,
+  .view-schedule-items .session-slot--title a:hover, h1 a:focus, .block--views-individual-sponsors-block h2 a:focus, .block--views-individual-sponsors-block .fieldset-legend a:focus, .block--views-individual-sponsors-block .messages a:focus, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:focus, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:focus, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:focus, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:focus,
   .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a:focus,
   .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a:focus, .block--views-individual-sponsors-block .attendee-name a:focus, .view-schedule-items .legend-title a:focus,
   .view-schedule-items .session-slot--title a:focus {
     color: #fb9b0e; }
   /* line 34, ../sass/base/_typography.scss */
-  h1 a:link, .block--views-events-block-1 .views-field-title a:link, .block--views-individual-sponsors-block h2 a:link, .block--views-individual-sponsors-block .fieldset-legend a:link, .block--views-individual-sponsors-block .messages a:link, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:link, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:link, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:link, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:link,
+  h1 a:link, .block--views-individual-sponsors-block h2 a:link, .block--views-individual-sponsors-block .fieldset-legend a:link, .block--views-individual-sponsors-block .messages a:link, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:link, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:link, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:link, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:link,
   .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a:link,
   .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a:link, .block--views-individual-sponsors-block .attendee-name a:link, .view-schedule-items .legend-title a:link,
-  .view-schedule-items .session-slot--title a:link, h1 a:visited, .block--views-events-block-1 .views-field-title a:visited, .block--views-individual-sponsors-block h2 a:visited, .block--views-individual-sponsors-block .fieldset-legend a:visited, .block--views-individual-sponsors-block .messages a:visited, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:visited, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:visited, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:visited, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:visited,
+  .view-schedule-items .session-slot--title a:link, h1 a:visited, .block--views-individual-sponsors-block h2 a:visited, .block--views-individual-sponsors-block .fieldset-legend a:visited, .block--views-individual-sponsors-block .messages a:visited, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:visited, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:visited, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:visited, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:visited,
   .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a:visited,
   .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a:visited, .block--views-individual-sponsors-block .attendee-name a:visited, .view-schedule-items .legend-title a:visited,
-  .view-schedule-items .session-slot--title a:visited, h1 a:hover, .block--views-events-block-1 .views-field-title a:hover, .block--views-individual-sponsors-block h2 a:hover, .block--views-individual-sponsors-block .fieldset-legend a:hover, .block--views-individual-sponsors-block .messages a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:hover, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:hover, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:hover,
+  .view-schedule-items .session-slot--title a:visited, h1 a:hover, .block--views-individual-sponsors-block h2 a:hover, .block--views-individual-sponsors-block .fieldset-legend a:hover, .block--views-individual-sponsors-block .messages a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:hover, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:hover, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:hover,
   .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a:hover,
   .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a:hover, .block--views-individual-sponsors-block .attendee-name a:hover, .view-schedule-items .legend-title a:hover,
-  .view-schedule-items .session-slot--title a:hover, h1 a:focus, .block--views-events-block-1 .views-field-title a:focus, .block--views-individual-sponsors-block h2 a:focus, .block--views-individual-sponsors-block .fieldset-legend a:focus, .block--views-individual-sponsors-block .messages a:focus, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:focus, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:focus, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:focus, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:focus,
+  .view-schedule-items .session-slot--title a:hover, h1 a:focus, .block--views-individual-sponsors-block h2 a:focus, .block--views-individual-sponsors-block .fieldset-legend a:focus, .block--views-individual-sponsors-block .messages a:focus, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:focus, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:focus, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:focus, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:focus,
   .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a:focus,
   .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a:focus, .block--views-individual-sponsors-block .attendee-name a:focus, .view-schedule-items .legend-title a:focus,
-  .view-schedule-items .session-slot--title a:focus, h1 a:active, .block--views-events-block-1 .views-field-title a:active, .block--views-individual-sponsors-block h2 a:active, .block--views-individual-sponsors-block .fieldset-legend a:active, .block--views-individual-sponsors-block .messages a:active, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:active, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:active, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:active, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:active,
+  .view-schedule-items .session-slot--title a:focus, h1 a:active, .block--views-individual-sponsors-block h2 a:active, .block--views-individual-sponsors-block .fieldset-legend a:active, .block--views-individual-sponsors-block .messages a:active, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a:active, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a:active, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a:active, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a:active,
   .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a:active,
   .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a:active, .block--views-individual-sponsors-block .attendee-name a:active, .view-schedule-items .legend-title a:active,
-  .view-schedule-items .session-slot--title a:active, h1 a.active, .block--views-events-block-1 .views-field-title a.active, .block--views-individual-sponsors-block h2 a.active, .block--views-individual-sponsors-block .fieldset-legend a.active, .block--views-individual-sponsors-block .messages a.active, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a.active, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a.active, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a.active, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a.active,
+  .view-schedule-items .session-slot--title a:active, h1 a.active, .block--views-individual-sponsors-block h2 a.active, .block--views-individual-sponsors-block .fieldset-legend a.active, .block--views-individual-sponsors-block .messages a.active, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a.active, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a.active, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a.active, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a.active,
   .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a.active,
   .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a.active, .block--views-individual-sponsors-block .attendee-name a.active, .view-schedule-items .legend-title a.active,
-  .view-schedule-items .session-slot--title a.active, h1 a.active-trail, .block--views-events-block-1 .views-field-title a.active-trail, .block--views-individual-sponsors-block h2 a.active-trail, .block--views-individual-sponsors-block .fieldset-legend a.active-trail, .block--views-individual-sponsors-block .messages a.active-trail, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a.active-trail, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a.active-trail, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a.active-trail, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a.active-trail,
+  .view-schedule-items .session-slot--title a.active, h1 a.active-trail, .block--views-individual-sponsors-block h2 a.active-trail, .block--views-individual-sponsors-block .fieldset-legend a.active-trail, .block--views-individual-sponsors-block .messages a.active-trail, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1 a.active-trail, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1 a.active-trail, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name a.active-trail, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name a.active-trail,
   .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name a.active-trail,
   .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name a.active-trail, .block--views-individual-sponsors-block .attendee-name a.active-trail, .view-schedule-items .legend-title a.active-trail,
   .view-schedule-items .session-slot--title a.active-trail {
     font-family: "bebas_neueregular", "arial narrow", arial, sans-serif; }
 
 /* line 15, ../sass/base/_typography.scss */
-h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
+h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
 #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
 .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
 .user-profile .field--name-field-user-last-name, .attendee-name {
@@ -745,44 +742,44 @@ h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-
   text-transform: uppercase;
   margin: .5em 0; }
   /* line 25, ../sass/base/_typography.scss */
-  h2 a:link, .fieldset-legend a:link, .messages a:link, #block-views-sponsors-block-block-1 h1 a:link, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:link, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:link, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:link, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:link, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:link, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:link,
+  h2 a:link, .fieldset-legend a:link, .messages a:link, #block-views-sponsors-block-block-1 h1 a:link, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:link, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:link, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:link, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:link,
   #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:link,
   .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:link, .user-profile .field--name-field-user-first-name a:link,
-  .user-profile .field--name-field-user-last-name a:link, .attendee-name a:link, h2 a:visited, .fieldset-legend a:visited, .messages a:visited, #block-views-sponsors-block-block-1 h1 a:visited, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:visited, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:visited, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:visited, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:visited, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:visited, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:visited,
+  .user-profile .field--name-field-user-last-name a:link, .attendee-name a:link, h2 a:visited, .fieldset-legend a:visited, .messages a:visited, #block-views-sponsors-block-block-1 h1 a:visited, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:visited, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:visited, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:visited, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:visited,
   #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:visited,
   .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:visited, .user-profile .field--name-field-user-first-name a:visited,
   .user-profile .field--name-field-user-last-name a:visited, .attendee-name a:visited {
     color: #FCB040;
     text-decoration: none; }
   /* line 30, ../sass/base/_typography.scss */
-  h2 a:hover, .fieldset-legend a:hover, .messages a:hover, #block-views-sponsors-block-block-1 h1 a:hover, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:hover, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:hover, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:hover, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:hover,
+  h2 a:hover, .fieldset-legend a:hover, .messages a:hover, #block-views-sponsors-block-block-1 h1 a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:hover, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:hover, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:hover,
   #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:hover,
   .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:hover, .user-profile .field--name-field-user-first-name a:hover,
-  .user-profile .field--name-field-user-last-name a:hover, .attendee-name a:hover, h2 a:focus, .fieldset-legend a:focus, .messages a:focus, #block-views-sponsors-block-block-1 h1 a:focus, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:focus, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:focus, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:focus, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:focus, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:focus, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:focus,
+  .user-profile .field--name-field-user-last-name a:hover, .attendee-name a:hover, h2 a:focus, .fieldset-legend a:focus, .messages a:focus, #block-views-sponsors-block-block-1 h1 a:focus, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:focus, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:focus, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:focus, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:focus,
   #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:focus,
   .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:focus, .user-profile .field--name-field-user-first-name a:focus,
   .user-profile .field--name-field-user-last-name a:focus, .attendee-name a:focus {
     color: #fb9b0e; }
   /* line 34, ../sass/base/_typography.scss */
-  h2 a:link, .fieldset-legend a:link, .messages a:link, #block-views-sponsors-block-block-1 h1 a:link, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:link, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:link, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:link, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:link, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:link, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:link,
+  h2 a:link, .fieldset-legend a:link, .messages a:link, #block-views-sponsors-block-block-1 h1 a:link, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:link, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:link, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:link, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:link,
   #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:link,
   .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:link, .user-profile .field--name-field-user-first-name a:link,
-  .user-profile .field--name-field-user-last-name a:link, .attendee-name a:link, h2 a:visited, .fieldset-legend a:visited, .messages a:visited, #block-views-sponsors-block-block-1 h1 a:visited, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:visited, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:visited, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:visited, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:visited, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:visited, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:visited,
+  .user-profile .field--name-field-user-last-name a:link, .attendee-name a:link, h2 a:visited, .fieldset-legend a:visited, .messages a:visited, #block-views-sponsors-block-block-1 h1 a:visited, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:visited, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:visited, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:visited, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:visited,
   #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:visited,
   .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:visited, .user-profile .field--name-field-user-first-name a:visited,
-  .user-profile .field--name-field-user-last-name a:visited, .attendee-name a:visited, h2 a:hover, .fieldset-legend a:hover, .messages a:hover, #block-views-sponsors-block-block-1 h1 a:hover, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:hover, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:hover, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:hover, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:hover,
+  .user-profile .field--name-field-user-last-name a:visited, .attendee-name a:visited, h2 a:hover, .fieldset-legend a:hover, .messages a:hover, #block-views-sponsors-block-block-1 h1 a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:hover, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:hover, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:hover,
   #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:hover,
   .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:hover, .user-profile .field--name-field-user-first-name a:hover,
-  .user-profile .field--name-field-user-last-name a:hover, .attendee-name a:hover, h2 a:focus, .fieldset-legend a:focus, .messages a:focus, #block-views-sponsors-block-block-1 h1 a:focus, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:focus, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:focus, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:focus, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:focus, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:focus, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:focus,
+  .user-profile .field--name-field-user-last-name a:hover, .attendee-name a:hover, h2 a:focus, .fieldset-legend a:focus, .messages a:focus, #block-views-sponsors-block-block-1 h1 a:focus, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:focus, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:focus, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:focus, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:focus,
   #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:focus,
   .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:focus, .user-profile .field--name-field-user-first-name a:focus,
-  .user-profile .field--name-field-user-last-name a:focus, .attendee-name a:focus, h2 a:active, .fieldset-legend a:active, .messages a:active, #block-views-sponsors-block-block-1 h1 a:active, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:active, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:active, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:active, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:active, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:active, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:active,
+  .user-profile .field--name-field-user-last-name a:focus, .attendee-name a:focus, h2 a:active, .fieldset-legend a:active, .messages a:active, #block-views-sponsors-block-block-1 h1 a:active, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:active, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:active, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:active, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:active,
   #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:active,
   .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:active, .user-profile .field--name-field-user-first-name a:active,
-  .user-profile .field--name-field-user-last-name a:active, .attendee-name a:active, h2 a.active, .fieldset-legend a.active, .messages a.active, #block-views-sponsors-block-block-1 h1 a.active, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a.active, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a.active, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a.active, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a.active, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a.active, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a.active,
+  .user-profile .field--name-field-user-last-name a:active, .attendee-name a:active, h2 a.active, .fieldset-legend a.active, .messages a.active, #block-views-sponsors-block-block-1 h1 a.active, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a.active, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a.active, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a.active, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a.active,
   #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a.active,
   .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a.active, .user-profile .field--name-field-user-first-name a.active,
-  .user-profile .field--name-field-user-last-name a.active, .attendee-name a.active, h2 a.active-trail, .fieldset-legend a.active-trail, .messages a.active-trail, #block-views-sponsors-block-block-1 h1 a.active-trail, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a.active-trail, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a.active-trail, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a.active-trail, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a.active-trail, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a.active-trail, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a.active-trail,
+  .user-profile .field--name-field-user-last-name a.active, .attendee-name a.active, h2 a.active-trail, .fieldset-legend a.active-trail, .messages a.active-trail, #block-views-sponsors-block-block-1 h1 a.active-trail, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a.active-trail, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a.active-trail, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a.active-trail, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a.active-trail,
   #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a.active-trail,
   .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a.active-trail, .user-profile .field--name-field-user-first-name a.active-trail,
   .user-profile .field--name-field-user-last-name a.active-trail, .attendee-name a.active-trail {
@@ -897,14 +894,14 @@ h6 {
   line-height: 1.2; }
 
 /* line 53, ../sass/base/_typography.scss */
-h1, .block--views-events-block-1 .views-field-title, .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block .fieldset-legend, .block--views-individual-sponsors-block .messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name,
+h1, .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block .fieldset-legend, .block--views-individual-sponsors-block .messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1, .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name,
 .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name,
 .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name, .block--views-individual-sponsors-block .attendee-name, .view-schedule-items .legend-title,
 .view-schedule-items .session-slot--title {
   margin: 10px 0;
   line-height: 1.2; }
   /* line 56, ../sass/base/_typography.scss */
-  h1.page__title, .block--views-events-block-1 .page__title.views-field-title, .block--views-individual-sponsors-block h2.page__title, .block--views-individual-sponsors-block .page__title.fieldset-legend, .block--views-individual-sponsors-block .page__title.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.page__title, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.page__title, .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-first-name,
+  h1.page__title, .block--views-individual-sponsors-block h2.page__title, .block--views-individual-sponsors-block .page__title.fieldset-legend, .block--views-individual-sponsors-block .page__title.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.page__title, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.page__title, .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-first-name,
   .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-last-name,
   .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-last-name, .block--views-individual-sponsors-block .page__title.attendee-name, .view-schedule-items .page__title.legend-title,
   .view-schedule-items .page__title.session-slot--title {
@@ -914,7 +911,7 @@ h1, .block--views-events-block-1 .views-field-title, .block--views-individual-sp
     padding: 0.5em 0.5em 0.5em;
     font-size: 30px; }
     /* line 62, ../sass/base/_typography.scss */
-    h1.page__title:before, .block--views-events-block-1 .page__title.views-field-title:before, .block--views-individual-sponsors-block h2.page__title:before, .block--views-individual-sponsors-block .page__title.fieldset-legend:before, .block--views-individual-sponsors-block .page__title.messages:before, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.page__title:before, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.page__title:before, .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-first-name:before, .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-first-name:before,
+    h1.page__title:before, .block--views-individual-sponsors-block h2.page__title:before, .block--views-individual-sponsors-block .page__title.fieldset-legend:before, .block--views-individual-sponsors-block .page__title.messages:before, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.page__title:before, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.page__title:before, .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-first-name:before, .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-first-name:before,
     .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-last-name:before,
     .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-last-name:before, .block--views-individual-sponsors-block .page__title.attendee-name:before, .view-schedule-items .page__title.legend-title:before,
     .view-schedule-items .page__title.session-slot--title:before {
@@ -928,7 +925,7 @@ h1, .block--views-events-block-1 .views-field-title, .block--views-individual-sp
       height: 100%; }
     @media (min-width: 700px) {
       /* line 56, ../sass/base/_typography.scss */
-      h1.page__title, .block--views-events-block-1 .page__title.views-field-title, .block--views-individual-sponsors-block h2.page__title, .block--views-individual-sponsors-block .page__title.fieldset-legend, .block--views-individual-sponsors-block .page__title.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.page__title, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.page__title, .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-first-name,
+      h1.page__title, .block--views-individual-sponsors-block h2.page__title, .block--views-individual-sponsors-block .page__title.fieldset-legend, .block--views-individual-sponsors-block .page__title.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.page__title, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.page__title, .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-first-name,
       .block--views-individual-sponsors-block .user-profile .page__title.field--name-field-user-last-name,
       .user-profile .block--views-individual-sponsors-block .page__title.field--name-field-user-last-name, .block--views-individual-sponsors-block .page__title.attendee-name, .view-schedule-items .page__title.legend-title,
       .view-schedule-items .page__title.session-slot--title {
@@ -1015,7 +1012,7 @@ li {
 .l-region--sidebar-second {
   /* Provide a deliniation between the content and aside while stacked */ }
   /* line 6, ../sass/components/_aside.scss */
-  .l-region--sidebar-second h2, .l-region--sidebar-second .fieldset-legend, .l-region--sidebar-second .messages, .l-region--sidebar-second #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .l-region--sidebar-second h1, .l-region--sidebar-second #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 .l-region--sidebar-second .views-field-title, .l-region--sidebar-second .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .l-region--sidebar-second .views-field-title, .l-region--sidebar-second #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .l-region--sidebar-second h2, .l-region--sidebar-second .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .l-region--sidebar-second h2, .l-region--sidebar-second #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .l-region--sidebar-second .legend-title, .l-region--sidebar-second .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .l-region--sidebar-second .legend-title,
+  .l-region--sidebar-second h2, .l-region--sidebar-second .fieldset-legend, .l-region--sidebar-second .messages, .l-region--sidebar-second #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .l-region--sidebar-second h1, .l-region--sidebar-second #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .l-region--sidebar-second h2, .l-region--sidebar-second .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .l-region--sidebar-second h2, .l-region--sidebar-second #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .l-region--sidebar-second .legend-title, .l-region--sidebar-second .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .l-region--sidebar-second .legend-title,
   .l-region--sidebar-second #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
   #block-views-sponsors-block-block-1 .view-schedule-items .l-region--sidebar-second .session-slot--title,
   .l-region--sidebar-second .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
@@ -1037,7 +1034,7 @@ li {
     Branding
    ========================================================================== */
 /* line 5, ../sass/components/_branding.scss */
-h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
+h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
 .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
 .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.attendee-name, .view-schedule-items .site-name.legend-title,
 .view-schedule-items .site-name.session-slot--title {
@@ -1050,14 +1047,14 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
   top: 0; }
   @media (min-width: 470px) {
     /* line 5, ../sass/components/_branding.scss */
-    h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
+    h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
     .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
     .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.attendee-name, .view-schedule-items .site-name.legend-title,
     .view-schedule-items .site-name.session-slot--title {
       position: relative; } }
   @media (min-width: 700px) {
     /* line 5, ../sass/components/_branding.scss */
-    h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
+    h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
     .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
     .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.attendee-name, .view-schedule-items .site-name.legend-title,
     .view-schedule-items .site-name.session-slot--title {
@@ -1065,7 +1062,7 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
       /* background-color: rgba(0,0,0,0.9); */ } }
   @media (min-width: 1025px) {
     /* line 5, ../sass/components/_branding.scss */
-    h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
+    h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
     .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
     .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.attendee-name, .view-schedule-items .site-name.legend-title,
     .view-schedule-items .site-name.session-slot--title {
@@ -1079,7 +1076,7 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
       -webkit-transition: line-height, 0s;
       transition: line-height, 0s; }
       /* line 31, ../sass/components/_branding.scss */
-      h1.site-name.scroll-down, .block--views-events-block-1 .site-name.scroll-down.views-field-title, .block--views-individual-sponsors-block h2.site-name.scroll-down, .block--views-individual-sponsors-block .site-name.scroll-down.fieldset-legend, .block--views-individual-sponsors-block .site-name.scroll-down.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name.scroll-down, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name.scroll-down, .block--views-individual-sponsors-block .user-profile .site-name.scroll-down.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.scroll-down.field--name-field-user-first-name,
+      h1.site-name.scroll-down, .block--views-individual-sponsors-block h2.site-name.scroll-down, .block--views-individual-sponsors-block .site-name.scroll-down.fieldset-legend, .block--views-individual-sponsors-block .site-name.scroll-down.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name.scroll-down, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name.scroll-down, .block--views-individual-sponsors-block .user-profile .site-name.scroll-down.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.scroll-down.field--name-field-user-first-name,
       .block--views-individual-sponsors-block .user-profile .site-name.scroll-down.field--name-field-user-last-name,
       .user-profile .block--views-individual-sponsors-block .site-name.scroll-down.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.scroll-down.attendee-name, .view-schedule-items .site-name.scroll-down.legend-title,
       .view-schedule-items .site-name.scroll-down.session-slot--title {
@@ -1090,21 +1087,21 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
         transition: line-height, 0.2s; } }
   @media (min-width: 1000px) {
     /* line 5, ../sass/components/_branding.scss */
-    h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
+    h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
     .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
     .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.attendee-name, .view-schedule-items .site-name.legend-title,
     .view-schedule-items .site-name.session-slot--title {
       font-size: 48px; } }
   @media (min-width: 1200px) {
     /* line 5, ../sass/components/_branding.scss */
-    h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
+    h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
     .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
     .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.attendee-name, .view-schedule-items .site-name.legend-title,
     .view-schedule-items .site-name.session-slot--title {
       font-size: 55px;
       margin: 0 auto; } }
   /* line 46, ../sass/components/_branding.scss */
-  h1.site-name a, .block--views-events-block-1 .site-name.views-field-title a, .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a,
+  h1.site-name a, .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a,
   .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
   .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a, .block--views-individual-sponsors-block .site-name.attendee-name a, .view-schedule-items .site-name.legend-title a,
   .view-schedule-items .site-name.session-slot--title a {
@@ -1122,7 +1119,7 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
     z-index: 10;
     background-position-y: -12px; }
     /* line 61, ../sass/components/_branding.scss */
-    h1.site-name a:after, .block--views-events-block-1 .site-name.views-field-title a:after, .block--views-individual-sponsors-block h2.site-name a:after, .block--views-individual-sponsors-block .site-name.fieldset-legend a:after, .block--views-individual-sponsors-block .site-name.messages a:after, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:after, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:after, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:after, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:after,
+    h1.site-name a:after, .block--views-individual-sponsors-block h2.site-name a:after, .block--views-individual-sponsors-block .site-name.fieldset-legend a:after, .block--views-individual-sponsors-block .site-name.messages a:after, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:after, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:after, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:after, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:after,
     .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:after,
     .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:after, .block--views-individual-sponsors-block .site-name.attendee-name a:after, .view-schedule-items .site-name.legend-title a:after,
     .view-schedule-items .site-name.session-slot--title a:after {
@@ -1133,7 +1130,7 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
       text-indent: 0; }
     @media (min-width: 700px) {
       /* line 46, ../sass/components/_branding.scss */
-      h1.site-name a, .block--views-events-block-1 .site-name.views-field-title a, .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a,
+      h1.site-name a, .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a,
       .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
       .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a, .block--views-individual-sponsors-block .site-name.attendee-name a, .view-schedule-items .site-name.legend-title a,
       .view-schedule-items .site-name.session-slot--title a {
@@ -1143,28 +1140,28 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
         width: auto;
         height: 80px; }
         /* line 76, ../sass/components/_branding.scss */
-        h1.site-name a:after, .block--views-events-block-1 .site-name.views-field-title a:after, .block--views-individual-sponsors-block h2.site-name a:after, .block--views-individual-sponsors-block .site-name.fieldset-legend a:after, .block--views-individual-sponsors-block .site-name.messages a:after, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:after, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:after, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:after, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:after,
+        h1.site-name a:after, .block--views-individual-sponsors-block h2.site-name a:after, .block--views-individual-sponsors-block .site-name.fieldset-legend a:after, .block--views-individual-sponsors-block .site-name.messages a:after, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:after, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:after, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:after, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:after,
         .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:after,
         .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:after, .block--views-individual-sponsors-block .site-name.attendee-name a:after, .view-schedule-items .site-name.legend-title a:after,
         .view-schedule-items .site-name.session-slot--title a:after {
           content: ""; } }
     @media (min-width: 900px) {
       /* line 46, ../sass/components/_branding.scss */
-      h1.site-name a, .block--views-events-block-1 .site-name.views-field-title a, .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a,
+      h1.site-name a, .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a,
       .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
       .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a, .block--views-individual-sponsors-block .site-name.attendee-name a, .view-schedule-items .site-name.legend-title a,
       .view-schedule-items .site-name.session-slot--title a {
         left: -20px;
         background-position-y: 0; } }
     /* line 86, ../sass/components/_branding.scss */
-    h1.site-name a:hover, .block--views-events-block-1 .site-name.views-field-title a:hover, .block--views-individual-sponsors-block h2.site-name a:hover, .block--views-individual-sponsors-block .site-name.fieldset-legend a:hover, .block--views-individual-sponsors-block .site-name.messages a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:hover, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:hover, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:hover,
+    h1.site-name a:hover, .block--views-individual-sponsors-block h2.site-name a:hover, .block--views-individual-sponsors-block .site-name.fieldset-legend a:hover, .block--views-individual-sponsors-block .site-name.messages a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:hover, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:hover, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:hover,
     .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:hover,
     .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:hover, .block--views-individual-sponsors-block .site-name.attendee-name a:hover, .view-schedule-items .site-name.legend-title a:hover,
     .view-schedule-items .site-name.session-slot--title a:hover {
       color: #fdc572; }
   @media (min-width: 700px) {
     /* line 92, ../sass/components/_branding.scss */
-    .front h1.site-name a, .front .block--views-events-block-1 .site-name.views-field-title a, .block--views-events-block-1 .front .site-name.views-field-title a, .front .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .front h2.site-name a, .front .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .front .site-name.fieldset-legend a, .front .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block .front .site-name.messages a, .front .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .front h1.site-name a, .front #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .front h1.site-name a, .front .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .block--views-individual-sponsors-block .user-profile .front .site-name.field--name-field-user-first-name a, .front .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .front .site-name.field--name-field-user-first-name a,
+    .front h1.site-name a, .front .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .front h2.site-name a, .front .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .front .site-name.fieldset-legend a, .front .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block .front .site-name.messages a, .front .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .front h1.site-name a, .front #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .front h1.site-name a, .front .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .block--views-individual-sponsors-block .user-profile .front .site-name.field--name-field-user-first-name a, .front .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .front .site-name.field--name-field-user-first-name a,
     .front .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
     .block--views-individual-sponsors-block .user-profile .front .site-name.field--name-field-user-last-name a,
     .front .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a,
@@ -1240,6 +1237,15 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
     /* line 23, ../sass/components/_comments.scss */
     .comment__links a:hover {
       color: white; }
+
+/* line 1, ../sass/components/_description_front.scss */
+.z-description {
+  text-align: center;
+  font-size: 27px;
+  max-width: 750px;
+  margin: 80px auto;
+  color: #0E73AF;
+  font-weight: lighter; }
 
 /* =============================================================================
     Exploding bubbles
@@ -1429,167 +1435,121 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
 /* =============================================================================
     Front Hero
    ========================================================================== */
-/* line 6, ../sass/components/_front_hero.scss */
-.block--views-events-block-1 .block__content {
+/* line 5, ../sass/components/_front_hero.scss */
+.hero-teaser {
   text-align: center;
-  padding: 10px;
+  padding: 20px 20px 30px 20px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5); }
-  @media (min-width: 700px) {
-    /* line 6, ../sass/components/_front_hero.scss */
-    .block--views-events-block-1 .block__content {
-      padding: 20px; } }
+  border: solid 2px white; }
   @media (min-width: 900px) {
-    /* line 6, ../sass/components/_front_hero.scss */
-    .block--views-events-block-1 .block__content {
+    /* line 5, ../sass/components/_front_hero.scss */
+    .hero-teaser {
       position: absolute;
       width: 50%;
+      left: 50%;
       top: 50%;
-      -moz-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      right: 20px; } }
-  @media (min-width: 1200px) {
-    /* line 6, ../sass/components/_front_hero.scss */
-    .block--views-events-block-1 .block__content {
-      right: auto;
-      left: 5%; } }
-/* line 25, ../sass/components/_front_hero.scss */
-.block--views-events-block-1 .views-field-title {
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); } }
+
+/* line 18, ../sass/components/_front_hero.scss */
+.hero-title {
   line-height: 1.2;
   display: inline-block;
   font-size: 55px;
   color: white;
+  margin-top: 0;
   border-bottom: solid 1px white;
   -webkit-text-stroke: 1px white; }
-  /* line 33, ../sass/components/_front_hero.scss */
-  .block--views-events-block-1 .views-field-title a {
+  /* line 27, ../sass/components/_front_hero.scss */
+  .hero-title a {
     color: inherit; }
-    /* line 35, ../sass/components/_front_hero.scss */
-    .block--views-events-block-1 .views-field-title a:link, .block--views-events-block-1 .views-field-title a:visited {
+    /* line 30, ../sass/components/_front_hero.scss */
+    .hero-title a:link, .hero-title a:visited {
       color: inherit; }
   @media (min-width: 470px) {
-    /* line 25, ../sass/components/_front_hero.scss */
-    .block--views-events-block-1 .views-field-title {
+    /* line 18, ../sass/components/_front_hero.scss */
+    .hero-title {
       font-size: 65px; } }
   @media (min-width: 900px) {
-    /* line 25, ../sass/components/_front_hero.scss */
-    .block--views-events-block-1 .views-field-title {
+    /* line 18, ../sass/components/_front_hero.scss */
+    .hero-title {
       font-size: 55px; } }
   @media (min-width: 1200px) {
-    /* line 25, ../sass/components/_front_hero.scss */
-    .block--views-events-block-1 .views-field-title {
+    /* line 18, ../sass/components/_front_hero.scss */
+    .hero-title {
       font-size: 60px; } }
   @media (min-width: 1700px) {
-    /* line 25, ../sass/components/_front_hero.scss */
-    .block--views-events-block-1 .views-field-title {
+    /* line 18, ../sass/components/_front_hero.scss */
+    .hero-title {
       font-size: 70px; } }
+
 /* line 53, ../sass/components/_front_hero.scss */
-.block--views-events-block-1 h2, .block--views-events-block-1 .fieldset-legend, .block--views-events-block-1 .messages, .block--views-events-block-1 #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-events-block-1 h1, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .block--views-events-block-1 h2, .block--views-events-block-1 .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .block--views-events-block-1 h2, .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .block--views-events-block-1 .legend-title, .block--views-events-block-1 .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .legend-title,
-.block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
-#block-views-sponsors-block-block-1 .view-schedule-items .block--views-events-block-1 .session-slot--title,
-.block--views-events-block-1 .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
-.view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .session-slot--title, .block--views-events-block-1 .user-profile .field--name-field-user-first-name, .user-profile .block--views-events-block-1 .field--name-field-user-first-name,
-.block--views-events-block-1 .user-profile .field--name-field-user-last-name,
-.user-profile .block--views-events-block-1 .field--name-field-user-last-name, .block--views-events-block-1 .attendee-name {
+h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
+#block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+.view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
+.user-profile .field--name-field-user-last-name, .attendee-name {
   font-size: 30px;
-  margin: 0;
+  margin: 0 0 10px;
   line-height: 1.2;
   color: #FCB040; }
   @media (min-width: 470px) {
     /* line 53, ../sass/components/_front_hero.scss */
-    .block--views-events-block-1 h2, .block--views-events-block-1 .fieldset-legend, .block--views-events-block-1 .messages, .block--views-events-block-1 #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-events-block-1 h1, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .block--views-events-block-1 h2, .block--views-events-block-1 .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .block--views-events-block-1 h2, .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .block--views-events-block-1 .legend-title, .block--views-events-block-1 .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .legend-title,
-    .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
-    #block-views-sponsors-block-block-1 .view-schedule-items .block--views-events-block-1 .session-slot--title,
-    .block--views-events-block-1 .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
-    .view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .session-slot--title, .block--views-events-block-1 .user-profile .field--name-field-user-first-name, .user-profile .block--views-events-block-1 .field--name-field-user-first-name,
-    .block--views-events-block-1 .user-profile .field--name-field-user-last-name,
-    .user-profile .block--views-events-block-1 .field--name-field-user-last-name, .block--views-events-block-1 .attendee-name {
+    h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
+    #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+    .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
+    .user-profile .field--name-field-user-last-name, .attendee-name {
       line-height: 1.5; } }
   @media (min-width: 1700px) {
     /* line 53, ../sass/components/_front_hero.scss */
-    .block--views-events-block-1 h2, .block--views-events-block-1 .fieldset-legend, .block--views-events-block-1 .messages, .block--views-events-block-1 #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-events-block-1 h1, #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .block--views-events-block-1 h2, .block--views-events-block-1 .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .block--views-events-block-1 h2, .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .block--views-events-block-1 .legend-title, .block--views-events-block-1 .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .legend-title,
-    .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
-    #block-views-sponsors-block-block-1 .view-schedule-items .block--views-events-block-1 .session-slot--title,
-    .block--views-events-block-1 .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
-    .view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .session-slot--title, .block--views-events-block-1 .user-profile .field--name-field-user-first-name, .user-profile .block--views-events-block-1 .field--name-field-user-first-name,
-    .block--views-events-block-1 .user-profile .field--name-field-user-last-name,
-    .user-profile .block--views-events-block-1 .field--name-field-user-last-name, .block--views-events-block-1 .attendee-name {
-      font-size: 40px; } }
-/* line 65, ../sass/components/_front_hero.scss */
-.block--views-events-block-1 p {
-  margin: 10px; }
-  @media (min-width: 1700px) {
-    /* line 65, ../sass/components/_front_hero.scss */
-    .block--views-events-block-1 p {
-      font-size: 25px; } }
-/* line 72, ../sass/components/_front_hero.scss */
-.block--views-events-block-1 button, .block--views-events-block-1 input[type="submit"], .block--views-events-block-1 a.button, .block--views-events-block-1 .comment__links a, .comment__links .block--views-events-block-1 a, .block--views-events-block-1 .flag a, .flag .block--views-events-block-1 a, .block--views-events-block-1 .view-session-list .read-more, .view-session-list .block--views-events-block-1 .read-more {
-  width: 90%;
-  max-width: 380px;
-  height: 90px;
-  padding: 0;
+    h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
+    #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+    .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
+    .user-profile .field--name-field-user-last-name, .attendee-name {
+      font-size: 40px;
+      margin-bottom: 20px; } }
+
+/* line 69, ../sass/components/_front_hero.scss */
+a.hero-button {
+  padding: 20px;
   text-transform: uppercase;
   text-align: center;
-  line-height: 90px;
-  margin: 10px 0 20px 0; }
-/* line 82, ../sass/components/_front_hero.scss */
-.block--views-events-block-1 .date {
+  font-size: 50px; }
+
+/* line 76, ../sass/components/_front_hero.scss */
+.date {
   display: block;
   font-size: 35px; }
   @media (min-width: 470px) {
-    /* line 82, ../sass/components/_front_hero.scss */
-    .block--views-events-block-1 .date {
+    /* line 76, ../sass/components/_front_hero.scss */
+    .date {
       display: inline;
       font-size: 30px; }
-      /* line 88, ../sass/components/_front_hero.scss */
-      .block--views-events-block-1 .date:after {
+      /* line 84, ../sass/components/_front_hero.scss */
+      .date:after {
         content: " | "; } }
   @media (min-width: 1700px) {
-    /* line 82, ../sass/components/_front_hero.scss */
-    .block--views-events-block-1 .date {
+    /* line 76, ../sass/components/_front_hero.scss */
+    .date {
       font-size: inherit; } }
-/* line 96, ../sass/components/_front_hero.scss */
-.block--views-events-block-1 .loc {
+
+/* line 94, ../sass/components/_front_hero.scss */
+.loc {
   display: block; }
   @media (min-width: 470px) {
-    /* line 96, ../sass/components/_front_hero.scss */
-    .block--views-events-block-1 .loc {
+    /* line 94, ../sass/components/_front_hero.scss */
+    .loc {
       display: inline; } }
-/* line 104, ../sass/components/_front_hero.scss */
-.block--views-events-block-1 .icon {
+
+/* line 103, ../sass/components/_front_hero.scss */
+.icon {
   color: #fff;
   font-size: 50px; }
-/* line 109, ../sass/components/_front_hero.scss */
-.block--views-events-block-1 .icon:hover {
+
+/* line 108, ../sass/components/_front_hero.scss */
+.icon:hover {
   color: #E4D400; }
-
-/* line 119, ../sass/components/_front_hero.scss */
-.bubble1,
-.bubble2,
-.bubble3,
-.bubble4,
-.bubble5 {
-  display: none; }
-
-/* line 127, ../sass/components/_front_hero.scss */
-.cssanimations .diver-bubble {
-  display: block;
-  width: 80px;
-  height: 80px; }
-  /* line 131, ../sass/components/_front_hero.scss */
-  .cssanimations .diver-bubble > img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    max-width: 9999px; }
 
 /* =============================================================================
     Location Map
@@ -1707,7 +1667,7 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
         .csstransitions #location-info.scroll-down:before {
           left: -40px; } }
   /* line 91, ../sass/components/_location_map_front.scss */
-  #location-info h1, #location-info .block--views-events-block-1 .views-field-title, .block--views-events-block-1 #location-info .views-field-title, #location-info .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #location-info h2, #location-info .block--views-individual-sponsors-block .fieldset-legend, .block--views-individual-sponsors-block #location-info .fieldset-legend, #location-info .block--views-individual-sponsors-block .messages, .block--views-individual-sponsors-block #location-info .messages, #location-info .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name, .block--views-individual-sponsors-block .user-profile #location-info .field--name-field-user-first-name, #location-info .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block #location-info .field--name-field-user-first-name,
+  #location-info h1, #location-info .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #location-info h2, #location-info .block--views-individual-sponsors-block .fieldset-legend, .block--views-individual-sponsors-block #location-info .fieldset-legend, #location-info .block--views-individual-sponsors-block .messages, .block--views-individual-sponsors-block #location-info .messages, #location-info .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name, .block--views-individual-sponsors-block .user-profile #location-info .field--name-field-user-first-name, #location-info .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block #location-info .field--name-field-user-first-name,
   #location-info .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name,
   .block--views-individual-sponsors-block .user-profile #location-info .field--name-field-user-last-name,
   #location-info .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name,
@@ -1717,7 +1677,7 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
     color: #E4D400;
     margin: 0; }
   /* line 95, ../sass/components/_location_map_front.scss */
-  #location-info h2, #location-info .fieldset-legend, #location-info .messages, #location-info #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 #location-info h1, #location-info #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 #location-info .views-field-title, #location-info .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 #location-info .views-field-title, #location-info #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items #location-info .legend-title, #location-info .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 #location-info .legend-title,
+  #location-info h2, #location-info .fieldset-legend, #location-info .messages, #location-info #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 #location-info h1, #location-info #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items #location-info .legend-title, #location-info .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 #location-info .legend-title,
   #location-info #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
   #block-views-sponsors-block-block-1 .view-schedule-items #location-info .session-slot--title,
   #location-info .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
@@ -1731,7 +1691,7 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
     line-height: 1.1; }
     @media (min-width: 470px) {
       /* line 95, ../sass/components/_location_map_front.scss */
-      #location-info h2, #location-info .fieldset-legend, #location-info .messages, #location-info #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 #location-info h1, #location-info #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 #location-info .views-field-title, #location-info .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 #location-info .views-field-title, #location-info #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items #location-info .legend-title, #location-info .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 #location-info .legend-title,
+      #location-info h2, #location-info .fieldset-legend, #location-info .messages, #location-info #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 #location-info h1, #location-info #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items #location-info .legend-title, #location-info .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 #location-info .legend-title,
       #location-info #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
       #block-views-sponsors-block-block-1 .view-schedule-items #location-info .session-slot--title,
       #location-info .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
@@ -2260,7 +2220,7 @@ h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block-
     height: 60px; } }
 @media (min-width: 1025px) and (min-width: 1025px) {
   /* line 320, ../sass/components/_navigation.scss */
-  h1.site-name, .block--views-events-block-1 .site-name.views-field-title, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
+  h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
   .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name,
   .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name, .block--views-individual-sponsors-block .site-name.attendee-name, .view-schedule-items .site-name.legend-title,
   .view-schedule-items .site-name.session-slot--title {
@@ -2319,7 +2279,7 @@ html.js .form-autocomplete {
     Preface Region and featured speakers
    ========================================================================== */
 /* line 7, ../sass/components/_preface.scss */
-.zone.z-preface h2, .zone.z-preface .fieldset-legend, .zone.z-preface .messages, .zone.z-preface #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .zone.z-preface h1, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 .zone.z-preface .views-field-title, .zone.z-preface .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .zone.z-preface .views-field-title, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .zone.z-preface h2, .zone.z-preface .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .zone.z-preface h2, .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .legend-title, .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .legend-title,
+.zone.z-preface h2, .zone.z-preface .fieldset-legend, .zone.z-preface .messages, .zone.z-preface #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .zone.z-preface h1, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .zone.z-preface h2, .zone.z-preface .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .zone.z-preface h2, .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .legend-title, .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .legend-title,
 .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
 #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .session-slot--title,
 .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
@@ -2333,7 +2293,7 @@ html.js .form-autocomplete {
   text-align: center; }
   @media (min-width: 700px) {
     /* line 7, ../sass/components/_preface.scss */
-    .zone.z-preface h2, .zone.z-preface .fieldset-legend, .zone.z-preface .messages, .zone.z-preface #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .zone.z-preface h1, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 .zone.z-preface .views-field-title, .zone.z-preface .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .zone.z-preface .views-field-title, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .zone.z-preface h2, .zone.z-preface .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .zone.z-preface h2, .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .legend-title, .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .legend-title,
+    .zone.z-preface h2, .zone.z-preface .fieldset-legend, .zone.z-preface .messages, .zone.z-preface #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .zone.z-preface h1, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .zone.z-preface h2, .zone.z-preface .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .zone.z-preface h2, .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .legend-title, .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .legend-title,
     .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
     #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .session-slot--title,
     .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
@@ -2343,7 +2303,7 @@ html.js .form-autocomplete {
       font-size: 38px; } }
   @media (min-width: 900px) {
     /* line 7, ../sass/components/_preface.scss */
-    .zone.z-preface h2, .zone.z-preface .fieldset-legend, .zone.z-preface .messages, .zone.z-preface #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .zone.z-preface h1, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 .zone.z-preface .views-field-title, .zone.z-preface .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .zone.z-preface .views-field-title, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .zone.z-preface h2, .zone.z-preface .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .zone.z-preface h2, .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .legend-title, .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .legend-title,
+    .zone.z-preface h2, .zone.z-preface .fieldset-legend, .zone.z-preface .messages, .zone.z-preface #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .zone.z-preface h1, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .zone.z-preface h2, .zone.z-preface .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .zone.z-preface h2, .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .legend-title, .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .legend-title,
     .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
     #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .session-slot--title,
     .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
@@ -2353,7 +2313,7 @@ html.js .form-autocomplete {
       font-size: 45px; } }
   @media (min-width: 1200px) {
     /* line 7, ../sass/components/_preface.scss */
-    .zone.z-preface h2, .zone.z-preface .fieldset-legend, .zone.z-preface .messages, .zone.z-preface #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .zone.z-preface h1, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 .zone.z-preface .views-field-title, .zone.z-preface .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .zone.z-preface .views-field-title, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .zone.z-preface h2, .zone.z-preface .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .zone.z-preface h2, .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .legend-title, .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .legend-title,
+    .zone.z-preface h2, .zone.z-preface .fieldset-legend, .zone.z-preface .messages, .zone.z-preface #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .zone.z-preface h1, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .zone.z-preface h2, .zone.z-preface .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .zone.z-preface h2, .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .legend-title, .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .legend-title,
     .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
     #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .session-slot--title,
     .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
@@ -2422,208 +2382,176 @@ html.js .form-autocomplete {
 /* =============================================================================
     Sponsors (Front page, Sponsors page, and block)
    ========================================================================== */
-/* line 6, ../sass/components/_sponsors.scss */
-.view-sponsors ul {
-  padding: 0;
-  margin: 0;
-  text-align: center; }
-/* line 11, ../sass/components/_sponsors.scss */
-.view-sponsors.view-display-id-page_1 {
-  padding-top: 50px; }
-/* line 14, ../sass/components/_sponsors.scss */
-.view-sponsors h1, .view-sponsors .block--views-events-block-1 .views-field-title, .block--views-events-block-1 .view-sponsors .views-field-title, .view-sponsors .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block .view-sponsors h2, .view-sponsors .block--views-individual-sponsors-block .fieldset-legend, .block--views-individual-sponsors-block .view-sponsors .fieldset-legend, .view-sponsors .block--views-individual-sponsors-block .messages, .block--views-individual-sponsors-block .view-sponsors .messages, .view-sponsors .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-sponsors h1, .view-sponsors #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .view-sponsors h1, .view-sponsors .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name, .block--views-individual-sponsors-block .user-profile .view-sponsors .field--name-field-user-first-name, .view-sponsors .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .view-sponsors .field--name-field-user-first-name,
-.view-sponsors .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name,
-.block--views-individual-sponsors-block .user-profile .view-sponsors .field--name-field-user-last-name,
-.view-sponsors .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name,
-.user-profile .block--views-individual-sponsors-block .view-sponsors .field--name-field-user-last-name, .view-sponsors .block--views-individual-sponsors-block .attendee-name, .block--views-individual-sponsors-block .view-sponsors .attendee-name, .view-sponsors .view-schedule-items .legend-title, .view-schedule-items .view-sponsors .legend-title,
-.view-sponsors .view-schedule-items .session-slot--title,
-.view-schedule-items .view-sponsors .session-slot--title {
-  text-align: center; }
-/* line 17, ../sass/components/_sponsors.scss */
-.view-sponsors .wrap {
-  margin-bottom: 20px;
-  padding: 20px;
-  list-style: none;
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  width: 100%; }
-  @media (min-width: 1200px) {
-    /* line 17, ../sass/components/_sponsors.scss */
-    .view-sponsors .wrap {
-      height: 250px; } }
-  /* line 28, ../sass/components/_sponsors.scss */
-  .view-sponsors .wrap img {
-    max-width: 100%;
-    max-height: 140px;
-    width: auto;
-    margin: 0 auto; }
+/* line 5, ../sass/components/_sponsors.scss */
+.view-sponsors {
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8); }
+  /* line 9, ../sass/components/_sponsors.scss */
+  .view-sponsors ul {
+    padding: 0;
+    margin: 0;
+    text-align: center; }
+  /* line 14, ../sass/components/_sponsors.scss */
+  .view-sponsors.view-display-id-page_1 {
+    padding-top: 50px; }
+  /* line 17, ../sass/components/_sponsors.scss */
+  .view-sponsors h1, .view-sponsors .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block .view-sponsors h2, .view-sponsors .block--views-individual-sponsors-block .fieldset-legend, .block--views-individual-sponsors-block .view-sponsors .fieldset-legend, .view-sponsors .block--views-individual-sponsors-block .messages, .block--views-individual-sponsors-block .view-sponsors .messages, .view-sponsors .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-sponsors h1, .view-sponsors #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .view-sponsors h1, .view-sponsors .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name, .block--views-individual-sponsors-block .user-profile .view-sponsors .field--name-field-user-first-name, .view-sponsors .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .view-sponsors .field--name-field-user-first-name,
+  .view-sponsors .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name,
+  .block--views-individual-sponsors-block .user-profile .view-sponsors .field--name-field-user-last-name,
+  .view-sponsors .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name,
+  .user-profile .block--views-individual-sponsors-block .view-sponsors .field--name-field-user-last-name, .view-sponsors .block--views-individual-sponsors-block .attendee-name, .block--views-individual-sponsors-block .view-sponsors .attendee-name, .view-sponsors .view-schedule-items .legend-title, .view-schedule-items .view-sponsors .legend-title,
+  .view-sponsors .view-schedule-items .session-slot--title,
+  .view-schedule-items .view-sponsors .session-slot--title {
+    text-align: center; }
+  /* line 20, ../sass/components/_sponsors.scss */
+  .view-sponsors .wrap {
+    margin-bottom: 20px;
+    padding: 20px;
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100%; }
     @media (min-width: 1200px) {
-      /* line 28, ../sass/components/_sponsors.scss */
-      .view-sponsors .wrap img {
+      /* line 20, ../sass/components/_sponsors.scss */
+      .view-sponsors .wrap {
+        height: 250px; } }
+    /* line 31, ../sass/components/_sponsors.scss */
+    .view-sponsors .wrap img {
+      max-width: 100%;
+      max-height: 140px;
+      width: auto;
+      margin: 0 auto; }
+      @media (min-width: 1200px) {
+        /* line 31, ../sass/components/_sponsors.scss */
+        .view-sponsors .wrap img {
+          position: absolute;
+          -moz-backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          left: 50%;
+          top: 50%;
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); } }
+    @media (min-width: 700px) {
+      /* line 20, ../sass/components/_sponsors.scss */
+      .view-sponsors .wrap {
+        margin: 0 0 4px 0;
+        max-width: 24%; } }
+    @media (min-width: 1200px) {
+      /* line 20, ../sass/components/_sponsors.scss */
+      .view-sponsors .wrap {
+        padding: 0;
+        -moz-perspective: 1000px;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+        /* disable turn-around effect for IE */ }
+        /* line 49, ../sass/components/_sponsors.scss */
+        .csstransforms3d .view-sponsors .wrap:hover a, .csstransforms3d .view-sponsors .wrap:focus a {
+          -moz-transform: rotatex(180deg);
+          -ms-transform: rotatex(180deg);
+          -webkit-transform: rotatex(180deg);
+          transform: rotatex(180deg); }
+        /* line 55, ../sass/components/_sponsors.scss */
+        .no-csstransforms3d .view-sponsors .wrap:hover a, .no-csstransforms3d .view-sponsors .wrap:focus a, .ie10 .view-sponsors .wrap:hover a, .ie10 .view-sponsors .wrap:focus a, .ie11 .view-sponsors .wrap:hover a, .ie11 .view-sponsors .wrap:focus a {
+          -moz-transform: rotatex(0deg);
+          -ms-transform: rotatex(0deg);
+          -webkit-transform: rotatex(0deg);
+          transform: rotatex(0deg);
+          -moz-backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; } }
+  /* line 67, ../sass/components/_sponsors.scss */
+  .view-sponsors a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #666;
+    background: #fafafa; }
+    @media (min-width: 1200px) {
+      /* line 67, ../sass/components/_sponsors.scss */
+      .view-sponsors a {
+        -moz-transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        transition: 0.3s; } }
+  /* line 78, ../sass/components/_sponsors.scss */
+  .view-sponsors .wrap-front,
+  .view-sponsors .wrap-back {
+    display: block; }
+    @media (min-width: 1200px) {
+      /* line 78, ../sass/components/_sponsors.scss */
+      .view-sponsors .wrap-front,
+      .view-sponsors .wrap-back {
         position: absolute;
-        -moz-backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        left: 50%;
-        top: 50%;
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); } }
-  @media (min-width: 700px) {
-    /* line 17, ../sass/components/_sponsors.scss */
-    .view-sponsors .wrap {
-      margin: 0 0 4px 0;
-      max-width: 24%; } }
-  @media (min-width: 1200px) {
-    /* line 17, ../sass/components/_sponsors.scss */
-    .view-sponsors .wrap {
-      padding: 0;
-      -moz-perspective: 1000px;
-      -webkit-perspective: 1000px;
-      perspective: 1000px;
-      /* disable turn-around effect for IE */ }
-      /* line 46, ../sass/components/_sponsors.scss */
-      .csstransforms3d .view-sponsors .wrap:hover a, .csstransforms3d .view-sponsors .wrap:focus a {
-        -moz-transform: rotateY(180deg);
-        -ms-transform: rotateY(180deg);
-        -webkit-transform: rotateY(180deg);
-        transform: rotateY(180deg); }
-      /* line 52, ../sass/components/_sponsors.scss */
-      .no-csstransforms3d .view-sponsors .wrap:hover a, .no-csstransforms3d .view-sponsors .wrap:focus a, .ie10 .view-sponsors .wrap:hover a, .ie10 .view-sponsors .wrap:focus a, .ie11 .view-sponsors .wrap:hover a, .ie11 .view-sponsors .wrap:focus a {
-        -moz-transform: rotateY(0deg);
-        -ms-transform: rotateY(0deg);
-        -webkit-transform: rotateY(0deg);
-        transform: rotateY(0deg);
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
         -moz-backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden; } }
-/* line 64, ../sass/components/_sponsors.scss */
-.view-sponsors a {
-  display: block;
-  height: 100%;
-  width: 100%;
-  color: #666;
-  background: #fafafa; }
-  @media (min-width: 1200px) {
-    /* line 64, ../sass/components/_sponsors.scss */
-    .view-sponsors a {
-      -moz-transform-style: preserve-3d;
-      -webkit-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-      -moz-transition: 0.3s;
-      -o-transition: 0.3s;
-      -webkit-transition: 0.3s;
-      transition: 0.3s; } }
-/* line 75, ../sass/components/_sponsors.scss */
-.view-sponsors .wrap-front,
-.view-sponsors .wrap-back {
-  display: block; }
-  @media (min-width: 1200px) {
-    /* line 75, ../sass/components/_sponsors.scss */
-    .view-sponsors .wrap-front,
-    .view-sponsors .wrap-back {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      padding: 10px;
-      -moz-backface-visibility: hidden;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden; } }
-/* line 88, ../sass/components/_sponsors.scss */
-.view-sponsors .wrap-back {
-  display: none; }
-  @media (min-width: 1200px) {
-    /* line 88, ../sass/components/_sponsors.scss */
-    .view-sponsors .wrap-back {
-      background-color: #f5f5f5;
-      border-radius: 3px;
-      line-height: 1.3; }
-      /* line 94, ../sass/components/_sponsors.scss */
-      .csstransforms3d .view-sponsors .wrap-back {
-        -moz-transform: rotateY(180deg);
-        -ms-transform: rotateY(180deg);
-        -webkit-transform: rotateY(180deg);
-        transform: rotateY(180deg);
-        display: block; }
-      /* line 98, ../sass/components/_sponsors.scss */
-      .wrap:hover .view-sponsors .wrap-back {
-        -moz-transform: rotateY(180deg);
-        -ms-transform: rotateY(180deg);
-        -webkit-transform: rotateY(180deg);
-        transform: rotateY(180deg); } }
-/* line 103, ../sass/components/_sponsors.scss */
-.view-sponsors h3 {
-  line-height: 1; }
-@media (min-width: 1200px) {
-  /* line 110, ../sass/components/_sponsors.scss */
-  .view-sponsors .view-content .wrap-front {
-    width: 90%;
-    max-width: 350px;
-    height: 200px; }
-  /* line 116, ../sass/components/_sponsors.scss */
-  .view-sponsors .view-display-id-attachment_1 .wrap {
-    max-width: 24%; }
-  /* line 119, ../sass/components/_sponsors.scss */
-  .view-sponsors .view-display-id-attachment_1 .wrap-front {
-    width: 80%;
-    max-width: 250px;
-    height: 200px; }
-  /* line 124, ../sass/components/_sponsors.scss */
-  .view-sponsors .view-display-id-attachment_1 h3 {
-    font-size: 1.5em; }
-  /* line 129, ../sass/components/_sponsors.scss */
-  .view-sponsors .view-display-id-attachment_2 .wrap {
-    max-width: 24%; }
-  /* line 132, ../sass/components/_sponsors.scss */
-  .view-sponsors .view-display-id-attachment_2 .wrap-front {
-    width: 80%;
-    max-width: 200px;
-    height: 170px; }
-  /* line 137, ../sass/components/_sponsors.scss */
-  .view-sponsors .view-display-id-attachment_2 h3 {
-    font-size: 1.5em; }
-  /* line 143, ../sass/components/_sponsors.scss */
-  .view-sponsors .view-display-id-attachment_3 .wrap,
-  .view-sponsors .view-display-id-attachment_4 .wrap {
-    max-width: 24%; }
-  /* line 146, ../sass/components/_sponsors.scss */
-  .view-sponsors .view-display-id-attachment_3 .wrap-front,
-  .view-sponsors .view-display-id-attachment_4 .wrap-front {
-    width: 80%;
-    max-width: 150px;
-    height: 150px; }
-  /* line 151, ../sass/components/_sponsors.scss */
-  .view-sponsors .view-display-id-attachment_3 h3,
-  .view-sponsors .view-display-id-attachment_4 h3 {
-    font-size: 1.2em; } }
+  /* line 91, ../sass/components/_sponsors.scss */
+  .view-sponsors .wrap-back {
+    display: none; }
+    @media (min-width: 1200px) {
+      /* line 91, ../sass/components/_sponsors.scss */
+      .view-sponsors .wrap-back {
+        background-color: #0E73AF;
+        border-radius: 3px;
+        line-height: 1.3;
+        color: white; }
+        /* line 98, ../sass/components/_sponsors.scss */
+        .csstransforms3d .view-sponsors .wrap-back {
+          -moz-transform: rotatex(180deg);
+          -ms-transform: rotatex(180deg);
+          -webkit-transform: rotatex(180deg);
+          transform: rotatex(180deg);
+          display: block; }
+        /* line 102, ../sass/components/_sponsors.scss */
+        .wrap:hover .view-sponsors .wrap-back {
+          -moz-transform: rotatex(180deg);
+          -ms-transform: rotatex(180deg);
+          -webkit-transform: rotatex(180deg);
+          transform: rotatex(180deg); } }
+    /* line 107, ../sass/components/_sponsors.scss */
+    .view-sponsors .wrap-back h3 {
+      color: inherit; }
+  /* line 111, ../sass/components/_sponsors.scss */
+  .view-sponsors h3 {
+    line-height: 1; }
 
-/* line 161, ../sass/components/_sponsors.scss */
+/* line 169, ../sass/components/_sponsors.scss */
 .sponsor-platinum {
   color: #666; }
 
-/* line 164, ../sass/components/_sponsors.scss */
+/* line 172, ../sass/components/_sponsors.scss */
 .sponsor-gold {
   color: #e6c200; }
 
-/* line 167, ../sass/components/_sponsors.scss */
+/* line 175, ../sass/components/_sponsors.scss */
 .sponsor-silver {
   color: #999; }
 
-/* line 170, ../sass/components/_sponsors.scss */
+/* line 178, ../sass/components/_sponsors.scss */
 .sponsor-bronze {
   color: #998100; }
 
 /* =============================================================================
     Sponsors Block
    ========================================================================== */
-/* line 179, ../sass/components/_sponsors.scss */
+/* line 187, ../sass/components/_sponsors.scss */
 #block-views-sponsors-block-block-1 ul {
   padding: 0; }
-/* line 182, ../sass/components/_sponsors.scss */
+/* line 190, ../sass/components/_sponsors.scss */
 #block-views-sponsors-block-block-1 li {
   padding: 10px;
   margin: 0;
@@ -2913,7 +2841,7 @@ div.password-confirm {
 .block--views-individual-sponsors-block {
   text-align: center; }
   /* line 7, ../sass/components/_view_individual_sponsors.scss */
-  .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block .fieldset-legend, .block--views-individual-sponsors-block .messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 .block--views-individual-sponsors-block .views-field-title, .block--views-individual-sponsors-block .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .views-field-title, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .block--views-individual-sponsors-block .legend-title, .block--views-individual-sponsors-block .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .legend-title,
+  .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block .fieldset-legend, .block--views-individual-sponsors-block .messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .block--views-individual-sponsors-block .legend-title, .block--views-individual-sponsors-block .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .legend-title,
   .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
   #block-views-sponsors-block-block-1 .view-schedule-items .block--views-individual-sponsors-block .session-slot--title,
   .block--views-individual-sponsors-block .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
@@ -2944,7 +2872,7 @@ div.password-confirm {
   color: #999; }
 
 /* line 11, ../sass/components/_view_news.scss */
-.view-display-id-multi_news_block h2, .view-display-id-multi_news_block .fieldset-legend, .view-display-id-multi_news_block .messages, .view-display-id-multi_news_block #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .view-display-id-multi_news_block h1, .view-display-id-multi_news_block #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 .view-display-id-multi_news_block .views-field-title, .view-display-id-multi_news_block .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-display-id-multi_news_block .views-field-title, .view-display-id-multi_news_block #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .view-display-id-multi_news_block h2, .view-display-id-multi_news_block .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-display-id-multi_news_block h2, .view-display-id-multi_news_block #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .view-display-id-multi_news_block .legend-title, .view-display-id-multi_news_block .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .view-display-id-multi_news_block .legend-title,
+.view-display-id-multi_news_block h2, .view-display-id-multi_news_block .fieldset-legend, .view-display-id-multi_news_block .messages, .view-display-id-multi_news_block #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .view-display-id-multi_news_block h1, .view-display-id-multi_news_block #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .view-display-id-multi_news_block h2, .view-display-id-multi_news_block .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-display-id-multi_news_block h2, .view-display-id-multi_news_block #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .view-display-id-multi_news_block .legend-title, .view-display-id-multi_news_block .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .view-display-id-multi_news_block .legend-title,
 .view-display-id-multi_news_block #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
 #block-views-sponsors-block-block-1 .view-schedule-items .view-display-id-multi_news_block .session-slot--title,
 .view-display-id-multi_news_block .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
@@ -2990,7 +2918,7 @@ div.password-confirm {
       width: 150px;
       margin-top: 0; } }
 /* line 28, ../sass/components/_view_session_schedule.scss */
-.view-schedule-items h2, .view-schedule-items .fieldset-legend, .view-schedule-items .messages, .view-schedule-items #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .view-schedule-items h1, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title, #block-views-sponsors-block-block-1 .block--views-events-block-1 .view-schedule-items .views-field-title, .view-schedule-items .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title, .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .views-field-title, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .view-schedule-items h2, .view-schedule-items .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-schedule-items h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
+.view-schedule-items h2, .view-schedule-items .fieldset-legend, .view-schedule-items .messages, .view-schedule-items #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .view-schedule-items h1, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .view-schedule-items h2, .view-schedule-items .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-schedule-items h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
 #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
 .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .view-schedule-items .user-profile .field--name-field-user-first-name, .user-profile .view-schedule-items .field--name-field-user-first-name,
 .view-schedule-items .user-profile .field--name-field-user-last-name,
@@ -2999,14 +2927,14 @@ div.password-confirm {
   margin: 0;
   position: relative; }
   /* line 33, ../sass/components/_view_session_schedule.scss */
-  .view-schedule-items h2 a, .view-schedule-items .fieldset-legend a, .view-schedule-items .messages a, .view-schedule-items #block-views-sponsors-block-block-1 h1 a, #block-views-sponsors-block-block-1 .view-schedule-items h1 a, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a, #block-views-sponsors-block-block-1 .block--views-events-block-1 .view-schedule-items .views-field-title a, .view-schedule-items .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a, .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .views-field-title a, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .view-schedule-items h2 a, .view-schedule-items .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-schedule-items h2 a, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a,
+  .view-schedule-items h2 a, .view-schedule-items .fieldset-legend a, .view-schedule-items .messages a, .view-schedule-items #block-views-sponsors-block-block-1 h1 a, #block-views-sponsors-block-block-1 .view-schedule-items h1 a, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .view-schedule-items h2 a, .view-schedule-items .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-schedule-items h2 a, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a,
   #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a,
   .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a, .view-schedule-items .user-profile .field--name-field-user-first-name a, .user-profile .view-schedule-items .field--name-field-user-first-name a,
   .view-schedule-items .user-profile .field--name-field-user-last-name a,
   .user-profile .view-schedule-items .field--name-field-user-last-name a, .view-schedule-items .attendee-name a {
     color: #0E73AF; }
     /* line 35, ../sass/components/_view_session_schedule.scss */
-    .view-schedule-items h2 a:hover, .view-schedule-items .fieldset-legend a:hover, .view-schedule-items .messages a:hover, .view-schedule-items #block-views-sponsors-block-block-1 h1 a:hover, #block-views-sponsors-block-block-1 .view-schedule-items h1 a:hover, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-events-block-1 .views-field-title a:hover, #block-views-sponsors-block-block-1 .block--views-events-block-1 .view-schedule-items .views-field-title a:hover, .view-schedule-items .block--views-events-block-1 #block-views-sponsors-block-block-1 .views-field-title a:hover, .block--views-events-block-1 #block-views-sponsors-block-block-1 .view-schedule-items .views-field-title a:hover, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .view-schedule-items h2 a:hover, .view-schedule-items .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-schedule-items h2 a:hover, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:hover, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:hover,
+    .view-schedule-items h2 a:hover, .view-schedule-items .fieldset-legend a:hover, .view-schedule-items .messages a:hover, .view-schedule-items #block-views-sponsors-block-block-1 h1 a:hover, #block-views-sponsors-block-block-1 .view-schedule-items h1 a:hover, .view-schedule-items #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2 a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .view-schedule-items h2 a:hover, .view-schedule-items .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2 a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-schedule-items h2 a:hover, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title a:hover, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title a:hover,
     #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title a:hover,
     .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title a:hover, .view-schedule-items .user-profile .field--name-field-user-first-name a:hover, .user-profile .view-schedule-items .field--name-field-user-first-name a:hover,
     .view-schedule-items .user-profile .field--name-field-user-last-name a:hover,

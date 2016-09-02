@@ -12,9 +12,15 @@
         <video autoplay="" class="layout-homepage__hi__video" loop="" muted="" poster="" preload="auto">
           <source src="/sites/default/files/FLDC17%20Promo-high.mp4" type="video/mp4">
         </video>
-          <?php print render($page['branding']); ?>
+          <div class="hero-teaser">
+            <h1 class="hero-title">Florida DrupalCamp 2017</h1>
+            <h2>
+              <span class="date">February 18-19, 2017</span>
+              <span class="loc">Orlando, Florida</span>
+            </h2>
+            <a class="button hero-button" href="https://www.eventbrite.com/e/florida-drupalcamp-2016-tickets-19970715949">Register Now</a>
+          </div>
         </div>
-        <?php print render($page['header']); ?>
         <?php if (!$is_front): ?>
           <?php print render($title_prefix); ?>
           <?php if ($title): ?>
@@ -24,6 +30,12 @@
         <?php endif; ?>
       </header>
     </div>
+
+    <?php if ($is_front): ?>
+      <div class="zone z-description">
+        Florida DrupalCamp is an annual conference that brings together web developers from all over the world to learn, network and discuss web development and the Drupal content management system.
+      </div>
+    <?php endif; ?>
 
   <?php if ($page['preface']): ?>
     <div class="zone z-preface">
