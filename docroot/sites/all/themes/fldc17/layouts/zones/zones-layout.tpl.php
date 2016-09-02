@@ -22,7 +22,7 @@
                 <span class="loc">Orlando, Florida</span>
               </h2>
               <a target="_blank" class="button hero-button" href="https://www.eventbrite.com/e/florida-drupalcamp-2016-tickets-19970715949">Register Now</a>
-              <div class="hero-game-teaser" aria-hidden="true">...or play a sweet game</div>
+              <button class="hero-game-teaser" aria-hidden="true">...or play a sweet game</button>
             </div>
 
              <div aria-hidden="true" id="game-container" class="hero-game">

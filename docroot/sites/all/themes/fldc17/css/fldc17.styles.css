@@ -1506,21 +1506,32 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
     /* line 26, ../sass/components/_front_hero.scss */
     .hero-teaser {
       width: 50%; } }
-  /* line 49, ../sass/components/_front_hero.scss */
-  .js-show-game .hero-teaser {
-    display: none; }
+  @media (min-width: 900px) {
+    /* line 49, ../sass/components/_front_hero.scss */
+    .js-show-game .hero-teaser {
+      display: none; } }
 
-/* line 54, ../sass/components/_front_hero.scss */
+/* line 56, ../sass/components/_front_hero.scss */
 .hero-game-teaser {
+  display: block;
   font-size: 14px;
-  margin-top: 20px;
+  margin: 15px auto 0;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.7); }
-  /* line 60, ../sass/components/_front_hero.scss */
+  color: rgba(255, 255, 255, 0.7);
+  font-family: helvetica, arial, sans-serif;
+  text-transform: none;
+  border: 0;
+  background-color: transparent; }
+  @media (max-width: 900px) {
+    /* line 56, ../sass/components/_front_hero.scss */
+    .hero-game-teaser {
+      display: none; } }
+  /* line 71, ../sass/components/_front_hero.scss */
   .hero-game-teaser:hover {
-    color: white; }
+    color: white;
+    background: transparent; }
 
-/* line 65, ../sass/components/_front_hero.scss */
+/* line 77, ../sass/components/_front_hero.scss */
 .hero-title {
   line-height: 1.2;
   display: inline-block;
@@ -1529,22 +1540,22 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
   margin-top: 0;
   border-bottom: solid 1px white;
   -webkit-text-stroke: 1px white; }
-  /* line 74, ../sass/components/_front_hero.scss */
+  /* line 86, ../sass/components/_front_hero.scss */
   .hero-title a {
     color: inherit; }
-    /* line 77, ../sass/components/_front_hero.scss */
+    /* line 89, ../sass/components/_front_hero.scss */
     .hero-title a:link, .hero-title a:visited {
       color: inherit; }
   @media (min-width: 1200px) {
-    /* line 65, ../sass/components/_front_hero.scss */
+    /* line 77, ../sass/components/_front_hero.scss */
     .hero-title {
       font-size: 60px; } }
   @media (min-width: 1700px) {
-    /* line 65, ../sass/components/_front_hero.scss */
+    /* line 77, ../sass/components/_front_hero.scss */
     .hero-title {
       font-size: 70px; } }
 
-/* line 92, ../sass/components/_front_hero.scss */
+/* line 104, ../sass/components/_front_hero.scss */
 h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
 #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
 .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
@@ -1554,62 +1565,62 @@ h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-
   line-height: 1.2;
   color: #FCB040; }
   @media (min-width: 470px) {
-    /* line 92, ../sass/components/_front_hero.scss */
+    /* line 104, ../sass/components/_front_hero.scss */
     h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
     #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
     .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
     .user-profile .field--name-field-user-last-name, .attendee-name {
       line-height: 1.5; } }
   @media (min-width: 1700px) {
-    /* line 92, ../sass/components/_front_hero.scss */
+    /* line 104, ../sass/components/_front_hero.scss */
     h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
     #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
     .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
     .user-profile .field--name-field-user-last-name, .attendee-name {
       font-size: 40px; } }
 
-/* line 107, ../sass/components/_front_hero.scss */
+/* line 119, ../sass/components/_front_hero.scss */
 a.hero-button {
   padding: 20px;
   text-transform: uppercase;
   text-align: center;
   font-size: 40px; }
   @media (min-width: 700px) {
-    /* line 107, ../sass/components/_front_hero.scss */
+    /* line 119, ../sass/components/_front_hero.scss */
     a.hero-button {
       font-size: 50px; } }
 
-/* line 118, ../sass/components/_front_hero.scss */
+/* line 130, ../sass/components/_front_hero.scss */
 .date {
   display: block;
   font-size: 35px; }
   @media (min-width: 470px) {
-    /* line 118, ../sass/components/_front_hero.scss */
+    /* line 130, ../sass/components/_front_hero.scss */
     .date {
       display: inline;
       font-size: 30px; }
-      /* line 126, ../sass/components/_front_hero.scss */
+      /* line 138, ../sass/components/_front_hero.scss */
       .date:after {
         content: " | "; } }
   @media (min-width: 1700px) {
-    /* line 118, ../sass/components/_front_hero.scss */
+    /* line 130, ../sass/components/_front_hero.scss */
     .date {
       font-size: inherit; } }
 
-/* line 136, ../sass/components/_front_hero.scss */
+/* line 148, ../sass/components/_front_hero.scss */
 .loc {
   display: block; }
   @media (min-width: 470px) {
-    /* line 136, ../sass/components/_front_hero.scss */
+    /* line 148, ../sass/components/_front_hero.scss */
     .loc {
       display: inline; } }
 
-/* line 145, ../sass/components/_front_hero.scss */
+/* line 157, ../sass/components/_front_hero.scss */
 .icon {
   color: #fff;
   font-size: 50px; }
 
-/* line 150, ../sass/components/_front_hero.scss */
+/* line 162, ../sass/components/_front_hero.scss */
 .icon:hover {
   color: #E4D400; }
 
@@ -1623,11 +1634,12 @@ a.hero-button {
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
-  /* line 7, ../sass/components/_game.scss */
-  .js-show-game .hero-game {
-    display: block; }
+  @media (min-width: 900px) {
+    /* line 7, ../sass/components/_game.scss */
+    .js-show-game .hero-game {
+      display: block; } }
 
-/* line 13, ../sass/components/_game.scss */
+/* line 17, ../sass/components/_game.scss */
 .js-show-game:after {
   content: "Press ESC to Cancel";
   position: absolute;
@@ -1639,40 +1651,40 @@ a.hero-button {
   left: 50%;
   transform: translatex(-50%); }
 
-/* line 26, ../sass/components/_game.scss */
+/* line 30, ../sass/components/_game.scss */
 #left-controls {
   position: absolute;
   left: 1px;
   bottom: 0px;
   display: none; }
 
-/* line 33, ../sass/components/_game.scss */
+/* line 37, ../sass/components/_game.scss */
 #right-controls {
   position: absolute;
   right: 1px;
   bottom: 0px;
   display: none; }
 
-/* line 40, ../sass/components/_game.scss */
+/* line 44, ../sass/components/_game.scss */
 #up {
   width: 200px;
   height: 100px;
   bottom: 100px; }
 
-/* line 46, ../sass/components/_game.scss */
+/* line 50, ../sass/components/_game.scss */
 #left {
   width: 100px;
   height: 100px;
   bottom: 0px; }
 
-/* line 51, ../sass/components/_game.scss */
+/* line 55, ../sass/components/_game.scss */
 #right {
   width: 100px;
   height: 100px;
   bottom: 0px;
   left: 100px; }
 
-/* line 58, ../sass/components/_game.scss */
+/* line 62, ../sass/components/_game.scss */
 #space {
   width: 200px;
   height: 200px;

@@ -5,7 +5,11 @@
   @include center;
 
   .js-show-game & {
-    display: block;
+
+    // Only show at desktop widths
+    @include breakpoint($show-game) {
+      display: block;
+    }
   }
 }
 

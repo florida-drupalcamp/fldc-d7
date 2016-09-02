@@ -47,18 +47,30 @@ $video-break: $tablet_wide;
   }
 
   .js-show-game & {
-    display: none;
+    @include breakpoint($show-game) {
+      display: none;
+    }
   }
 }
 
 .hero-game-teaser {
+  display: block;
   font-size: 14px;
-  margin-top: 20px;
+  margin: 15px auto 0;
   cursor: pointer;
   color: rgba(255,255,255,0.7);
+  font-family: $font-normal;
+  text-transform: none;
+  border: 0;
+  background-color: transparent;
+
+  @include breakpoint(max-width $show-game) {
+    display: none; // hide at mobile
+  }
 
   &:hover {
     color: white;
+    background: transparent;
   }
 }
 
