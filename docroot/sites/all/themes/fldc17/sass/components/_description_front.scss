@@ -2,7 +2,15 @@
   text-align: center;
   font-size: 27px;
   max-width: 750px;
-  margin: 80px auto;
-  color: #0E73AF;
+  margin: 40px auto;
+  color: $blue;
   font-weight: lighter;
+
+  @include breakpoint($tablet_narrow) {
+    padding-bottom: 80px;
+  }
+
+  @include breakpoint($normal) {
+    margin: 80px auto;
+  }
 }

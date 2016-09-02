@@ -2,7 +2,7 @@
     Front Hero
    ========================================================================== */
 
-$video-break: $tablet_narrow;
+$video-break: $tablet_wide;
 
 .front .z-header {
   @include breakpoint(max-width $video-break) {
@@ -11,6 +11,7 @@ $video-break: $tablet_narrow;
     background-position: center center;
     height: 80vh;
     min-height: 500px;
+    max-height: 700px;
 
     video {
       display: none;
@@ -28,7 +29,7 @@ $video-break: $tablet_narrow;
   color: white;
   position: absolute;
   border: solid 2px white;
-  padding: 20px 20px 40px 20px;
+  padding: 30px 20px 50px 20px;
   background: rgba(0,0,0,0.2);
   width: 90%;
   @include center;

@@ -1267,9 +1267,17 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
   text-align: center;
   font-size: 27px;
   max-width: 750px;
-  margin: 80px auto;
+  margin: 40px auto;
   color: #0E73AF;
   font-weight: lighter; }
+  @media (min-width: 700px) {
+    /* line 1, ../sass/components/_description_front.scss */
+    .z-description {
+      padding-bottom: 80px; } }
+  @media (min-width: 1200px) {
+    /* line 1, ../sass/components/_description_front.scss */
+    .z-description {
+      margin: 80px auto; } }
 
 /* =============================================================================
     Exploding bubbles
@@ -1454,29 +1462,30 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
 /* =============================================================================
     Front Hero
    ========================================================================== */
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   /* line 7, ../sass/components/_front_hero.scss */
   .front .z-header {
     background-image: url(../images/auditorium_blur-tablet_narrow.jpg);
     background-size: cover;
     background-position: center center;
     height: 80vh;
-    min-height: 500px; }
-    /* line 15, ../sass/components/_front_hero.scss */
+    min-height: 500px;
+    max-height: 700px; }
+    /* line 16, ../sass/components/_front_hero.scss */
     .front .z-header video {
       display: none; } }
-/* line 20, ../sass/components/_front_hero.scss */
+/* line 21, ../sass/components/_front_hero.scss */
 .front .z-header video {
   width: 100%; }
 
-/* line 25, ../sass/components/_front_hero.scss */
+/* line 26, ../sass/components/_front_hero.scss */
 .hero-teaser {
   text-align: center;
   padding: 0;
   color: white;
   position: absolute;
   border: solid 2px white;
-  padding: 20px 20px 40px 20px;
+  padding: 30px 20px 50px 20px;
   background: rgba(0, 0, 0, 0.2);
   width: 90%;
   left: 50%;
@@ -1485,20 +1494,20 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
-  @media (min-width: 700px) {
-    /* line 25, ../sass/components/_front_hero.scss */
+  @media (min-width: 900px) {
+    /* line 26, ../sass/components/_front_hero.scss */
     .hero-teaser {
       background: transparent; } }
   @media (min-width: 700px) {
-    /* line 25, ../sass/components/_front_hero.scss */
+    /* line 26, ../sass/components/_front_hero.scss */
     .hero-teaser {
       width: 70%; } }
   @media (min-width: 900px) {
-    /* line 25, ../sass/components/_front_hero.scss */
+    /* line 26, ../sass/components/_front_hero.scss */
     .hero-teaser {
       width: 50%; } }
 
-/* line 49, ../sass/components/_front_hero.scss */
+/* line 50, ../sass/components/_front_hero.scss */
 .hero-title {
   line-height: 1.2;
   display: inline-block;
@@ -1507,22 +1516,22 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
   margin-top: 0;
   border-bottom: solid 1px white;
   -webkit-text-stroke: 1px white; }
-  /* line 58, ../sass/components/_front_hero.scss */
+  /* line 59, ../sass/components/_front_hero.scss */
   .hero-title a {
     color: inherit; }
-    /* line 61, ../sass/components/_front_hero.scss */
+    /* line 62, ../sass/components/_front_hero.scss */
     .hero-title a:link, .hero-title a:visited {
       color: inherit; }
   @media (min-width: 1200px) {
-    /* line 49, ../sass/components/_front_hero.scss */
+    /* line 50, ../sass/components/_front_hero.scss */
     .hero-title {
       font-size: 60px; } }
   @media (min-width: 1700px) {
-    /* line 49, ../sass/components/_front_hero.scss */
+    /* line 50, ../sass/components/_front_hero.scss */
     .hero-title {
       font-size: 70px; } }
 
-/* line 76, ../sass/components/_front_hero.scss */
+/* line 77, ../sass/components/_front_hero.scss */
 h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
 #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
 .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
@@ -1532,62 +1541,62 @@ h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-
   line-height: 1.2;
   color: #FCB040; }
   @media (min-width: 470px) {
-    /* line 76, ../sass/components/_front_hero.scss */
+    /* line 77, ../sass/components/_front_hero.scss */
     h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
     #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
     .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
     .user-profile .field--name-field-user-last-name, .attendee-name {
       line-height: 1.5; } }
   @media (min-width: 1700px) {
-    /* line 76, ../sass/components/_front_hero.scss */
+    /* line 77, ../sass/components/_front_hero.scss */
     h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
     #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
     .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
     .user-profile .field--name-field-user-last-name, .attendee-name {
       font-size: 40px; } }
 
-/* line 91, ../sass/components/_front_hero.scss */
+/* line 92, ../sass/components/_front_hero.scss */
 a.hero-button {
   padding: 20px;
   text-transform: uppercase;
   text-align: center;
   font-size: 40px; }
   @media (min-width: 700px) {
-    /* line 91, ../sass/components/_front_hero.scss */
+    /* line 92, ../sass/components/_front_hero.scss */
     a.hero-button {
       font-size: 50px; } }
 
-/* line 102, ../sass/components/_front_hero.scss */
+/* line 103, ../sass/components/_front_hero.scss */
 .date {
   display: block;
   font-size: 35px; }
   @media (min-width: 470px) {
-    /* line 102, ../sass/components/_front_hero.scss */
+    /* line 103, ../sass/components/_front_hero.scss */
     .date {
       display: inline;
       font-size: 30px; }
-      /* line 110, ../sass/components/_front_hero.scss */
+      /* line 111, ../sass/components/_front_hero.scss */
       .date:after {
         content: " | "; } }
   @media (min-width: 1700px) {
-    /* line 102, ../sass/components/_front_hero.scss */
+    /* line 103, ../sass/components/_front_hero.scss */
     .date {
       font-size: inherit; } }
 
-/* line 120, ../sass/components/_front_hero.scss */
+/* line 121, ../sass/components/_front_hero.scss */
 .loc {
   display: block; }
   @media (min-width: 470px) {
-    /* line 120, ../sass/components/_front_hero.scss */
+    /* line 121, ../sass/components/_front_hero.scss */
     .loc {
       display: inline; } }
 
-/* line 129, ../sass/components/_front_hero.scss */
+/* line 130, ../sass/components/_front_hero.scss */
 .icon {
   color: #fff;
   font-size: 50px; }
 
-/* line 134, ../sass/components/_front_hero.scss */
+/* line 135, ../sass/components/_front_hero.scss */
 .icon:hover {
   color: #E4D400; }
 
