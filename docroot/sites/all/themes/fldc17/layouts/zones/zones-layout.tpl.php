@@ -15,14 +15,26 @@
                 <source src="/sites/default/files/FLDC17%20Promo-high.mp4" type="video/mp4">
               </video>
             </div>
-            <div class="hero-teaser">
+           <!--  <div class="hero-teaser">
               <h1 class="hero-title">Florida DrupalCamp 2017</h1>
               <h2>
                 <span class="date">February 18-19, 2017</span>
                 <span class="loc">Orlando, Florida</span>
               </h2>
               <a target="_blank" class="button hero-button" href="https://www.eventbrite.com/e/florida-drupalcamp-2016-tickets-19970715949">Register Now</a>
-            </div>
+            </div> -->
+
+             <div id="game-container">
+                <canvas id="canvas" width="780" height="540"></canvas>
+                <div id="left-controls">
+                  <div id="up" class='button'>THRUST</div>
+                  <div id="left" class='button'>LEFT</div>
+                  <div id="right" class='button'>RIGHT</div>
+                </div>
+                <div id="right-controls">
+                  <div id="space" class='button'>FIRE</div>
+                </div>
+              </div>
           </div>
         <?php endif; ?>
         <?php if (!$is_front): ?>

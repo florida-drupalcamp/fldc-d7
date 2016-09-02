@@ -36,6 +36,9 @@ stylesheets[all][] = css/fldc17.no-query.css
 scripts[] = js/fldc17.behaviors.js
 scripts[] = js/vendor/twitterFetcher_min.js
 scripts[] = js/vendor/modernizr.2.6.2.min.js
+scripts[] = js/vendor/vector_battle_regular.typeface.js
+scripts[] = js/vendor/ipad.js
+scripts[] = js/vendor/game.js
 
 ; ========================================
 ; Settings
