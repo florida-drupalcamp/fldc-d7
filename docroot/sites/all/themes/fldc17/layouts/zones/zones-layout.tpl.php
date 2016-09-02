@@ -26,7 +26,7 @@
             </div>
 
              <div aria-hidden="true" id="game-container" class="hero-game">
-                <canvas id="canvas" width="1500" height="843"></canvas>
+                <canvas id="canvas" width="1500" height="700"></canvas>
                 <div id="left-controls">
                   <div id="up" class='button'>THRUST</div>
                   <div id="left" class='button'>LEFT</div>

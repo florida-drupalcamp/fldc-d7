@@ -883,7 +883,7 @@
     lives: 0,
 
     canvasWidth: 1500,
-    canvasHeight: 843  ,
+    canvasHeight: 700,
 
     sprites: [],
     ship: null,
