@@ -1,5 +1,5 @@
 name = Florida DrupalCamp 2017
-description = Please provide a description for your theme.
+description = Refresh of the 2014 theme
 base theme = omega
 screenshot = screenshot.png
 engine = phptemplate
@@ -32,9 +32,9 @@ stylesheets[all][] = css/fldc17.no-query.css
 ; ========================================
 ; Scripts
 ; ========================================
-scripts[] = js/jquery.fastLiveFilter.js
+;scripts[] = js/jquery.fastLiveFilter.js
 scripts[] = js/fldc17.behaviors.js
-scripts[] = js/vendor/twitterFetcher_v10_min.js
+scripts[] = js/vendor/twitterFetcher_min.js
 scripts[] = js/vendor/modernizr.2.6.2.min.js
 
 ; ========================================

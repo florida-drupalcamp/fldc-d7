@@ -2,7 +2,7 @@
     Theming the javascript twitter feed
    ========================================================================== */
 
- #fldc14-tweets {
+ #fldc-tweets {
  	ul {
  		padding: 0;
  	}
@@ -27,6 +27,7 @@
  	}
  	.tweet {
  		font-size: 1em;
+    overflow: hidden;
  	}
  	p {
  		margin: 0;
