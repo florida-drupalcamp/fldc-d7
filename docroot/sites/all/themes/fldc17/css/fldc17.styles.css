@@ -1600,6 +1600,61 @@ a.hero-button {
 .icon:hover {
   color: #E4D400; }
 
+/* line 2, ../sass/components/_game.scss */
+#game-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+/* line 7, ../sass/components/_game.scss */
+.button {
+  position: absolute;
+  border: 1px solid black; }
+
+/* line 12, ../sass/components/_game.scss */
+#left-controls {
+  position: absolute;
+  left: 1px;
+  bottom: 0px;
+  display: none; }
+
+/* line 19, ../sass/components/_game.scss */
+#right-controls {
+  position: absolute;
+  right: 1px;
+  bottom: 0px;
+  display: none; }
+
+/* line 26, ../sass/components/_game.scss */
+#up {
+  width: 200px;
+  height: 100px;
+  bottom: 100px; }
+
+/* line 31, ../sass/components/_game.scss */
+#left {
+  width: 100px;
+  height: 100px;
+  bottom: 0px; }
+
+/* line 36, ../sass/components/_game.scss */
+#right {
+  width: 100px;
+  height: 100px;
+  bottom: 0px;
+  left: 100px; }
+
+/* line 43, ../sass/components/_game.scss */
+#space {
+  width: 200px;
+  height: 200px;
+  bottom: 0px;
+  right: 0px; }
+
 /* =============================================================================
     Location Map
    ========================================================================== */
@@ -3330,62 +3385,3 @@ div.password-confirm {
   /* line 72, ../sass/components/_views_header_exposed_forms.scss */
   .bef-checkboxes label:hover {
     background: #f5f5f5; }
-
-/* line 23, ../sass/fldc17.styles.scss */
-#game-container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-
-/* line 28, ../sass/fldc17.styles.scss */
-#canvas {
-  border: 1px solid black; }
-
-/* line 32, ../sass/fldc17.styles.scss */
-.button {
-  position: absolute;
-  border: 1px solid black; }
-
-/* line 37, ../sass/fldc17.styles.scss */
-#left-controls {
-  position: absolute;
-  left: 1px;
-  bottom: 0px;
-  display: none; }
-
-/* line 44, ../sass/fldc17.styles.scss */
-#right-controls {
-  position: absolute;
-  right: 1px;
-  bottom: 0px;
-  display: none; }
-
-/* line 51, ../sass/fldc17.styles.scss */
-#up {
-  width: 200px;
-  height: 100px;
-  bottom: 100px; }
-
-/* line 56, ../sass/fldc17.styles.scss */
-#left {
-  width: 100px;
-  height: 100px;
-  bottom: 0px; }
-
-/* line 61, ../sass/fldc17.styles.scss */
-#right {
-  width: 100px;
-  height: 100px;
-  bottom: 0px;
-  left: 100px; }
-
-/* line 68, ../sass/fldc17.styles.scss */
-#space {
-  width: 200px;
-  height: 200px;
-  bottom: 0px;
-  right: 0px; }
