@@ -10,7 +10,7 @@
       <header class="l-header" role="banner">
         <div class="l-branding">
           <div class="video-wrapper">
-            <video autoplay="" class="layout-homepage__hi__video" loop="" muted="" poster="" preload="auto">
+            <video autoplay class="layout-homepage__hi__video" loop muted poster="/sites/all/themes/fldc17/images/video-poster.jpg" preload="auto">
               <source src="/sites/default/files/FLDC17%20Promo-high.mp4" type="video/mp4">
             </video>
           </div>

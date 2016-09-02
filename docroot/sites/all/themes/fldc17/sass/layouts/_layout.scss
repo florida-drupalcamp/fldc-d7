@@ -35,8 +35,11 @@
   position: relative;
   &.z-navigation {
     top: 0;
-    .admin-menu & {
-      top: 30px;
+
+    @include breakpoint(800px) {
+      .admin-menu & {
+        top: 30px;
+      }
     }
   }
   &.z-header {
@@ -61,7 +64,9 @@
       }
     }
     .admin-menu & {
-      margin-top: 60px;
+      @include breakpoint(800px) {
+        margin-top: 60px;
+      }
     }
   }
 }

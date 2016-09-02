@@ -8,9 +8,8 @@
 
 #block-system-main-menu {
   background-color: white;
-  /* clear: both; */
   font-family: $font-heading;
-  line-height: 100px;
+  line-height: 60px;
   text-transform: uppercase;
 
   @include breakpoint(max-width $mobile-nav) {
@@ -18,11 +17,12 @@
     width: 0;
     overflow: scroll;
     position: fixed;
-    top: 60px;
+    top: 0;
     right: 0;
     height: 100%;
-    padding-bottom: 60px; // Same as 'top' value
+    padding: 60px 0;
     z-index: 6;
+    box-shadow: 0px 0 4px 1px rgba(0,0,0,0.3);
 
     &::-webkit-scrollbar { // Hide the scrollbar in desktop browsers
       display: none;
@@ -92,11 +92,11 @@
       position: relative;
       z-index: 10;
       padding: 0 10px;
-    }
 
-    &:hover,
-    &:focus {
-      background-color: $orange;
+      &:hover,
+      &:focus {
+        background-color: $orange;
+      }
     }
   }
 
@@ -120,6 +120,14 @@
       font-size: 25px;
     }
 
+    &:hover a,
+    &.js-tabbed-expanded a {
+
+      @include breakpoint($mobile-nav) {
+        background-color: $orange;
+        color: #333;
+      }
+    }
 
     a.highlight {
       color: white;
@@ -131,12 +139,6 @@
         background-color: $turquois;
         color: #333;
       }
-    }
-
-    &:hover a,
-    &.js-tabbed-expanded a {
-      background-color: $orange;
-      color: #333;
     }
 
     .icon {
@@ -154,7 +156,7 @@
 
       > ul {
         display: none;
-        background-color: #666;
+        background-color: #f5f5f5;
         padding: 0;
         margin: 0;
 
@@ -194,12 +196,6 @@
 
       .register:before {
         content: "\f145";
-      }
-
-      &:hover a,
-      &:focus a {
-        background-color: transparent;
-        color: white;
       }
 
       &.expanded:after {
