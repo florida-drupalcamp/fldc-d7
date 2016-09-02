@@ -8,21 +8,23 @@
 
     <div class="zone z-header">
       <header class="l-header" role="banner">
-        <div class="l-branding">
-          <div class="video-wrapper">
-            <video autoplay class="layout-homepage__hi__video" loop muted poster="/sites/all/themes/fldc17/images/video-poster.jpg" preload="auto">
-              <source src="/sites/default/files/FLDC17%20Promo-high.mp4" type="video/mp4">
-            </video>
+        <?php if ($is_front): ?>
+          <div class="l-branding">
+            <div class="video-wrapper">
+              <video autoplay class="layout-homepage__hi__video" loop muted poster="/sites/all/themes/fldc17/images/video-poster.jpg" preload="auto">
+                <source src="/sites/default/files/FLDC17%20Promo-high.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="hero-teaser">
+              <h1 class="hero-title">Florida DrupalCamp 2017</h1>
+              <h2>
+                <span class="date">February 18-19, 2017</span>
+                <span class="loc">Orlando, Florida</span>
+              </h2>
+              <a target="_blank" class="button hero-button" href="https://www.eventbrite.com/e/florida-drupalcamp-2016-tickets-19970715949">Register Now</a>
+            </div>
           </div>
-          <div class="hero-teaser">
-            <h1 class="hero-title">Florida DrupalCamp 2017</h1>
-            <h2>
-              <span class="date">February 18-19, 2017</span>
-              <span class="loc">Orlando, Florida</span>
-            </h2>
-            <a target="_blank" class="button hero-button" href="https://www.eventbrite.com/e/florida-drupalcamp-2016-tickets-19970715949">Register Now</a>
-          </div>
-        </div>
+        <?php endif; ?>
         <?php if (!$is_front): ?>
           <?php print render($title_prefix); ?>
           <?php if ($title): ?>

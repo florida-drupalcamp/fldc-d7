@@ -4,7 +4,7 @@
 
 $video-break: $tablet_narrow;
 
-.z-header {
+.front .z-header {
   @include breakpoint(max-width $video-break) {
     background-image: url(../images/auditorium_blur-tablet_narrow.jpg);
     background-size: cover;
