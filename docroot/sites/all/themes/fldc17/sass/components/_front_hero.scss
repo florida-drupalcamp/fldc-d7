@@ -68,7 +68,8 @@ $video-break: $tablet_wide;
     display: none; // hide at mobile
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: white;
     background: transparent;
   }

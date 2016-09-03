@@ -148,20 +148,4 @@
     }
   };
 
-  Drupal.behaviors.Asteroids = {
-    attach: function ( context, settings ) {
-      $('.hero-game-teaser', context).click(function() {
-        $('.z-header', context).addClass('js-show-game');
-        $.getScript( '/sites/all/themes/fldc17/js/vendor/vector_battle_regular.typeface.js');
-        $.getScript( '/sites/all/themes/fldc17/js/vendor/game.js');
-      });
-
-      $(document, context).keyup(function (e) {
-        if (e.keyCode == 27) {
-          $('.z-header', context).removeClass('js-show-game');
-        }
-      });
-    }
-  };
-
 })(jQuery);
