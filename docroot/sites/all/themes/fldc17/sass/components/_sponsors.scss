@@ -45,45 +45,43 @@ $flip-effect: $normal;
       display: inline-block;
       height: 250px;
       padding: 0;
-      @include perspective(1000px);
-
-      &:hover a,
-      & a:focus {
-         transform: rotatex(180deg);
-      }
-
-
-      /* disable turn-around effect for IE */
-      .ie11 &:hover a,
-      .ie11 & a:focus  {
-         transform: rotatex(0deg);
-         @include backface-visibility(hidden);
-      }
     }
   }
 
   a {
     @include breakpoint($flip-effect) {
-      @include transform-style(preserve-3d);
-      @include transition(.3s);
+      @include perspective(1000px);
       position: absolute;
       top: 0;
       left: 0;
       height: 100%;
       width: 100%;
+
+      &:hover,
+      &:focus {
+        .wrap-front {
+          transform: rotatex(180deg);
+        }
+
+        .wrap-back {
+          transform: rotatex(0);
+        }
+      }
     }
   }
 
   .wrap-front,
   .wrap-back {
     @include breakpoint($flip-effect) {
+      @include transform-style(preserve-3d);
+      @include transition(all .3s);
+      @include backface-visibility(hidden);
       position: absolute;
       left: 0;
       top: 0;
       width: 100%;
       height: 100%;
       padding: 10px;
-      @include backface-visibility(hidden);
     }
   }
 
@@ -100,11 +98,7 @@ $flip-effect: $normal;
     @include breakpoint($flip-effect) {
       background-color: $blue;
       color: white;
-      transform: rotatex(180deg);
-    }
-
-    .ie11 & {
-      display: none; // hide from ie11
+      transform: rotatex(-180deg);
     }
 
     h3 {

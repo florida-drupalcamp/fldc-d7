@@ -2506,94 +2506,87 @@ html.js .form-autocomplete {
       .view-sponsors .wrap {
         display: inline-block;
         height: 250px;
-        padding: 0;
-        -moz-perspective: 1000px;
-        -webkit-perspective: 1000px;
-        perspective: 1000px;
-        /* disable turn-around effect for IE */ }
-        /* line 50, ../sass/components/_sponsors.scss */
-        .view-sponsors .wrap:hover a, .view-sponsors .wrap a:focus {
-          transform: rotatex(180deg); }
-        /* line 57, ../sass/components/_sponsors.scss */
-        .ie11 .view-sponsors .wrap:hover a, .ie11 .view-sponsors .wrap a:focus {
-          transform: rotatex(0deg);
-          -moz-backface-visibility: hidden;
-          -webkit-backface-visibility: hidden;
-          backface-visibility: hidden; } }
+        padding: 0; } }
   @media (min-width: 1200px) {
-    /* line 65, ../sass/components/_sponsors.scss */
+    /* line 51, ../sass/components/_sponsors.scss */
     .view-sponsors a {
-      -moz-transform-style: preserve-3d;
-      -webkit-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-      -moz-transition: 0.3s;
-      -o-transition: 0.3s;
-      -webkit-transition: 0.3s;
-      transition: 0.3s;
+      -moz-perspective: 1000px;
+      -webkit-perspective: 1000px;
+      perspective: 1000px;
       position: absolute;
       top: 0;
       left: 0;
       height: 100%;
-      width: 100%; } }
+      width: 100%; }
+      /* line 62, ../sass/components/_sponsors.scss */
+      .view-sponsors a:hover .wrap-front, .view-sponsors a:focus .wrap-front {
+        transform: rotatex(180deg); }
+      /* line 66, ../sass/components/_sponsors.scss */
+      .view-sponsors a:hover .wrap-back, .view-sponsors a:focus .wrap-back {
+        transform: rotatex(0); } }
   @media (min-width: 1200px) {
-    /* line 77, ../sass/components/_sponsors.scss */
+    /* line 73, ../sass/components/_sponsors.scss */
     .view-sponsors .wrap-front,
     .view-sponsors .wrap-back {
+      -moz-transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      -moz-backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
       position: absolute;
       left: 0;
       top: 0;
       width: 100%;
       height: 100%;
-      padding: 10px;
-      -moz-backface-visibility: hidden;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden; } }
-  /* line 90, ../sass/components/_sponsors.scss */
+      padding: 10px; } }
+  /* line 88, ../sass/components/_sponsors.scss */
   .view-sponsors .wrap-front {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #fafafa; }
-  /* line 97, ../sass/components/_sponsors.scss */
+  /* line 95, ../sass/components/_sponsors.scss */
   .view-sponsors .wrap-back {
     line-height: 1.1; }
     @media (min-width: 1200px) {
-      /* line 97, ../sass/components/_sponsors.scss */
+      /* line 95, ../sass/components/_sponsors.scss */
       .view-sponsors .wrap-back {
         background-color: #0E73AF;
         color: white;
-        transform: rotatex(180deg); } }
-    /* line 106, ../sass/components/_sponsors.scss */
-    .ie11 .view-sponsors .wrap-back {
-      display: none; }
-    /* line 110, ../sass/components/_sponsors.scss */
+        transform: rotatex(-180deg); } }
+    /* line 104, ../sass/components/_sponsors.scss */
     .view-sponsors .wrap-back h3 {
       font-size: 25px;
       color: inherit; }
 
-/* line 119, ../sass/components/_sponsors.scss */
+/* line 113, ../sass/components/_sponsors.scss */
 .sponsor-platinum {
   color: #666; }
 
-/* line 123, ../sass/components/_sponsors.scss */
+/* line 117, ../sass/components/_sponsors.scss */
 .sponsor-gold {
   color: #e6c200; }
 
-/* line 127, ../sass/components/_sponsors.scss */
+/* line 121, ../sass/components/_sponsors.scss */
 .sponsor-silver {
   color: #999; }
 
-/* line 131, ../sass/components/_sponsors.scss */
+/* line 125, ../sass/components/_sponsors.scss */
 .sponsor-bronze {
   color: #998100; }
 
 /* =============================================================================
     Sponsors Block
    ========================================================================== */
-/* line 141, ../sass/components/_sponsors.scss */
+/* line 135, ../sass/components/_sponsors.scss */
 #block-views-sponsors-block-block-1 ul {
   padding: 0; }
-/* line 145, ../sass/components/_sponsors.scss */
+/* line 139, ../sass/components/_sponsors.scss */
 #block-views-sponsors-block-block-1 li {
   padding: 10px;
   margin: 0;
