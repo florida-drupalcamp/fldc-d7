@@ -2429,11 +2429,17 @@ html.js .form-autocomplete {
   background-image: none; }
 
 /* line 12, ../sass/components/_node_add.scss */
-.page-node-add-session .tabledrag-toggle-weight-wrapper {
+.page-node-add-sess .tabledrag-toggle-weight-wrapper {
   display: none; }
+/* line 16, ../sass/components/_node_add.scss */
+.page-node-add-sess .cke_contents {
+  min-height: 400px !important; }
+/* line 20, ../sass/components/_node_add.scss */
+.page-node-add-sess .url-textfield {
+  visibility: hidden; }
 
-/* line 18, ../sass/components/_node_add.scss */
-#edit-field-speakers-und-add-more {
+/* line 28, ../sass/components/_node_add.scss */
+input.field-add-more-submit {
   font-size: 25px; }
 
 /* =============================================================================

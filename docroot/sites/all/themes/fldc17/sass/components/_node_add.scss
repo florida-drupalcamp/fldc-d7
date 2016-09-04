@@ -8,13 +8,23 @@ html.js .form-autocomplete {
 }
 
 // Add session pages
-.page-node-add-session {
+.page-node-add-sess {
 	.tabledrag-toggle-weight-wrapper {
 		display: none; // Hide the display row weights link
 	}
+
+  .cke_contents {
+    min-height: 400px !important; // Override inline styles
+  }
+
+  .url-textfield { // Honeypot field
+    visibility: hidden;
+  }
 }
 
-// Add another speaker button 
-#edit-field-speakers-und-add-more {
+
+
+// Add another speaker button
+input.field-add-more-submit {
 	font-size: 25px;
 }
