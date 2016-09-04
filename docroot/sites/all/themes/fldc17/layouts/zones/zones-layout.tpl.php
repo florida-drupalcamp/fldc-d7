@@ -21,7 +21,7 @@
                 <span class="date">February 18-19, 2017</span>
                 <span class="loc">Orlando, Florida</span>
               </h2>
-              <a target="_blank" class="button hero-button" href="https://www.eventbrite.com/e/florida-drupalcamp-2016-tickets-19970715949">Register Now</a>
+              <a target="_blank" class="button hero-button" href="https://www.eventbrite.com/e/florida-drupalcamp-2017-tickets-27509068364#tickets">Register Now</a>
               <button class="hero-game-teaser" aria-hidden="true">...or play a sweet game</button>
             </div>
 
