@@ -2465,128 +2465,145 @@ html.js .form-autocomplete {
 /* =============================================================================
     Sponsors (Front page, Sponsors page, and block)
    ========================================================================== */
-/* line 7, ../sass/components/_sponsors.scss */
-.view-sponsors {
-  transform: scale(0.8); }
-  /* line 11, ../sass/components/_sponsors.scss */
-  .view-sponsors ul {
-    padding: 0;
-    margin: 0;
-    text-align: center; }
-  /* line 17, ../sass/components/_sponsors.scss */
-  .view-sponsors.view-display-id-page_1 {
-    padding-top: 50px; }
-  /* line 21, ../sass/components/_sponsors.scss */
-  .view-sponsors h1, .view-sponsors .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block .view-sponsors h2, .view-sponsors .block--views-individual-sponsors-block .fieldset-legend, .block--views-individual-sponsors-block .view-sponsors .fieldset-legend, .view-sponsors .block--views-individual-sponsors-block .messages, .block--views-individual-sponsors-block .view-sponsors .messages, .view-sponsors .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-sponsors h1, .view-sponsors #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .view-sponsors h1, .view-sponsors .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name, .block--views-individual-sponsors-block .user-profile .view-sponsors .field--name-field-user-first-name, .view-sponsors .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .view-sponsors .field--name-field-user-first-name,
-  .view-sponsors .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name,
-  .block--views-individual-sponsors-block .user-profile .view-sponsors .field--name-field-user-last-name,
-  .view-sponsors .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name,
-  .user-profile .block--views-individual-sponsors-block .view-sponsors .field--name-field-user-last-name, .view-sponsors .block--views-individual-sponsors-block .attendee-name, .block--views-individual-sponsors-block .view-sponsors .attendee-name, .view-sponsors .view-schedule-items .legend-title, .view-schedule-items .view-sponsors .legend-title,
-  .view-sponsors .view-schedule-items .session-slot--title,
-  .view-schedule-items .view-sponsors .session-slot--title {
-    text-align: center; }
-  /* line 25, ../sass/components/_sponsors.scss */
-  .view-sponsors .wrap {
-    margin-bottom: 20px;
-    padding: 20px;
-    list-style: none;
-    position: relative;
-    width: 100%; }
-    /* line 32, ../sass/components/_sponsors.scss */
-    .view-sponsors .wrap img {
-      max-width: 100%;
-      max-height: 140px; }
-    @media (min-width: 700px) {
-      /* line 25, ../sass/components/_sponsors.scss */
-      .view-sponsors .wrap {
-        margin: 0 0 4px 0;
-        max-width: 24%; } }
-    @media (min-width: 1200px) {
-      /* line 25, ../sass/components/_sponsors.scss */
-      .view-sponsors .wrap {
-        display: inline-block;
-        height: 250px;
-        padding: 0; } }
+/* line 9, ../sass/components/_sponsors.scss */
+.view-sponsors ul {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center; }
   @media (min-width: 1200px) {
-    /* line 51, ../sass/components/_sponsors.scss */
-    .view-sponsors a {
-      -moz-perspective: 1000px;
-      -webkit-perspective: 1000px;
-      perspective: 1000px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%; }
-      /* line 62, ../sass/components/_sponsors.scss */
-      .view-sponsors a:hover .wrap-front, .view-sponsors a:focus .wrap-front {
-        transform: rotatex(180deg); }
-      /* line 66, ../sass/components/_sponsors.scss */
-      .view-sponsors a:hover .wrap-back, .view-sponsors a:focus .wrap-back {
-        transform: rotatex(0); } }
-  @media (min-width: 1200px) {
+    /* line 9, ../sass/components/_sponsors.scss */
+    .view-sponsors ul {
+      width: 80%; } }
+/* line 19, ../sass/components/_sponsors.scss */
+.view-sponsors.view-display-id-page_1 {
+  padding-top: 50px; }
+/* line 23, ../sass/components/_sponsors.scss */
+.view-sponsors h1, .view-sponsors .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block .view-sponsors h2, .view-sponsors .block--views-individual-sponsors-block .fieldset-legend, .block--views-individual-sponsors-block .view-sponsors .fieldset-legend, .view-sponsors .block--views-individual-sponsors-block .messages, .block--views-individual-sponsors-block .view-sponsors .messages, .view-sponsors .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .view-sponsors h1, .view-sponsors #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .view-sponsors h1, .view-sponsors .block--views-individual-sponsors-block .user-profile .field--name-field-user-first-name, .block--views-individual-sponsors-block .user-profile .view-sponsors .field--name-field-user-first-name, .view-sponsors .user-profile .block--views-individual-sponsors-block .field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .view-sponsors .field--name-field-user-first-name,
+.view-sponsors .block--views-individual-sponsors-block .user-profile .field--name-field-user-last-name,
+.block--views-individual-sponsors-block .user-profile .view-sponsors .field--name-field-user-last-name,
+.view-sponsors .user-profile .block--views-individual-sponsors-block .field--name-field-user-last-name,
+.user-profile .block--views-individual-sponsors-block .view-sponsors .field--name-field-user-last-name, .view-sponsors .block--views-individual-sponsors-block .attendee-name, .block--views-individual-sponsors-block .view-sponsors .attendee-name, .view-sponsors .view-schedule-items .legend-title, .view-schedule-items .view-sponsors .legend-title,
+.view-sponsors .view-schedule-items .session-slot--title,
+.view-schedule-items .view-sponsors .session-slot--title {
+  text-align: center; }
+/* line 27, ../sass/components/_sponsors.scss */
+.view-sponsors .wrap {
+  padding: 20px;
+  list-style: none;
+  position: relative;
+  width: 100%; }
+  /* line 33, ../sass/components/_sponsors.scss */
+  .view-sponsors .wrap img {
+    max-width: 60%;
+    max-height: 60%;
+    width: auto;
+    height: auto; }
+    @media (min-width: 700px) and (max-width: 1200px) {
+      /* line 33, ../sass/components/_sponsors.scss */
+      .view-sponsors .wrap img {
+        max-width: 90%;
+        max-height: 90%; } }
+  @media (min-width: 700px) {
+    /* line 27, ../sass/components/_sponsors.scss */
+    .view-sponsors .wrap {
+      display: inline-block;
+      margin: 0 0 4px 0;
+      max-width: 24%;
+      height: 0;
+      padding-top: 18%; } }
+@media (min-width: 700px) {
+  /* line 55, ../sass/components/_sponsors.scss */
+  .view-sponsors a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; } }
+@media (min-width: 1200px) {
+  /* line 55, ../sass/components/_sponsors.scss */
+  .view-sponsors a {
+    -moz-perspective: 1000px;
+    -webkit-perspective: 1000px;
+    perspective: 1000px; }
+    /* line 69, ../sass/components/_sponsors.scss */
+    .view-sponsors a:hover .wrap-front, .view-sponsors a:focus .wrap-front {
+      transform: rotatex(180deg); }
     /* line 73, ../sass/components/_sponsors.scss */
-    .view-sponsors .wrap-front,
-    .view-sponsors .wrap-back {
-      -moz-transform-style: preserve-3d;
-      -webkit-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-      -moz-transition: all 0.3s;
-      -o-transition: all 0.3s;
-      -webkit-transition: all 0.3s;
-      transition: all 0.3s;
-      -moz-backface-visibility: hidden;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      padding: 10px; } }
-  /* line 88, ../sass/components/_sponsors.scss */
-  .view-sponsors .wrap-front {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fafafa; }
-  /* line 95, ../sass/components/_sponsors.scss */
+    .view-sponsors a:hover .wrap-back, .view-sponsors a:focus .wrap-back {
+      transform: rotatex(0); } }
+@media (min-width: 700px) {
+  /* line 80, ../sass/components/_sponsors.scss */
+  .view-sponsors .wrap-front,
   .view-sponsors .wrap-back {
-    line-height: 1.1; }
-    @media (min-width: 1200px) {
-      /* line 95, ../sass/components/_sponsors.scss */
-      .view-sponsors .wrap-back {
-        background-color: #0E73AF;
-        color: white;
-        transform: rotatex(-180deg); } }
-    /* line 104, ../sass/components/_sponsors.scss */
-    .view-sponsors .wrap-back h3 {
-      font-size: 25px;
-      color: inherit; }
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px; } }
+@media (min-width: 1200px) {
+  /* line 80, ../sass/components/_sponsors.scss */
+  .view-sponsors .wrap-front,
+  .view-sponsors .wrap-back {
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; } }
+/* line 98, ../sass/components/_sponsors.scss */
+.view-sponsors .wrap-front {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (min-width: 700px) {
+    /* line 98, ../sass/components/_sponsors.scss */
+    .view-sponsors .wrap-front {
+      background-color: #fafafa; } }
+/* line 108, ../sass/components/_sponsors.scss */
+.view-sponsors .wrap-back {
+  display: none;
+  line-height: 1.2;
+  font-size: 13px; }
+  @media (min-width: 1200px) {
+    /* line 108, ../sass/components/_sponsors.scss */
+    .view-sponsors .wrap-back {
+      display: block;
+      background-color: #0E73AF;
+      color: white;
+      transform: rotatex(-180deg); } }
+  /* line 120, ../sass/components/_sponsors.scss */
+  .view-sponsors .wrap-back h3 {
+    font-size: 20px;
+    color: inherit; }
 
-/* line 113, ../sass/components/_sponsors.scss */
+/* line 129, ../sass/components/_sponsors.scss */
 .sponsor-platinum {
   color: #666; }
 
-/* line 117, ../sass/components/_sponsors.scss */
+/* line 133, ../sass/components/_sponsors.scss */
 .sponsor-gold {
   color: #e6c200; }
 
-/* line 121, ../sass/components/_sponsors.scss */
+/* line 137, ../sass/components/_sponsors.scss */
 .sponsor-silver {
   color: #999; }
 
-/* line 125, ../sass/components/_sponsors.scss */
+/* line 141, ../sass/components/_sponsors.scss */
 .sponsor-bronze {
   color: #998100; }
 
 /* =============================================================================
     Sponsors Block
    ========================================================================== */
-/* line 135, ../sass/components/_sponsors.scss */
+/* line 151, ../sass/components/_sponsors.scss */
 #block-views-sponsors-block-block-1 ul {
   padding: 0; }
-/* line 139, ../sass/components/_sponsors.scss */
+/* line 155, ../sass/components/_sponsors.scss */
 #block-views-sponsors-block-block-1 li {
   padding: 10px;
   margin: 0;

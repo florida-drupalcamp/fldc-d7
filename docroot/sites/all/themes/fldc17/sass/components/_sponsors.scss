@@ -2,16 +2,18 @@
     Sponsors (Front page, Sponsors page, and block)
    ========================================================================== */
 
-$flip-effect: $normal;
+$sponsor-flip-effect: $normal;
+$sponsor-mobile-transition: $tablet_narrow;
 
 .view-sponsors {
-  // Tricky sneak to shrink everything
-  transform: scale(0.8);
-
   ul {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
+
+    @include breakpoint($normal) {
+      width: 80%
+    }
   }
 
   &.view-display-id-page_1 {
@@ -23,39 +25,44 @@ $flip-effect: $normal;
   }
 
   .wrap {
-    margin-bottom: 20px;
     padding: 20px;
     list-style: none;
     position: relative;
     width: 100%;
 
     img {
-      max-width: 100%;
-      max-height: 140px;
+      max-width: 60%;
+      max-height: 60%;
+      width: auto;
+      height: auto;
+
+      @include breakpoint($tablet_narrow $normal) {
+        max-width: 90%;
+        max-height: 90%;
+      }
     }
 
 
-    @include breakpoint($tablet_narrow) {
+    @include breakpoint($sponsor-mobile-transition) {
+      display: inline-block;
       margin: 0 0 4px 0;
       max-width: 24%;
-    }
-
-
-    @include breakpoint($flip-effect) {
-      display: inline-block;
-      height: 250px;
-      padding: 0;
+      height: 0;
+      padding-top: 18%;
     }
   }
 
   a {
-    @include breakpoint($flip-effect) {
-      @include perspective(1000px);
+    @include breakpoint($sponsor-mobile-transition) {
       position: absolute;
       top: 0;
       left: 0;
       height: 100%;
       width: 100%;
+    }
+
+    @include breakpoint($sponsor-flip-effect) {
+      @include perspective(1000px);
 
       &:hover,
       &:focus {
@@ -72,10 +79,7 @@ $flip-effect: $normal;
 
   .wrap-front,
   .wrap-back {
-    @include breakpoint($flip-effect) {
-      @include transform-style(preserve-3d);
-      @include transition(all .3s);
-      @include backface-visibility(hidden);
+    @include breakpoint($sponsor-mobile-transition) {
       position: absolute;
       left: 0;
       top: 0;
@@ -83,26 +87,38 @@ $flip-effect: $normal;
       height: 100%;
       padding: 10px;
     }
+
+    @include breakpoint($sponsor-flip-effect) {
+      @include transform-style(preserve-3d);
+      @include transition(all .3s);
+      @include backface-visibility(hidden);
+    }
   }
 
   .wrap-front {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fafafa;
+
+    @include breakpoint($sponsor-mobile-transition) {
+      background-color: #fafafa;
+    }
   }
 
   .wrap-back {
-    line-height: 1.1;
+    display: none; // hide for mobile
+    line-height: 1.2;
+    font-size: 13px;
 
-    @include breakpoint($flip-effect) {
+    @include breakpoint($sponsor-flip-effect) {
+      display: block; // Show for desktop
       background-color: $blue;
       color: white;
       transform: rotatex(-180deg);
     }
 
     h3 {
-      font-size: 25px;
+      font-size: 20px;
       color: inherit;
     }
   }
