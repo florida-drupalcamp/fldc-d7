@@ -1265,33 +1265,66 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
 /* line 1, ../sass/components/_description_front.scss */
 .z-description {
   text-align: center;
-  font-size: 27px;
+  font-size: 20px;
   max-width: 750px;
   margin: 40px auto;
+  padding: 0 20px;
   color: #0E73AF;
   font-weight: lighter; }
   @media (min-width: 700px) {
     /* line 1, ../sass/components/_description_front.scss */
     .z-description {
-      padding-bottom: 80px; } }
+      padding-bottom: 80px;
+      font-size: 27px; } }
   @media (min-width: 1200px) {
     /* line 1, ../sass/components/_description_front.scss */
     .z-description {
       margin: 80px auto; } }
 
 /* =============================================================================
-    Exploding bubbles
+    Preface Region and featured speakers
    ========================================================================== */
-/* line 5, ../sass/components/_exploding_bubbles.scss */
-.explode-this-shit {
-  pointer-events: none;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+@media (min-width: 700px) {
+  /* line 6, ../sass/components/_featured_speakers.scss */
+  .zone.z-preface {
+    margin: 21% 0 0 0; } }
+/* line 12, ../sass/components/_featured_speakers.scss */
+.zone.z-preface .l-region--preface {
+  padding: 0; }
+  @media (min-width: 700px) {
+    /* line 12, ../sass/components/_featured_speakers.scss */
+    .zone.z-preface .l-region--preface {
+      margin: -28% 0 10px 0; } }
+/* line 20, ../sass/components/_featured_speakers.scss */
+.zone.z-preface ul {
+  margin: 0;
+  padding: 0; }
+  @media (min-width: 700px) {
+    /* line 20, ../sass/components/_featured_speakers.scss */
+    .zone.z-preface ul {
+      display: flex;
+      justify-content: space-between; } }
+/* line 30, ../sass/components/_featured_speakers.scss */
+.zone.z-preface .speaker {
+  margin: 40px 0;
+  padding: 0;
+  list-style-type: none;
+  color: white; }
+  @media (min-width: 700px) {
+    /* line 30, ../sass/components/_featured_speakers.scss */
+    .zone.z-preface .speaker {
+      margin: 0;
+      width: 30%; } }
+/* line 42, ../sass/components/_featured_speakers.scss */
+.zone.z-preface .speaker-name {
+  color: inherit; }
+/* line 46, ../sass/components/_featured_speakers.scss */
+.zone.z-preface .speaker-bio {
+  font-size: 16px; }
+  @media (min-width: 1200px) {
+    /* line 46, ../sass/components/_featured_speakers.scss */
+    .zone.z-preface .speaker-bio {
+      font-size: 20px; } }
 
 /* =============================================================================
     Flag buttons
@@ -2418,51 +2451,6 @@ html.js .form-autocomplete {
       font-size: 2em; } }
 
 /* =============================================================================
-    Preface Region and featured speakers
-   ========================================================================== */
-@media (min-width: 700px) {
-  /* line 6, ../sass/components/_preface.scss */
-  .zone.z-preface {
-    margin: 21% 0 0 0; } }
-/* line 12, ../sass/components/_preface.scss */
-.zone.z-preface .l-region--preface {
-  padding: 0; }
-  @media (min-width: 700px) {
-    /* line 12, ../sass/components/_preface.scss */
-    .zone.z-preface .l-region--preface {
-      margin: -28% 0 10px 0; } }
-/* line 20, ../sass/components/_preface.scss */
-.zone.z-preface ul {
-  margin: 0;
-  padding: 0; }
-  @media (min-width: 700px) {
-    /* line 20, ../sass/components/_preface.scss */
-    .zone.z-preface ul {
-      display: flex;
-      justify-content: space-between; } }
-/* line 30, ../sass/components/_preface.scss */
-.zone.z-preface .speaker {
-  margin: 40px 0;
-  padding: 0;
-  list-style-type: none;
-  color: white; }
-  @media (min-width: 700px) {
-    /* line 30, ../sass/components/_preface.scss */
-    .zone.z-preface .speaker {
-      margin: 0;
-      width: 30%; } }
-/* line 42, ../sass/components/_preface.scss */
-.zone.z-preface .speaker-name {
-  color: inherit; }
-/* line 46, ../sass/components/_preface.scss */
-.zone.z-preface .speaker-bio {
-  font-size: 16px; }
-  @media (min-width: 1200px) {
-    /* line 46, ../sass/components/_preface.scss */
-    .zone.z-preface .speaker-bio {
-      font-size: 20px; } }
-
-/* =============================================================================
     Sponsors (Front page, Sponsors page, and block)
    ========================================================================== */
 /* line 9, ../sass/components/_sponsors.scss */
@@ -2495,7 +2483,7 @@ html.js .form-autocomplete {
   /* line 33, ../sass/components/_sponsors.scss */
   .view-sponsors .wrap img {
     max-width: 60%;
-    max-height: 60%;
+    max-height: 140px;
     width: auto;
     height: auto; }
     @media (min-width: 700px) and (max-width: 1200px) {

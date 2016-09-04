@@ -1,13 +1,15 @@
 .z-description {
   text-align: center;
-  font-size: 27px;
+  font-size: 20px;
   max-width: 750px;
   margin: 40px auto;
+  padding: 0 20px;
   color: $blue;
   font-weight: lighter;
 
   @include breakpoint($tablet_narrow) {
     padding-bottom: 80px;
+    font-size: 27px;
   }
 
   @include breakpoint($normal) {
