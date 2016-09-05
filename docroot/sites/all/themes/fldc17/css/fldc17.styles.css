@@ -1517,13 +1517,17 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
     min-height: 500px;
     max-height: 700px; }
     /* line 16, ../sass/components/_front_hero.scss */
-    .front .z-header video {
+    .front .z-header video,
+    .front .z-header .video-wrapper {
       display: none; } }
-/* line 21, ../sass/components/_front_hero.scss */
+/* line 22, ../sass/components/_front_hero.scss */
 .front .z-header video {
   width: 100%; }
-
 /* line 26, ../sass/components/_front_hero.scss */
+.front .z-header .video-wrapper {
+  background: #0E73AF; }
+
+/* line 32, ../sass/components/_front_hero.scss */
 .hero-teaser {
   text-align: center;
   padding: 0;
@@ -1540,23 +1544,23 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
   @media (min-width: 900px) {
-    /* line 26, ../sass/components/_front_hero.scss */
+    /* line 32, ../sass/components/_front_hero.scss */
     .hero-teaser {
       background: transparent; } }
   @media (min-width: 700px) {
-    /* line 26, ../sass/components/_front_hero.scss */
+    /* line 32, ../sass/components/_front_hero.scss */
     .hero-teaser {
       width: 70%; } }
   @media (min-width: 900px) {
-    /* line 26, ../sass/components/_front_hero.scss */
+    /* line 32, ../sass/components/_front_hero.scss */
     .hero-teaser {
       width: 50%; } }
   @media (min-width: 900px) {
-    /* line 49, ../sass/components/_front_hero.scss */
+    /* line 55, ../sass/components/_front_hero.scss */
     .js-show-game .hero-teaser {
       display: none; } }
 
-/* line 56, ../sass/components/_front_hero.scss */
+/* line 62, ../sass/components/_front_hero.scss */
 .hero-game-teaser {
   display: block;
   font-size: 14px;
@@ -1568,15 +1572,15 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
   border: 0;
   background-color: transparent; }
   @media (max-width: 900px) {
-    /* line 56, ../sass/components/_front_hero.scss */
+    /* line 62, ../sass/components/_front_hero.scss */
     .hero-game-teaser {
       display: none; } }
-  /* line 71, ../sass/components/_front_hero.scss */
+  /* line 77, ../sass/components/_front_hero.scss */
   .hero-game-teaser:hover, .hero-game-teaser:focus {
     color: white;
     background: transparent; }
 
-/* line 78, ../sass/components/_front_hero.scss */
+/* line 84, ../sass/components/_front_hero.scss */
 .hero-title {
   line-height: 1.2;
   display: inline-block;
@@ -1585,22 +1589,22 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
   margin-top: 0;
   border-bottom: solid 1px white;
   -webkit-text-stroke: 1px white; }
-  /* line 87, ../sass/components/_front_hero.scss */
+  /* line 93, ../sass/components/_front_hero.scss */
   .hero-title a {
     color: inherit; }
-    /* line 90, ../sass/components/_front_hero.scss */
+    /* line 96, ../sass/components/_front_hero.scss */
     .hero-title a:link, .hero-title a:visited {
       color: inherit; }
   @media (min-width: 1200px) {
-    /* line 78, ../sass/components/_front_hero.scss */
+    /* line 84, ../sass/components/_front_hero.scss */
     .hero-title {
       font-size: 60px; } }
   @media (min-width: 1700px) {
-    /* line 78, ../sass/components/_front_hero.scss */
+    /* line 84, ../sass/components/_front_hero.scss */
     .hero-title {
       font-size: 70px; } }
 
-/* line 105, ../sass/components/_front_hero.scss */
+/* line 111, ../sass/components/_front_hero.scss */
 h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
 #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
 .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
@@ -1610,62 +1614,62 @@ h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-
   line-height: 1.2;
   color: #FCB040; }
   @media (min-width: 470px) {
-    /* line 105, ../sass/components/_front_hero.scss */
+    /* line 111, ../sass/components/_front_hero.scss */
     h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
     #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
     .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
     .user-profile .field--name-field-user-last-name, .attendee-name {
       line-height: 1.5; } }
   @media (min-width: 1700px) {
-    /* line 105, ../sass/components/_front_hero.scss */
+    /* line 111, ../sass/components/_front_hero.scss */
     h2, .fieldset-legend, .messages, #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .legend-title,
     #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
     .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title, .user-profile .field--name-field-user-first-name,
     .user-profile .field--name-field-user-last-name, .attendee-name {
       font-size: 40px; } }
 
-/* line 120, ../sass/components/_front_hero.scss */
+/* line 126, ../sass/components/_front_hero.scss */
 a.hero-button {
   padding: 20px;
   text-transform: uppercase;
   text-align: center;
   font-size: 40px; }
   @media (min-width: 700px) {
-    /* line 120, ../sass/components/_front_hero.scss */
+    /* line 126, ../sass/components/_front_hero.scss */
     a.hero-button {
       font-size: 50px; } }
 
-/* line 131, ../sass/components/_front_hero.scss */
+/* line 137, ../sass/components/_front_hero.scss */
 .date {
   display: block;
   font-size: 35px; }
   @media (min-width: 470px) {
-    /* line 131, ../sass/components/_front_hero.scss */
+    /* line 137, ../sass/components/_front_hero.scss */
     .date {
       display: inline;
       font-size: 30px; }
-      /* line 139, ../sass/components/_front_hero.scss */
+      /* line 145, ../sass/components/_front_hero.scss */
       .date:after {
         content: " | "; } }
   @media (min-width: 1700px) {
-    /* line 131, ../sass/components/_front_hero.scss */
+    /* line 137, ../sass/components/_front_hero.scss */
     .date {
       font-size: inherit; } }
 
-/* line 149, ../sass/components/_front_hero.scss */
+/* line 155, ../sass/components/_front_hero.scss */
 .loc {
   display: block; }
   @media (min-width: 470px) {
-    /* line 149, ../sass/components/_front_hero.scss */
+    /* line 155, ../sass/components/_front_hero.scss */
     .loc {
       display: inline; } }
 
-/* line 158, ../sass/components/_front_hero.scss */
+/* line 164, ../sass/components/_front_hero.scss */
 .icon {
   color: #fff;
   font-size: 50px; }
 
-/* line 163, ../sass/components/_front_hero.scss */
+/* line 169, ../sass/components/_front_hero.scss */
 .icon:hover {
   color: #E4D400; }
 

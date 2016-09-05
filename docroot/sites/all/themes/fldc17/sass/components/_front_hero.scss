@@ -13,13 +13,19 @@ $video-break: $tablet_wide;
     min-height: 500px;
     max-height: 700px;
 
-    video {
+    video,
+    .video-wrapper {
       display: none;
     }
   }
 
   video {
     width: 100%;
+  }
+
+  .video-wrapper {
+    // Load a background color so CTA can be seen without video
+    background: $blue;
   }
 }
 
