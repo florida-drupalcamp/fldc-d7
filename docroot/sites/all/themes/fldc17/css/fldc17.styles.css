@@ -1131,7 +1131,7 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
   .view-schedule-items .site-name.session-slot--title a {
     display: inline-block;
     text-indent: -9999px;
-    background-image: url('../images/drupal-diver_small.png?1472783182');
+    background-image: url('../images/drupal-diver_small.png?1473038591');
     width: 90px;
     height: 80px;
     background-size: contain;
@@ -1295,34 +1295,46 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
     /* line 12, ../sass/components/_featured_speakers.scss */
     .zone.z-preface .l-region--preface {
       margin: -28% 0 10px 0; } }
-/* line 20, ../sass/components/_featured_speakers.scss */
+@media (max-width: 700px) {
+  /* line 20, ../sass/components/_featured_speakers.scss */
+  .zone.z-preface h2, .zone.z-preface .fieldset-legend, .zone.z-preface .messages, .zone.z-preface #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .zone.z-preface h1, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .zone.z-preface h2, .zone.z-preface .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .zone.z-preface h2, .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .legend-title, .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .legend-title,
+  .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+  #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .session-slot--title,
+  .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
+  .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .session-slot--title, .zone.z-preface .user-profile .field--name-field-user-first-name, .user-profile .zone.z-preface .field--name-field-user-first-name,
+  .zone.z-preface .user-profile .field--name-field-user-last-name,
+  .user-profile .zone.z-preface .field--name-field-user-last-name, .zone.z-preface .attendee-name {
+    color: white;
+    padding: 0 20px; } }
+/* line 27, ../sass/components/_featured_speakers.scss */
 .zone.z-preface ul {
   margin: 0;
   padding: 0; }
   @media (min-width: 700px) {
-    /* line 20, ../sass/components/_featured_speakers.scss */
+    /* line 27, ../sass/components/_featured_speakers.scss */
     .zone.z-preface ul {
       display: flex;
       justify-content: space-between; } }
-/* line 30, ../sass/components/_featured_speakers.scss */
+/* line 37, ../sass/components/_featured_speakers.scss */
 .zone.z-preface .speaker {
   margin: 40px 0;
-  padding: 0;
+  padding: 0 20px;
   list-style-type: none;
   color: white; }
   @media (min-width: 700px) {
-    /* line 30, ../sass/components/_featured_speakers.scss */
+    /* line 37, ../sass/components/_featured_speakers.scss */
     .zone.z-preface .speaker {
       margin: 0;
+      padding: 0;
       width: 30%; } }
-/* line 42, ../sass/components/_featured_speakers.scss */
+/* line 50, ../sass/components/_featured_speakers.scss */
 .zone.z-preface .speaker-name {
   color: inherit; }
-/* line 46, ../sass/components/_featured_speakers.scss */
+/* line 54, ../sass/components/_featured_speakers.scss */
 .zone.z-preface .speaker-bio {
   font-size: 16px; }
   @media (min-width: 1200px) {
-    /* line 46, ../sass/components/_featured_speakers.scss */
+    /* line 54, ../sass/components/_featured_speakers.scss */
     .zone.z-preface .speaker-bio {
       font-size: 20px; } }
 

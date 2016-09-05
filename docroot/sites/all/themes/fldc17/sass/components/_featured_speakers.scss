@@ -17,6 +17,13 @@ $preface-break: $tablet_narrow;
     }
   }
 
+  h2 {
+    @include breakpoint(max-width $preface-break) {
+      color: white;
+      padding: 0 20px;
+    }
+  }
+
   ul {
     margin: 0;
     padding: 0;
@@ -29,12 +36,13 @@ $preface-break: $tablet_narrow;
 
   .speaker {
     margin: 40px 0;
-    padding: 0;
+    padding: 0 20px;
     list-style-type: none;
     color: white;
 
     @include breakpoint($preface-break) {
       margin: 0;
+      padding: 0;
       width: 30%;
     }
   }
