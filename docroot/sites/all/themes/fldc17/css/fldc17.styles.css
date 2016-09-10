@@ -3231,50 +3231,52 @@ div.password-confirm {
     Sessions Views (Accepted and Proposed)
    ========================================================================== */
 /* line 6, ../sass/components/_view_sessions.scss */
-.view-session-list .propose-session {
+.view-session-list .view-header {
   background-color: #fafafa;
-  font-size: 35px;
   padding: 20px;
   margin-top: 10px; }
   @media (min-width: 700px) {
     /* line 6, ../sass/components/_view_sessions.scss */
-    .view-session-list .propose-session {
+    .view-session-list .view-header {
       margin-top: 0; } }
 /* line 16, ../sass/components/_view_sessions.scss */
+.view-session-list .propose-session {
+  font-size: 35px; }
+/* line 21, ../sass/components/_view_sessions.scss */
 .view-session-list .views-exposed-form input[type="submit"] {
   font-size: 25px; }
 @media (min-width: 700px) {
-  /* line 20, ../sass/components/_view_sessions.scss */
+  /* line 26, ../sass/components/_view_sessions.scss */
   .view-session-list .views-exposed-widget {
     max-width: 33%; } }
-/* line 25, ../sass/components/_view_sessions.scss */
+/* line 32, ../sass/components/_view_sessions.scss */
 .view-session-list .views-row {
   margin-bottom: 50px; }
-  /* line 27, ../sass/components/_view_sessions.scss */
+  /* line 34, ../sass/components/_view_sessions.scss */
   .view-session-list .views-row > .speaker,
   .view-session-list .views-row > .experience,
   .view-session-list .views-row > .track {
     font-size: 1.2em; }
-    /* line 31, ../sass/components/_view_sessions.scss */
+    /* line 38, ../sass/components/_view_sessions.scss */
     .view-session-list .views-row > .speaker:before,
     .view-session-list .views-row > .experience:before,
     .view-session-list .views-row > .track:before {
       font-family: FontAwesome;
       display: inline-block;
       width: 20px; }
-  /* line 38, ../sass/components/_view_sessions.scss */
+  /* line 45, ../sass/components/_view_sessions.scss */
   .view-session-list .views-row > .speaker:before {
     content: "\f007"; }
-  /* line 44, ../sass/components/_view_sessions.scss */
+  /* line 51, ../sass/components/_view_sessions.scss */
   .view-session-list .views-row > .experience:before {
     content: "\f135"; }
-  /* line 50, ../sass/components/_view_sessions.scss */
+  /* line 57, ../sass/components/_view_sessions.scss */
   .view-session-list .views-row > .track:before {
     content: "\f02e"; }
-  /* line 55, ../sass/components/_view_sessions.scss */
+  /* line 62, ../sass/components/_view_sessions.scss */
   .view-session-list .views-row > .views-field-body {
     margin: 20px 0; }
-/* line 61, ../sass/components/_view_sessions.scss */
+/* line 68, ../sass/components/_view_sessions.scss */
 .view-session-list .expandable .views-field-body {
   max-height: 200px;
   overflow: hidden;
@@ -3283,7 +3285,7 @@ div.password-confirm {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
-  /* line 66, ../sass/components/_view_sessions.scss */
+  /* line 73, ../sass/components/_view_sessions.scss */
   .view-session-list .expandable .views-field-body:after {
     background: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0));
     display: block;
@@ -3293,13 +3295,13 @@ div.password-confirm {
     bottom: 0;
     width: 100%;
     content: ""; }
-/* line 77, ../sass/components/_view_sessions.scss */
+/* line 84, ../sass/components/_view_sessions.scss */
 .view-session-list .expandable-expanded .views-field-body {
   max-height: 1000px; }
-  /* line 79, ../sass/components/_view_sessions.scss */
+  /* line 86, ../sass/components/_view_sessions.scss */
   .view-session-list .expandable-expanded .views-field-body:after {
     background: none; }
-/* line 83, ../sass/components/_view_sessions.scss */
+/* line 90, ../sass/components/_view_sessions.scss */
 .view-session-list .read-more {
   cursor: pointer;
   font-size: 25px;
@@ -3307,25 +3309,25 @@ div.password-confirm {
   text-align: center;
   max-width: 175px;
   margin: 0 auto; }
-  /* line 91, ../sass/components/_view_sessions.scss */
+  /* line 98, ../sass/components/_view_sessions.scss */
   .view-session-list .read-more:before {
     font-family: FontAwesome;
     content: "\f078";
     display: inline-block;
     margin-right: 10px; }
-  /* line 97, ../sass/components/_view_sessions.scss */
+  /* line 104, ../sass/components/_view_sessions.scss */
   .view-session-list .read-more:after {
     display: inline;
     content: "Read More"; }
-  /* line 101, ../sass/components/_view_sessions.scss */
+  /* line 108, ../sass/components/_view_sessions.scss */
   .view-session-list .read-more.read-more-processed:before {
     content: "\f077"; }
-  /* line 104, ../sass/components/_view_sessions.scss */
+  /* line 111, ../sass/components/_view_sessions.scss */
   .view-session-list .read-more.read-more-processed:after {
     display: inline;
     content: "Read Less"; }
   @media (min-width: 700px) {
-    /* line 83, ../sass/components/_view_sessions.scss */
+    /* line 90, ../sass/components/_view_sessions.scss */
     .view-session-list .read-more {
       display: inline-block;
       margin: 0;

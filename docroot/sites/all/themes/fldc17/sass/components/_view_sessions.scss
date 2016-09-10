@@ -3,25 +3,32 @@
    ========================================================================== */
 
 .view-session-list {
-	.propose-session {
+  .view-header {
     background-color: #fafafa;
+    padding: 20px;
+    margin-top: 10px;
+
+    @include breakpoint($tablet_narrow) {
+      margin-top: 0;
+    }
+  }
+
+	.propose-session {
 		font-size: 35px;
-		padding: 20px;
-		margin-top: 10px;
-		@include breakpoint($tablet_narrow) {
-			margin-top: 0;
-		}
 	}
+
 	.views-exposed-form {
 		input[type="submit"] {
 			font-size: 25px;
 		}
 	}
+
 	.views-exposed-widget {
 		@include breakpoint($tablet_narrow) {
 			max-width: 33%;
 		}
 	}
+
 	.views-row {
 		margin-bottom: 50px;
 		> .speaker,
