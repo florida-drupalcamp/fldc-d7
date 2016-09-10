@@ -63,18 +63,23 @@
 	}
 	.submit-session-access-denied & {
 		background-color: $yellow;
-		text-indent: -9999px;
 		position: relative;
-		&:before {
-			position: absolute;
-			text-indent: 0;
-			left: 20px;
-		}
-		&:after {
-			content: "Heyo! Please create an account to submit a session.";
-			position: absolute;
-			left: 110px;
-			text-indent: 0;
-		}
+
+    @include breakpoint($tablet_wide) {
+      text-indent: -9999px;
+
+  		&:before {
+  			position: absolute;
+  			text-indent: 0;
+  			left: 20px;
+  		}
+
+  		&:after {
+  			content: "Please create an account to submit a session.";
+  			position: absolute;
+  			left: 110px;
+  			text-indent: 0;
+  		}
+    }
 	}
 }

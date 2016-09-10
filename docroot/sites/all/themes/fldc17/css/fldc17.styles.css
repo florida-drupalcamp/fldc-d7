@@ -2091,21 +2091,25 @@ a.hero-button {
   .submit-session-access-denied .messages--error, .submit-session-access-denied
   .messages.error {
     background-color: #E4D400;
-    text-indent: -9999px;
     position: relative; }
-    /* line 68, ../sass/components/_messages.scss */
-    .submit-session-access-denied .messages--error:before, .submit-session-access-denied
-    .messages.error:before {
-      position: absolute;
-      text-indent: 0;
-      left: 20px; }
-    /* line 73, ../sass/components/_messages.scss */
-    .submit-session-access-denied .messages--error:after, .submit-session-access-denied
-    .messages.error:after {
-      content: "Heyo! Please create an account to submit a session.";
-      position: absolute;
-      left: 110px;
-      text-indent: 0; }
+    @media (min-width: 900px) {
+      /* line 64, ../sass/components/_messages.scss */
+      .submit-session-access-denied .messages--error, .submit-session-access-denied
+      .messages.error {
+        text-indent: -9999px; }
+        /* line 71, ../sass/components/_messages.scss */
+        .submit-session-access-denied .messages--error:before, .submit-session-access-denied
+        .messages.error:before {
+          position: absolute;
+          text-indent: 0;
+          left: 20px; }
+        /* line 77, ../sass/components/_messages.scss */
+        .submit-session-access-denied .messages--error:after, .submit-session-access-denied
+        .messages.error:after {
+          content: "Please create an account to submit a session.";
+          position: absolute;
+          left: 110px;
+          text-indent: 0; } }
 
 /* =============================================================================
     Primary Navigation
