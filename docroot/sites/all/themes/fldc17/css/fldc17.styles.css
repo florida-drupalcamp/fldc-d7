@@ -3232,48 +3232,49 @@ div.password-confirm {
    ========================================================================== */
 /* line 6, ../sass/components/_view_sessions.scss */
 .view-session-list .propose-session {
-  font-size: 25px;
-  padding: 10px 20px;
+  background-color: #fafafa;
+  font-size: 35px;
+  padding: 20px;
   margin-top: 10px; }
   @media (min-width: 700px) {
     /* line 6, ../sass/components/_view_sessions.scss */
     .view-session-list .propose-session {
       margin-top: 0; } }
-/* line 15, ../sass/components/_view_sessions.scss */
+/* line 16, ../sass/components/_view_sessions.scss */
 .view-session-list .views-exposed-form input[type="submit"] {
   font-size: 25px; }
 @media (min-width: 700px) {
-  /* line 19, ../sass/components/_view_sessions.scss */
+  /* line 20, ../sass/components/_view_sessions.scss */
   .view-session-list .views-exposed-widget {
     max-width: 33%; } }
-/* line 24, ../sass/components/_view_sessions.scss */
+/* line 25, ../sass/components/_view_sessions.scss */
 .view-session-list .views-row {
   margin-bottom: 50px; }
-  /* line 26, ../sass/components/_view_sessions.scss */
+  /* line 27, ../sass/components/_view_sessions.scss */
   .view-session-list .views-row > .speaker,
   .view-session-list .views-row > .experience,
   .view-session-list .views-row > .track {
     font-size: 1.2em; }
-    /* line 30, ../sass/components/_view_sessions.scss */
+    /* line 31, ../sass/components/_view_sessions.scss */
     .view-session-list .views-row > .speaker:before,
     .view-session-list .views-row > .experience:before,
     .view-session-list .views-row > .track:before {
       font-family: FontAwesome;
       display: inline-block;
       width: 20px; }
-  /* line 37, ../sass/components/_view_sessions.scss */
+  /* line 38, ../sass/components/_view_sessions.scss */
   .view-session-list .views-row > .speaker:before {
     content: "\f007"; }
-  /* line 43, ../sass/components/_view_sessions.scss */
+  /* line 44, ../sass/components/_view_sessions.scss */
   .view-session-list .views-row > .experience:before {
     content: "\f135"; }
-  /* line 49, ../sass/components/_view_sessions.scss */
+  /* line 50, ../sass/components/_view_sessions.scss */
   .view-session-list .views-row > .track:before {
     content: "\f02e"; }
-  /* line 54, ../sass/components/_view_sessions.scss */
+  /* line 55, ../sass/components/_view_sessions.scss */
   .view-session-list .views-row > .views-field-body {
     margin: 20px 0; }
-/* line 60, ../sass/components/_view_sessions.scss */
+/* line 61, ../sass/components/_view_sessions.scss */
 .view-session-list .expandable .views-field-body {
   max-height: 200px;
   overflow: hidden;
@@ -3282,7 +3283,7 @@ div.password-confirm {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
-  /* line 65, ../sass/components/_view_sessions.scss */
+  /* line 66, ../sass/components/_view_sessions.scss */
   .view-session-list .expandable .views-field-body:after {
     background: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0));
     display: block;
@@ -3292,13 +3293,13 @@ div.password-confirm {
     bottom: 0;
     width: 100%;
     content: ""; }
-/* line 76, ../sass/components/_view_sessions.scss */
+/* line 77, ../sass/components/_view_sessions.scss */
 .view-session-list .expandable-expanded .views-field-body {
   max-height: 1000px; }
-  /* line 78, ../sass/components/_view_sessions.scss */
+  /* line 79, ../sass/components/_view_sessions.scss */
   .view-session-list .expandable-expanded .views-field-body:after {
     background: none; }
-/* line 82, ../sass/components/_view_sessions.scss */
+/* line 83, ../sass/components/_view_sessions.scss */
 .view-session-list .read-more {
   cursor: pointer;
   font-size: 25px;
@@ -3306,25 +3307,25 @@ div.password-confirm {
   text-align: center;
   max-width: 175px;
   margin: 0 auto; }
-  /* line 90, ../sass/components/_view_sessions.scss */
+  /* line 91, ../sass/components/_view_sessions.scss */
   .view-session-list .read-more:before {
     font-family: FontAwesome;
     content: "\f078";
     display: inline-block;
     margin-right: 10px; }
-  /* line 96, ../sass/components/_view_sessions.scss */
+  /* line 97, ../sass/components/_view_sessions.scss */
   .view-session-list .read-more:after {
     display: inline;
     content: "Read More"; }
-  /* line 100, ../sass/components/_view_sessions.scss */
+  /* line 101, ../sass/components/_view_sessions.scss */
   .view-session-list .read-more.read-more-processed:before {
     content: "\f077"; }
-  /* line 103, ../sass/components/_view_sessions.scss */
+  /* line 104, ../sass/components/_view_sessions.scss */
   .view-session-list .read-more.read-more-processed:after {
     display: inline;
     content: "Read Less"; }
   @media (min-width: 700px) {
-    /* line 82, ../sass/components/_view_sessions.scss */
+    /* line 83, ../sass/components/_view_sessions.scss */
     .view-session-list .read-more {
       display: inline-block;
       margin: 0;
