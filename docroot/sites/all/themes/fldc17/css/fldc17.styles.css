@@ -560,6 +560,10 @@ fieldset {
     background: #0E73AF;
     color: white; }
 
+/* line 136, ../sass/base/_forms.scss */
+.url-textfield {
+  display: none; }
+
 /* =============================================================================
     Media default styles
    ========================================================================== */
@@ -2454,11 +2458,8 @@ html.js .form-autocomplete {
 /* line 16, ../sass/components/_node_add.scss */
 .page-node-add-sess .cke_contents {
   min-height: 400px !important; }
-/* line 20, ../sass/components/_node_add.scss */
-.page-node-add-sess .url-textfield {
-  visibility: hidden; }
 
-/* line 28, ../sass/components/_node_add.scss */
+/* line 22, ../sass/components/_node_add.scss */
 input.field-add-more-submit {
   font-size: 25px; }
 
