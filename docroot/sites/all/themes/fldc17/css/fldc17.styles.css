@@ -1187,28 +1187,12 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
     .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:hover, .block--views-individual-sponsors-block .site-name.attendee-name a:hover, .view-schedule-items .site-name.legend-title a:hover,
     .view-schedule-items .site-name.session-slot--title a:hover {
       color: #fdc572; }
-  @media (min-width: 700px) {
-    /* line 96, ../sass/components/_branding.scss */
-    .front h1.site-name a, .front .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .front h2.site-name a, .front .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .front .site-name.fieldset-legend a, .front .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block .front .site-name.messages a, .front .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .front h1.site-name a, .front #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .front h1.site-name a, .front .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .block--views-individual-sponsors-block .user-profile .front .site-name.field--name-field-user-first-name a, .front .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .front .site-name.field--name-field-user-first-name a,
-    .front .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
-    .block--views-individual-sponsors-block .user-profile .front .site-name.field--name-field-user-last-name a,
-    .front .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a,
-    .user-profile .block--views-individual-sponsors-block .front .site-name.field--name-field-user-last-name a, .front .block--views-individual-sponsors-block .site-name.attendee-name a, .block--views-individual-sponsors-block .front .site-name.attendee-name a, .front .view-schedule-items .site-name.legend-title a, .view-schedule-items .front .site-name.legend-title a,
-    .front .view-schedule-items .site-name.session-slot--title a,
-    .view-schedule-items .front .site-name.session-slot--title a {
-      margin: 0;
-      text-indent: 0;
-      background-image: none;
-      width: auto;
-      height: auto;
-      display: inline;
-      left: 0; } }
 
-/* line 110, ../sass/components/_branding.scss */
+/* line 96, ../sass/components/_branding.scss */
 .site-logo {
   display: none; }
   @media (min-width: 700px) {
-    /* line 110, ../sass/components/_branding.scss */
+    /* line 96, ../sass/components/_branding.scss */
     .site-logo {
       display: inline-block;
       position: relative;
@@ -1219,7 +1203,7 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       -webkit-transform: translatex(-50%);
       transform: translatex(-50%); } }
   @media (min-width: 900px) {
-    /* line 110, ../sass/components/_branding.scss */
+    /* line 96, ../sass/components/_branding.scss */
     .site-logo {
       position: absolute;
       top: 50%;
@@ -1231,12 +1215,12 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       width: 40%;
       max-width: 550px; } }
   @media (min-width: 1200px) {
-    /* line 110, ../sass/components/_branding.scss */
+    /* line 96, ../sass/components/_branding.scss */
     .site-logo {
       left: 0;
       width: 45%; } }
   @media (min-width: 1700px) {
-    /* line 110, ../sass/components/_branding.scss */
+    /* line 96, ../sass/components/_branding.scss */
     .site-logo {
       width: 100%; } }
 

@@ -91,20 +91,6 @@ h1.site-name {
       color: lighten($orange, 10%);
     }
   }
-
-  .front & {
-    a {
-      @include breakpoint($tablet_narrow) {
-        margin: 0;
-        text-indent: 0;
-        background-image: none;
-        width: auto;
-        height: auto;
-        display: inline;
-        left: 0;
-      }
-    }
-  }
 }
 
 .site-logo {
