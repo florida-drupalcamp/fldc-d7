@@ -56,6 +56,16 @@ DirectoryIndex index.php index.html index.htm
 <IfModule mod_rewrite.c>
   RewriteEngine on
 
+  # From Acquia
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteCond %{HTTP_HOST} ^(www\.)?fldrupal\.camp$
+  RewriteRule ^ https://www.fldrupal.camp%{REQUEST_URI} [L,R=301]
+
+  #Note: This does not work with Firefox, it won't redirect fldrupal.camp properly
+  #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
   # if you enable "www." stripping or enforcement, in order to ensure that
   # you don't bounce between http and https.
@@ -141,9 +151,7 @@ DirectoryIndex index.php index.html index.htm
     </FilesMatch>
   </IfModule>
 </IfModule>
-
-# Add headers to all responses.
-<IfModule mod_headers.c>
-  # Disable content sniffing, since it's an attack vector.
-  Header always set X-Content-Type-Options nosniff
+<IfModule mod_deflate.c>
+  # Compress SVG's
+  AddOutputFilterByType DEFLATE image/svg+xml
 </IfModule>
