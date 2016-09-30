@@ -119,269 +119,92 @@
     Animations
    ========================================================================== */
 /* Logo Animation */
-/* No Prefix */
 @keyframes bubblerise1 {
   0% {
-    transform: translateX(0) translateY(-60px) scale(0.5); }
+    transform: translateX(0) translateY(0em) scale(0.5); }
   20% {
-    transform: translateX(10px) translateY(-160px) scale(0.65); }
+    transform: translateX(0.9em) translateY(-2em) scale(0.65); }
   40% {
-    transform: translateX(0) translateY(-250px) scale(0.8); }
+    transform: translateX(0) translateY(-4em) scale(0.8); }
   60% {
-    transform: translateX(-10px) translateY(-390px) scale(1); }
+    transform: translateX(-0.9em) translateY(-6em) scale(1); }
   80% {
-    transform: translateX(0) translateY(-510px) scale(1.15); }
+    transform: translateX(0) translateY(-8em) scale(1.15); }
   100% {
-    transform: translateX(10px) translateY(-650px) scale(1.3); } }
+    transform: translateX(0.9em) translateY(-10em) scale(1.3); } }
 @keyframes bubblerise2 {
   0% {
-    transform: translateX(0) translateY(-60px) scale(0.5); }
+    transform: translateX(0) translateY(0em) scale(0.5); }
   20% {
-    transform: translateX(-10px) translateY(-160px) scale(0.65); }
+    transform: translateX(-0.9em) translateY(-2em) scale(0.65); }
   40% {
-    transform: translateX(0) translateY(-250px) scale(0.8); }
+    transform: translateX(0) translateY(-4em) scale(0.8); }
   60% {
-    transform: translateX(10px) translateY(-390px) scale(1); }
+    transform: translateX(0.9em) translateY(-6em) scale(1); }
   80% {
-    transform: translateX(0) translateY(-510px) scale(1.15); }
+    transform: translateX(0) translateY(-8em) scale(1.15); }
   100% {
-    transform: translateX(-10px) translateY(-650px) scale(1.3); } }
-/* Webkit */
-@-webkit-keyframes bubblerise1 {
-  0% {
-    -webkit-transform: translateX(0) translateY(-60px) scale(0.5); }
-  20% {
-    -webkit-transform: translateX(10px) translateY(-160px) scale(0.65); }
-  40% {
-    -webkit-transform: translateX(0) translateY(-250px) scale(0.8); }
-  60% {
-    -webkit-transform: translateX(-10px) translateY(-390px) scale(1); }
-  80% {
-    -webkit-transform: translateX(0) translateY(-510px) scale(1.15); }
-  100% {
-    -webkit-transform: translateX(10px) translateY(-650px) scale(1.3); } }
-@-webkit-keyframes bubblerise2 {
-  0% {
-    -webkit-transform: translateX(0) translateY(-60px) scale(0.5); }
-  20% {
-    -webkit-transform: translateX(-10px) translateY(-160px) scale(0.65); }
-  40% {
-    -webkit-transform: translateX(0) translateY(-250px) scale(0.8); }
-  60% {
-    -webkit-transform: translateX(10px) translateY(-390px) scale(1); }
-  80% {
-    -webkit-transform: translateX(0) translateY(-510px) scale(1.15); }
-  100% {
-    -webkit-transform: translateX(-10px) translateY(-650px) scale(1.3); } }
-/* mozilla */
-@-moz-keyframes bubblerise1 {
-  0% {
-    -moz-transform: translateX(0) translateY(-60px) scale(0.5); }
-  20% {
-    -moz-transform: translateX(10px) translateY(-160px) scale(0.65); }
-  40% {
-    -moz-transform: translateX(0) translateY(-250px) scale(0.8); }
-  60% {
-    -moz-transform: translateX(-10px) translateY(-390px) scale(1); }
-  80% {
-    -moz-transform: translateX(0) translateY(-510px) scale(1.15); }
-  100% {
-    -moz-transform: translateX(10px) translateY(-650px) scale(1.3); } }
-@-moz-keyframes bubblerise2 {
-  0% {
-    -moz-transform: translateX(0) translateY(-60px) scale(0.5); }
-  20% {
-    -moz-transform: translateX(-10px) translateY(-160px) scale(0.65); }
-  40% {
-    -moz-transform: translateX(0) translateY(-250px) scale(0.8); }
-  60% {
-    -moz-transform: translateX(10px) translateY(-390px) scale(1); }
-  80% {
-    -moz-transform: translateX(0) translateY(-510px) scale(1.15); }
-  100% {
-    -moz-transform: translateX(-10px) translateY(-650px) scale(1.3); } }
-/* line 65, ../sass/base/_animations.scss */
-.cssanimations .bubble1 {
-  cursor: crosshair;
+    transform: translateX(-0.9em) translateY(-10em) scale(1.3); } }
+/* line 26, ../sass/base/_animations.scss */
+.bubble1 {
   opacity: 0.8;
   position: absolute;
   right: 45%;
-  bottom: 7%;
-  -webkit-transform: translateZ(0);
-  -webkit-animation: bubblerise1 15s linear 0s infinite;
-  animation: bubblerise1 15s linear 0 infinite;
-  -moz-animation-name: bubblerise1;
-  /* Firefox does not like shorthand */
-  -moz-animation-duration: 15s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear; }
-  /* line 78, ../sass/base/_animations.scss */
-  .cssanimations .bubble1 > img {
+  bottom: 15%;
+  animation: bubblerise1 15s linear 0s infinite; }
+  /* line 33, ../sass/base/_animations.scss */
+  .bubble1 > img {
     display: block; }
 
-/* line 83, ../sass/base/_animations.scss */
-.cssanimations .bubble2 {
-  cursor: crosshair;
+/* line 38, ../sass/base/_animations.scss */
+.bubble2 {
   display: block;
   position: absolute;
   right: 45%;
-  bottom: 7%;
-  -webkit-animation: bubblerise2 15s linear -8s infinite;
-  animation: bubblerise2 15s linear -8s infinite;
-  -moz-animation-name: bubblerise2;
-  /* Firefox does not like shorthand */
-  -moz-animation-duration: 15s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear; }
-  /* line 95, ../sass/base/_animations.scss */
-  .cssanimations .bubble2 > img {
+  bottom: 15%;
+  animation: bubblerise2 15s linear -8s infinite; }
+  /* line 45, ../sass/base/_animations.scss */
+  .bubble2 > img {
     opacity: 0.8; }
 
-/* line 100, ../sass/base/_animations.scss */
-.cssanimations .bubble3 {
-  cursor: crosshair;
+/* line 50, ../sass/base/_animations.scss */
+.bubble3 {
   position: absolute;
   right: 45%;
-  bottom: 7%;
-  -webkit-animation: bubblerise1 13s linear 0s infinite;
+  bottom: 15%;
   animation: bubblerise1 13s linear 0s infinite;
-  -moz-animation-name: bubblerise1;
-  /* Firefox does not like shorthand */
-  -moz-animation-duration: 13s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
   -moz-animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
-  /* line 112, ../sass/base/_animations.scss */
-  .cssanimations .bubble3 > img {
+  /* line 57, ../sass/base/_animations.scss */
+  .bubble3 > img {
     opacity: 0.5; }
 
-/* line 117, ../sass/base/_animations.scss */
-.cssanimations .bubble4 {
-  cursor: crosshair;
+/* line 62, ../sass/base/_animations.scss */
+.bubble4 {
   display: block;
   position: absolute;
   right: 45%;
-  bottom: 7%;
-  -webkit-animation: bubblerise2 17s linear -14s infinite;
-  animation: bubblerise2 17s linear -14s infinite;
-  -moz-animation-name: bubblerise2;
-  /* Firefox does not like shorthand */
-  -moz-animation-duration: 17s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear; }
-  /* line 129, ../sass/base/_animations.scss */
-  .cssanimations .bubble4 > img {
+  bottom: 15%;
+  animation: bubblerise2 17s linear -14s infinite; }
+  /* line 69, ../sass/base/_animations.scss */
+  .bubble4 > img {
     opacity: 0.5; }
 
-/* line 134, ../sass/base/_animations.scss */
-.cssanimations .bubble5 {
-  cursor: crosshair;
+/* line 74, ../sass/base/_animations.scss */
+.bubble5 {
   display: block;
   position: absolute;
   right: 45%;
-  bottom: 7%;
-  -webkit-animation: bubblerise1 17s linear -6s infinite;
-  animation: bubblerise1 17s linear -6s infinite;
-  -moz-animation-name: bubblerise1;
-  /* Firefox does not like shorthand */
-  -moz-animation-duration: 17s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear; }
-  /* line 146, ../sass/base/_animations.scss */
-  .cssanimations .bubble5 > img {
+  bottom: 15%;
+  animation: bubblerise1 17s linear -6s infinite; }
+  /* line 81, ../sass/base/_animations.scss */
+  .bubble5 > img {
     opacity: 0.5; }
 
-@keyframes bubblewhite {
-  0% {
-    background-position: 110% 600px; }
-  33% {
-    background-position: 115% 200px; }
-  66% {
-    background-position: 110% -200px; }
-  100% {
-    background-position: 105% -600px; } }
-@-webkit-keyframes bubblewhite {
-  0% {
-    background-position: 110% 600px; }
-  33% {
-    background-position: 115% 200px; }
-  66% {
-    background-position: 110% -200px; }
-  100% {
-    background-position: 105% -600px; } }
-@-moz-keyframes bubblewhite {
-  0% {
-    background-position: 110% 600px; }
-  33% {
-    background-position: 115% 200px; }
-  66% {
-    background-position: 110% -200px; }
-  100% {
-    background-position: 105% -600px; } }
-/* line 189, ../sass/base/_animations.scss */
-.cssanimations #images {
-  background-image: url(../images/white-bubble.svg);
-  background-repeat: no-repeat;
-  background-position: 110% 600px;
-  background-size: 600px;
-  -webkit-transform: translateZ(0);
-  -webkit-animation: bubblewhite 20s linear 0 infinite;
-  animation: bubblewhite 20s linear 0 infinite;
-  -moz-animation-name: bubblewhite;
-  /* Firefox does not like shorthand */
-  -moz-animation-duration: 20s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear; }
-
-@media (min-width: 700px) and (max-width: 1025px) {
-  /* line 204, ../sass/base/_animations.scss */
-  .cssanimations #block-system-main-menu {
-    background-image: url(../images/white-bubble.svg);
-    background-repeat: no-repeat;
-    background-position: 110% 600px;
-    background-size: 600px;
-    -webkit-transform: translateZ(0);
-    -webkit-animation: bubblewhite 40s linear 0 infinite;
-    animation: bubblewhite 40s linear 0 infinite;
-    -moz-animation-name: bubblewhite;
-    /* Firefox does not like shorthand */
-    -moz-animation-duration: 40s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear; } }
-
-/* Arrow fade in within mobile navigation */
-@keyframes mobilenav {
-  0% {
-    opacity: 0; }
-  30% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-webkit-keyframes mobilenav {
-  0% {
-    -webkit-opacity: 0; }
-  30% {
-    -webkit-opacity: 0; }
-  100% {
-    -webkit-opacity: 1; } }
-@-moz-keyframes mobilenav {
-  0% {
-    opacity: 0; }
-  30% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-/* line 241, ../sass/base/_animations.scss */
-.cssanimations .header-menu-active .expanded:after {
-  animation: mobilenav 1s linear 0s 1;
-  -webkit-animation: mobilenav 1s linear 0s 1;
-  -moz-animation-name: mobilenav;
-  /* Firefox does not like shorthand */
-  -moz-animation-duration: 1s;
-  -moz-animation-iteration-count: 1;
-  -moz-animation-timing-function: linear; }
+/* line 87, ../sass/base/_animations.scss */
+.header-menu-active .expanded:after {
+  animation: mobilenav 1s linear 0s 1; }
 
 /* =============================================================================
     Base Styles
@@ -1097,7 +920,7 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       width: 100%;
       z-index: 7;
       position: fixed;
-      left: 0; } }
+      left: 90px; } }
   @media (min-width: 1025px) {
     /* line 5, ../sass/components/_branding.scss */
     h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
@@ -1135,18 +958,14 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
   .view-schedule-items .site-name.session-slot--title a {
     display: inline-block;
     text-indent: -9999px;
-    background-image: url('../images/drupal-diver-no-bubble.svg?1475149796');
     width: 90px;
     height: 80px;
-    background-size: contain;
-    background-repeat: no-repeat;
     color: #fb9b0e;
     padding: 0;
     position: relative;
     left: 0;
-    z-index: 10;
-    background-position-y: -12px; }
-    /* line 65, ../sass/components/_branding.scss */
+    z-index: 10; }
+    /* line 62, ../sass/components/_branding.scss */
     h1.site-name a:after, .block--views-individual-sponsors-block h2.site-name a:after, .block--views-individual-sponsors-block .site-name.fieldset-legend a:after, .block--views-individual-sponsors-block .site-name.messages a:after, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:after, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:after, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:after, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:after,
     .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:after,
     .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:after, .block--views-individual-sponsors-block .site-name.attendee-name a:after, .view-schedule-items .site-name.legend-title a:after,
@@ -1154,7 +973,7 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       content: "#FLDC17";
       position: absolute;
       top: 0;
-      left: 100%;
+      left: 0;
       text-indent: 0; }
     @media (min-width: 700px) {
       /* line 51, ../sass/components/_branding.scss */
@@ -1162,37 +981,42 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
       .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a, .block--views-individual-sponsors-block .site-name.attendee-name a, .view-schedule-items .site-name.legend-title a,
       .view-schedule-items .site-name.session-slot--title a {
-        text-indent: 70px;
+        text-indent: 0;
         margin-left: 0;
         margin-right: 0;
         width: auto;
         height: 80px; }
-        /* line 80, ../sass/components/_branding.scss */
+        /* line 77, ../sass/components/_branding.scss */
         h1.site-name a:after, .block--views-individual-sponsors-block h2.site-name a:after, .block--views-individual-sponsors-block .site-name.fieldset-legend a:after, .block--views-individual-sponsors-block .site-name.messages a:after, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:after, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:after, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:after, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:after,
         .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:after,
         .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:after, .block--views-individual-sponsors-block .site-name.attendee-name a:after, .view-schedule-items .site-name.legend-title a:after,
         .view-schedule-items .site-name.session-slot--title a:after {
           content: ""; } }
-    @media (min-width: 900px) {
-      /* line 51, ../sass/components/_branding.scss */
-      h1.site-name a, .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a,
-      .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
-      .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a, .block--views-individual-sponsors-block .site-name.attendee-name a, .view-schedule-items .site-name.legend-title a,
-      .view-schedule-items .site-name.session-slot--title a {
-        left: -10px;
-        background-position-y: 0; } }
-    /* line 90, ../sass/components/_branding.scss */
+    /* line 82, ../sass/components/_branding.scss */
     h1.site-name a:hover, .block--views-individual-sponsors-block h2.site-name a:hover, .block--views-individual-sponsors-block .site-name.fieldset-legend a:hover, .block--views-individual-sponsors-block .site-name.messages a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:hover, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:hover, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:hover,
     .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:hover,
     .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:hover, .block--views-individual-sponsors-block .site-name.attendee-name a:hover, .view-schedule-items .site-name.legend-title a:hover,
     .view-schedule-items .site-name.session-slot--title a:hover {
       color: #fdc572; }
 
-/* line 96, ../sass/components/_branding.scss */
+/* line 89, ../sass/components/_branding.scss */
+.header-diver-container {
+  font-size: 16px;
+  position: relative;
+  width: 3.7em;
+  float: left;
+  z-index: 15;
+  margin-right: 10px; }
+
+/* line 99, ../sass/components/_branding.scss */
+.header-bubble img {
+  width: 1.3em; }
+
+/* line 104, ../sass/components/_branding.scss */
 .site-logo {
   display: none; }
   @media (min-width: 700px) {
-    /* line 96, ../sass/components/_branding.scss */
+    /* line 104, ../sass/components/_branding.scss */
     .site-logo {
       display: inline-block;
       position: relative;
@@ -1203,7 +1027,7 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       -webkit-transform: translatex(-50%);
       transform: translatex(-50%); } }
   @media (min-width: 900px) {
-    /* line 96, ../sass/components/_branding.scss */
+    /* line 104, ../sass/components/_branding.scss */
     .site-logo {
       position: absolute;
       top: 50%;
@@ -1215,12 +1039,12 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       width: 40%;
       max-width: 550px; } }
   @media (min-width: 1200px) {
-    /* line 96, ../sass/components/_branding.scss */
+    /* line 104, ../sass/components/_branding.scss */
     .site-logo {
       left: 0;
       width: 45%; } }
   @media (min-width: 1700px) {
-    /* line 96, ../sass/components/_branding.scss */
+    /* line 104, ../sass/components/_branding.scss */
     .site-logo {
       width: 100%; } }
 
@@ -1359,14 +1183,15 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
 /* line 5, ../sass/components/_footer.scss */
 .zone.z-footer {
   background-color: #0E73AF;
-  padding: 30px 10px 20px 10px; }
-  /* line 8, ../sass/components/_footer.scss */
+  padding: 30px 10px 20px 10px;
+  overflow: hidden; }
+  /* line 10, ../sass/components/_footer.scss */
   .zone.z-footer .footer-copyright {
     color: #eee;
     padding: 10px 0;
     text-align: center; }
     @media (min-width: 700px) {
-      /* line 8, ../sass/components/_footer.scss */
+      /* line 10, ../sass/components/_footer.scss */
       .zone.z-footer .footer-copyright {
         text-align: left;
         float: left;
@@ -1374,14 +1199,14 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
         width: 70%;
         text-align: left; } }
     @media (min-width: 900px) {
-      /* line 8, ../sass/components/_footer.scss */
+      /* line 10, ../sass/components/_footer.scss */
       .zone.z-footer .footer-copyright {
         clear: both;
         width: 100%; } }
-    /* line 23, ../sass/components/_footer.scss */
+    /* line 25, ../sass/components/_footer.scss */
     .zone.z-footer .footer-copyright a {
       color: #fff; }
-  /* line 27, ../sass/components/_footer.scss */
+  /* line 29, ../sass/components/_footer.scss */
   .zone.z-footer:before {
     content: "";
     width: 0;
@@ -1394,66 +1219,66 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
     border-right: 40px solid transparent;
     border-top: 40px solid white; }
 
-/* line 41, ../sass/components/_footer.scss */
+/* line 43, ../sass/components/_footer.scss */
 #block-system-main-menu--2 {
   padding: 0;
   margin: 0;
   text-align: left; }
-  /* line 45, ../sass/components/_footer.scss */
+  /* line 47, ../sass/components/_footer.scss */
   #block-system-main-menu--2 .highlight {
     display: none; }
   @media (min-width: 700px) {
-    /* line 41, ../sass/components/_footer.scss */
+    /* line 43, ../sass/components/_footer.scss */
     #block-system-main-menu--2 {
       float: left; } }
-  /* line 51, ../sass/components/_footer.scss */
+  /* line 53, ../sass/components/_footer.scss */
   #block-system-main-menu--2 ul {
     padding: 0;
     margin: 0; }
-  /* line 55, ../sass/components/_footer.scss */
+  /* line 57, ../sass/components/_footer.scss */
   #block-system-main-menu--2 li {
     margin: 0;
     padding: 0;
     list-style: none;
     font-family: "bebas_neueregular", "arial narrow", arial, sans-serif;
     display: block; }
-    /* line 61, ../sass/components/_footer.scss */
+    /* line 63, ../sass/components/_footer.scss */
     #block-system-main-menu--2 li a {
       font-size: 32px;
       color: #FCB040; }
-      /* line 64, ../sass/components/_footer.scss */
+      /* line 66, ../sass/components/_footer.scss */
       #block-system-main-menu--2 li a:hover {
         color: #fb9b0e; }
-    /* line 68, ../sass/components/_footer.scss */
+    /* line 70, ../sass/components/_footer.scss */
     #block-system-main-menu--2 li li {
       font-family: helvetica, arial, sans-serif;
       margin: 0;
       line-height: 1.4;
       display: block; }
-      /* line 73, ../sass/components/_footer.scss */
+      /* line 75, ../sass/components/_footer.scss */
       #block-system-main-menu--2 li li a {
         color: white;
         font-size: 22px; }
     @media (min-width: 700px) {
-      /* line 55, ../sass/components/_footer.scss */
+      /* line 57, ../sass/components/_footer.scss */
       #block-system-main-menu--2 li {
         display: inline-block;
         vertical-align: top;
         padding: 20px; }
-        /* line 82, ../sass/components/_footer.scss */
+        /* line 84, ../sass/components/_footer.scss */
         #block-system-main-menu--2 li li {
           display: block;
           padding: 0; } }
 
-/* line 90, ../sass/components/_footer.scss */
+/* line 92, ../sass/components/_footer.scss */
 .footer-social {
   padding-top: 20px;
   text-align: center; }
   @media (min-width: 700px) {
-    /* line 90, ../sass/components/_footer.scss */
+    /* line 92, ../sass/components/_footer.scss */
     .footer-social {
       float: right; } }
-  /* line 96, ../sass/components/_footer.scss */
+  /* line 98, ../sass/components/_footer.scss */
   .footer-social .icon {
     position: relative;
     font-size: 35px;
@@ -1470,11 +1295,11 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
     -o-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     transition: all 0.5s; }
-    /* line 109, ../sass/components/_footer.scss */
+    /* line 111, ../sass/components/_footer.scss */
     .footer-social .icon:hover {
       color: #0E73AF;
       background-color: white; }
-    /* line 113, ../sass/components/_footer.scss */
+    /* line 115, ../sass/components/_footer.scss */
     .footer-social .icon:before {
       position: absolute;
       left: 50%;
@@ -1483,14 +1308,30 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       -ms-transform: translate(-50%, -50%);
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
-  /* line 118, ../sass/components/_footer.scss */
+  /* line 120, ../sass/components/_footer.scss */
   .footer-social .icon-facebook {
     position: relative;
     top: -1px; }
-    /* line 121, ../sass/components/_footer.scss */
+    /* line 123, ../sass/components/_footer.scss */
     .footer-social .icon-facebook:before {
       font-family: FontAwesome;
       content: "\f09a"; }
+
+/* line 130, ../sass/components/_footer.scss */
+.footer-diver-container {
+  font-size: 16px;
+  display: none;
+  position: relative;
+  float: right;
+  width: 12.5em; }
+  @media (min-width: 1040px) {
+    /* line 130, ../sass/components/_footer.scss */
+    .footer-diver-container {
+      display: block; } }
+
+/* line 146, ../sass/components/_footer.scss */
+.footer-bubble img {
+  width: 3em; }
 
 /* =============================================================================
     Front Hero

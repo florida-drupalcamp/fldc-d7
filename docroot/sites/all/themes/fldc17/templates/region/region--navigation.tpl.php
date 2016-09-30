@@ -31,13 +31,20 @@
 ?>
 <?php if ($content): ?>
   <div<?php print $attributes; ?>>
-    <?php if ($site_name): ?>
-      <h1 class="site-name">
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-      </h1>
-    <?php endif; ?>
-    
-    
+  <div class="header-diver-container">
+    <img class="header-diver" src="/sites/all/themes/fldc17/images/drupal-diver-no-bubble.svg" alt="Drupal Diver Logo">
+    <div class="header-bubble bubble1"><img src="/sites/all/themes/fldc17/images/bubbles.svg" alt="Bubble"></div>
+    <div class="header-bubble bubble2"><img src="/sites/all/themes/fldc17/images/bubbles.svg" alt="Bubble"></div>
+    <div class="header-bubble bubble3"><img src="/sites/all/themes/fldc17/images/bubbles.svg" alt="Bubble"></div>
+    <div class="header-bubble bubble4"><img src="/sites/all/themes/fldc17/images/bubbles.svg" alt="Bubble"></div>
+    <div class="header-bubble bubble5"><img src="/sites/all/themes/fldc17/images/bubbles.svg" alt="Bubble"></div>
+  </div>
+
+    <h1 class="site-name">
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+    </h1>
+
+
 
     <?php print $content; ?>
   </div>

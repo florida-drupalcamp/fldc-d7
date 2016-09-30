@@ -3,247 +3,88 @@
    ========================================================================== */
 
 /* Logo Animation */
-/* No Prefix */
 
 @keyframes bubblerise1 {
-  0% {transform: translateX(0) translateY(-60px) scale(.5);} 
-  20% {transform: translateX(10px) translateY(-160px) scale(.65);}
-  40% {transform: translateX(0) translateY(-250px) scale(.8);}
-  60% {transform: translateX(-10px) translateY(-390px) scale(1);}
-  80% {transform: translateX(0) translateY(-510px) scale(1.15);}
-  100% {transform: translateX(10px) translateY(-650px) scale(1.3);}
+  0% {transform: translateX(0) translateY(0em) scale(0.5);}
+  20% {transform: translateX(0.9em) translateY(-2em) scale(0.65);}
+  40% {transform: translateX(0) translateY(-4em) scale(0.8);}
+  60% {transform: translateX(-0.9em) translateY(-6em) scale(1);}
+  80% {transform: translateX(0) translateY(-8em) scale(1.15);}
+  100% {transform: translateX(0.9em) translateY(-10em) scale(1.3);}
 }
 
 @keyframes bubblerise2 {
-  0% {transform: translateX(0) translateY(-60px) scale(.5);} 
-  20% {transform: translateX(-10px) translateY(-160px) scale(.65);}
-  40% {transform: translateX(0) translateY(-250px) scale(.8);}
-  60% {transform: translateX(10px) translateY(-390px) scale(1);}
-  80% {transform: translateX(0) translateY(-510px) scale(1.15);}
-  100% {transform: translateX(-10px) translateY(-650px) scale(1.3);}
-}
-
-/* Webkit */
-@-webkit-keyframes bubblerise1 {
-  0% {-webkit-transform: translateX(0) translateY(-60px) scale(.5);} 
-  20% {-webkit-transform: translateX(10px) translateY(-160px) scale(.65);}
-  40% {-webkit-transform: translateX(0) translateY(-250px) scale(.8);}
-  60% {-webkit-transform: translateX(-10px) translateY(-390px) scale(1);}
-  80% {-webkit-transform: translateX(0) translateY(-510px) scale(1.15);}
-  100% {-webkit-transform: translateX(10px) translateY(-650px) scale(1.3);}
-}
-
-@-webkit-keyframes bubblerise2 {
-  0% {-webkit-transform: translateX(0) translateY(-60px) scale(.5);} 
-  20% {-webkit-transform: translateX(-10px) translateY(-160px) scale(.65);}
-  40% {-webkit-transform: translateX(0) translateY(-250px) scale(.8);}
-  60% {-webkit-transform: translateX(10px) translateY(-390px) scale(1);}
-  80% {-webkit-transform: translateX(0) translateY(-510px) scale(1.15);}
-  100% {-webkit-transform: translateX(-10px) translateY(-650px) scale(1.3);}
-}
-
-/* mozilla */
-@-moz-keyframes bubblerise1 {
-  0% {-moz-transform: translateX(0) translateY(-60px) scale(.5);} 
-  20% {-moz-transform: translateX(10px) translateY(-160px) scale(.65);}
-  40% {-moz-transform: translateX(0) translateY(-250px) scale(.8);}
-  60% {-moz-transform: translateX(-10px) translateY(-390px) scale(1);}
-  80% {-moz-transform: translateX(0) translateY(-510px) scale(1.15);}
-  100% {-moz-transform: translateX(10px) translateY(-650px) scale(1.3);}
+  0% {transform: translateX(0) translateY(0em) scale(0.5);}
+  20% {transform: translateX(-0.9em) translateY(-2em) scale(0.65);}
+  40% {transform: translateX(0) translateY(-4em) scale(0.8);}
+  60% {transform: translateX(0.9em) translateY(-6em) scale(1);}
+  80% {transform: translateX(0) translateY(-8em) scale(1.15);}
+  100% {transform: translateX(-0.9em) translateY(-10em) scale(1.3);}
 }
 
 
-@-moz-keyframes bubblerise2 {
-  0% {-moz-transform: translateX(0) translateY(-60px) scale(.5);} 
-  20% {-moz-transform: translateX(-10px) translateY(-160px) scale(.65);}
-  40% {-moz-transform: translateX(0) translateY(-250px) scale(.8);}
-  60% {-moz-transform: translateX(10px) translateY(-390px) scale(1);}
-  80% {-moz-transform: translateX(0) translateY(-510px) scale(1.15);}
-  100% {-moz-transform: translateX(-10px) translateY(-650px) scale(1.3);}
-}
-
-.cssanimations .bubble1 {
-  cursor: crosshair;
-  opacity: 0.8;  
+.bubble1 {
+  opacity: 0.8;
   position: absolute;
   right: 45%;
-  bottom: 7%;
-  -webkit-transform: translateZ(0);
-  -webkit-animation:bubblerise1 15s linear 0s infinite;
-  animation:bubblerise1 15s linear 0 infinite;
-  -moz-animation-name: bubblerise1;  /* Firefox does not like shorthand */
-  -moz-animation-duration: 15s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
+  bottom: 15%;
+  animation: bubblerise1 15s linear 0s infinite;
+
   > img {
     display: block;
   }
 }
 
-.cssanimations .bubble2 {
-  cursor: crosshair;
+.bubble2 {
   display: block;
   position: absolute;
   right: 45%;
-  bottom: 7%; 
-  -webkit-animation:bubblerise2 15s linear -8s infinite;
-  animation:bubblerise2 15s linear -8s infinite;
-  -moz-animation-name: bubblerise2;  /* Firefox does not like shorthand */
-  -moz-animation-duration: 15s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
+  bottom: 15%;
+  animation: bubblerise2 15s linear -8s infinite;
+
   > img {
     opacity: 0.8;
   }
 }
 
-.cssanimations .bubble3 {
-  cursor: crosshair;
+.bubble3 {
   position: absolute;
   right: 45%;
-  bottom: 7%;
-  -webkit-animation:bubblerise1 13s linear 0s infinite;
-  animation:bubblerise1 13s linear 0s infinite;
-  -moz-animation-name: bubblerise1;  /* Firefox does not like shorthand */
-  -moz-animation-duration: 13s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
+  bottom: 15%;
+  animation: bubblerise1 13s linear 0s infinite;
   @include animation-fill-mode(both);
+
   > img {
     opacity: 0.5;
   }
 }
 
-.cssanimations .bubble4 {
-  cursor: crosshair;
+.bubble4 {
   display: block;
   position: absolute;
   right: 45%;
-  bottom: 7%;
-  -webkit-animation:bubblerise2 17s linear -14s infinite;
-  animation:bubblerise2 17s linear -14s infinite;
-  -moz-animation-name: bubblerise2;  /* Firefox does not like shorthand */
-  -moz-animation-duration: 17s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
+  bottom: 15%;
+  animation: bubblerise2 17s linear -14s infinite;
+
   > img {
     opacity: 0.5;
   }
 }
 
-.cssanimations .bubble5 {
-  cursor: crosshair;
+.bubble5 {
   display: block;
   position: absolute;
   right: 45%;
-  bottom: 7%;
-  -webkit-animation:bubblerise1 17s linear -6s infinite;
-  animation:bubblerise1 17s linear -6s infinite;
-  -moz-animation-name: bubblerise1;  /* Firefox does not like shorthand */
-  -moz-animation-duration: 17s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
+  bottom: 15%;
+  animation: bubblerise1 17s linear -6s infinite;
+
   > img {
     opacity: 0.5;
   }
 }
 
 
-// Background Animation for turquois section
-
-@keyframes bubblewhite {
-  0% { background-position: 110% 600px;} 
-  33% { background-position: 115% 200px;}
-  66% { background-position: 110% -200px;}
-  100% {background-position: 105% -600px;}
-}
-
-@-webkit-keyframes bubblewhite {
-  0% { background-position: 110% 600px;} 
-  33% { background-position: 115% 200px;}
-  66% { background-position: 110% -200px;}
-  100% {background-position: 105% -600px;}
-}
-
-@-moz-keyframes bubblewhite {
-  0% { background-position: 110% 600px;} 
-  33% { background-position: 115% 200px;}
-  66% { background-position: 110% -200px;}
-  100% {background-position: 105% -600px;}
-}
-
-
-// .cssanimations #bubble-white { 
-//   display: block;
-//   position: absolute;
-//   -webkit-transform: translateZ(0);
-//   -webkit-animation:bubblewhite 25s linear 0 infinite;
-//   animation:bubblewhite 25s linear 0 infinite;
-//   -moz-animation-name: bubblewhite;  /* Firefox does not like shorthand */
-//   -moz-animation-duration: 25s;
-//   -moz-animation-iteration-count: infinite;
-//   -moz-animation-timing-function: linear;
-// }
-
-
-.cssanimations #images {
-  background-image: url(../images/white-bubble.svg);
-  background-repeat: no-repeat;
-  background-position: 110% 600px;
-  background-size: 600px;
-  -webkit-transform: translateZ(0);
-  -webkit-animation:bubblewhite 20s linear 0 infinite;
-  animation:bubblewhite 20s linear 0 infinite;  
-  -moz-animation-name: bubblewhite;  /* Firefox does not like shorthand */
-  -moz-animation-duration: 20s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;  
-
-}
-
-.cssanimations #block-system-main-menu {
-  @include breakpoint($tablet_narrow $mobile-nav) {
-    background-image: url(../images/white-bubble.svg);
-    background-repeat: no-repeat;
-    background-position: 110% 600px;
-    background-size: 600px;
-    -webkit-transform: translateZ(0);
-    -webkit-animation:bubblewhite 40s linear 0 infinite;
-    animation:bubblewhite 40s linear 0 infinite;  
-    -moz-animation-name: bubblewhite;  /* Firefox does not like shorthand */
-    -moz-animation-duration: 40s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;  
-  }
-
-}
-
-/* Arrow fade in within mobile navigation */
-
-@keyframes mobilenav {
-  0% { opacity: 0; } 
-  30% { opacity: 0; }
-  100% {opacity: 1; }
-}
-
-@-webkit-keyframes mobilenav {
-  0% { -webkit-opacity: 0; } 
-  30% { -webkit-opacity: 0; }
-  100% {-webkit-opacity: 1; }
-}
-
-@-moz-keyframes mobilenav {
-  0% { opacity: 0; } 
-  30% { opacity: 0; }
-  100% {opacity: 1; }
-}
-
-.cssanimations .header-menu-active .expanded:after {
+.header-menu-active .expanded:after {
   animation: mobilenav 1s linear 0s 1;
-  -webkit-animation: mobilenav 1s linear 0s 1;
-  -moz-animation-name: mobilenav;  /* Firefox does not like shorthand */
-  -moz-animation-duration: 1s;
-  -moz-animation-iteration-count: 1;
-  -moz-animation-timing-function: linear; 
 }
 

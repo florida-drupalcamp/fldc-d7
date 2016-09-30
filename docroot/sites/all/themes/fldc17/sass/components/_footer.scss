@@ -5,6 +5,8 @@
  .zone.z-footer {
  	background-color: $blue;
  	padding: 30px 10px 20px 10px;
+  overflow: hidden;
+
  	.footer-copyright{ // Copyright info and such
  		color: #eee;
  		padding: 10px 0;
@@ -125,4 +127,23 @@
  	}
  }
 
+.footer-diver-container {
+  font-size: 16px;
+  display: none;
+  position: relative;
+  float: right;
+  width: 12.5em;
 
+  @include breakpoint(1040px) {
+    display: block;
+  }
+}
+
+.footer-diver {
+}
+
+.footer-bubble {
+  img {
+    width: 3em;
+  }
+}
