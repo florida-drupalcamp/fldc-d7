@@ -51,7 +51,7 @@ h1.site-name {
   a {
     display: inline-block;
     text-indent: -9999px;
-    background-image: image-url("drupal-diver_small.png");
+    background-image: image-url("drupal-diver-no-bubble.svg");
     width: 90px;
     height: 80px;
     background-size: contain;
@@ -71,7 +71,7 @@ h1.site-name {
     }
 
     @include breakpoint($tablet_narrow) {
-      text-indent: 80px;
+      text-indent: 70px;
       margin-left: 0;
       margin-right: 0;
       width: auto;
@@ -83,7 +83,7 @@ h1.site-name {
     }
 
     @include breakpoint($tablet_wide) {
-      left: -20px;
+      left: -10px;
       background-position-y: 0;
     }
 

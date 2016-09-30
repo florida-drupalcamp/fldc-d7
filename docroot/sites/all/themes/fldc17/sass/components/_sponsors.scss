@@ -30,6 +30,15 @@ $sponsor-mobile-transition: $tablet_narrow;
     position: relative;
     width: 100%;
 
+    @include breakpoint($sponsor-mobile-transition) {
+      display: inline-block;
+      margin: 0 0 4px 0;
+      max-width: 24%;
+      min-width: 270px;
+      height: 0;
+      padding-top: 18%;
+    }
+
     img {
       max-width: 60%;
       max-height: 140px;
@@ -40,15 +49,6 @@ $sponsor-mobile-transition: $tablet_narrow;
         max-width: 90%;
         max-height: 90%;
       }
-    }
-
-
-    @include breakpoint($sponsor-mobile-transition) {
-      display: inline-block;
-      margin: 0 0 4px 0;
-      max-width: 24%;
-      height: 0;
-      padding-top: 18%;
     }
   }
 
