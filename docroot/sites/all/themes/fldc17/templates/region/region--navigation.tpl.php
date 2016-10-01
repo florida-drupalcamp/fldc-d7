@@ -32,7 +32,7 @@
 <?php if ($content): ?>
   <div<?php print $attributes; ?>>
   <div class="header-diver-container">
-    <img class="header-diver" src="/sites/all/themes/fldc17/images/drupal-diver-no-bubble.svg" alt="Drupal Diver Logo">
+    <a href="/"><img class="header-diver" src="/sites/all/themes/fldc17/images/drupal-diver-no-bubble.svg" alt="Drupal Diver Logo"></a>
     <div class="header-bubble bubble1"><img src="/sites/all/themes/fldc17/images/bubbles.svg" alt="Bubble"></div>
     <div class="header-bubble bubble2"><img src="/sites/all/themes/fldc17/images/bubbles.svg" alt="Bubble"></div>
     <div class="header-bubble bubble3"><img src="/sites/all/themes/fldc17/images/bubbles.svg" alt="Bubble"></div>

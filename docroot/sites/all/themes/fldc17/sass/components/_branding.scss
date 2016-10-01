@@ -96,6 +96,8 @@ h1.site-name {
 }
 
 .header-bubble {
+  pointer-events: none;
+
   img {
     width: 1.3em;
   }
