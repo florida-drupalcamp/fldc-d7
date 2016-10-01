@@ -18,7 +18,7 @@
             <div class="hero-teaser">
               <h1 class="hero-title">Florida DrupalCamp 2017</h1>
               <h2>
-                <span class="date">February 18-19, 2017</span>
+                <span class="date">February 17-19, 2017</span>
                 <span class="loc">Orlando, Florida</span>
               </h2>
               <a target="_blank" class="button hero-button" href="https://www.eventbrite.com/e/florida-drupalcamp-2017-tickets-27509068364#tickets">Register Now</a>
