@@ -2527,7 +2527,7 @@ input.field-add-more-submit {
   padding: 0; }
 /* line 10, ../sass/components/_twitter_feed.scss */
 #fldc-tweets li {
-  padding: 10px;
+  padding: 20px 10px;
   list-style-type: none;
   border-bottom: solid 1px #eee;
   line-height: 1.2; }
