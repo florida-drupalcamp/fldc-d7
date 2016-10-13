@@ -2652,7 +2652,7 @@ div.password-confirm {
     border-top-color: transparent;
     border-left-color: transparent; }
   /* line 30, ../sass/components/_view_attendees.scss */
-  .attendee.Sponsor:before {
+  .attendee[class*="ponsor"]:before {
     content: "Individual Sponsor";
     font-size: 12px;
     padding-left: 10px;

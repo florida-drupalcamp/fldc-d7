@@ -26,7 +26,7 @@
     border-top-color: transparent;
     border-left-color: transparent;
   }
-  &.Sponsor {
+  &[class*="ponsor"] {
     &:before {
       content: "Individual Sponsor";
       font-size: 12px;
@@ -80,7 +80,7 @@
       font-weight: normal;
       position: absolute;
       @include center(xy);
-      font-size: 20px;   
+      font-size: 20px;
     }
   }
 }
