@@ -999,7 +999,7 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
     .view-schedule-items .site-name.session-slot--title a:hover {
       color: #fdc572; }
 
-/* line 89, ../sass/components/_branding.scss */
+/* line 88, ../sass/components/_branding.scss */
 .header-diver-container {
   font-size: 16px;
   position: relative;
@@ -1008,18 +1008,22 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
   z-index: 15;
   margin-right: 10px; }
 
-/* line 98, ../sass/components/_branding.scss */
+/* line 97, ../sass/components/_branding.scss */
+.header-diver {
+  max-height: 76px; }
+
+/* line 101, ../sass/components/_branding.scss */
 .header-bubble {
   pointer-events: none; }
-  /* line 101, ../sass/components/_branding.scss */
+  /* line 104, ../sass/components/_branding.scss */
   .header-bubble img {
     width: 1.3em; }
 
-/* line 106, ../sass/components/_branding.scss */
+/* line 109, ../sass/components/_branding.scss */
 .site-logo {
   display: none; }
   @media (min-width: 700px) {
-    /* line 106, ../sass/components/_branding.scss */
+    /* line 109, ../sass/components/_branding.scss */
     .site-logo {
       display: inline-block;
       position: relative;
@@ -1030,7 +1034,7 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       -webkit-transform: translatex(-50%);
       transform: translatex(-50%); } }
   @media (min-width: 900px) {
-    /* line 106, ../sass/components/_branding.scss */
+    /* line 109, ../sass/components/_branding.scss */
     .site-logo {
       position: absolute;
       top: 50%;
@@ -1042,12 +1046,12 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       width: 40%;
       max-width: 550px; } }
   @media (min-width: 1200px) {
-    /* line 106, ../sass/components/_branding.scss */
+    /* line 109, ../sass/components/_branding.scss */
     .site-logo {
       left: 0;
       width: 45%; } }
   @media (min-width: 1700px) {
-    /* line 106, ../sass/components/_branding.scss */
+    /* line 109, ../sass/components/_branding.scss */
     .site-logo {
       width: 100%; } }
 

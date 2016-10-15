@@ -85,7 +85,6 @@ h1.site-name {
   }
 }
 
-
 .header-diver-container {
   font-size: 16px;
   position: relative;
@@ -93,6 +92,10 @@ h1.site-name {
   float: left;
   z-index: 15;
   margin-right: 10px;
+}
+
+.header-diver {
+  max-height: 76px; // Necessary for IE
 }
 
 .header-bubble {
