@@ -1,0 +1,48 @@
+$schedule-break: 600px;
+
+.faux-schedule-container {
+  display: flex;
+
+  @include breakpoint(max-width $schedule-break) {
+    flex-direction: column;
+  }
+}
+
+.faux-schedule-day {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint($schedule-break) {
+    flex-basis: 0;
+    flex-grow: 1;
+    min-height: 700px;
+  }
+}
+
+.faux-schedule-title {
+  background: $turquois;
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+
+.faux-schedule-item {
+  flex-grow: 1;
+  border: solid 1px $blue;
+  background: #fafafa;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 5px 0;
+
+  h3 {
+    margin-top: 0;
+    text-transform: none;
+    color: $blue;
+  }
+
+  p {
+    margin: 10px 0;
+    line-height: 1.2;
+  }
+}

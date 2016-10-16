@@ -1100,6 +1100,51 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
     .z-description {
       margin: 80px auto; } }
 
+/* line 3, ../sass/components/_faux_schedule.scss */
+.faux-schedule-container {
+  display: flex; }
+  @media (max-width: 600px) {
+    /* line 3, ../sass/components/_faux_schedule.scss */
+    .faux-schedule-container {
+      flex-direction: column; } }
+
+/* line 11, ../sass/components/_faux_schedule.scss */
+.faux-schedule-day {
+  padding: 5px;
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 600px) {
+    /* line 11, ../sass/components/_faux_schedule.scss */
+    .faux-schedule-day {
+      flex-basis: 0;
+      flex-grow: 1;
+      min-height: 700px; } }
+
+/* line 23, ../sass/components/_faux_schedule.scss */
+.faux-schedule-title {
+  background: #55C2C2;
+  color: white;
+  padding: 10px;
+  margin: 0; }
+
+/* line 30, ../sass/components/_faux_schedule.scss */
+.faux-schedule-item {
+  flex-grow: 1;
+  border: solid 1px #0E73AF;
+  background: #fafafa;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 5px 0; }
+  /* line 38, ../sass/components/_faux_schedule.scss */
+  .faux-schedule-item h3 {
+    margin-top: 0;
+    text-transform: none;
+    color: #0E73AF; }
+  /* line 44, ../sass/components/_faux_schedule.scss */
+  .faux-schedule-item p {
+    margin: 10px 0;
+    line-height: 1.2; }
+
 /* =============================================================================
     Preface Region and featured speakers
    ========================================================================== */
