@@ -249,7 +249,7 @@
     Forms
    ========================================================================== */
 /* line 5, ../sass/base/_forms.scss */
-button, input[type="submit"], a.button, .comment__links a, .flag a, .view-session-list .read-more {
+button, input[type="submit"], a.button, .comment__links a, .flag a, .view-id-trainings .node-readmore a, .view-session-list .read-more {
   font-family: "bebas_neueregular", "arial narrow", arial, sans-serif;
   text-transform: uppercase;
   border: 0;
@@ -263,7 +263,7 @@ button, input[type="submit"], a.button, .comment__links a, .flag a, .view-sessio
   -webkit-transition: all 0.2s;
   transition: all 0.2s; }
   /* line 15, ../sass/base/_forms.scss */
-  button:hover, input[type="submit"]:hover, a.button:hover, .comment__links a:hover, .flag a:hover, .view-session-list .read-more:hover, button:focus, input[type="submit"]:focus, a.button:focus, .comment__links a:focus, .flag a:focus, .view-session-list .read-more:focus {
+  button:hover, input[type="submit"]:hover, a.button:hover, .comment__links a:hover, .flag a:hover, .view-id-trainings .node-readmore a:hover, .view-session-list .read-more:hover, button:focus, input[type="submit"]:focus, a.button:focus, .comment__links a:focus, .flag a:focus, .view-id-trainings .node-readmore a:focus, .view-session-list .read-more:focus {
     background-color: #fca627;
     color: white; }
 
@@ -2568,6 +2568,26 @@ input.field-add-more-submit {
       .links--inline li a:hover {
         background-color: transparent;
         color: #666; } }
+/* line 2, ../sass/components/_training.scss */
+.view-id-trainings .view-header {
+  padding: 10px;
+  background: #fafafa;
+  color: #666; }
+  /* line 7, ../sass/components/_training.scss */
+  .view-id-trainings .view-header p {
+    color: inherit; }
+/* line 12, ../sass/components/_training.scss */
+.view-id-trainings .views-row {
+  margin: 60px 0; }
+  /* line 15, ../sass/components/_training.scss */
+  .view-id-trainings .views-row:first-child {
+    margin-top: 30px; }
+/* line 20, ../sass/components/_training.scss */
+.view-id-trainings .node-readmore a {
+  font-size: 30px;
+  margin: 10px 0;
+  padding: 0 20px; }
+
 /* =============================================================================
     Theming the javascript twitter feed
    ========================================================================== */
