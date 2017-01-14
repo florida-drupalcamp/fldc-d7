@@ -1152,15 +1152,19 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
   /* line 6, ../sass/components/_featured_speakers.scss */
   .zone.z-preface {
     margin: 21% 0 0 0; } }
-/* line 12, ../sass/components/_featured_speakers.scss */
+@media (min-width: 2000px) {
+  /* line 6, ../sass/components/_featured_speakers.scss */
+  .zone.z-preface {
+    margin-top: 15%; } }
+/* line 16, ../sass/components/_featured_speakers.scss */
 .zone.z-preface .l-region--preface {
   padding: 0; }
   @media (min-width: 700px) {
-    /* line 12, ../sass/components/_featured_speakers.scss */
+    /* line 16, ../sass/components/_featured_speakers.scss */
     .zone.z-preface .l-region--preface {
       margin: -28% 0 10px 0; } }
 @media (max-width: 700px) {
-  /* line 20, ../sass/components/_featured_speakers.scss */
+  /* line 24, ../sass/components/_featured_speakers.scss */
   .zone.z-preface h2, .zone.z-preface .fieldset-legend, .zone.z-preface .messages, .zone.z-preface #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .zone.z-preface h1, .zone.z-preface #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .zone.z-preface h2, .zone.z-preface .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .zone.z-preface h2, .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .legend-title, .zone.z-preface .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .zone.z-preface .legend-title,
   .zone.z-preface #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
   #block-views-sponsors-block-block-1 .view-schedule-items .zone.z-preface .session-slot--title,
@@ -1170,35 +1174,35 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
   .user-profile .zone.z-preface .field--name-field-user-last-name, .zone.z-preface .attendee-name {
     color: white;
     padding: 0 20px; } }
-/* line 27, ../sass/components/_featured_speakers.scss */
+/* line 31, ../sass/components/_featured_speakers.scss */
 .zone.z-preface ul {
   margin: 0;
   padding: 0; }
   @media (min-width: 700px) {
-    /* line 27, ../sass/components/_featured_speakers.scss */
+    /* line 31, ../sass/components/_featured_speakers.scss */
     .zone.z-preface ul {
       display: flex;
       justify-content: space-between; } }
-/* line 37, ../sass/components/_featured_speakers.scss */
+/* line 41, ../sass/components/_featured_speakers.scss */
 .zone.z-preface .speaker {
   margin: 40px 0;
   padding: 0 20px;
   list-style-type: none;
   color: white; }
   @media (min-width: 700px) {
-    /* line 37, ../sass/components/_featured_speakers.scss */
+    /* line 41, ../sass/components/_featured_speakers.scss */
     .zone.z-preface .speaker {
       margin: 0;
       padding: 0;
       width: 30%; } }
-/* line 50, ../sass/components/_featured_speakers.scss */
+/* line 54, ../sass/components/_featured_speakers.scss */
 .zone.z-preface .speaker-name {
   color: inherit; }
-/* line 54, ../sass/components/_featured_speakers.scss */
+/* line 58, ../sass/components/_featured_speakers.scss */
 .zone.z-preface .speaker-bio {
   font-size: 16px; }
   @media (min-width: 1200px) {
-    /* line 54, ../sass/components/_featured_speakers.scss */
+    /* line 58, ../sass/components/_featured_speakers.scss */
     .zone.z-preface .speaker-bio {
       font-size: 20px; } }
 

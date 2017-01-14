@@ -9,6 +9,10 @@ $preface-break: $tablet_narrow;
     margin: 21% 0 0 0;
   }
 
+  @include breakpoint(2000px) {
+    margin-top: 15%;
+  }
+
   .l-region--preface {
     padding: 0;
 
