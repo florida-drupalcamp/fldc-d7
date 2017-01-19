@@ -55,15 +55,11 @@
 <?php endif; ?>
 <head>
   <title><?php print $head_title; ?></title>
-  <meta property="og:image" content="/sites/all/themes/fldc17/images/drupal-diver-no-bubble.png" />
+  <link rel="icon" href="/sites/all/themes/fldc17/favicon.png">
+  <meta property="og:image" content="/sites/all/themes/fldc17/images/drupal-diver-new--large.png" />
   <?php print $head; ?>
   <?php print $styles; ?>
   <?php print $scripts; ?>
-  <!--[if lte IE 8]>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
-  <script src="/<?php print $directory ?>/js/vendor/svgeezy.min.js"></script>
-  <script src="/<?php print $directory ?>/js/vendor/svgeezy_init.js"></script>
-  <![endif]-->
 </head>
 <body<?php print $attributes;?>>
   <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
