@@ -26,7 +26,7 @@
 .bubble1 {
   opacity: 0.8;
   position: absolute;
-  right: 45%;
+  right: 48%;
   bottom: 15%;
   animation: bubblerise1 15s linear 0s infinite;
 
@@ -38,7 +38,7 @@
 .bubble2 {
   display: block;
   position: absolute;
-  right: 45%;
+  right: 48%;
   bottom: 15%;
   animation: bubblerise2 15s linear -8s infinite;
 
@@ -49,7 +49,7 @@
 
 .bubble3 {
   position: absolute;
-  right: 45%;
+  right: 48%;
   bottom: 15%;
   animation: bubblerise1 13s linear 0s infinite;
   @include animation-fill-mode(both);
@@ -62,7 +62,7 @@
 .bubble4 {
   display: block;
   position: absolute;
-  right: 45%;
+  right: 48%;
   bottom: 15%;
   animation: bubblerise2 17s linear -14s infinite;
 
@@ -74,7 +74,7 @@
 .bubble5 {
   display: block;
   position: absolute;
-  right: 45%;
+  right: 48%;
   bottom: 15%;
   animation: bubblerise1 17s linear -6s infinite;
 
