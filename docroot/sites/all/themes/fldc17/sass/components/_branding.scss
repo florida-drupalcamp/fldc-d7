@@ -26,7 +26,6 @@ h1.site-name {
     width: 100%;
     z-index: 7;
     position: fixed;
-    left: 90px; // Room for logo
   }
 
   @include breakpoint($mobile-nav) {

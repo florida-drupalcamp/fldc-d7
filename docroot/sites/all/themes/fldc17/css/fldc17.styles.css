@@ -919,8 +919,7 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       height: 60px;
       width: 100%;
       z-index: 7;
-      position: fixed;
-      left: 90px; } }
+      position: fixed; } }
   @media (min-width: 1025px) {
     /* line 5, ../sass/components/_branding.scss */
     h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--views-individual-sponsors-block .site-name.fieldset-legend, .block--views-individual-sponsors-block .site-name.messages, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name,
@@ -951,7 +950,7 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
     .view-schedule-items .site-name.session-slot--title {
       font-size: 55px;
       margin: 0 auto; } }
-  /* line 51, ../sass/components/_branding.scss */
+  /* line 50, ../sass/components/_branding.scss */
   h1.site-name a, .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a,
   .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
   .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a, .block--views-individual-sponsors-block .site-name.attendee-name a, .view-schedule-items .site-name.legend-title a,
@@ -965,7 +964,7 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
     position: relative;
     left: 0;
     z-index: 10; }
-    /* line 62, ../sass/components/_branding.scss */
+    /* line 61, ../sass/components/_branding.scss */
     h1.site-name a:after, .block--views-individual-sponsors-block h2.site-name a:after, .block--views-individual-sponsors-block .site-name.fieldset-legend a:after, .block--views-individual-sponsors-block .site-name.messages a:after, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:after, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:after, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:after, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:after,
     .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:after,
     .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:after, .block--views-individual-sponsors-block .site-name.attendee-name a:after, .view-schedule-items .site-name.legend-title a:after,
@@ -976,7 +975,7 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       left: 0;
       text-indent: 0; }
     @media (min-width: 700px) {
-      /* line 51, ../sass/components/_branding.scss */
+      /* line 50, ../sass/components/_branding.scss */
       h1.site-name a, .block--views-individual-sponsors-block h2.site-name a, .block--views-individual-sponsors-block .site-name.fieldset-legend a, .block--views-individual-sponsors-block .site-name.messages a, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a,
       .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a,
       .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a, .block--views-individual-sponsors-block .site-name.attendee-name a, .view-schedule-items .site-name.legend-title a,
@@ -986,20 +985,20 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
         margin-right: 0;
         width: auto;
         height: 80px; }
-        /* line 77, ../sass/components/_branding.scss */
+        /* line 76, ../sass/components/_branding.scss */
         h1.site-name a:after, .block--views-individual-sponsors-block h2.site-name a:after, .block--views-individual-sponsors-block .site-name.fieldset-legend a:after, .block--views-individual-sponsors-block .site-name.messages a:after, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:after, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:after, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:after, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:after,
         .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:after,
         .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:after, .block--views-individual-sponsors-block .site-name.attendee-name a:after, .view-schedule-items .site-name.legend-title a:after,
         .view-schedule-items .site-name.session-slot--title a:after {
           content: ""; } }
-    /* line 82, ../sass/components/_branding.scss */
+    /* line 81, ../sass/components/_branding.scss */
     h1.site-name a:hover, .block--views-individual-sponsors-block h2.site-name a:hover, .block--views-individual-sponsors-block .site-name.fieldset-legend a:hover, .block--views-individual-sponsors-block .site-name.messages a:hover, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h1.site-name a:hover, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h1.site-name a:hover, .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-first-name a:hover, .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-first-name a:hover,
     .block--views-individual-sponsors-block .user-profile .site-name.field--name-field-user-last-name a:hover,
     .user-profile .block--views-individual-sponsors-block .site-name.field--name-field-user-last-name a:hover, .block--views-individual-sponsors-block .site-name.attendee-name a:hover, .view-schedule-items .site-name.legend-title a:hover,
     .view-schedule-items .site-name.session-slot--title a:hover {
       color: #fdc572; }
 
-/* line 88, ../sass/components/_branding.scss */
+/* line 87, ../sass/components/_branding.scss */
 .header-diver-container {
   font-size: 16px;
   position: relative;
@@ -1008,22 +1007,22 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
   z-index: 15;
   margin-right: 2px; }
 
-/* line 97, ../sass/components/_branding.scss */
+/* line 96, ../sass/components/_branding.scss */
 .header-diver {
   max-height: 60px; }
 
-/* line 101, ../sass/components/_branding.scss */
+/* line 100, ../sass/components/_branding.scss */
 .header-bubble {
   pointer-events: none; }
-  /* line 104, ../sass/components/_branding.scss */
+  /* line 103, ../sass/components/_branding.scss */
   .header-bubble img {
     width: 1.3em; }
 
-/* line 109, ../sass/components/_branding.scss */
+/* line 108, ../sass/components/_branding.scss */
 .site-logo {
   display: none; }
   @media (min-width: 700px) {
-    /* line 109, ../sass/components/_branding.scss */
+    /* line 108, ../sass/components/_branding.scss */
     .site-logo {
       display: inline-block;
       position: relative;
@@ -1034,7 +1033,7 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       -webkit-transform: translatex(-50%);
       transform: translatex(-50%); } }
   @media (min-width: 900px) {
-    /* line 109, ../sass/components/_branding.scss */
+    /* line 108, ../sass/components/_branding.scss */
     .site-logo {
       position: absolute;
       top: 50%;
@@ -1046,12 +1045,12 @@ h1.site-name, .block--views-individual-sponsors-block h2.site-name, .block--view
       width: 40%;
       max-width: 550px; } }
   @media (min-width: 1200px) {
-    /* line 109, ../sass/components/_branding.scss */
+    /* line 108, ../sass/components/_branding.scss */
     .site-logo {
       left: 0;
       width: 45%; } }
   @media (min-width: 1700px) {
-    /* line 109, ../sass/components/_branding.scss */
+    /* line 108, ../sass/components/_branding.scss */
     .site-logo {
       width: 100%; } }
 
