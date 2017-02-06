@@ -11,34 +11,6 @@
     }
   };
 
-  // Drupal.behaviors.fldc14iesvg = {
-  //   attach: function ( context, settings ) {
-  //     // Detects IE9,10, & 11
-  //     if (($.browser.msie && $.browser.version >= 9) || (!!navigator.userAgent.match(/Trident\/7\./))) {
-  //       var img = document.getElementById('main-img');
-  //       var width = img.clientWidth;
-  //       var height = width * 1.29;  // the ratio of width to height of the drupal diver svg
-  //       $('#main-img', context).css('height', height);
-  //     }
-  //   }
-  // };
-
-  // // Moving exploding animation to JS because nested animation doesn't work properly in FF
-  // Drupal.behaviors.explodeShit = {
-  //   attach: function ( context, settings ) {
-  //     $('.diver-bubble > img', context).click(function() {
-  //       $(this).addClass('explode-this-shit')
-  //              .attr('src', '/sites/all/themes/fldc14/images/explosion.svg')
-  //              .animate({
-  //                height: '300%',
-  //                width: '300%'
-  //              }, 300, function () {
-  //               $(this).parent().css({ 'display' : 'none'});
-  //              });
-  //     });
-  //   }
-  // };
-
   Drupal.behaviors.fldc14MobileMenu = {
     attach: function ( context, settings ) {
       $('#block-system-main-menu', context).after($('<div id="mobile-menu"></div>'));
@@ -60,46 +32,22 @@
     }
   };
 
-  // Drupal.behaviors.headingHeightOnScroll = {
-  //   attach: function ( context, settings ) {
-  //     $('body', context).once('scroll', function () {
-  //       var $nav = $('#block-system-main-menu', context);
-  //       var $heading = $('.z-navigation', context);
-  //       $(window).scroll( function (){
-  //         var scrollTop = $(window, context).scrollTop();
-  //         if ( scrollTop >= 100 ) {
-  //           $heading.addClass('scroll-down');
-  //           $nav.addClass('scroll-down');
-  //         }
-  //         else if (scrollTop < 100) {
-  //           $heading.removeClass('scroll-down');
-  //           $nav.removeClass('scroll-down');
-  //         }
-  //       });
-  //     });
-  //   }
-  // };
 
   Drupal.behaviors.coolShitOnScroll = {
     attach: function ( context, settings ) {
-      // var $speaker = $('.speaker', context);
       var $locationInfo = $('#location-info', context);
-      $(window).scroll( function (){
-        // Featured Speaker Pop
-        // if($(window).scrollTop() + $(window).height() >= $speaker.offset().top) {
-        //   $speaker.addClass('scroll-down');
-        // }
-        // if($(window).scrollTop() + $(window).height() < $speaker.offset().top) {
-        //   $speaker.removeClass('scroll-down');
-        // }
-        // Location Slide in
-        if($(window).scrollTop() + $(window).height() >= $locationInfo.offset().top) {
-          $locationInfo.addClass('scroll-down');
-        }
-        if($(window).scrollTop() + $(window).height() < $locationInfo.offset().top) {
-          $locationInfo.removeClass('scroll-down');
-        }
-      });
+
+      if ($locationInfo.length) {
+        $(window).scroll( function (){
+          // Location Slide in
+          if($(window).scrollTop() + $(window).height() >= $locationInfo.offset().top) {
+            $locationInfo.addClass('scroll-down');
+          }
+          if($(window).scrollTop() + $(window).height() < $locationInfo.offset().top) {
+            $locationInfo.removeClass('scroll-down');
+          }
+        });
+      }
     }
   };
 
@@ -145,6 +93,17 @@
       $('#block-system-main-menu a', context).blur(function() {
         $(this).closest('.expanded').removeClass('js-tabbed-expanded');
       });
+    }
+  };
+
+  // Truncate long sponsor descriptions
+  Drupal.behaviors.sponsorHelper = {
+    attach: function ( context, settings ) {
+      $sponsorText =  $('.view-sponsors .wrap-back', context);
+
+      if ($sponsorText.length && $(window).width() >= 1200) {
+        $sponsorText.dotdotdot();
+      }
     }
   };
 

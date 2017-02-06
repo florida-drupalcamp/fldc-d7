@@ -40,7 +40,7 @@ $sponsor-mobile-transition: $tablet_narrow;
     }
 
     img {
-      max-width: 60%;
+      max-width: 75%;
       max-height: 140px;
       width: auto;
       height: auto;
@@ -85,7 +85,7 @@ $sponsor-mobile-transition: $tablet_narrow;
       top: 0;
       width: 100%;
       height: 100%;
-      padding: 10px;
+      padding: 20px;
     }
 
     @include breakpoint($sponsor-flip-effect) {
@@ -107,8 +107,8 @@ $sponsor-mobile-transition: $tablet_narrow;
 
   .wrap-back {
     display: none; // hide for mobile
-    line-height: 1.2;
-    font-size: 13px;
+    line-height: 1.3;
+    font-size: 15px;
 
     @include breakpoint($sponsor-flip-effect) {
       display: block; // Show for desktop
