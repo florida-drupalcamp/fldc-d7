@@ -859,9 +859,13 @@ li {
     Some general theming for the sidebar
    ========================================================================== */
 /* line 5, ../sass/components/_aside.scss */
+.l-region--sidebar-first .block {
+  margin-bottom: 80px; }
+
+/* line 11, ../sass/components/_aside.scss */
 .l-region--sidebar-second {
   /* Provide a deliniation between the content and aside while stacked */ }
-  /* line 6, ../sass/components/_aside.scss */
+  /* line 12, ../sass/components/_aside.scss */
   .l-region--sidebar-second h2, .l-region--sidebar-second .fieldset-legend, .l-region--sidebar-second .messages, .l-region--sidebar-second #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .l-region--sidebar-second h1, .l-region--sidebar-second #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .l-region--sidebar-second h2, .l-region--sidebar-second .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .l-region--sidebar-second h2, .l-region--sidebar-second #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .l-region--sidebar-second .legend-title, .l-region--sidebar-second .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .l-region--sidebar-second .legend-title,
   .l-region--sidebar-second #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
   #block-views-sponsors-block-block-1 .view-schedule-items .l-region--sidebar-second .session-slot--title,
@@ -871,7 +875,7 @@ li {
   .user-profile .l-region--sidebar-second .field--name-field-user-last-name, .l-region--sidebar-second .attendee-name {
     margin: 0 0 10px 0; }
   @media (max-width: 900px) {
-    /* line 5, ../sass/components/_aside.scss */
+    /* line 11, ../sass/components/_aside.scss */
     .l-region--sidebar-second {
       border: solid 1px #ddd;
       padding: 10px;
