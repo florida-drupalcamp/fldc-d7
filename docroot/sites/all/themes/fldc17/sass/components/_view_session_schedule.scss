@@ -345,3 +345,30 @@
     }
   }
 }
+
+// Trainings on Friday in schedule
+.view-trainings.view-display-id-block_1 {
+  .view-header {
+    margin: 5px 0;
+    padding: 10px 20px;
+    background: $blue;
+    color: white;
+    font-size: 20px;
+
+    h2 {
+      color: inherit;
+      text-transform: none;
+      margin-bottom: 0;
+    }
+  }
+
+  .view-content {
+    background: #f5f5f5;
+  }
+
+  .views-row {
+    margin: 0;
+    padding: 20px;
+    border-bottom: 3px solid white;
+  }
+}
