@@ -27,7 +27,7 @@
     attach: function ( context, settings ) {
       $('.session-expand', context).click(function() {
         // $('.session', context).removeClass('js-expanded');
-        $(this).parent().toggleClass('js-expanded');
+        $(this).parent().toggleClass('js-expanded').find('.session-description').slideToggle(200);
       });
     }
   };
