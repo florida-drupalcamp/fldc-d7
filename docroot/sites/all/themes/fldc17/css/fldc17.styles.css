@@ -859,13 +859,22 @@ li {
     Some general theming for the sidebar
    ========================================================================== */
 /* line 5, ../sass/components/_aside.scss */
+.l-region--sidebar-first h2, .l-region--sidebar-first .fieldset-legend, .l-region--sidebar-first .messages, .l-region--sidebar-first #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .l-region--sidebar-first h1, .l-region--sidebar-first #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .l-region--sidebar-first h2, .l-region--sidebar-first .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .l-region--sidebar-first h2, .l-region--sidebar-first #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .l-region--sidebar-first .legend-title, .l-region--sidebar-first .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .l-region--sidebar-first .legend-title,
+.l-region--sidebar-first #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+#block-views-sponsors-block-block-1 .view-schedule-items .l-region--sidebar-first .session-slot--title,
+.l-region--sidebar-first .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
+.view-schedule-items #block-views-sponsors-block-block-1 .l-region--sidebar-first .session-slot--title, .l-region--sidebar-first .user-profile .field--name-field-user-first-name, .user-profile .l-region--sidebar-first .field--name-field-user-first-name,
+.l-region--sidebar-first .user-profile .field--name-field-user-last-name,
+.user-profile .l-region--sidebar-first .field--name-field-user-last-name, .l-region--sidebar-first .attendee-name {
+  margin-bottom: 0; }
+/* line 9, ../sass/components/_aside.scss */
 .l-region--sidebar-first .block {
   margin-bottom: 80px; }
 
-/* line 10, ../sass/components/_aside.scss */
+/* line 14, ../sass/components/_aside.scss */
 .l-region--sidebar-second {
   /* Provide a deliniation between the content and aside while stacked */ }
-  /* line 11, ../sass/components/_aside.scss */
+  /* line 15, ../sass/components/_aside.scss */
   .l-region--sidebar-second h2, .l-region--sidebar-second .fieldset-legend, .l-region--sidebar-second .messages, .l-region--sidebar-second #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .l-region--sidebar-second h1, .l-region--sidebar-second #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .l-region--sidebar-second h2, .l-region--sidebar-second .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .l-region--sidebar-second h2, .l-region--sidebar-second #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .l-region--sidebar-second .legend-title, .l-region--sidebar-second .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .l-region--sidebar-second .legend-title,
   .l-region--sidebar-second #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
   #block-views-sponsors-block-block-1 .view-schedule-items .l-region--sidebar-second .session-slot--title,
@@ -875,7 +884,7 @@ li {
   .user-profile .l-region--sidebar-second .field--name-field-user-last-name, .l-region--sidebar-second .attendee-name {
     margin: 0 0 10px 0; }
   @media (max-width: 900px) {
-    /* line 10, ../sass/components/_aside.scss */
+    /* line 14, ../sass/components/_aside.scss */
     .l-region--sidebar-second {
       border: solid 1px #ddd;
       padding: 10px;
@@ -3086,66 +3095,102 @@ div.password-confirm {
   /* line 7, ../sass/abstractions/_mixins.scss */
   .view-schedule-items .view-header:after {
     clear: both; }
-/* line 229, ../sass/components/_view_session_schedule.scss */
-.view-schedule-items .track-item {
+
+/* line 233, ../sass/components/_view_session_schedule.scss */
+.legend-wrapper .legend {
+  margin: 0 0 10px 0; }
+/* line 237, ../sass/components/_view_session_schedule.scss */
+.legend-wrapper .track-item {
   position: relative;
-  line-height: 1.2;
+  line-height: 1.4;
   font-family: "arial narrow", arial, helvetica, sans-serif;
-  font-size: 1.1em;
+  font-size: 1.5em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 8px 0 8px 45px; }
-  @media (min-width: 399px) {
-    /* line 229, ../sass/components/_view_session_schedule.scss */
-    .view-schedule-items .track-item {
-      font-size: 1.3em; } }
-  @media (min-width: 700px) {
-    /* line 229, ../sass/components/_view_session_schedule.scss */
-    .view-schedule-items .track-item {
-      width: 50%;
-      float: left; } }
-  @media (min-width: 900px) {
-    /* line 229, ../sass/components/_view_session_schedule.scss */
-    .view-schedule-items .track-item {
-      font-size: 1.1em; } }
-  /* line 251, ../sass/components/_view_session_schedule.scss */
-  .view-schedule-items .track-item:before {
+  /* line 247, ../sass/components/_view_session_schedule.scss */
+  .legend-wrapper .track-item:before {
     content: "";
     position: absolute;
     display: block;
     top: 50%;
     margin-top: -13px;
-    left: 10px;
+    left: 5px;
     height: 27px;
     width: 26px;
     background-image: url(../images/sprite-track-icons.png);
     background-repeat: no-repeat; }
-/* line 265, ../sass/components/_view_session_schedule.scss */
-.view-schedule-items .legend {
-  margin: 0 0 10px 0; }
-  @media (min-width: 1200px) {
-    /* line 265, ../sass/components/_view_session_schedule.scss */
-    .view-schedule-items .legend {
-      margin: 0 0 20px 160px; } }
-/* line 272, ../sass/components/_view_session_schedule.scss */
-.view-schedule-items .track-item--theming:before {
+/* line 261, ../sass/components/_view_session_schedule.scss */
+.legend-wrapper .track-item--theming:before {
   background-position: 0 -320px; }
-/* line 276, ../sass/components/_view_session_schedule.scss */
-.view-schedule-items .track-item--dev:before {
+/* line 265, ../sass/components/_view_session_schedule.scss */
+.legend-wrapper .track-item--dev:before {
   background-position: 0 -40px; }
-/* line 280, ../sass/components/_view_session_schedule.scss */
-.view-schedule-items .track-item--site:before {
+/* line 269, ../sass/components/_view_session_schedule.scss */
+.legend-wrapper .track-item--site:before {
   background-position: 0 -160px; }
-/* line 284, ../sass/components/_view_session_schedule.scss */
-.view-schedule-items .track-item--proj:before {
+/* line 273, ../sass/components/_view_session_schedule.scss */
+.legend-wrapper .track-item--proj:before {
   background-position: 0 0; }
-/* line 288, ../sass/components/_view_session_schedule.scss */
-.view-schedule-items .track-item--island:before {
+/* line 277, ../sass/components/_view_session_schedule.scss */
+.legend-wrapper .track-item--island:before {
   background-position: 0 -200px; }
-/* line 292, ../sass/components/_view_session_schedule.scss */
-.view-schedule-items .track-item--beg:before {
+/* line 281, ../sass/components/_view_session_schedule.scss */
+.legend-wrapper .track-item--beg:before {
   background-position: 0 -279px; }
+
+/* line 287, ../sass/components/_view_session_schedule.scss */
+.block--menu-menu-multiday-schedule ul {
+  display: flex;
+  margin: 10px 0 5px;
+  padding: 0;
+  justify-content: space-between; }
+  @media (min-width: 900px) {
+    /* line 287, ../sass/components/_view_session_schedule.scss */
+    .block--menu-menu-multiday-schedule ul {
+      margin: 10px 0 2px;
+      justify-content: flex-start; } }
+  @media (min-width: 1200px) {
+    /* line 287, ../sass/components/_view_session_schedule.scss */
+    .block--menu-menu-multiday-schedule ul {
+      margin: 10px 0 0; } }
+/* line 303, ../sass/components/_view_session_schedule.scss */
+.block--menu-menu-multiday-schedule li {
+  margin: 0;
+  padding: 0;
+  margin: 0 3px; }
+  @media (max-width: 900px) {
+    /* line 303, ../sass/components/_view_session_schedule.scss */
+    .block--menu-menu-multiday-schedule li {
+      flex-basis: 100%; } }
+  /* line 312, ../sass/components/_view_session_schedule.scss */
+  .block--menu-menu-multiday-schedule li:first-child {
+    margin: 0 3px 0 0; }
+  /* line 316, ../sass/components/_view_session_schedule.scss */
+  .block--menu-menu-multiday-schedule li:last-child {
+    margin: 0 0 0 3px; }
+/* line 321, ../sass/components/_view_session_schedule.scss */
+.block--menu-menu-multiday-schedule a {
+  display: block;
+  background-color: #0E73AF;
+  color: white;
+  text-align: center;
+  padding: 10px 0; }
+  @media (min-width: 470px) {
+    /* line 321, ../sass/components/_view_session_schedule.scss */
+    .block--menu-menu-multiday-schedule a {
+      padding: 10px 40px;
+      font-size: 30px; } }
+  /* line 333, ../sass/components/_view_session_schedule.scss */
+  .block--menu-menu-multiday-schedule a:hover, .block--menu-menu-multiday-schedule a:focus {
+    background-color: #1292de; }
+  /* line 338, ../sass/components/_view_session_schedule.scss */
+  .block--menu-menu-multiday-schedule a.active-trail {
+    background-color: #34a9ef; }
+    /* line 341, ../sass/components/_view_session_schedule.scss */
+    .block--menu-menu-multiday-schedule a.active-trail:hover, .block--menu-menu-multiday-schedule a.active-trail:focus {
+      background-color: #63bdf3; }
 
 /* =============================================================================
     Sessions Views (Accepted and Proposed)

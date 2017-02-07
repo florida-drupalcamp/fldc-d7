@@ -226,27 +226,23 @@
     @include clearfix;
   }
 
+
+}
+
+.legend-wrapper {
+  .legend {
+    margin: 0 0 10px 0;
+  }
+
   .track-item {
     position: relative;
-    line-height: 1.2;
+    line-height: 1.4;
     font-family: $font-narrow;
-    font-size: 1.1em;
+    font-size: 1.5em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 8px 0 8px 45px;
-    @include breakpoint(399px) {
-      font-size: 1.3em;
-    }
-
-    @include breakpoint($tablet_narrow) {
-      width: 50%;
-      float: left;
-    }
-
-    @include breakpoint($tablet_wide) {
-      font-size: 1.1em;
-    }
 
     &:before {
       content: "";
@@ -254,18 +250,11 @@
       display: block;
       top: 50%;
       margin-top: -13px;
-      left: 10px;
+      left: 5px;
       height: 27px;
       width: 26px;
       background-image: url(../images/sprite-track-icons.png);
       background-repeat: no-repeat;
-    }
-  }
-
-  .legend {
-    margin: 0 0 10px 0;
-    @include breakpoint($normal) {
-      margin: 0 0 20px 160px;
     }
   }
 
@@ -292,6 +281,67 @@
   .track-item--beg:before { // Beginner
     background-position: 0 -279px;
   }
-
 }
 
+.block--menu-menu-multiday-schedule {
+  ul {
+    display: flex;
+    margin: 10px 0 5px;
+    padding: 0;
+    justify-content: space-between;
+
+    @include breakpoint($tablet_wide) {
+      margin: 10px 0 2px;
+      justify-content: flex-start;
+    }
+
+    @include breakpoint($normal) {
+      margin: 10px 0 0;
+    }
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    margin: 0 3px;
+
+    @include breakpoint(max-width $tablet_wide) {
+      flex-basis: 100%
+    }
+
+    &:first-child {
+      margin: 0 3px 0 0;
+    }
+
+    &:last-child {
+      margin: 0 0 0 3px;
+    }
+  }
+
+  a {
+    display: block;
+    background-color: $blue;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+
+    @include breakpoint($smartphone_wide) {
+      padding: 10px 40px;
+      font-size: 30px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: lighten($blue, 10%);
+    }
+
+    &.active-trail {
+      background-color: lighten($blue, 20%);
+
+      &:hover,
+      &:focus {
+        background-color: lighten($blue, 30%);
+      }
+    }
+  }
+}

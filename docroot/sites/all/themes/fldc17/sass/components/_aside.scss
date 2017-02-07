@@ -2,6 +2,10 @@
     Some general theming for the sidebar
    ========================================================================== */
 .l-region--sidebar-first {
+  h2 {
+    margin-bottom: 0;
+  }
+
   .block {
     margin-bottom: 80px;
   }
