@@ -2943,9 +2943,9 @@ div.password-confirm {
   overflow: hidden;
   position: absolute;
   display: block;
-  top: 10px;
+  top: 13px;
   left: 10px;
-  height: 26px;
+  height: 28px;
   width: 26px;
   background-image: url(../images/sprite-track-icons.png); }
 /* line 71, ../sass/components/_view_session_schedule.scss */
