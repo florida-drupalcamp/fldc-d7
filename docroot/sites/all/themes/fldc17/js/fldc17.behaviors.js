@@ -107,4 +107,27 @@
     }
   };
 
+  // Modal
+  Drupal.behaviors.closingModal = {
+    attach: function ( context, settings ) {
+      var $modal = '<div class="modal modal-post-camp">' +
+        '<div class="modal-inner"><button type="button" class="modal-close modal-close-x">Close</button>' +
+        '<h2 class="modal-title">Florida Drupalcamp was held in February 2017</h2>' +
+        '<p>Our next annual camp will be winter/spring 2018. Sign up to our mailing list to stay updated.</p>' +
+        '<a class="button button-action" href="http://eepurl.com/bUXSmP" target="_blank">Sign up for Mailing List</a>' +
+        '<button type="button" class="modal-close modal-close-text">Close</button>' +
+        '</div></div>';
+
+      if ($.cookie('fldc17.modal') != 'modaldisabled') {
+        $('body', context).append($modal);
+        $('.modal .button-action', context).focus();
+
+        $('.modal-close', context).on('click', function() {
+          $('.modal', context).remove();
+          $.cookie('fldc17.modal', 'modaldisabled', { expires: 1, path: '/' });
+        });
+      }
+    }
+  };
+
 })(jQuery);

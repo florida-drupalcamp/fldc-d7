@@ -2008,6 +2008,107 @@ a.hero-button {
           left: 110px;
           text-indent: 0; } }
 
+/*
+ * Modal
+ */
+/* line 5, ../sass/components/_modal.scss */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+/* line 15, ../sass/components/_modal.scss */
+.modal-inner {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 500px;
+  background-color: white;
+  padding: 30px 20px; }
+  @media (min-width: 700px) {
+    /* line 15, ../sass/components/_modal.scss */
+    .modal-inner {
+      padding: 40px; } }
+
+/* line 30, ../sass/components/_modal.scss */
+.modal-close-x {
+  background: transparent;
+  border: none;
+  -webkit-appearance: none;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  text-indent: -9999px;
+  overflow: hidden; }
+  @media (min-width: 700px) {
+    /* line 30, ../sass/components/_modal.scss */
+    .modal-close-x {
+      top: 10px;
+      right: 10px; } }
+  /* line 46, ../sass/components/_modal.scss */
+  .modal-close-x:before, .modal-close-x:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 20px;
+    height: 4px;
+    background-color: #0E73AF; }
+  /* line 60, ../sass/components/_modal.scss */
+  .modal-close-x:hover:before, .modal-close-x:hover:after, .modal-close-x:focus:before, .modal-close-x:focus:after {
+    background-color: white; }
+  /* line 66, ../sass/components/_modal.scss */
+  .modal-close-x:after {
+    transform: translate(-50%, -50%) rotate(-45deg); }
+
+/* line 71, ../sass/components/_modal.scss */
+.modal-close-text {
+  background: transparent;
+  border: none;
+  -webkit-appearance: none;
+  padding: 0;
+  font-family: helvetica, arial, sans-serif;
+  color: #0E73AF;
+  margin-top: 10px;
+  font-size: 16px;
+  display: block;
+  text-transform: none;
+  margin: 10px; }
+  /* line 81, ../sass/components/_modal.scss */
+  .modal-close-text:hover, .modal-close-text:focus {
+    background-color: transparent;
+    text-decoration: underline;
+    color: #0E73AF; }
+
+/* line 91, ../sass/components/_modal.scss */
+.modal-post-camp h2, .modal-post-camp .fieldset-legend, .modal-post-camp .messages, .modal-post-camp #block-views-sponsors-block-block-1 h1, #block-views-sponsors-block-block-1 .modal-post-camp h1, .modal-post-camp #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block h2, #block-views-sponsors-block-block-1 .block--views-individual-sponsors-block .modal-post-camp h2, .modal-post-camp .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 h2, .block--views-individual-sponsors-block #block-views-sponsors-block-block-1 .modal-post-camp h2, .modal-post-camp #block-views-sponsors-block-block-1 .view-schedule-items .legend-title, #block-views-sponsors-block-block-1 .view-schedule-items .modal-post-camp .legend-title, .modal-post-camp .view-schedule-items #block-views-sponsors-block-block-1 .legend-title, .view-schedule-items #block-views-sponsors-block-block-1 .modal-post-camp .legend-title,
+.modal-post-camp #block-views-sponsors-block-block-1 .view-schedule-items .session-slot--title,
+#block-views-sponsors-block-block-1 .view-schedule-items .modal-post-camp .session-slot--title,
+.modal-post-camp .view-schedule-items #block-views-sponsors-block-block-1 .session-slot--title,
+.view-schedule-items #block-views-sponsors-block-block-1 .modal-post-camp .session-slot--title, .modal-post-camp .user-profile .field--name-field-user-first-name, .user-profile .modal-post-camp .field--name-field-user-first-name,
+.modal-post-camp .user-profile .field--name-field-user-last-name,
+.user-profile .modal-post-camp .field--name-field-user-last-name, .modal-post-camp .attendee-name {
+  line-height: 1.1; }
+/* line 95, ../sass/components/_modal.scss */
+.modal-post-camp .button-action {
+  display: inline-block;
+  max-width: 100%; }
+  @media (min-width: 700px) {
+    /* line 95, ../sass/components/_modal.scss */
+    .modal-post-camp .button-action {
+      font-size: 40px; } }
+
 /* =============================================================================
     Primary Navigation
    ========================================================================== */

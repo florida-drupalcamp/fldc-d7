@@ -26,7 +26,7 @@
 // Centers an element with reference to the parent element that is not position: static
 //
 // Note that for this to work properly, you will need to absolutely position this element before applying this mixin
-// 
+//
 // Params
 //   $way: x (for horizontal centering), y (vertical centering), or xy (centered in both ways)
 //
@@ -46,4 +46,11 @@
     top: 50%;
     @include transform(translate(-50%, -50%));
   }
+}
+
+@mixin remove-button {
+  background: transparent;
+  border: none;
+  -webkit-appearance: none;
+  padding: 0;
 }
