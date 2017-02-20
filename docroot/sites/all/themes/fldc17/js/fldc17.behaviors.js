@@ -107,7 +107,7 @@
     }
   };
 
-  // Modal
+  // Mailing list modal - only opens on non-webform pages and viewports > 800px
   Drupal.behaviors.closingModal = {
     attach: function ( context, settings ) {
       var $modal = '<div class="modal modal-post-camp">' +
@@ -118,15 +118,27 @@
         '<button type="button" class="modal-close modal-close-text">Close</button>' +
         '</div></div>';
 
-      if ($.cookie('fldc17.modal') != 'modaldisabled') {
+      if ($.cookie('fldc17.modal') != 'modaldisabled' && !$('body', context).hasClass('node-type-webform') && $(window).width() > 800) {
         $('body', context).append($modal);
         $('.modal .button-action', context).focus();
 
         $('.modal-close', context).on('click', function() {
-          $('.modal', context).remove();
-          $.cookie('fldc17.modal', 'modaldisabled', { expires: 1, path: '/' });
+          closeModal();
+        });
+
+        $(document).on('keyup', function (e) {
+          if (e.keyCode == 27) {
+            closeModal();
+          }
         });
       }
+
+      function closeModal() {
+        $('.modal', context).remove();
+        $.cookie('fldc17.modal', 'modaldisabled', { expires: 1, path: '/' });
+        $('.site-name a', context).focus();
+      }
+
     }
   };
 
