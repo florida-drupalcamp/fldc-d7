@@ -44,6 +44,7 @@
   .session-description {
     overflow: hidden;
     padding-top: 10px;
+    padding-bottom: 10px;
     margin-bottom: 10px;
     // @include transition(all .5s);
     @include breakpoint(max-width $smartphone_wide) {
@@ -370,5 +371,27 @@
     margin: 0;
     padding: 20px;
     border-bottom: 3px solid white;
+  }
+}
+
+.youtube-icon {
+  position: relative;
+  display: inline-block;
+  text-indent: -9999px;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  top: 16px; // @todo magic number
+
+  &:before {
+    content: "\f166";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: FontAwesome;
+    font-size: 40px;
+    text-indent: 0;
+    color: #b31217;
   }
 }
